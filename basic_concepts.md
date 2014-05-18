@@ -1,0 +1,7 @@
+# Koncept integracije
+Povezavo med spletno trgovino in MK se lahko izvede na naslednje načine :
+- seznam vseh artiklov in zalogo se vodi v MK. S pomočjo cenika se določijo cene objavljenih artiklov. Spletna trgovina vsake toliko časa pokliče 'get_pricelist_inventories' in s tem obnovi seznam artiklov v spletni trgovini. V spletni trgovini se potem podatki še obogatijo s slikami, dodatnimi opisi, itd. Pred potrditvijo nakupa se izvede še preverjanje zaloge preko 'check_inventories'. Po uspešno opravljenem nakupi se zabeleži nakup preko klica 'put_sales_bill'. Na koncu se za uporabnika lahko pripravi PDF dokument računa preko klica 'get_document_for_bill'.
+- seznam vseh artiklov se vodi v spletni trgovini, kjer se tudi dodajajo / spreminjajo / urejajo artikli. Vsaka sprememba se pošlje na MetaKocka. Uporabnik vse artikle in cene uredi v trgovini. Po uspešno opravljenem nakupi se zabeleži nakup preko klica 'put_sales_bill'. Pred nakupom se lahko izvede preverjanje zaloge preko 'check_inventories'. Dodatni oz. novi artikli se avtomatično zabeležijo v MetaKocka. Na koncu se za uporabnika lahko pripravi PDF dokument računa preko klica 'get_document_for_bill'.
+- podobno kot zgornji primer, samo da spletna trgovina v MK izdela ustrezno ponudbo (klic 'put_sales_offer'). Skrbnik MK računa potem v MK izvede prenos ponudbe na račun, natisne račun ter ga pošlje uporabniku.
+
+# Splošna oblika klicev
