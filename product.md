@@ -64,7 +64,7 @@ URL : https://main.metakocka.si/rest/eshop/v1/json/product_add
 Opis : izvedba popravkov podatkov na artiklu. V primeru konflikta s pravili za zagotavljanje konsistentnosti podatkov, metoda vrne ustrezno napako.
 URL : https://main.metakocka.si/rest/eshop/v1/json/product_update
 
-*Primer klica
+**Primer klica**
 ```javascript
 {
     "secret_key":"my_secreat_key",
