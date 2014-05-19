@@ -1,4 +1,4 @@
-# product_add – dodajanje artiklov
+#product_add – dodajanje artiklov
 Opis : Dodajanje novih artiklov. Če že obstaja artikel z enako count_code in code (to v praksi pomeni enaki artikel), dobimo napako. Ob uspešnem dodajanju dobimo tudi interno oznako artikla.
 URL : https://main.metakocka.si/rest/eshop/v1/json/product_add
 
