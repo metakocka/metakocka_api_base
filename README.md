@@ -1,7 +1,6 @@
-Welcome!
+Dobrodošli!
 ===
-
-On this page you can find our API description and code samples
+Na tej strani lahko najdete API dokumentacijo in primere izvorne kode
 
 Table of content
 ===
