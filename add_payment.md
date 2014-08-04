@@ -27,7 +27,7 @@ URL : https://main.metakocka.si/rest/eshop/v1/json/add_payment
 }
 ```
 
-Opombe
+**Opombe**
 - doc_type mora biti določen glede na tip dokumenta na katerega želimo dodajati plačilo,
 - za identifikacijo dokumenta lahko uporabimo mk_id ali count_code (to je št. računa ali št. ponudbe)
 - cash_register uporabimo samo v primeru, da imamo gotovinsko plačilo
