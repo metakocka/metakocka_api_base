@@ -1,12 +1,12 @@
-Dobrodošli!
-Ravno pripravljamo prenos celotne dokumentacije za razvijalce...
+Welcome!
+We are just translating our development documentation from Slovenian language. Stay tune...
 
-Stara dokumentacija je dosegljiva na [dev.metakocka.si](http://dev.metakocka.si/eshop/index.html)
+Current documentation is available on [dev.metakocka.si](http://dev.metakocka.si/eshop/index.html)
 
-### Računi in Ponudbe
-[add_payment – dodajanje plačila na račun in ponudbo](add_payment.md)
+# Bill and offer
+[add_payment - add payment on existing bill or offer](add_payment.md)
 
-### Documents
-[Concept](documents_concept.md)
+# Documents
+[concept](documents_concept.md)
 
 [put_document](documents_put_document.md)
