@@ -3,10 +3,18 @@ We are just translating our development documentation from Slovenian language. S
 
 Current documentation is available on [dev.metakocka.si](http://dev.metakocka.si/eshop/index.html)
 
-# Bill and offer
-[add_payment - add payment on existing bill or offer](add_payment.md)
-
+# Products
+TODO...
+# Bill and Offer
+TODO...
+# Warehouse
+TODO...
 # Documents
-[concept](documents_concept.md)
+[1. Concept](documents_concept.md)
 
-[put_document](documents_put_document.md)
+[2. put_document](documents_put_document.md)
+* [2.1 sales_order](documents_put_document.md)
+* [2.2 bill](documents_put_document.md#)
+
+# Other calls
+[add_payment - add payment on existing bill or offer](add_payment.md)
