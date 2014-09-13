@@ -1,25 +1,27 @@
-#add_payment – dodajanje plačila na račun in ponudbo
-Opis : Na obstoječi račun ali ponudbo lahko dodamo transakcijo plačila. Glede na to, da ima dokument lahko več plačil, lahko tudi operacijo ponovimo večkrat.
-URL : https://main.metakocka.si/rest/eshop/v1/json/add_payment
+#add_payment - add payment on existing bill or offer
 
-**Primer klica**
+**Description** : Add payment transaction on existing bill or offer. Because bill / offer can have more then one transaction, operation can be repeat many times.
+
+**URL** : https://main.metakocka.si/rest/eshop/v1/json/add_payment
+
+**Request example**
 ```javascript
 {
    "secret_key":"my_secret",
    "company_id":"16",
-   "doc_type" : "bill" ; "sales_offer"
+   "doc_type" : "bill",
    "mk_id":"1600001744",
-   "count_code":"eshop_002"   
-   "payment_mode" : "payment" ; "prepayment", "return"
-   "payment_type" : "Transakcijski račun"
-   "cash_register" : "Blagajna 1"
+   "count_code":"eshop_002",   
+   "payment_mode" : "payment",
+   "payment_type" : "Transaction bill"
+   "cash_register" : "Cashregister 1"
    "date" : "2014-08-23+02:00"
    "price" : "12.23"
    "notes" : "bla bla bla"
 }
 ```
 
-**Primer odgovora**
+**Respond example**
 ```javascript
 {
     "opr_code":"0",
@@ -27,20 +29,20 @@ URL : https://main.metakocka.si/rest/eshop/v1/json/add_payment
 }
 ```
 
-**Opombe**
-- doc_type mora biti določen glede na tip dokumenta na katerega želimo dodajati plačilo,
-- za identifikacijo dokumenta lahko uporabimo mk_id ali count_code (to je št. računa ali št. ponudbe)
-- cash_register uporabimo samo v primeru, da imamo gotovinsko plačilo
+**Notes**
+- doc_type is document type. It can be 'bill' or 'sales_offer'
+- use mk_id or count_code for document identification
+- cash_register paramether is required only if we have cash payment and we use multiple cash register
 
-| Atribut | Obvezen? | V MK | Tip / max dolžina | Opomba |
+| Paramether | Required? | In MK | Type / max length | Notes |
 | ------- | -------- | ---- | ----------------- | ------ |
-| doc_type | DA | / | char | vrednost 'bill' (za vse račune) oz. 'sales_offer' (za ponudbe)
-| mk_id | NE | / | char, 30 | unikatna oznaka dokumenta v MK. Dobimo kot rezultat klical za dodajanje dokumentov. Mora biti podani mk_id ali count_code
-| count_code | NE | Št. računa ali Št. ponudbe | char, 30 | Št. dokumenta v MK. Lahko se avtomatično generila v MK ali jo določimo preko klica za dodajanje dokumentov. Več dokument ima lahko enako oznako (recimo domači in tuji račun ; domači računi v različnih letih)
-| payment_mode | DA | Tip plačila | char | glej okno za dodajanje plačila. Možne vrednost "payment" (Plačilo), "prepayment" (Plačilo - avans), "return" (Vračilo)
-| payment_type | DA | Vrsta plačila | char,100 | ime plačila, ki ga lahko nastavimo v dinamičnem šifrantu
-| cash_register | NE | Blagajna | char,100 | ime blagajne, ki jo lahko nastavimo v dinamičnem šifrantu. Uporabno samo v primeru, da imamo plačilo preko gotovine. 
-| date | DA | Datum | char (ISO date) | kdaj je bilo opravljeno plačilo v ISO 8601 formatu.
-| price | DA | Znesek | cena | znesek v format "1200.12".
-| notes | NE | Opomba | char,100 | opomba, ki se izpiše ob transakciji
+| doc_type | Yes | / | char | 'bill' or 'sales_offer'
+| mk_id | No | / | char, 30 | unique document identification in MK. Usually we get this paramether as result of the call for adding document. mk_id or count_code is required.
+| count_code | Yes | Bill or offer number | char, 30 | document number in MK. It can be automatically generated in MK or added in document when it is created by REST call. 
+| payment_mode | No | Payment mode | char | see payment edit dialog in MK. It can have values 'payment', 'prepayment' or 'return'.
+| payment_type | No | Payment type | char,100 | payment type can be set in dynamic register.
+| cash_register | NE | Cash register | char,100 | the name of cash register that can be set in dynamic register. Use only when you have cash payment and multiple cash register.
+| date | DA | Date | char (ISO date) | when payment was done. In ISO 8601 format.
+| price | DA | Price | price | price in format '1200.12'.
+| notes | NE | Notes | char,100 | text will be part of transaction description.
 

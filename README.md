@@ -1,9 +1,19 @@
-Dobrodošli!
-Ravno pripravljamo prenos celotne dokumentacije za razvijalce...
+Welcome!
+We are just translating our development documentation from Slovenian language. Stay tune...
 
-Stara dokumentacija je dosegljiva na [dev.metakocka.si](http://dev.metakocka.si/eshop/index.html)
+Current documentation is available on [dev.metakocka.si](http://dev.metakocka.si/eshop/index.html)
 
-### Računi in Ponudbe
-[add_payment – dodajanje plačila na račun in ponudbo](add_payment.md)
+# Products
+TODO...
+# Bill and Offer
+TODO...
+# Warehouse
+TODO...
+# Documents
+[1. Concept](documents_concept.md)
 
+[2. put_document](documents_put_document.md)
+* [2.1 sales_order](documents_put_document.md#21-sales_order)
 
+# Other calls
+[add_payment](add_payment.md)  - add payment on existing bill or offer
