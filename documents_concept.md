@@ -98,7 +98,7 @@ Notes :
          "code":"eshop_artikel_1",
          "amount":"20",
          "price":"21",
-         "discount":"22",
+         "discount":"22;23",
          "tax":"200"         
       },
       {
@@ -106,6 +106,7 @@ Notes :
          "code":"eshop_artikel_2",
          "name":"eshop_artikel_2",
          "name_desc":"eshop_artikel_2 opis",
+         "doc_desc":"product desc on document",         
          "unit":"kom",
          "service":"false",
          "sales":"true",
