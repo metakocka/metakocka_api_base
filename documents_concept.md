@@ -120,7 +120,7 @@ Notes :
 ```
 
 ### 1.2.4 Respond
-**Example** (Warning : this is only part of required call structure):
+**Example**:
 ```javascript
 {
     "opr_code": "0",
@@ -134,3 +134,24 @@ Notes :
 * opr_code - status code of operation. '0' is OK, other values are error.
 * mk_id - put_document call will return new insert document id.
 * count_code - put_document call will return new insert document number.
+<<<<<<< HEAD
+=======
+
+**Error example 1**:
+```javascript
+{  
+   "opr_code":"2",
+   "opr_desc":"Unknown document type : warehouse_packing_list1",
+   "opr_time_ms":"348"
+}
+```
+
+**Error example 2**:
+```javascript
+{  
+   "opr_code":"2",
+   "opr_desc":"Paramether 'status_code' has invalid value : XXXactive. Valid values : active,finished,deleted",
+   "opr_time_ms":"47"
+}
+```
+>>>>>>> add_bill_2
