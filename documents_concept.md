@@ -134,8 +134,6 @@ Notes :
 * opr_code - status code of operation. '0' is OK, other values are error.
 * mk_id - put_document call will return new insert document id.
 * count_code - put_document call will return new insert document number.
-<<<<<<< HEAD
-=======
 
 **Error example 1**:
 ```javascript
@@ -154,4 +152,3 @@ Notes :
    "opr_time_ms":"47"
 }
 ```
->>>>>>> add_bill_2
