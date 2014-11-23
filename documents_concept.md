@@ -23,12 +23,12 @@ warehouse\_receiving\_note   |X    |X       |X       |X    | X                |
 warehouse\_acceptance\_note  |X    |X       |X       |X    | X                |
 sales\_order                 |X    |        |        |     |                  |
 sales\_offer                 |     |        |        |     |                  |
-sales\_bill\_domestic        |     |        |        |     |                  | 
-sales\_bill\_foreign         |     |        |        |     |                  |
-sales\_bill\_retail          |     |        |        |     |                  |
+sales\_bill\_domestic        |X    |        |        |     |                  | 
+sales\_bill\_foreign         |X    |        |        |     |                  |
+sales\_bill\_retail          |X    |        |        |     |                  |
 purchase\_order              |     |        |        |     |                  |
-purchase\_bill\_domestic     |     |        |        |     |                  |
-purchase\_bill\_foreign      |     |        |        |     |                  |
+purchase\_bill\_domestic     |X    |        |        |     |                  |
+purchase\_bill\_foreign      |X    |        |        |     |                  |
 
 ## 1.2. Building blocks
 All calls have very simmilar JSON structure. Let's describe the most importand parts.
@@ -98,7 +98,7 @@ Notes :
          "code":"eshop_artikel_1",
          "amount":"20",
          "price":"21",
-         "discount":"22",
+         "discount":"22;23",
          "tax":"200"         
       },
       {
@@ -106,6 +106,7 @@ Notes :
          "code":"eshop_artikel_2",
          "name":"eshop_artikel_2",
          "name_desc":"eshop_artikel_2 opis",
+         "doc_desc":"product desc on document",         
          "unit":"kom",
          "service":"false",
          "sales":"true",
@@ -119,7 +120,7 @@ Notes :
 ```
 
 ### 1.2.4 Respond
-**Example** (Warning : this is only part of required call structure):
+**Example**:
 ```javascript
 {
     "opr_code": "0",
@@ -133,3 +134,21 @@ Notes :
 * opr_code - status code of operation. '0' is OK, other values are error.
 * mk_id - put_document call will return new insert document id.
 * count_code - put_document call will return new insert document number.
+
+**Error example 1**:
+```javascript
+{  
+   "opr_code":"2",
+   "opr_desc":"Unknown document type : warehouse_packing_list1",
+   "opr_time_ms":"348"
+}
+```
+
+**Error example 2**:
+```javascript
+{  
+   "opr_code":"2",
+   "opr_desc":"Paramether 'status_code' has invalid value : XXXactive. Valid values : active,finished,deleted",
+   "opr_time_ms":"47"
+}
+```
