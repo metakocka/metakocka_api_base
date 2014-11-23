@@ -23,12 +23,12 @@ warehouse\_receiving\_note   |X    |X       |X       |X    | X                |
 warehouse\_acceptance\_note  |X    |X       |X       |X    | X                |
 sales\_order                 |X    |        |        |     |                  |
 sales\_offer                 |     |        |        |     |                  |
-sales\_bill\_domestic        |     |        |        |     |                  | 
-sales\_bill\_foreign         |     |        |        |     |                  |
-sales\_bill\_retail          |     |        |        |     |                  |
+sales\_bill\_domestic        |X    |        |        |     |                  | 
+sales\_bill\_foreign         |X    |        |        |     |                  |
+sales\_bill\_retail          |X    |        |        |     |                  |
 purchase\_order              |     |        |        |     |                  |
-purchase\_bill\_domestic     |     |        |        |     |                  |
-purchase\_bill\_foreign      |     |        |        |     |                  |
+purchase\_bill\_domestic     |X    |        |        |     |                  |
+purchase\_bill\_foreign      |X    |        |        |     |                  |
 
 ## 1.2. Building blocks
 All calls have very simmilar JSON structure. Let's describe the most importand parts.
