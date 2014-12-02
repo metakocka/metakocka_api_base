@@ -2,7 +2,7 @@
 
 **Description** : Add payment transaction on existing bill or offer. Because bill / offer can have more then one transaction, operation can be repeat many times.
 
-**URL** : https://main.metakocka.si/rest/eshop/v1/json/add_payment
+**URL** : https://main.metakocka.si/rest/eshop/v1/json/put_transaction
 
 **Request example**
 ```javascript
