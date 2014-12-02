@@ -17,4 +17,4 @@ TODO...
 * [2.2 bill](documents_put_document.md#22-bill)
 
 # Other calls
-[add_payment](add_payment.md)  - add payment on existing bill or offer
+[put_transaction](put_transaction.md)  - add payment on existing bill or offer
