@@ -47,6 +47,14 @@
     "status_code" : "shipped",
     "pariteta" : "Lasten Prevzem",
     "doc_created_email" : "m@m.com",
+    "offer_list" : [
+        {
+            "count_code" : "PP1_261"
+        },
+        {
+            "count_code" : "PP1_265"
+        }       
+    ],        
     "delivery_deadline" : "2014-09-14+02:00",
     "warehouse" : "glavni",
     "delivery_type" : "DHL",
