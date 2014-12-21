@@ -26,7 +26,7 @@ sales\_offer                 |     |        |        |     |                  |
 sales\_bill\_domestic        |X    |        |        |     |                  | 
 sales\_bill\_foreign         |X    |        |        |     |                  |
 sales\_bill\_retail          |X    |        |        |     |                  |
-purchase\_order              |     |        |        |     |                  |
+purchase\_order              |X    |        |        |     |                  |
 purchase\_bill\_domestic     |X    |        |        |     |                  |
 purchase\_bill\_foreign      |X    |        |        |     |                  |
 
