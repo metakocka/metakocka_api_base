@@ -115,7 +115,14 @@ Notes :
          "price":"31",
          "discount":"32",
          "tax":"000"
-      }      
+      },
+      {
+         "code":"eshop_artikel_1",
+         "amount":"20",
+         "price_with_tax":"30",
+         "discount":"22;23",
+         "tax":"200"         
+      }
    ]   
 ```
 
