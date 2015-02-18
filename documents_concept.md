@@ -17,10 +17,10 @@ Currenty we support :
 
 Document type                | Put | Update | Delete | Get | GetChangeDocument|
 -----------------------------|-----|--------|--------|-----|------------------|
-warehouse\_delivery\_note    |X    |X       |X       |X    | X                |
-warehouse\_packing\_list     |X    |X       |X       |X    | X                |
-warehouse\_receiving\_note   |X    |X       |X       |X    | X                |
-warehouse\_acceptance\_note  |X    |X       |X       |X    | X                |
+warehouse\_delivery\_note    |X    |        |        |X    | X                |
+warehouse\_packing\_list     |X    |        |        |X    | X                |
+warehouse\_receiving\_note   |X    |        |        |X    | X                |
+warehouse\_acceptance\_note  |X    |        |        |X    | X                |
 sales\_order                 |X    |        |        |     |                  |
 sales\_offer                 |     |        |        |     |                  |
 sales\_bill\_domestic        |X    |        |        |     |                  | 
