@@ -4,7 +4,7 @@ We are just translating our development documentation from Slovenian language. S
 Current documentation is available on [dev.metakocka.si](http://dev.metakocka.si/eshop/index.html)
 
 # Products
-[1. Concept](\docs\product_concept.md)
+[1. Concept](/docs/product_concept.md)
 
 [2. product_get](.\docs\product_get.md)
 
