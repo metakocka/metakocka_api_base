@@ -31,6 +31,68 @@ Respond :
 }
 ```
 
+## 1.1 Localization
+Request :
+```javascript
+{
+    "secret_key":"my_secreat_key",
+    "company_id":"16",
+    "count_code":"eshop_001",
+    "code":"eshop_001_sif",
+    "name":"artikel eshop_001",
+    "name_desc": "artikel eshop_001 - daljsi opis",    
+    "unit":"kos",
+    "localization":[
+    {
+        "language":"en",
+        "name":"en name",
+        "name_desc":"en desc"
+    },
+    {
+        "language":"de",
+        "name":"de name",
+        "name_desc":"de desc"
+    }
+   ]    
+}
+```
+
+## 1.2 Categories (simple form)
+Request :
+```javascript
+{
+    "secret_key":"my_secreat_key",
+    "company_id":"16",
+    "count_code":"eshop_001",
+    "code":"eshop_001_sif",
+    "name":"artikel eshop_001",
+    "name_desc": "artikel eshop_001 - daljsi opis",    
+    "unit":"kos",
+    "categories" :[
+        {"category":"Sadje"},
+        {"category":"Hruška"}
+    ]    
+}
+```
+
+## 1.3 Categories (advance form)
+Request :
+```javascript
+{
+    "secret_key":"my_secreat_key",
+    "company_id":"16",
+    "count_code":"eshop_001",
+    "code":"eshop_001_sif",
+    "name":"artikel eshop_001",
+    "name_desc": "artikel eshop_001 - daljsi opis",    
+    "unit":"kos",
+    "categories" :[    
+        {"category":["Sadje", "Hruška"]}
+    ]    
+}
+```
+
+
 # 2. PHP Example
 [product\_add\_json.php](./examples_php/product_add_json.php)
 
