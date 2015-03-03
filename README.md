@@ -15,7 +15,12 @@ Current documentation is available on [dev.metakocka.si](http://dev.metakocka.si
 [5. product_delete](/docs/product_delete.md)
 
 # Bill and Offer
-TODO...
+1. Concept
+
+[2. Bill examples](/docs/put_sales_bill_examples.md)
+
+3. Offer examples
+
 # Warehouse
 TODO...
 # Documents
