@@ -6,15 +6,13 @@ Current documentation is available on [dev.metakocka.si](http://dev.metakocka.si
 # Products
 [1. Concept](/docs/product_concept.md)
 
-[2. product_get](/docs/product_get.md)
+[2. product_list](/docs/product_list.md)
 
 [3. product_add](/docs/product_add.md)
 
 [4. product_update](/docs/product_update.md)
 
 [5. product_delete](/docs/product_delete.md)
-
-[6. product_list](/docs/product_list.md)
 
 # Bill and Offer
 TODO...
