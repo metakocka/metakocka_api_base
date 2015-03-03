@@ -154,7 +154,7 @@ Notes :
 * pricelist 'PC_115' has price (without tax)
 * pricelist 'PC-2016' has price with tax and discount
 
-## 1.2 With compound
+## 1.3 With compound
 Request :
 ```javascript
 {
