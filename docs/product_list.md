@@ -207,3 +207,30 @@ Respond :
 ```
 Notes :
 * compound_type - can have values 'norm' (MK SLO : 'Normativ') or 'compound' (MK SLO : 'Kosovnica')
+
+## 1.4 Unit2 and unit factor
+Respond :
+```javascript
+{
+    "opr_code": "0",
+    "opr_time_ms": "57",
+    "count_code": "26276",
+    "limit": "1000",
+    "offset": "0",
+    "product_list_count": "1",
+    "product_list": {
+        "count_code": "26276",
+        "mk_id": "1600180258",
+        "code": "uni2",
+        "name": "unit2",
+        
+        "unit": "kg",
+        "unit2": "cm3",
+        "unit_factor": "10,52",
+        
+        "service": "false",
+        "sales": "true",
+        "purchasing": "false"
+    }
+}
+```
