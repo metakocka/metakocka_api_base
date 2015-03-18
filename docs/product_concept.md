@@ -39,6 +39,7 @@ height                    | decimal |  | Višina |
 width                     | decimal |  | Širina |
 depth                     | decimal |  | Globina |
 weight                    | decimal |  | Teža |
+customs_fee               | string  | Must be value (not description) from dynamic register | Carinska tarifa |
 
 Notes :
 * Attribute with [*] are mandatory attributes.
