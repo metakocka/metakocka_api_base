@@ -1,4 +1,4 @@
-**URL** : https://main.metakocka.si/rest/eshop/v1/json/put\_sales\_bill
+**URL** : https://main.metakocka.si/rest/eshop/v1/json/put_sales_bill
 #JSON Example
 
 
