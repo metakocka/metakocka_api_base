@@ -1,0 +1,71 @@
+# get_document - Sales Offer
+
+**Example** :
+
+Request :
+```javascript
+{
+  "secret_key":"8899",
+  "company_id":"16",
+  "doc_type" : "sales_offer",
+  "doc_id" : "1600202487"
+}
+```
+Respond :
+```javascript
+{
+    "mk_id": "1600202487",
+    "doc_type": "sales_offer",
+    "opr_code": "0",
+    "count_code": "PP1_288",
+    "doc_date": "2015-04-20+02:00",
+    "partner": {
+        "business_entity": "true",
+        "taxpayer": "true",
+        "foreign_county": "false",
+        "tax_id_number": "SI10040073",
+        "customer": "eshop 1",
+        "street": "Slovenska cesta 100",
+        "post_number": "1000",
+        "place": "Ljubljana",
+        "country": "Slovenia",
+        "count_code": "1600002672",
+        "useCustomerAsContact": "false"
+    },
+    "sales_pricelist_code": "bruto1",
+    "purchase_pricelist_code": "cenik_nabava",
+    "prepayment_value": "5.42",
+    "discount_value": "15",
+    "duo_payment": "2015-04-22+02:00",
+    "currency_code": "EUR",
+    "status_code": "Odprta",
+    "valid_days": "30",
+    "valid_to": "2015-05-20+02:00",
+    "title": "Ponudba 1",
+    "pariteta": "Lasten prevzem",
+    "doc_created_email": "janeznovak@gmail.com",
+    "notes": "Dodatni opis",
+    "product_list": [
+        {
+            "mk_id": "1600162716",
+            "code": "mkp1",
+            "name": "MK prenos 1",
+            "name_desc": "MK prenos 1 artikel opis",
+            "amount": "2",
+            "price": "10",
+            "tax": "EX4",
+            "doc_desc": "Opis na ponudbi"
+        },
+        {
+            "mk_id": "1600162716",
+            "code": "mkp1",
+            "name": "MK prenos 1",
+            "name_desc": "MK prenos 1 artikel opis",
+            "amount": "3",
+            "price_with_tax": "13",
+            "tax": "EX4",
+            "doc_desc": "Opis na ponudbi"
+        }
+    ]
+}
+```

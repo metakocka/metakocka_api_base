@@ -21,14 +21,14 @@ warehouse\_delivery\_note    |X    |        |        |X    | X                |
 warehouse\_packing\_list     |X    |        |        |X    | X                |
 warehouse\_receiving\_note   |X    |        |        |X    | X                |
 warehouse\_acceptance\_note  |X    |        |        |X    | X                |
-sales\_order                 |X    |        |        |     |                  |
-sales\_offer                 |     |        |        |     |                  |
-sales\_bill\_domestic        |X    |        |        |     |                  | 
-sales\_bill\_foreign         |X    |        |        |     |                  |
-sales\_bill\_retail          |X    |        |        |     |                  |
+sales\_order                 |X    |        |        |X    |                  |
+sales\_offer                 |     |        |        |X    |                  |
+sales\_bill\_domestic        |X    |        |        |X    |                  | 
+sales\_bill\_foreign         |X    |        |        |X    |                  |
+sales\_bill\_retail          |X    |        |        |X    |                  |
 purchase\_order              |X    |        |        |     |                  |
-purchase\_bill\_domestic     |X    |        |        |     |                  |
-purchase\_bill\_foreign      |X    |        |        |     |                  |
+purchase\_bill\_domestic     |X    |        |        |X    |                  |
+purchase\_bill\_foreign      |X    |        |        |X    |                  |
 
 ## 1.2. Building blocks
 All calls have very simmilar JSON structure. Let's describe the most importand parts.
