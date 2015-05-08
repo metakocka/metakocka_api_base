@@ -30,7 +30,9 @@ TODO...
 * [2.4 purchase order](/docs/documents_put_document_purchase_order.md)
 
 ###get_document
-* [3.2 bill](/docs/documents_get_document_bill.md)
+* [offer](/docs/documents_get_document_sales_offer.md)
+* [sales_order](/docs/documents_get_document_sales_order.md)
+* [bill](/docs/documents_get_document_bill.md)
 
 # Other calls
 [put_transaction](/docs/put_transaction.md)  - add payment on existing bill or offer
