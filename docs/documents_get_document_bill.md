@@ -9,7 +9,7 @@ Valid doc_type :
 
 **Example** :
 
-Request :
+Request : (POST - https://main.metakocka.si/rest/eshop/v1/get_document)
 ```javascript
 {
   "secret_key":"8899",
@@ -59,7 +59,7 @@ Respond :
     "currency_code": "EUR",
     "title": "Naziv1",
     "pariteta": "Dostava kupcu",
-    "doc_created_email": "janez@gmail.com",
+    "doc_created_email": "maticpetek@gmail.com",
     "location_of_service": "1komenda",
     "offer_list": [
         {
@@ -86,11 +86,15 @@ Respond :
             "code": "majica1sifra",
             "name_desc": "majica1 artikle opis",
             "amount": "2",
-            "price_with_tax": "15",
+            "price_with_tax": "14.6754",
             "discount": "12",
             "tax": "EX4",
             "doc_desc": "Opis na računu"
         }
-    ]
+    ],
+    "sum_basic": "20.33",
+    "sum_discount": "13.67",
+    "sum_tax_ex4": "4.47",
+    "sum_all": "24.8"
 }
 ```

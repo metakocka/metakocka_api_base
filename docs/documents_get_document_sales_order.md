@@ -1,7 +1,7 @@
 # get_document - Sales Order
 **Example** :
 
-Request :
+Request (POST - https://main.metakocka.si/rest/eshop/v1/get_document) :
 ```javascript
 {
   "secret_key":"8899",
@@ -51,7 +51,7 @@ Respond :
     "status_code": "Novo naročilo",
     "title": "naziv1",
     "pariteta": "Dostava kupcu",
-    "doc_created_email": "janeznovak@gmail.com",
+    "doc_created_email": "maticpetek@gmail.com",
     "delivery_deadline": "2015-05-10+02:00",
     "finish_date": "2015-05-10+02:00",
     "offer_list": [
@@ -88,6 +88,12 @@ Respond :
             "tax": "EX4",
             "doc_desc": "Opis na prodajnem naročilu"
         }
-    ]
+    ],
+    "sum_basic": "46.19",
+    "sum_discount": "20.12",
+    "sum_tax_ex4": "10.16",
+    "sum_prepayment": "5.64",
+    "sum_all": "56.35",
+    "sum_paid": "10"
 }
 ```

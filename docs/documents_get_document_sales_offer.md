@@ -2,7 +2,7 @@
 
 **Example** :
 
-Request :
+Request (POST - https://main.metakocka.si/rest/eshop/v1/get_document) :
 ```javascript
 {
   "secret_key":"8899",
@@ -43,7 +43,7 @@ Respond :
     "valid_to": "2015-05-20+02:00",
     "title": "Ponudba 1",
     "pariteta": "Lasten prevzem",
-    "doc_created_email": "janeznovak@gmail.com",
+    "doc_created_email": "maticpetek@gmail.com",
     "notes": "Dodatni opis",
     "product_list": [
         {
@@ -66,6 +66,11 @@ Respond :
             "tax": "EX4",
             "doc_desc": "Opis na ponudbi"
         }
-    ]
+    ],
+    "sum_basic": "44.4",
+    "sum_discount": "15",
+    "sum_tax_ex4": "9.77",
+    "sum_prepayment": "10",
+    "sum_all": "54.17"
 }
 ```

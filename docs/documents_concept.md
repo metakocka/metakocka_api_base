@@ -159,3 +159,18 @@ Notes :
    "opr_time_ms":"47"
 }
 ```
+
+## 1.3 get_document specific
+### 1.3.1 Sum values
+If one or more products on document have prices, sum for whole document is calculated. You can get the following sum value :
+* sum\_basic
+* sum\_discount
+* sum\_tax\_085
+* sum\_tax\_200
+* sum\_tax\_ex1
+* sum\_tax\_ex2
+* sum\_tax\_ex3
+* sum\_tax\_ex4
+* sum\_prepayment
+* sum\_all
+* sum\_paid
