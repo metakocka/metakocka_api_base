@@ -34,5 +34,8 @@ TODO...
 * [sales_order](/docs/documents_get_document_sales_order.md)
 * [bill](/docs/documents_get_document_bill.md)
 
+###search
+* [Concept and examples](/docs/search_concept.md)
+
 # Other calls
 [put_transaction](/docs/put_transaction.md)  - add payment on existing bill or offer
