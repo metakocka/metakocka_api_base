@@ -33,6 +33,7 @@ TODO...
 * [offer](/docs/documents_get_document_sales_offer.md)
 * [sales_order](/docs/documents_get_document_sales_order.md)
 * [bill](/docs/documents_get_document_bill.md)
+* [warehouse docs](/docs/documents_get_document_whdocs.md)
 
 ###search
 * [Concept](/docs/search_concept.md)
