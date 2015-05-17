@@ -40,5 +40,9 @@ TODO...
 * [Examples](/docs/search_examples.md)
 * [Query advance - paramethers](/docs/search_query_advance_discovery.md)
 
+###report
+* [Concept](/docs/report_concept.md)
+* [Examples](/docs/report_examples.md)
+
 # Other calls
 [put_transaction](/docs/put_transaction.md)  - add payment on existing bill or offer
