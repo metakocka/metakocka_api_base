@@ -35,7 +35,9 @@ TODO...
 * [bill](/docs/documents_get_document_bill.md)
 
 ###search
-* [Concept and examples](/docs/search_concept.md)
+* [Concept](/docs/search_concept.md)
+* [Examples](/docs/search_examples.md)
+* [Query advance - paramethers](/docs/search_query_advance_discovery.md)
 
 # Other calls
 [put_transaction](/docs/put_transaction.md)  - add payment on existing bill or offer

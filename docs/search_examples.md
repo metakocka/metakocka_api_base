@@ -1,45 +1,3 @@
-
-# Concept
-
-Let's start with example :
-
-**Request** (POST - https://main.metakocka.si/rest/eshop/v1/search) :
-```javascript
-{
-    "secret_key":"8899",
-    "company_id":"16",
-    "doc_type":"sales_bill_domestic",
-    "query" : "john"
-}
-```
-
-* you can search by one document type (doc\_type)
-* use 'query' (some as search field in MetaKocka) or 'advance\_query' (some as advance search option in MetaKocka) to limit results.
-* use 'limit' and 'offset' to perform query window
-* you can get maximum of 50 records. For more use query window
-
-**Respond** :
-```javascript
-{
-    "opr_code": "0",
-    "opr_time_ms": "185",
-    "result_all_records": "1",
-    "result_count": "1",
-    "offset": "0",
-    "limit": "1",
-    "result": [
-        {
-            "mk_id": "1600203710",
-            "opr_code": "0",
-            "count_code": "PRD1_494"
-        }
-    ]
-}
-```
-
-* 'result\_all\_records' is number of all possible records for given query
-* result can be list of mk\_id and count code or list of whole document (see examples below)
-
 ## Examples
 
 ### Simple query search with query window
@@ -145,7 +103,52 @@ Let's start with example :
 }
 ```
 
-## Advance search supported paramethers
-Condition  | Paramethers                           | Notes |
------------|---------------------------------------|-------|
-partner    |partner\_mk\_id, partner\_query, partner\_tax\_num, partner\_code | / |
+### Return products as result
+**Request** (POST - https://main.metakocka.si/rest/eshop/v1/search) :
+```javascript
+{
+    "secret_key":"8899",
+    "company_id":"16",
+    "doc_type":"purchase_product",
+    "query_advance" : [
+    { "type" : "eshop_sync", "value" : "true" }
+    ],  
+    "result_type" : "doc",
+    "limit" : "2"    
+}
+```
+
+**Respond** :
+```javascript
+{
+    "opr_code": "0",
+    "opr_time_ms": "8304",
+    "result_all_records": "2",
+    "result_count": "2",
+    "offset": "0",
+    "limit": "2",
+    "result_product": [
+        {
+            "count_code": "a15631",
+            "mk_id": "1600160543",
+            "code": "547779-ODPRODAJA",
+            "name": "AKCIJA BFGoodrich 205/55R16 G-ForceWinter 94H XL",
+            "unit": "kos",
+            "service": "false",
+            "sales": "true",
+            "purchasing": "true"
+        },
+        {
+            "count_code": "a15632",
+            "mk_id": "1600160544",
+            "code": "518776-ODPRODAJA",
+            "name": "AKCIJA Dunlop 175/70R14 SP Wint.Resp.84T DOT4311",
+            "unit": "kos",
+            "service": "false",
+            "sales": "true",
+            "purchasing": "true",
+            "weight": "7,3"
+        }
+    ]
+}
+```
