@@ -13,6 +13,7 @@
    "location_of_service":"Komenda",
    "warehouse":"glavno skladisce",
    "buyer_order":"narocilo 123",
+   "title" : "Nakup igrače",
    "partner":{
       "business_entity":"true",
       "taxpayer":"true",
