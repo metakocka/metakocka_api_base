@@ -57,7 +57,23 @@ Reapond (with return\_warehause\_stock = 'true'):
          "width":"2",
          "depth":"3",
          "weight":"4",
-         "amount":"-2000"
+         "amount":"10",
+         "amount_detail": [
+         {
+            "warehouse_mark": "oznaka1",
+            "warehouse_name": "moje skladisce",
+            "serial_number": "ser1",
+            "exp_date": "2013-06-10+02:00",
+            "amount": "4"
+         },
+         {
+            "warehouse_mark": "oznaka1",
+            "warehouse_name": "moje skladisce",
+            "serial_number": "ser2",
+            "exp_date": "2013-06-10+02:00",
+            "amount": "6"
+         }
+         ]
       },
       {
          "company_id":"0",
@@ -67,8 +83,7 @@ Reapond (with return\_warehause\_stock = 'true'):
          "unit":"dan",
          "service":"false",
          "sales":"true",
-         "purchasing":"false",
-         "amount":"-10"
+         "purchasing":"false"
       }
    ]
 }
@@ -76,7 +91,8 @@ Reapond (with return\_warehause\_stock = 'true'):
 
 Notes :
 * head of respond contains attributes (sales, limit, etc) from request.
-* product_list_count is number of records in respond. Not the number of all records. If product_list_count = limit, you should read next window of results.
+* product\_list\_count is number of records in respond. Not the number of all records. If product\_list\_count = limit, you should read next window of results.
+* amount\_detail will give you detail view for amount on different warehouses and separate by serial number, exp date, microloc or lot.
 
 ## 1.2 With pricelist
 Request :
