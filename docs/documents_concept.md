@@ -15,20 +15,20 @@ Not all calls are (yet) supported for every document type. We add support base o
 
 Currenty we support :
 
-Document type                | Put | Update | Delete | Get | GetChangeDocument|
------------------------------|-----|--------|--------|-----|------------------|
-warehouse\_delivery\_note    |X    |        |        |X    | X                |
-warehouse\_packing\_list     |X    |        |        |X    | X                |
-warehouse\_receiving\_note   |X    |        |        |X    | X                |
-warehouse\_acceptance\_note  |X    |        |        |X    | X                |
-sales\_order                 |X    |        |        |X    |                  |
-sales\_offer                 |     |        |        |X    |                  |
-sales\_bill\_domestic        |X    |        |        |X    |                  | 
-sales\_bill\_foreign         |X    |        |        |X    |                  |
-sales\_bill\_retail          |X    |        |        |X    |                  |
-purchase\_order              |X    |        |        |     |                  |
-purchase\_bill\_domestic     |X    |        |        |X    |                  |
-purchase\_bill\_foreign      |X    |        |        |X    |                  |
+Document type                | Put | Update | Delete | Get | GetChangeDocument| Local translation [SLO]|
+-----------------------------|-----|--------|--------|-----|------------------|------------------|
+warehouse\_delivery\_note    |X    |        |        |X    | X                |Nalog za odpremo|
+warehouse\_packing\_list     |X    |        |        |X    | X                |Dobavnica|
+warehouse\_receiving\_note   |X    |        |        |X    | X                |Nalog za prejem|
+warehouse\_acceptance\_note  |X    |        |        |X    | X                |Prevzemnica|
+sales\_order                 |X    |        |        |X    |                  |Prodajno naročilo|
+sales\_offer                 |     |        |        |X    |                  |Ponudba|
+sales\_bill\_domestic        |X    |        |        |X    |                  |Prodaja Račun Domači|
+sales\_bill\_foreign         |X    |        |        |X    |                  |Prodaja Račun Tuji|
+sales\_bill\_retail          |X    |        |        |X    |                  |Prodaja Račun maloprodajni|
+purchase\_order              |X    |        |        |     |                  |Naročilnica|
+purchase\_bill\_domestic     |X    |        |        |X    |                  |Nabava Račun - domači|
+purchase\_bill\_foreign      |X    |        |        |X    |                  |Nabava Račun - tuji|
 
 ## 1.2. Building blocks
 All calls have very simmilar JSON structure. Let's describe the most importand parts.
