@@ -34,7 +34,7 @@
     "company_id":"16",
     "doc_type":"sales_bill_domestic",
     "query" : "john",
-    "result" : "doc"
+    "result_type" : "doc"
 }
 ```
 
