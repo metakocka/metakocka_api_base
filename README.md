@@ -46,3 +46,4 @@ TODO...
 
 # Other calls
 [put_transaction](/docs/put_transaction.md)  - add payment on existing bill or offer
+[get_bank_statement_status](/docs/get_bank_statement_status.md)  - return last statement state, date, etc for all bank bills
