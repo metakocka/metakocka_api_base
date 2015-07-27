@@ -13,7 +13,8 @@ Request : (POST - https://main.metakocka.si/rest/eshop/v1/get_document)
   "secret_key":"8899",
   "company_id":"16",
   "doc_type" : "warehouse_delivery_note",
-  "doc_id" : "1600204441"
+  "doc_id" : "1600204441",
+  "show_purchase_price_and_allo_cost" : true
 }
 ```
 Respond :
@@ -59,7 +60,10 @@ Respond :
             "code": "art d1",
             "amount": "1",
             "price": "8",
-            "tax": "EX3"
+            "tax": "EX3",
+            "price_purchase": "5",
+            "allocated_code_purchase": "1.5",
+            "allocated_cost_sales": "0.5"
         }
     ],
     "sum_basic": "8",
