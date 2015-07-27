@@ -8,8 +8,7 @@ Request (POST - https://main.metakocka.si/rest/eshop/v1/get_document) :
   "secret_key":"8899",
   "company_id":"16",
   "doc_type" : "sales_offer",
-  "doc_id" : "1600202487",
-  "show_purchase_price_and_allo_cost" : true
+  "doc_id" : "1600202487"
 }
 ```
 Respond :
@@ -55,10 +54,7 @@ Respond :
             "amount": "2",
             "price": "10",
             "tax": "EX4",
-            "doc_desc": "Opis na ponudbi",
-            "price_purchase": "5"
-            "allocated_code_purchase": "1.5"
-            "allocated_cost_sales": "0.5"
+            "doc_desc": "Opis na ponudbi"
         },
         {
             "mk_id": "1600162716",
