@@ -147,4 +147,4 @@ Customers has also ask us to provide some addition paramethers for further repor
 
 Attribute                 | Description | Documents|
 --------------------------|------|------|
-| ADD\_ATT\_HIDDEN\_MK\_SHOW\_ARTIKEL\_DESC\_IGNORE\_PRODUCT\_DESC | Print full description of product but remove Product extra description | bills |
+| ADD\_ATT\_HIDDEN\_MK\_SHOW \_ARTIKEL\_DESC\_IGNORE\_PRODUCT\_DESC | Print full description of product but remove Product extra description | bills |
