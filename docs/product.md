@@ -59,6 +59,35 @@ URL : https://main.metakocka.si/rest/eshop/v1/json/product_add
     echo '</body></html>';    
 ?>
 ```
+**Primer klica z razširjenimi parametri**
+```javascript
+{
+    "secret_key":"my_secreat_key",
+    "company_id":"16",
+    "count_code":"eshop_001",
+    "code":"eshop_001_sif",
+    "name":"artikel eshop_001",
+    "name_desc": "artikel eshop_001 - daljsi opis",    
+    "unit":"kos",
+    "service":"false",
+    "sales":"true",
+    "purchasing":"false",
+    "height":"12.23",
+    "depth":"4.12",
+    "weight":"6.3",
+    "extra_column": [
+        {
+            "name": "ime_artikla_nas_sistem",
+            "value": "T-SHIRT 4"
+        },
+        {
+            "name": "ime_pakiranja",
+            "value": "KOS 4"
+        }
+    ]
+}
+```
+
 
 #product_update – sprememba opisa
 Opis : izvedba popravkov podatkov na artiklu. V primeru konflikta s pravili za zagotavljanje konsistentnosti podatkov, metoda vrne ustrezno napako.

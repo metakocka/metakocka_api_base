@@ -250,3 +250,44 @@ Respond :
     }
 }
 ```
+
+## 1.5 Extend paramethers
+Respond :
+```javascript
+{
+    "opr_code": "0",
+    "opr_time_ms": "57",
+    "count_code": "26276",
+    "limit": "1000",
+    "offset": "0",
+    "product_list_count": "1",
+    "product_list": {
+        "count_code": "26276",
+        "mk_id": "1600180258",
+        "code": "uni2",
+        "name": "unit2",
+        
+        "unit": "kg",
+        "unit2": "cm3",
+        "unit_factor": "10,52",
+        
+        "service": "false",
+        "sales": "true",
+        "purchasing": "false",
+        "extra_column": [
+          {
+            "name": "ime_artikla_nas_sistem",
+            "value": "T-SHIRT 4"
+          },
+          {
+            "name": "ime_pakiranja",
+            "value": "KOS 4"
+          },
+          {
+            "name": "marketing",
+            "value": "false"
+          }
+        ]
+    }
+}
+```
