@@ -71,3 +71,44 @@ Respond :
     "sum_all": "8.76"
 }
 ```
+
+## Special paramethers
+Paramether | Type | Description |
+-----------|------|-------------|
+show\_purchase\_price\_and\_allo\_cost | bool | get purchase price and purchase allocated cost for product.
+
+###show\_purchase\_price\_and\_allo\_cost
+Notes :
+* you will get additional return paramethers - price\_purchase, allocated\_code\_purchase, allocated\_cost\_sales
+
+Request : (POST - https://main.metakocka.si/rest/eshop/v1/get_document)
+```javascript
+{
+  "secret_key":"8899",
+  "company_id":"16",
+  "doc_type" : "sales_bill_domestic",
+  "doc_id" : "1600203257",
+  "show_last_payment_date" : "true"
+}
+```
+Respond :
+```javascript
+{
+    "mk_id": "1600203257",
+    "doc_type": "warehouse_delivery_note",
+    [... remove ...]
+    "product_list": [
+        {
+            "mk_id": "1600204437",
+            "code": "art d1",
+            "amount": "1",
+            "price": "8",
+            "tax": "EX3",
+            "price_purchase": "5",
+            "allocated_code_purchase": "1.5",
+            "allocated_cost_sales": "0.5"
+        }
+    ]
+    [... remove ...]    
+}
+```

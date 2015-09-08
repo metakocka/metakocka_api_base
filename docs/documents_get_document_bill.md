@@ -98,3 +98,43 @@ Respond :
     "sum_all": "24.8"
 }
 ```
+
+## Special paramethers
+Paramether | Type | Description |
+-----------|------|-------------|
+show\_last\_payment\_date | bool| return last payment date and sum payment amount also for partially paid bills. Last payment date do not include credit notes.
+
+### show\_last\_payment\_date
+
+Notes :
+* you will get additional return paramethers - last\_paid\_date and last\_paid\_sum
+
+Request : (POST - https://main.metakocka.si/rest/eshop/v1/get_document)
+```javascript
+{
+  "secret_key":"8899",
+  "company_id":"16",
+  "doc_type" : "sales_bill_domestic",
+  "doc_id" : "1600203257",
+  "show_last_payment_date" : "true"
+}
+```
+Respond :
+```javascript
+{
+    "mk_id": "1600203257",
+    "doc_type": "sales_bill_domestic",
+    [... remove ...]
+	"sum_basic": "4",
+	"sum_tax_ex4": "0.88",
+	"sum_prepayment": "3",
+	"sum_all": "4.88",
+	"sum_paid": "3",
+	"sum_full_paid_when": "2015-09-07+02:00",
+	"sum_creditnote": "2.44",
+	"last_paid_date": "06.09.2015",
+	"last_paid_sum": "3"    
+}
+```
+
+
