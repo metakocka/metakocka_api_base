@@ -29,6 +29,7 @@ sales\_bill\_retail          |X    |        |        |X    |                  |P
 purchase\_order              |X    |        |        |     |                  |Naročilnica|
 purchase\_bill\_domestic     |X    |        |        |X    |                  |Nabava Račun - domači|
 purchase\_bill\_foreign      |X    |        |        |X    |                  |Nabava Račun - tuji|
+workorder                    |     |        |        |X    |                  |Delovni nalog|
 
 ## 1.2. Building blocks
 All calls have very simmilar JSON structure. Let's describe the most importand parts.

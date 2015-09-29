@@ -34,6 +34,7 @@ TODO...
 * [sales_order](/docs/documents_get_document_sales_order.md)
 * [bill](/docs/documents_get_document_bill.md)
 * [warehouse docs](/docs/documents_get_document_whdocs.md)
+* [workorder](/docs/documents_get_document_workorder.md)
 
 ###search
 * [Concept](/docs/search_concept.md)
