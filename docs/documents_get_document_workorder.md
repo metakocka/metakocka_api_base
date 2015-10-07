@@ -34,7 +34,7 @@ Respond :
     "useCustomerAsContact": "false"
   },
   "sales_pricelist_code": "PC_115",
-  "purchase_procelist_list": [
+  "purchase_pricelist_list": [
     {
       "count_code": "PC-2011"
     },
@@ -51,19 +51,23 @@ Respond :
     }
   ],
   "buyer_order": "narociloKupca1",
-  "sales_order_list": {
-    "count_code": "PP-25282"
-  },
+  "sales_order_list": [
+    {
+      "count_code": "PP-25282"
+    }
+  ],
   "contact_person_name": "Podobnik Blaž",
   "start_date": "2015-09-27+02:00",
   "produce_deadline_date": "2015-09-30+02:00",
   "finish_date": "2015-10-01+02:00",
   "caretaker_list": [
     {
-      "count_code": "matic petek - PF onaon1"
+      "count_code": "matic petek - PF onaon1",
+      "email": "maticpetek@gmail.com"
     },
     {
-      "count_code": "matic_delovno_mesto test"
+      "count_code": "matic_delovno_mesto test",
+      "email": "matic_delovno_mesto@gmail.com"
     }
   ],
   "sum_material": "5",
@@ -72,7 +76,7 @@ Respond :
   "sum_sales_plan": "216",
   "sum_sales_realization": "98",
   "sum_roi": "52.96",
-  "create_product": [
+  "create_product_realization_list": [
     {
       "product_mk_id": "1600000392",
       "product_count_code": "PA_115_PA",
@@ -85,7 +89,7 @@ Respond :
       "price_purchase": "45.04",
       "discount_sales": "10",
       "sum_sales": "108",
-      "material": [
+      "material_plan_list": [
         {
           "product_mk_id": "1600022698",
           "product_count_code": "asdfd",
@@ -99,7 +103,7 @@ Respond :
           "price_purchase_plan": "1.4",
           "sum_purchase": "5",
           "when": "2015-09-28+02:00",
-          "material": [
+          "material_realization_list": [
             {
               "product_mk_id": "1600022698",
               "product_count_code": "asdfd",
@@ -115,18 +119,20 @@ Respond :
           ]
         }
       ],
-      "work": [
+      "work_plan_list": [
         {
           "product_mk_id": "1600000028",
           "product_count_code": "PA_101_PA",
           "product_code": "pod sifra 2",
           "product_title": "pod naziv 2",
-          "performer_name": [
+          "performer_name_list": [
             {
-              "count_code": "Janez Novak"
+              "count_code": "Janez Novak",
+              "email": "janez.novak@mail.com"
             },
             {
-              "count_code": "Matic Petek - brez PF"
+              "count_code": "Matic Petek - brez PF",
+              "email": "mat....icpetek@gmail.com"
             }
           ],
           "product_workorder_desc": "plan delo",
@@ -135,15 +141,18 @@ Respond :
           "price_purchase_plan": "10.01",
           "sum_purchase": "40.04",
           "when": "2015-09-28+02:00",
-          "work": [
+          "work_realization_list": [
             {
               "product_mk_id": "1600000028",
               "product_count_code": "PA_101_PA",
               "product_code": "pod sifra 2",
               "product_title": "pod naziv 2",
-              "performer_name": {
-                "count_code": "matic petek - PF onaon1"
-              },
+              "performer_name_list": [
+                {
+                  "count_code": "matic petek - PF onaon1",
+                  "email": "maticpetek@gmail.com"
+                }
+              ],
               "product_workorder_desc": "poraba delo",
               "amount_realization": "4",
               "price_purchase": "10.01",
