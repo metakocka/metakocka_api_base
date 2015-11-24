@@ -28,6 +28,7 @@ TODO...
 * [2.2 bill](/docs/documents_put_document.md#22-bill)
 * [2.3 warehouse docs](/docs/documents_put_document_whdocs.md)
 * [2.4 purchase order](/docs/documents_put_document_purchase_order.md)
+* [workorder](/docs/documents_put_document_workorder.md)
 
 ###get_document
 * [offer](/docs/documents_get_document_sales_offer.md)
