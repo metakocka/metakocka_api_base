@@ -21,7 +21,7 @@ warehouse\_delivery\_note    |X    |        |        |X    | X                |N
 warehouse\_packing\_list     |X    |        |        |X    | X                |Dobavnica|
 warehouse\_receiving\_note   |X    |        |        |X    | X                |Nalog za prejem|
 warehouse\_acceptance\_note  |X    |        |        |X    | X                |Prevzemnica|
-sales\_order                 |X    |        |        |X    |                  |Prodajno naročilo|
+sales\_order                 |X    |X       |        |X    |                  |Prodajno naročilo|
 sales\_offer                 |     |        |        |X    |                  |Ponudba|
 sales\_bill\_domestic        |X    |        |        |X    |                  |Prodaja Račun Domači|
 sales\_bill\_foreign         |X    |        |        |X    |                  |Prodaja Račun Tuji|
@@ -175,3 +175,20 @@ If one or more products on document have prices, sum for whole document is calcu
 * sum\_prepayment
 * sum\_all
 * sum\_paid
+
+## 1.4 update_document specific
+Document update usually works together with get document :
+* read document via "get\_document"
+* change JSON values
+* update document via "put\_document"
+
+Update operations are request (=document) atomic - you always change the whole document values. We don't have REST call to change only specific fields on document.
+Products on document are always mark as deleted and then new one are added base on product description in REST request. In case you have some specific fields on document products and this fields are not supported in REST interface, value of this fields will be deleted. 
+
+If you perform get\_document and then put\_document, the following fields are different :
+* put\_document : "company\_id" and "secret\_key" must be added
+* put\_document : "mk\_id" must be added (otherwise new document will be inserted)
+* put\_document : "count\_code" is ignored
+* put\_document : for changing partner / receiver, first remove "mk\_id" and "count\_code" from partner. Otherwise all partner might be selected.
+* get\_document : fields "sum\_*" 
+

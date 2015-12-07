@@ -24,7 +24,7 @@ TODO...
 [1. Concept](/docs/documents_concept.md)
 
 ###put_document
-* [2.1 sales_order](/docs/documents_put_document.md#21-sales_order)
+* [2.1 sales_order](/docs/documents_put_document_sales_order.md)
 * [2.2 bill](/docs/documents_put_document.md#22-bill)
 * [2.3 warehouse docs](/docs/documents_put_document_whdocs.md)
 * [2.4 purchase order](/docs/documents_put_document_purchase_order.md)
