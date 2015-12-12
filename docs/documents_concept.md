@@ -189,6 +189,6 @@ If you perform get\_document and then put\_document, the following fields are di
 * put\_document : "company\_id" and "secret\_key" must be added
 * put\_document : "mk\_id" must be added (otherwise new document will be inserted)
 * put\_document : "count\_code" is ignored
-* put\_document : for changing partner / receiver, first remove "mk\_id" and "count\_code" from partner. Otherwise all partner might be selected.
-* get\_document : fields "sum\_*" 
+* put\_document : for changing partner / receiver, first remove "mk\_id" and "count\_code" from partner. Otherwise old partner might be selected.
+* get\_document : fields "sum\_*" are calculated values. For put\_documents we always calculate this values base on given product list. 
 
