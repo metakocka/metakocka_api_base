@@ -17,19 +17,19 @@ Currenty we support :
 
 Document type                | Put | Update | Delete | Get | GetChangeDocument| Local translation [SLO]|
 -----------------------------|-----|--------|--------|-----|------------------|------------------|
-warehouse\_delivery\_note    |X    |        |        |X    | X                |Nalog za odpremo|
-warehouse\_packing\_list     |X    |        |        |X    | X                |Dobavnica|
-warehouse\_receiving\_note   |X    |        |        |X    | X                |Nalog za prejem|
-warehouse\_acceptance\_note  |X    |        |        |X    | X                |Prevzemnica|
+warehouse\_delivery\_note    |X    |X       |        |X    | X                |Nalog za odpremo|
+warehouse\_packing\_list     |X    |X       |        |X    | X                |Dobavnica|
+warehouse\_receiving\_note   |X    |X       |        |X    | X                |Nalog za prejem|
+warehouse\_acceptance\_note  |X    |X       |        |X    | X                |Prevzemnica|
 sales\_order                 |X    |X       |        |X    |                  |Prodajno naročilo|
 sales\_offer                 |     |        |        |X    |                  |Ponudba|
-sales\_bill\_domestic        |X    |        |        |X    |                  |Prodaja Račun Domači|
-sales\_bill\_foreign         |X    |        |        |X    |                  |Prodaja Račun Tuji|
-sales\_bill\_retail          |X    |        |        |X    |                  |Prodaja Račun maloprodajni|
+sales\_bill\_domestic        |X    |X       |        |X    |                  |Prodaja Račun Domači|
+sales\_bill\_foreign         |X    |X       |        |X    |                  |Prodaja Račun Tuji|
+sales\_bill\_retail          |X    |X       |        |X    |                  |Prodaja Račun maloprodajni|
 purchase\_order              |X    |        |        |     |                  |Naročilnica|
-purchase\_bill\_domestic     |X    |        |        |X    |                  |Nabava Račun - domači|
-purchase\_bill\_foreign      |X    |        |        |X    |                  |Nabava Račun - tuji|
-workorder                    |     |        |        |X    |                  |Delovni nalog|
+purchase\_bill\_domestic     |X    |X       |        |X    |                  |Nabava Račun - domači|
+purchase\_bill\_foreign      |X    |X       |        |X    |                  |Nabava Račun - tuji|
+workorder                    |X    |        |        |X    |                  |Delovni nalog|
 
 ## 1.2. Building blocks
 All calls have very simmilar JSON structure. Let's describe the most importand parts.
