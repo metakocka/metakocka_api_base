@@ -26,7 +26,7 @@ sales\_offer                 |     |        |        |X    |                  |P
 sales\_bill\_domestic        |X    |X       |        |X    |                  |Prodaja Račun Domači|
 sales\_bill\_foreign         |X    |X       |        |X    |                  |Prodaja Račun Tuji|
 sales\_bill\_retail          |X    |X       |        |X    |                  |Prodaja Račun maloprodajni|
-purchase\_order              |X    |        |        |     |                  |Naročilnica|
+purchase\_order              |X    |X       |        |X    |                  |Naročilnica|
 purchase\_bill\_domestic     |X    |X       |        |X    |                  |Nabava Račun - domači|
 purchase\_bill\_foreign      |X    |X       |        |X    |                  |Nabava Račun - tuji|
 workorder                    |X    |        |        |X    |                  |Delovni nalog|
