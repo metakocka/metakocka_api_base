@@ -22,7 +22,7 @@ warehouse\_packing\_list     |X    |X       |        |X    | X                |D
 warehouse\_receiving\_note   |X    |X       |        |X    | X                |Nalog za prejem|
 warehouse\_acceptance\_note  |X    |X       |        |X    | X                |Prevzemnica|
 sales\_order                 |X    |X       |        |X    |                  |Prodajno naročilo|
-sales\_offer                 |     |        |        |X    |                  |Ponudba|
+sales\_offer                 |X    |X       |        |X    |                  |Ponudba|
 sales\_bill\_domestic        |X    |X       |        |X    |                  |Prodaja Račun Domači|
 sales\_bill\_foreign         |X    |X       |        |X    |                  |Prodaja Račun Tuji|
 sales\_bill\_retail          |X    |X       |        |X    |                  |Prodaja Račun maloprodajni|

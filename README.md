@@ -21,6 +21,7 @@ Current documentation is available on [dev.metakocka.si](http://dev.metakocka.si
 [Concept](/docs/documents_concept.md)
 
 ###put_document
+* [offer](/docs/documents_put_document_offer.md)
 * [sales_order](/docs/documents_put_document_sales_order.md)
 * [bill](/docs/documents_put_document.md#22-bill)
 * [warehouse docs](/docs/documents_put_document_whdocs.md)
