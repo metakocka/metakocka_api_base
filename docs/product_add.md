@@ -18,6 +18,45 @@ Request :
     "height":"12.23",
     "depth":"4.12",
     "weight":"6.3",
+    "localization":[
+      {
+         "language":"en",
+         "name":"en name",
+         "name_desc":"en desc"
+      },
+      {
+         "language":"de",
+         "name":"de name",
+         "name_desc":"de desc"
+      }
+   ],
+    "categories" :[
+      {"category":"Sadje"},
+      {"category":["Sadje", "Hruška"]}
+    ],
+    "pricelist" :[
+      {
+         "count_code" : "CENIK_001",
+         "price_def": [
+            {
+              "amount_from" : "0",
+              "amount_to" : "6",
+              "discount" : "5",
+              "tax" : "220",
+              "price" : "8",
+              "price_with_tax" : "10"
+            },
+            {
+              "amount_from" : "6",
+              "amount_to" : null,
+              "discount" : "5",
+              "tax" : "220",
+              "price" : "8",
+              "price_with_tax" : "10"
+            }
+         ]
+      }
+    ]
 }
 ```
 
