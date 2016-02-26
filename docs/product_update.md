@@ -18,9 +18,21 @@ Request :
     "height":"12.23",
     "depth":"4.12",
     "weight":"6.3",
+    "localization":[
+      {
+         "language":"en",
+         "name":"en name",
+         "name_desc":"en desc"
+      },
+      {
+         "language":"de",
+         "name":"de name",
+         "name_desc":"de desc"
+      }
+   ],
     "categories" :[
       {"category":"Sadje"},
-      {"category":"Hruška"}
+      {"category":["Sadje", "Hruška"]}
     ],
     "pricelist" :[
       {
