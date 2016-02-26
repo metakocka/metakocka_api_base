@@ -18,6 +18,10 @@ Request :
     "height":"12.23",
     "depth":"4.12",
     "weight":"6.3",
+    "categories" :[
+      {"category":"Sadje"},
+      {"category":"Hruška"}
+    ]
 }
 ```
 Notes :
