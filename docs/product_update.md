@@ -21,6 +21,29 @@ Request :
     "categories" :[
       {"category":"Sadje"},
       {"category":"Hruška"}
+    ],
+    "pricelist" :[
+      {
+         "count_code" : "CENIK_001",
+         "price_def": [
+            {
+              "amount_from" : "0",
+              "amount_to" : "6",
+              "discount" : "5",
+              "tax" : "220",
+              "price" : "8",
+              "price_with_tax" : "10"
+            },
+            {
+              "amount_from" : "6",
+              "amount_to" : null,
+              "discount" : "5",
+              "tax" : "220",
+              "price" : "8",
+              "price_with_tax" : "10"
+            }
+         ]
+      }
     ]
 }
 ```
