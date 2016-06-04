@@ -213,3 +213,36 @@ Valid doc_type :
     ]
 }
 ```
+
+**Example : Sales bill with bank reference number** :
+```javascript
+{
+    "secret_key":"mysecret",
+    "company_id":"16",
+    "doc_type": "sales_bill_domestic",
+    "doc_date" : "2016-06-04+02:00",
+    "service_to_date" : "2016-06-04+02:00",
+    "duo_payment" : "2016-06-04+02:00",
+    "partner": {
+        "business_entity": "true",
+        "taxpayer": "true",
+        "foreign_county": "false",
+        "tax_id_number": "SI20000001",
+        "customer": "API partner 1",
+        "street": "Slovenska cesta 100",
+        "post_number": "1000",
+        "place": "Ljubljana",
+        "country": "Slovenia"
+    },
+    "bank_ref_prefix" : "02",
+    "bank_ref_number" : "100-200-300",
+    "product_list": [
+        {
+            "code": "art1",
+            "amount": "1",
+            "price" : "100",
+            "tax" : "EX4"
+        }
+    ]
+}
+```
