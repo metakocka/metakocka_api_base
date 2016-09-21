@@ -4,8 +4,12 @@ Valid doc_type :
 * sales\_bill\_domestic
 * sales\_bill\_foreign
 * sales\_bill\_retail
+* sales\_bill\_prepaid
+* sales\_bill\_credit\_note
 * purchase\_bill\_domestic
 * purchase\_bill\_foreign
+* purchase\_bill\_prepaid
+* purchase\_bill\_credit\_note
 
 **Example** :
 
