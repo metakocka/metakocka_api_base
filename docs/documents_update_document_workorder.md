@@ -8,7 +8,7 @@ Notes :
 {
   "work_list" : [
     {
-      "product_mk_id" : "122109555946",
+      "product_mk_id" : "1609555946",
       "amount_realization" : 93,
       "performer_name_list" : [
         {

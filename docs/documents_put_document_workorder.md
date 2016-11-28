@@ -246,3 +246,36 @@
    ]
 }
 ```
+
+### Example : only "izdelava-vsi" work realization
+```javascript
+{
+  "company_id" : "16",
+  "partner" : {
+    "tax_id_number" : "SI10020030",
+    "business_entity" : "true",
+    "street" : "Janševa ulica 16a",
+    "country" : "Slovenia",
+    "post_number" : "1000",
+    "taxpayer" : "false",
+    "customer" : "Company d.o.o.",
+    "place" : "Ljubljana"
+  },
+  "secret_key" : "8899",
+  "start_date" : "28.11.2016",
+  "work_list" : [
+    {
+      "product_code" : "S-SKLAD",
+      "amount_realization" : 93,
+      "performer_name_list" : [
+        {
+          "email" : "user@user.com"
+        }
+      ],
+      "when" : "28.11.2016, 09:32",
+      "type" : "work"
+    }
+  ],
+  "doc_date" : "28.11.2016"
+}
+```
