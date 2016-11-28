@@ -36,6 +36,9 @@ Current documentation is available on [dev.metakocka.si](http://dev.metakocka.si
 * [warehouse docs](/docs/documents_get_document_whdocs.md)
 * [workorder](/docs/documents_get_document_workorder.md)
 
+###update_document
+* [workorder](/docs/documents_update_document_workorder.md)
+
 ###search
 * [Concept](/docs/search_concept.md)
 * [Examples](/docs/search_examples.md)
