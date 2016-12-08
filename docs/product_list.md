@@ -22,6 +22,7 @@ Attribute                 | Type | Notes| MK SLO |
 --------------------------|------|------|--------|
 | count_code | char,30 | | Id artikla |
 | mk_id | char,30 | | / |
+| code | char,50 | | Šifra artikla |
 | sales | bool | Product must be flag as sales | Prodajni |
 | purchase | bool | Product must be flag as purchase | Nabavni |
 | service | bool | Product must be flag as service | Storitev |
