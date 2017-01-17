@@ -5,13 +5,14 @@ Basic building blocks of MK are product, partner, pricelist and documents. With 
 
 ## 1.1 Call types
 We support the following REST calls on all supported documents :
-* put\_document
-* update\_document
-* delete\_document
-* get\_document
-* get\_change\_documents - return list of documents that change after last call.
+* /put\_document
+* /update\_document
+* /delete\_document
+* /get\_document
+* /get\_change\_documents - return list of documents that change after last call.
 
 Not all calls are (yet) supported for every document type. We add support base on custumer needs.
+Prefix for all methods is https://main.metakocka.si/rest/eshop/v1/ (example: https://main.metakocka.si/rest/eshop/v1/put_document)
 
 Currenty we support :
 
