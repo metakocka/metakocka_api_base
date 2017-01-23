@@ -1,3 +1,5 @@
+**URL** : https://main.metakocka.si/rest/eshop/v1/put_document
+
 ## 2.3 Warehouse docs (delivery note, packing list, etc)
 Valid doc_type :
 * warehouse\_delivery\_note
