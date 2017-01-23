@@ -1,3 +1,5 @@
+**URL** : https://main.metakocka.si/rest/eshop/v1/put_document
+
 ## 2.4 Purchase Order
 
 **Example full request** :
