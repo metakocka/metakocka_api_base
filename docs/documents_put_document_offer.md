@@ -1,3 +1,4 @@
+**URL** : https://main.metakocka.si/rest/eshop/v1/put_document
 
 ## 2.1 sales\_offer
 **Example full request** :
