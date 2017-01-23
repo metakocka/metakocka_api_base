@@ -1,3 +1,5 @@
+**URL** : https://main.metakocka.si/rest/eshop/v1/update_document
+
 ## Workorder - update
 
 ### Example : add work to all positions ("izdelava - vsi")
