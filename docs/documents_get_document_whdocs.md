@@ -1,3 +1,5 @@
+**URL** : https://main.metakocka.si/rest/eshop/v1/get_document
+
 # get_document - Warehouse docs
 Valid doc_type :
 * warehouse\_delivery\_note
