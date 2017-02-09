@@ -10,7 +10,7 @@ Valid doc_type :
 * purchase\_bill\_domestic
 * purchase\_bill\_foreign
 
-**Example : Sales bill - minimum request** :
+### Example : Sales bill - minimum request
 ```javascript
 {
     "secret_key":"8899",
@@ -42,7 +42,7 @@ Valid doc_type :
 }
 ```
 
-**Example : Sales bill foreign - full request** :
+### Example : Sales bill foreign - full request
 ```javascript
 {
     "secret_key":"8899",
@@ -112,7 +112,7 @@ Valid doc_type :
 }
 ```
 
-**Example : Purchase bill - minimum request** :
+### Example : Purchase bill - minimum request
 ```javascript
 {
     "secret_key":"8899",
@@ -144,7 +144,7 @@ Valid doc_type :
 }
 ```
 
-**Example : Purchase bill foreign - full request** :
+### Example : Purchase bill foreign - full request
 ```javascript
 {
     "secret_key":"8899",
@@ -215,7 +215,7 @@ Valid doc_type :
 }
 ```
 
-**Example : Sales bill with bank reference number** :
+### Example : Sales bill with bank reference number
 ```javascript
 {
     "secret_key":"mysecret",
@@ -248,7 +248,7 @@ Valid doc_type :
 }
 ```
 
-**Example : Credit note** :
+### Example : Credit note
 ```javascript
 {
     "secret_key":"...",
