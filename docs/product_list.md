@@ -28,6 +28,7 @@ Attribute                 | Type | Notes| MK SLO |
 | service | bool | Product must be flag as service | Storitev |
 | work | bool | Product must be flag as work | Delo |
 | return\_warehause\_stock | bool | If attribute is set, every product in respond will have "amount" attribute. In case the product was newer use on stock, attribute "amount" will still have value 0. | / |
+| return\_warehouse\_reservation | bool | Product will have additional attribute "reservation_detail" with list of reservation amount per warehouse. | / |
 | offset | int | see notes. | / |
 | limit | int | see notes. | / |
 
@@ -290,5 +291,57 @@ Respond :
           }
         ]
     }
+}
+```
+## 1.6 with return\_warehause\_reservation
+```javascript
+{
+   "opr_code":"0",
+   "opr_time_ms":"11762",
+   "sales":"true",
+   "return_warehause_stock":"true",
+   "limit":"2",
+   "offset":"0",
+   "product_list_count":"2",
+   "product_list":[
+      {
+         "company_id":"0",
+         "mk_id":"1600000027",
+         "code":"prod sifra 1",
+         "name":"naziv sifra 1",
+         "unit":"kos",
+         "service":"false",
+         "sales":"true",
+         "purchasing":"true",
+         "height":"1",
+         "width":"2",
+         "depth":"3",
+         "weight":"4",
+         "amount":"10",
+         "amount_detail": [
+            {
+               "warehouse_mark": "oznaka1",
+               "warehouse_name": "moje skladisce",
+               "serial_number": "ser1",
+               "exp_date": "2013-06-10+02:00",
+               "amount": "4"
+            },
+            {
+               "warehouse_mark": "oznaka1",
+               "warehouse_name": "moje skladisce",
+               "serial_number": "ser2",
+               "exp_date": "2013-06-10+02:00",
+               "amount": "6"
+            }
+         ],
+         "reservation_detail": [
+         {
+            "warehouse_mark": "oznaka1",
+            "warehouse_name": "moje skladisce",
+            "amount": "1"
+         }
+      ],
+      }
+   ]
 }
 ```
