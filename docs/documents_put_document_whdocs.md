@@ -31,6 +31,7 @@ TODO
         "street": "Slovenska cesta 100",
         "post_number": "1000",
         "place": "Ljubljana",
+        "province": "Severna primorska",
         "country": "Slovenia"
     },
     "order_list" : [
