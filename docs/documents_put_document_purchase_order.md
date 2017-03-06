@@ -19,7 +19,7 @@
         "street": "Slovenska cesta 100",
         "post_number": "1000",
         "place": "Ljubljana",
-	"province": "Severna primorska",
+        "province": "Severna primorska",
         "country": "Slovenia"
     },
     "receiver": {
