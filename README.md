@@ -21,7 +21,7 @@ Current documentation is available on [dev.metakocka.si](http://dev.metakocka.si
 # Documents
 [Concept](/docs/documents_concept.md)
 
-###put_document
+### put_document
 * [offer](/docs/documents_put_document_offer.md)
 * [sales_order](/docs/documents_put_document_sales_order.md)
 * [bill](/docs/documents_put_document.md#22-bill)
@@ -29,22 +29,22 @@ Current documentation is available on [dev.metakocka.si](http://dev.metakocka.si
 * [purchase order](/docs/documents_put_document_purchase_order.md)
 * [workorder](/docs/documents_put_document_workorder.md)
 
-###get_document
+### get_document
 * [offer](/docs/documents_get_document_sales_offer.md)
 * [sales_order](/docs/documents_get_document_sales_order.md)
 * [bill](/docs/documents_get_document_bill.md)
 * [warehouse docs](/docs/documents_get_document_whdocs.md)
 * [workorder](/docs/documents_get_document_workorder.md)
 
-###update_document
+### update_document
 * [workorder](/docs/documents_update_document_workorder.md)
 
-###search
+### search
 * [Concept](/docs/search_concept.md)
 * [Examples](/docs/search_examples.md)
 * [Query advance - paramethers](/docs/search_query_advance_discovery.md)
 
-###report
+### report
 * [Concept](/docs/report_concept.md)
 * [Examples](/docs/report_examples.md)
 
