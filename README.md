@@ -1,5 +1,5 @@
 Welcome!
-We are just translating our development documentation from Slovenian language. Stay tune...
+We are just translating our development documentation from Slovenian language. Stay tuned...
 
 Current documentation is available on [dev.metakocka.si](http://dev.metakocka.si/eshop/index.html)
 
