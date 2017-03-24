@@ -14,6 +14,11 @@ Current documentation is available on [dev.metakocka.si](http://dev.metakocka.si
 
 [product_delete](/docs/product_delete.md)
 
+### product_partner_code
+* [put_product_partner_code](/docs/put_product_partner_code.md)
+* [update_product_partner_code](/docs/update_product_partner_code.md)
+* [delete_product_partner_code](/docs/delete_product_partner_code.md)
+
 # Bill and Offer (old API)
 [Bill examples](/docs/put_sales_bill_examples.md)
 * [Send to FURS](/docs/put_sales_bill_send_to_furs.md)
