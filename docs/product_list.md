@@ -6,6 +6,7 @@
 * warehause amount
 * prices on pricelists
 * compound or norm structure
+* partner info on product
 
 ## 1.1 With amount
 Request :
@@ -29,6 +30,7 @@ Attribute                 | Type | Notes| MK SLO |
 | work | bool | Product must be flag as work | Delo |
 | return\_warehause\_stock | bool | If attribute is set, every product in respond will have "amount" attribute. In case the product was newer use on stock, attribute "amount" will still have value 0. | / |
 | return\_warehouse\_reservation | bool | Product will have additional attribute "reservation_detail" with list of reservation amount per warehouse. | / |
+| return\_product\_partner\_info | bool | Product will have additional attribute "product_partner_info" with list of custom partner info on product. | / |
 | offset | int | see notes. | / |
 | limit | int | see notes. | / |
 
@@ -316,6 +318,7 @@ Respond :
          "height":"1",
          "width":"2",
          "depth":"3",
+         
          "weight":"4",
          "amount":"10",
          "amount_detail": [
@@ -344,6 +347,75 @@ Respond :
       }
    ]
 }
-
 ```
-bla1
+## 1.7 With partner info
+Request :
+```javascript
+{
+    "secret_key":"my_secret_key",
+    "company_id":"16",
+    "sales":"true",
+    "return_product_partner_info" : "true",
+    "count_code":"PA_102_PA"
+}
+```
+Respond :
+```javascript
+{
+  "opr_code": "0",
+  "opr_time_ms": "146",
+  "count_code": "PA_102_PA",
+  "sales": "true",
+  "limit": "1000",
+  "offset": "0",
+  "product_list_count": "1",
+  "product_list": [
+    {
+      "count_code": "PA_102_PA",
+      "mk_id": "1600000066",
+      "code": "sktest1",
+      "barcode": "987654321",
+      "name": "sktest1",
+      "name_desc": "To je opis sktest1 artikla. D<font color=\"FF0000\">odatni test <br><br><br><font color=\"FF0000\">za testiranje HTM<font color=\"FF0000\">L opis<font color=\"FF0000\">ov <br><br><a href=\"http://\">www.google.com</a><br><br></font></font></font></font><ul><li><font color=\"FF0000\">dfs</font></li><li><font color=\"FF0000\"><font color=\"FF0000\">ghfh</font></font></li><li><font color=\"FF0000\"><font color=\"FF0000\"><font color=\"FF0000\">a,kdask</font></font></font></li></ul><p><br></p>",
+      "unit": "kom",
+      "service": "false",
+      "sales": "true",
+      "purchasing": "true",
+      "eshop_sync": "false",
+      "height": "60",
+      "width": "80",
+      "depth": "110",
+      "weight": "40",
+      "customs_fee": "54321",
+      "koli_package_amount": "24",
+      "asset": "false",
+      "compound": "false",
+      "expiration_dates": "false",
+      "gross_weight": "50",
+      "lot_numbers": "false",
+      "min_stock": "10",
+      "norm": "false",
+      "serial_numbers": "false",
+      "work": "false",
+      "product_partner_info": [
+        {
+          "mk_id": "1600444908",
+          "product_id": "1600000066",
+          "product_code": "t12345",
+          "product_name": "sifra_partner",
+          "partner_id": "1600113924",
+          "partner_name": "3D ART d.o.o."
+        },
+        {
+          "mk_id": "1600444912",
+          "product_id": "1600000066",
+          "product_code": "t998",
+          "product_name": "ps_test",
+          "partner_id": "1600106702",
+          "partner_name": "A. Kronenberg1"
+        }
+      ]
+    }
+  ]
+}
+```
