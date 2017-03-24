@@ -130,6 +130,44 @@ Request :
     ]    
 }
 ```
+## 1.4 Product partner info
+Request :
+```javascript
+{
+    "secret_key":"my_secret_key",
+    "company_id":"16",
+    "count_code":"part_sifra_test",
+    "code":"part_sifra_test",
+    "name":"Partner šifra test REST",
+    "unit":"kos",
+    "sales":"true",
+    "product_partner_info": [
+        {
+          "product_code": "t12345",
+          "product_name": "sifra_partner",
+          "partner_id": "1600113924"
+        }, 
+        {
+          "product_code": "asd",
+          "product_name": "pp_partner",
+          "partner_id": "1600106702"
+        }
+      ]    
+}
+```
+Respond : 
+```javascript
+{
+  "opr_code": "0",
+  "opr_time_ms": "247",
+  "mk_id": "1600444917",
+  "count_code": "part_sifra_test",
+  "product_partner_info_mk_id": [
+    "1600444918",
+    "1600444919"
+  ]
+}
+```
 
 
 # 2. PHP Example
