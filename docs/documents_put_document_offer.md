@@ -36,6 +36,7 @@
   "inquiry_num": "sp2",  
   "pariteta": "Dostava kupcu",
   "doc_created_email": "maticpetek@gmail.com",
+  "method_of_payment" : "on_deliver",
   "product_list": [
     {
       "code": "art1",
