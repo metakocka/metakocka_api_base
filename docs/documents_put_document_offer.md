@@ -23,6 +23,24 @@
     "country": "Slovenia",
     "count_code": "1000"
   },
+  "receiver": {
+        "business_entity": "true",
+        "taxpayer": "true",
+        "foreign_county": "false",
+        "tax_id_number": "SI20000002",
+        "customer": "API partner 2",
+        "street": "Slovenska cesta 200",
+        "post_number": "1000",
+        "place": "Ljubljana",
+        "country": "Slovenia",
+        "partner_contact": {
+            "name": "Rok Doltar",
+            "phone": "05 320 24 88",
+            "fax": "05 320 24 84",
+            "gsm": "071 333 444",
+            "email": "test@test.co.uk"
+        }
+    },
   "sales_pricelist_code": "PC_104",
   "purchase_pricelist_code": "NC_200_NC",
   "prepayment_value": "12",
