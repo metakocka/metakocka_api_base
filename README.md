@@ -23,6 +23,9 @@ Current documentation is available on [dev.metakocka.si](http://dev.metakocka.si
 [Bill examples](/docs/put_sales_bill_examples.md)
 * [Send to FURS](/docs/put_sales_bill_send_to_furs.md)
 
+# Warehouse
+[warehouse_list](/docs/warehouse_list.md)
+
 # Documents
 [Concept](/docs/documents_concept.md)
 
