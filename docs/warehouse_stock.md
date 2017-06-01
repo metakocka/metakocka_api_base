@@ -173,41 +173,23 @@ Respond :
       "unit": "kos"
     },
     {
-      "warehouse_id": "1600000067",
-      "mk_id": "1600397819",
-      "count_code": "16896",
-      "title": "GU10 60x3014 SMD 6,5W Warmweiß",
-      "amount": "0",
-      "reserved_amount": "3",
-      "free_amount": "-3",
-      "unit": "kos"
-    },
-    {
-      "warehouse_id": "1600000067",
-      "mk_id": "1600397818",
-      "count_code": "16895",
-      "title": "GU10 54x3528SMD 3W Warmweiß",
-      "amount": "0",
-      "reserved_amount": "3",
-      "free_amount": "-3",
-      "unit": "kos"
-    },
-    {
-      "warehouse_id": "1600000067",
-      "mk_id": "1600280113",
-      "count_code": "21827",
-      "title": "na23 test",
-      "amount": "10",
+      "warehouse_id": "1600000042",
+      "mk_id": "96600034074",
+      "count_code": "6967",
+      "title": "¨PRALNI STROJ KORTING WK6101",
+      "amount": "9990",
       "microlocation": "A1",
       "unit": "kos"
     },
     {
-      "warehouse_id": "1600000067",
-      "mk_id": "1600220960",
-      "count_code": "20767",
-      "title": "Add-on Modul Bar",
-      "amount": "1",
-      "unit": "kos"
+      "warehouse_id": "1600430213",
+      "mk_id": "1600000028",
+      "count_code": "PA_101_PA",
+      "title": "pod naziv 2a",
+      "amount": "6",
+      "microlocation": "A1",
+      "unit": "kos",
+      "unit2": "m"
     }
   ]
 }
