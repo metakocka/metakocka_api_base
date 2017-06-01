@@ -10,8 +10,9 @@ Request :
     "secret_key":"my_secret_key",
     "company_id":"16"
 }
-
+```
 Respond :
+``` javascript
 {
   "opr_code": "0",
   "opr_time_ms": "58",
@@ -132,3 +133,4 @@ Respond :
     }
   ]
 }
+```
