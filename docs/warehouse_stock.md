@@ -116,10 +116,10 @@ Respond :
     }
   ]
 }
-
+```
 ## 1.1 With wh_id_list
+``` javascript
 Request :
-```javascript
 {
     "secret_key":"my_secret_key",
     "company_id":"16",
@@ -193,3 +193,4 @@ Respond :
     }
   ]
 }
+```
