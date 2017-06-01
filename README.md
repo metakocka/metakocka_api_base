@@ -25,6 +25,7 @@ Current documentation is available on [dev.metakocka.si](http://dev.metakocka.si
 
 # Warehouse
 [warehouse_list](/docs/warehouse_list.md)
+[warehouse_stock](/docs/warehouse_stock.md)
 
 # Documents
 [Concept](/docs/documents_concept.md)
