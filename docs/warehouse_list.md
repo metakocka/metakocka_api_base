@@ -1,7 +1,7 @@
 # 1. JSON Examples
 **URL** : https://main.metakocka.si/rest/eshop/v1/json/warehouse_list
 
-**Description** : return list of all warehouses
+**Description** : return list of all warehouses. We also have support for calling webhooks in case of change on warehouse.
 
 ## 1.1 Warehouse list
 Request :
