@@ -1,7 +1,7 @@
 # 1. JSON Examples
 **URL** : https://main.metakocka.si/rest/eshop/v1/json/warehouse_stock
 
-**Description** : return list of all product stock
+**Description** : return list of all product stock. We also have support for calling webhooks in case of change of stock.
 
 Attribute                 | Type | Notes| MK SLO |
 --------------------------|------|------|--------|
