@@ -26,3 +26,73 @@ Notes :
   "company_id" : "16"
 }
 ```
+### Example : update product realization
+
+``` javascript
+{ 
+"mk_id":"1600444898",
+"company_id": "16", 
+"secret_key": "8899",
+ "product_list":[
+ { 
+   "mk_id":"1600445170",
+   "type":"product_plan_realization", 
+   "amount_realization":"5", 
+   "when":"2016-09-16+02:00" 
+  }
+ ]
+}
+```
+
+### Example : adding new product and material plan and realization
+``` javascript
+{ 
+"mk_id":"1600436014",
+"company_id": "16", 
+"secret_key": "8899",
+	"product_list":[
+		{ 
+			"mk_id":-1, 
+			"type":"product_plan", 
+			"product_mk_id":"1600000089", 
+			"warehouse_code":"nas1", 
+			"amount_plan":"11", 
+			"purchase_price":"8", 
+			"when":"2016-09-16+02:00" 
+		}
+		,
+		{ 
+			"type":"product", 
+			"product_mk_id":"1600000089", 
+			"warehouse_code":"nas1", 
+			"amount_realization":"3", 
+			"purchase_price":"8", 
+			"product_plan_mk_id":-1, 
+			"when":"2016-09-16+02:00" 
+		}
+	],
+	"material_list":[
+		{ 
+			"mk_id":-2, 
+			"type":"material_plan", 
+			"product_mk_id":"1600000066", 
+			"position_mk_id":-1,
+			"warehouse_code":"nas1", 
+			"amount_plan":"11", 
+			"purchase_price":"8", 
+			"when":"2016-09-16+02:00" 
+		}
+		,
+		{ 
+			"type":"material", 
+			"product_mk_id":"1600000066", 
+			"warehouse_code":"nas1", 
+			"amount_realization":"3", 
+			"purchase_price":"8", 
+			"position_mk_id":-1, 
+			"product_plan_mk_id":-2, 
+			"when":"2016-09-16+02:00" 
+		}
+	]
+}
+``` 
