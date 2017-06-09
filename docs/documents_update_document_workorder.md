@@ -96,3 +96,22 @@ Notes :
 	]
 }
 ``` 
+
+### Example : add work realization on product realization
+``` javascript
+{ 
+"mk_id":"1600444898",
+"company_id": "16", 
+"secret_key": "8899",
+ "work_list":[
+ { 
+   "type":"work", 
+   "product_mk_id":"1600000089", 
+   "amount_realization":"4", 
+   "position_mk_id":"1600445170", 
+   "when":"2016-09-16+02:00",
+   "performer_name_list":"Matic Petek"
+  }
+ ]
+}
+```
