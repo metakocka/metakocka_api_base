@@ -158,5 +158,5 @@ Attribute                 | Description | Documents|
 | ADD\_ATT\_HIDDEN\_MK\_SHOW \_ARTIKEL\_DESC\_IGNORE\_PRODUCT\_DESC | Print full description of product but remove Product extra description | bills |
 
 # Report type
-When sending request, you must specify type of report you want to get. Supported types:
-Values: PDF, XLS, CSV, XML, HTM, JSN (JSON), POI (xlsx), ESL (xml)
+When sending request, you must specify type of report you want to get. 
+Supported types: PDF, XLS, CSV, XML, HTM, JSN (JSON), POI (xlsx), ESL (xml)
