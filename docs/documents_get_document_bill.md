@@ -211,7 +211,92 @@ Respond :
     "sum_all": "24.8"
 }
 ```
-
+### Example : get bill installment list
+Request : (POST - https://main.metakocka.si/rest/eshop/v1/get_document)
+```javascript
+{  
+	"company_id": "16", 
+	"secret_key": "8899",
+	"doc_type" : "sales_bill_domestic",
+	"doc_id" : "1600552358"
+}
+```
+Repond :
+```
+{
+    "mk_id": "1600552358",
+    "doc_type": "sales_bill_domestic",
+    "opr_code": "0",
+    "count_code": "LJ-MK-559",
+    "doc_date": "2017-05-18+02:00",
+    "partner": {
+        "mk_id": "1600552355",
+        "business_entity": "false",
+        "taxpayer": "false",
+        "foreign_county": "false",
+        "customer": "Janez Novak",
+        "street": "Tehnološki park 21",
+        "place": "Ljubljana",
+        "country": "Slovenia",
+        "count_code": "3282"
+    },
+    "receiver": {
+        "mk_id": "1600552357",
+        "business_entity": "false",
+        "taxpayer": "false",
+        "foreign_county": "false",
+        "customer": "3D ART d.o.o.",
+        "count_code": "3283"
+    },
+    "service_to_date": "2017-05-18+02:00",
+    "duo_payment": "2017-05-20+02:00",
+    "currency_code": "EUR",
+    "doc_created_email": "maticpetek@gmail.com",
+    "location_of_service": "a1",
+    "packlist_accform_list": {
+        "mk_id": "1600552361",
+        "count_code": "D_4984"
+    },
+    "warehouse": "oznaka2",
+    "notes": "test opomba",
+    "product_list": [
+        {
+            "name": "testni artikel",
+            "amount": "2",
+            "price": "89.9",
+            "discount": "15",
+            "tax": "EX4"
+        },
+        {
+            "mk_id": "1600000066",
+            "code": "sktest1",
+            "name_desc": "HTML<div><br></div><div><font color=\"#ff0000\">opis artikla</font></div><div><font color=\"#ff0000\"><br></font></div><div><font color=\"#ff0000\"><a href=\"www.google.com\">www.google.com</a></font></div>",
+            "amount": "6",
+            "price": "15.5",
+            "discount": "5",
+            "tax": "EX4"
+        }
+    ],
+    "sum_basic": "241.18",
+    "sum_discount": "31.62",
+    "sum_tax_ex4": "53.06",
+    "sum_all": "294.24",
+    "installment_list": [
+        {
+            "mk_id": "1600552544",
+            "installment_date": "2017-07-25+02:00",
+            "installment_amount": "147.12",
+            "installment_payed": "false"
+        },
+        {
+            "mk_id": "1600552545",
+            "installment_date": "2017-08-25+02:00",
+            "installment_amount": "147.12",
+            "installment_payed": "false"
+        }
+    ]
+}
+```
 ## Special paramethers
 Paramether | Type | Description |
 -----------|------|-------------|
