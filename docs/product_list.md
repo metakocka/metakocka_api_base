@@ -28,6 +28,7 @@ Attribute                 | Type | Notes| MK SLO |
 | purchase | bool | Product must be flag as purchase | Nabavni |
 | service | bool | Product must be flag as service | Storitev |
 | work | bool | Product must be flag as work | Delo |
+| active | bool | Product must be flag as active | Aktiven |
 | return\_warehause\_stock | bool | If attribute is set, every product in respond will have "amount" attribute. In case the product was newer use on stock, attribute "amount" will still have value 0. | / |
 | return\_warehouse\_reservation | bool | Product will have additional attribute "reservation_detail" with list of reservation amount per warehouse. | / |
 | return\_product\_partner\_info | bool | Product will have additional attribute "product_partner_info" with list of custom partner info on product. | / |
