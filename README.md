@@ -58,6 +58,9 @@ Current documentation is available on [dev.metakocka.si](http://dev.metakocka.si
 * [Concept](/docs/report_concept.md)
 * [Examples](/docs/report_examples.md)
 
+# Partner
+[get_partner](/docs/get_partner.md)
+
 # Other calls
 * [put_transaction](/docs/put_transaction.md)  - add payment on existing bill or offer
 * [get_bank_statement_status](/docs/get_bank_statement_status.md)  - return last statement state, date, etc for all bank bills
