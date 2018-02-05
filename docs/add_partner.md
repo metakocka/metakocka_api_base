@@ -4,6 +4,7 @@
 
 **Description** : adds a new partner. 
 When adding new partner, you must declare his default data such as street, post number, place, country. By default, their address type is saved as "Račun" which is used for billing process.
+
 Supported attributes for partner:
 
 | Attribute           	| Type     	| Notes                            	| MK SLO                   	|
@@ -22,7 +23,9 @@ Supported attributes for partner:
 | province            	| char,50  	| Partner's provnice               	| Pokrajina                	|
 | country             	| char,50  	| Partner's country                	| Država                   	|
 
+
 Supported attributes for partner contact:
+
 | Attribute            	| Type     	| Notes                                 	| MK SLO                                          	|
 |----------------------	|----------	|---------------------------------------	|-------------------------------------------------	|
 | useCustomerAsContact 	| bool     	| Use partner's name as contact name    	| Uporabi naziv partnerja za ime kontakta (Da/Ne) 	|
@@ -39,6 +42,7 @@ Additionally, you can add another partner's address in field partner_delivery_ad
 * Poslovna enota
 
 Supported attributes for partner delivery address:
+
 | Attribute    	| Type     	| Notes        	| MK SLO                                      	|
 |--------------	|----------	|--------------	|---------------------------------------------	|
 | address_type 	| String   	| Address type 	| Tip naslova (Račun, Dobava, Poslovna enota) 	|
