@@ -60,6 +60,7 @@ Current documentation is available on [dev.metakocka.si](http://dev.metakocka.si
 
 # Partner
 [get_partner](/docs/get_partner.md)
+[add_partner](/docs/add_partner.md)
 
 # Other calls
 * [put_transaction](/docs/put_transaction.md)  - add payment on existing bill or offer
