@@ -32,6 +32,8 @@ Respond :
             "count_code": "WE0003085",
             "partner_contact_list": [
                 {
+                    "mk_id": "228000009449",
+                    "mk_address_id": "228000009448",
                     "contact_address": "Tehnološki park 24",
                     "gsm": "051123456",
                     "email": "test@test.si"
@@ -39,6 +41,7 @@ Respond :
             ],
             "partner_delivery_address_list": [
                 {
+                    "mk_id": "228000009448",
                     "address_type": "Račun",
                     "street": "Tehnološki park 24",
                     "post_number": "1000",
@@ -57,6 +60,8 @@ Respond :
             "count_code": "140",
             "partner_contact_list": [
                 {
+                    "mk_id": "228000012293",
+                    "mk_address_id": "228000012292",
                     "contact_address": "Tehnološki park 21",
                     "gsm": "031111222",
                     "email": "test1@test.si"
@@ -64,6 +69,7 @@ Respond :
             ],
             "partner_delivery_address_list": [
                 {
+                    "mk_id": "228000012292",
                     "address_type": "Račun",
                     "street": "Tehnološki park 21",
                     "post_number": "1000",
