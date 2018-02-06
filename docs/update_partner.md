@@ -12,7 +12,7 @@ You can declare which partner you want to update by following parameters:
 
 Following example will add new contact to existing address (mandatory parameter mk_address_id). If you want to update existing contact, you must declare *mk_id*. It will also update existing address (we search address by parameter mk_id) and add new address for existing partner.
 
-Request (POST - https://main.metakocka.si/rest/eshop/v1/add_partner) :
+Request (POST - https://main.metakocka.si/rest/eshop/v1/update_partner) :
 ```javascript
 {
     "secret_key":"8899",
