@@ -8,8 +8,17 @@ Attribute                 | Type | Notes| MK SLO |
 | wh_id_list | string | If attribute is set, you will limit response by given warehouse ids. | / |
 | offset | int | see notes. | / |
 | limit | int | see notes. | / |
+| product_code_list | String | Limit respond by list of MK codes (or webshops SKU), separater with comma. | / |
+| product_mk_id_list | String | Limit respond by list of MK ID, separater with comma | / |
 
-## 1.1 Basic call
+If MetaKocka company is using reservations, amount will be return as :
+* amount - stock amount
+* reserved_amount - reservation amount
+* free_amount - difference between (amount - reserved_amount)
+
+If company is without reservations, only "amount" will be in respond.
+
+## 1.1 Basic call - no reservations
 Request :
 ```javascript
 {
@@ -118,7 +127,7 @@ Respond :
   ]
 }
 ```
-## 1.1 With wh_id_list
+## 1.1 With wh_id_list - with reservations
 
 Request :
 ``` javascript
