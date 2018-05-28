@@ -7,6 +7,7 @@
 * prices on pricelists
 * compound or norm structure
 * partner info on product
+* searching product with LIKE parameter
 
 ## 1.1 With amount
 Request :
@@ -418,5 +419,313 @@ Respond :
       ]
     }
   ]
+}
+```
+
+## 1.8 With LIKE operator
+Searching products with LIKE parameter. Possible to search by following fields:
+* count_code
+* code
+* title
+
+Request :
+```javascript
+{
+    "secret_key":"my_secret_key",
+    "company_id":"16",
+    "search_with_like" : true,
+    "return_product_compound" : true,
+	"count_code":"PA_10"
+}
+```
+Respond :
+```javascript
+{
+    "opr_code": "0",
+    "opr_time_ms": "741",
+    "count_code": "PA_10",
+    "limit": "1000",
+    "offset": "0",
+    "product_list_count": "10",
+    "product_list": [
+        {
+            "count_code": "PA_100_PA",
+            "mk_id": "1600000027",
+            "code": "prod sifra 1",
+            "barcode": "BAR_pa_100_pa",
+            "name": "naziv sifra 1",
+            "name_desc": "Dodatni opis 1",
+            "unit": "kpl",
+            "service": "true",
+            "sales": "true",
+            "activated": "true",
+            "purchasing": "true",
+            "eshop_sync": "true",
+            "weight": "5",
+            "customs_fee": "2710 19 27",
+            "extra_column": [
+                {
+                    "name": "add_col_varchar1",
+                    "value": "Test2"
+                },
+                {
+                    "name": "add_col_varchar0",
+                    "value": "Me2"
+                }
+            ],
+            "localization": {
+                "language": "en",
+                "name": "12\" nekajfds",
+                "name_desc": "<br>"
+            },
+            "compound_type": "compound",
+            "compounds": {
+                "product_mk_id": "1600000550",
+                "product_count_code": "PA_120_PA",
+                "product_code": "s120",
+                "product_title": "n120",
+                "amount": "5",
+                "purchase_unit_factor": "0,2"
+            },
+            "asset": "false",
+            "compound": "true",
+            "country": "VE",
+            "expiration_dates": "false",
+            "lot_numbers": "false",
+            "min_stock": "44",
+            "norm": "false",
+            "serial_numbers": "true",
+            "work": "true",
+            "supplier_info": {
+                "partner_id": "1600113924",
+                "partner_name": "3D ART d.o.o."
+            }
+        },
+        {
+            "count_code": "PA_101_PA",
+            "mk_id": "1600000028",
+            "code": "pod sifra 23",
+            "name": "pod naziv 2a",
+            "unit": "dan",
+            "service": "true",
+            "sales": "true",
+            "activated": "true",
+            "purchasing": "true",
+            "eshop_sync": "false",
+            "weight": "121",
+            "compound_type": "compound",
+            "compounds": {
+                "product_mk_id": "1600000027",
+                "product_count_code": "PA_100_PA",
+                "product_code": "prod sifra 1",
+                "product_title": "naziv sifra 1",
+                "amount": "200",
+                "purchase_unit_factor": "0,005"
+            },
+            "asset": "false",
+            "compound": "true",
+            "expiration_dates": "false",
+            "gross_weight": "4",
+            "lot_numbers": "false",
+            "norm": "false",
+            "serial_numbers": "false",
+            "work": "true"
+        },
+        {
+            "count_code": "PA_102_PA",
+            "mk_id": "1600000066",
+            "code": "sktest1",
+            "barcode": "aergaerga",
+            "name": "sktest1",
+            "name_desc": "HTML<div><br></div><div><font color=\"#ff0000\">opis artikla</font></div><div><font color=\"#ff0000\"><br></font></div><div><font color=\"#ff0000\"><a href=\"www.google.com\">www.google.com</a></font></div>",
+            "unit": "kg",
+            "unit2": "g",
+            "unit_factor": "1000",
+            "service": "false",
+            "sales": "true",
+            "activated": "true",
+            "purchasing": "true",
+            "eshop_sync": "false",
+            "weight": "45",
+            "customs_fee": "2710 19 27",
+            "asset": "false",
+            "compound": "false",
+            "expiration_dates": "false",
+            "gross_weight": "50",
+            "lot_numbers": "false",
+            "min_stock": "10",
+            "norm": "false",
+            "serial_numbers": "false",
+            "work": "false"
+        },
+        {
+            "count_code": "PA_103_PA",
+            "mk_id": "1600000087",
+            "code": "crke_test1",
+            "name": "crke_test1",
+            "name_desc": "304490",
+            "unit": "dan",
+            "service": "false",
+            "sales": "true",
+            "activated": "true",
+            "purchasing": "true",
+            "eshop_sync": "true",
+            "height": "50",
+            "width": "60",
+            "depth": "30",
+            "asset": "false",
+            "compound": "false",
+            "expiration_dates": "false",
+            "lot_numbers": "false",
+            "norm": "false",
+            "serial_numbers": "false",
+            "work": "false"
+        },
+        {
+            "count_code": "PA_105_PA",
+            "mk_id": "1600000160",
+            "code": "UVOZ_1",
+            "name": "Uvoz 1",
+            "name_desc": "Dodatni uvoz 2a",
+            "unit": "cm",
+            "service": "false",
+            "sales": "true",
+            "activated": "true",
+            "purchasing": "true",
+            "eshop_sync": "false",
+            "height": "12",
+            "width": "10",
+            "depth": "12",
+            "weight": "13",
+            "asset": "false",
+            "compound": "false",
+            "expiration_dates": "false",
+            "lot_numbers": "false",
+            "norm": "false",
+            "serial_numbers": "false",
+            "work": "false"
+        },
+        {
+            "count_code": "PA_106_PA",
+            "mk_id": "1600000161",
+            "code": "UVOZ_2",
+            "name": "Uvoz 2",
+            "name_desc": "Dodatni uvoz 2",
+            "unit": "kg",
+            "service": "true",
+            "sales": "true",
+            "activated": "true",
+            "purchasing": "false",
+            "eshop_sync": "false",
+            "height": "12,123",
+            "width": "10",
+            "depth": "12",
+            "weight": "2",
+            "asset": "false",
+            "compound": "false",
+            "expiration_dates": "false",
+            "lot_numbers": "false",
+            "norm": "false",
+            "serial_numbers": "false",
+            "work": "false"
+        },
+        {
+            "count_code": "PA_107_PA",
+            "mk_id": "1600000167",
+            "code": "sestav_del_1",
+            "barcode": "8892342374",
+            "name": "sestav_del_1",
+            "unit": "m3",
+            "service": "false",
+            "sales": "true",
+            "activated": "true",
+            "purchasing": "true",
+            "eshop_sync": "false",
+            "asset": "false",
+            "compound": "false",
+            "expiration_dates": "false",
+            "lot_numbers": "false",
+            "norm": "false",
+            "serial_numbers": "false",
+            "work": "false"
+        },
+        {
+            "count_code": "PA_108_PA",
+            "mk_id": "1600000168",
+            "code": "sestav_del_2",
+            "barcode": "3492342374",
+            "name": "sestav_del_2",
+            "unit": "cm",
+            "service": "false",
+            "sales": "true",
+            "activated": "true",
+            "purchasing": "true",
+            "eshop_sync": "false",
+            "asset": "false",
+            "compound": "false",
+            "expiration_dates": "false",
+            "lot_numbers": "false",
+            "norm": "false",
+            "serial_numbers": "false",
+            "work": "false"
+        },
+        {
+            "count_code": "PA_109_PA",
+            "mk_id": "1600000169",
+            "code": "sestav test 2",
+            "name": "sestav test 2",
+            "unit": "kos",
+            "service": "true",
+            "sales": "true",
+            "activated": "true",
+            "purchasing": "true",
+            "eshop_sync": "false",
+            "compound_type": "compound",
+            "compounds": [
+                {
+                    "product_mk_id": "1600000167",
+                    "product_count_code": "PA_107_PA",
+                    "product_code": "sestav_del_1",
+                    "product_title": "sestav_del_1",
+                    "amount": "2",
+                    "purchase_unit_factor": "0,2824859"
+                },
+                {
+                    "product_mk_id": "1600000168",
+                    "product_count_code": "PA_108_PA",
+                    "product_code": "sestav_del_2",
+                    "product_title": "sestav_del_2",
+                    "amount": "1",
+                    "purchase_unit_factor": "0,4350282"
+                }
+            ],
+            "asset": "false",
+            "compound": "true",
+            "expiration_dates": "false",
+            "lot_numbers": "false",
+            "norm": "false",
+            "serial_numbers": "false",
+            "work": "false"
+        },
+        {
+            "count_code": "PA_10_PA",
+            "mk_id": "1600051891",
+            "code": "skupni_popust_test",
+            "name": "skupni_popust_test",
+            "unit": "kos",
+            "service": "false",
+            "sales": "true",
+            "activated": "true",
+            "purchasing": "true",
+            "eshop_sync": "false",
+            "asset": "false",
+            "compound": "false",
+            "expiration_dates": "false",
+            "lot_numbers": "false",
+            "norm": "false",
+            "serial_numbers": "false",
+            "work": "false"
+        }
+    ]
 }
 ```
