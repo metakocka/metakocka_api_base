@@ -25,3 +25,32 @@ POST content is UTF-8 encoded.
 
 # 2. Stock
 EventType : warehouse_product_stock_update
+``` javascript
+{
+	"opr_code": "0",
+	"opr_time_ms": "0",
+	"stock_list_count": "61",
+	"stock_list": [{
+			"warehouse_id": "1600303267",
+			"mk_id": "1600094857",
+			"count_code": "PA-4020",
+			"code": "150974832263",
+			"title": "1,0 mm Düse für Mini HVLP Lackierpistole Spritzpistole Düsen set Nadel Rostfrei",
+			"amount": "0",
+			"reserved_amount": "0",
+			"free_amount": "0",
+			"unit": "kos"
+		}, {
+			"warehouse_id": "1600004367",
+			"mk_id": "1600094857",
+			"count_code": "PA-4020",
+			"code": "150974832263",
+			"title": "1,0 mm Düse für Mini HVLP Lackierpistole Spritzpistole Düsen set Nadel Rostfrei",
+			"amount": "0",
+			"reserved_amount": "0",
+			"free_amount": "0",
+			"unit": "kos"
+		}
+	]
+}
+```
