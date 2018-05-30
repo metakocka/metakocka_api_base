@@ -24,4 +24,4 @@ POST request on webhook will have the following header paramethers :
 POST content is UTF-8 encoded.  
 
 # 2. Stock
-TODO
+EventType : warehouse_product_stock_update
