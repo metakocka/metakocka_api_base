@@ -25,11 +25,27 @@ POST content is UTF-8 encoded.
 
 # 2. Stock
 EventType : warehouse_product_stock_update
+
+When event is fired :
+* every time stock is calculate for MK product. 
+
+Columns :
+* warehouse_id - MK warehouse identification,
+* mk_id, count_code, code, title, unit -  MK product identification,
+* amount - stock amount,
+* reserved_amount - reservation amount (if MK customer has turn on reservation)
+* free_amount - (amount - reserved_amount)
+
+Notes :
+* in stock_list you get stock amount for every active warehouse for given product. Even in product has no stock in this warehouse.
+* if one product in one warehouse has different lot number / exporation date / serial number / microlocation - one JSON object would be for every stock that has different values of this paramethers.
+
+Request example :
 ``` javascript
 {
 	"opr_code": "0",
 	"opr_time_ms": "0",
-	"stock_list_count": "61",
+	"stock_list_count": "2",
 	"stock_list": [{
 			"warehouse_id": "1600303267",
 			"mk_id": "1600094857",
