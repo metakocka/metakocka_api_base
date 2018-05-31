@@ -63,6 +63,9 @@ Current documentation is available on [dev.metakocka.si](http://dev.metakocka.si
 * [add_partner](/docs/add_partner.md)
 * [update_partner](/docs/update_partner.md)
 
+# WebHooks
+* [stock](/docs/webhooks.md)
+
 # Other calls
 * [put_transaction](/docs/put_transaction.md)  - add payment on existing bill or offer
 * [get_bank_statement_status](/docs/get_bank_statement_status.md)  - return last statement state, date, etc for all bank bills
