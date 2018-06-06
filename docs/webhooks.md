@@ -11,7 +11,7 @@ Optional paramethers :
 WebHook must return JSON with paramether "check_respond_status_json_ok" and value "true" (respond can have other JSON properties). For example :
 ``` javascript
 {
-  "check_respond_status_json_ok" : "true"
+  "status" : "ok"
 }
 ```
 If webhook end point is not available (or respond is not required JSON), MK will try two more time with 60 seconds delay.
