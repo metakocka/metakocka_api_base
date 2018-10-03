@@ -3,6 +3,8 @@ We are just translating our development documentation from Slovenian language. S
 
 Current documentation is available on [dev.metakocka.si](http://dev.metakocka.si/eshop/index.html)
 
+Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-api/](http://blog.metakocka.si/dodatne-nastavitve-api/)
+
 # Products
 [Concept](/docs/product_concept.md)
 
