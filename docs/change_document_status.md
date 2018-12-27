@@ -38,4 +38,4 @@
 **Notes**
 - status_code is the some value as description column in MetaKocka register form. See image below. 
 
-![](change_document_status.png?raw=true)
+![](change_document_status_1.png?raw=true)
