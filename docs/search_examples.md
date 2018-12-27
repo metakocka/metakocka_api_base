@@ -103,6 +103,34 @@
 }
 ```
 
+### Get invoices for particula date and not paid
+**Request** (POST - https://main.metakocka.si/rest/eshop/v1/search) :
+```javascript
+{
+    "secret_key": "8899",
+    "company_id": "16",
+    "doc_type": "sales_bill_domestic",
+    "result_type": "doc",
+    "limit": 100,
+    "offset": 0,
+    "query_advance": [
+        {
+            "type": "doc_date_from",
+            "value": "2018-10-05+02:00"
+        },
+        {
+            "type": "doc_date_to",
+            "value": "2018-12-21+02:00"
+        },
+        {
+            "type": "payment_status",
+            "value": "false"
+        }
+    ]
+}
+```
+
+
 ### Return products as result
 **Request** (POST - https://main.metakocka.si/rest/eshop/v1/search) :
 ```javascript
