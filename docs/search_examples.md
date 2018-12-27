@@ -156,7 +156,6 @@ Notes : you can read status_id for sales order in Mandrill settings
 }
 ```
 
-
 ### Return products as result
 **Request** (POST - https://main.metakocka.si/rest/eshop/v1/search) :
 ```javascript
@@ -204,5 +203,81 @@ Notes : you can read status_id for sales order in Mandrill settings
             "weight": "7,3"
         }
     ]
+}
+```
+
+### Sales Order - extra parameters for webshop orders
+If you are using sales order as target document for orders from webshop, you will get extra attributes :
+* buyer IP address
+* store URL
+* tracking number (if stickers was already printed or tracking number was imported).
+
+**Example** :
+```javascript
+{
+	"opr_code": "0",
+	"opr_time": "0",
+	"result_all_records": "960",
+	"result_count": "960",
+	"offset": "0",
+	"limit": "1",
+	"result": [{
+			"mk_id": "160008942974",
+			"doc_type": "sales_order",
+			"opr_code": "0",
+			"count_code": "2064269",
+			"doc_date": "2018-12-27+02:00",
+			"partner": {
+				"mk_id": "190008942971",
+				"business_entity": "false",
+				"taxpayer": "false",
+				"foreign_county": "true",
+				"customer": "Janez Kljajic",
+				"street": "Ulica, 131",
+				"post_number": "35221",
+				"place": "Dunaj",
+				"country": "Croatia",
+				"count_code": "9040783338",
+				"partner_contact": {
+					"gsm": "0811120408",
+					"email": "test@gmail.com"
+				}
+			},
+			"currency_code": "HRK",
+			"status_code": "Odpremljen",
+			"doc_created_email": "narocila@mycompany.si",
+			"buyer_order": "2064269",
+			"warehouse": "glavno",
+			"delivery_type": "GLS Hrvaška",
+			"product_list": [{
+					"count_code": "7886",
+					"mk_id": "160005644924",
+					"code": "radarBLU",
+					"name": "radarBLU",
+					"unit": "kos",
+					"amount": "1",
+					"price": "200",
+					"price_with_tax": "299",
+					"tax": "EX1"
+				}
+			],
+			"extra_column": [{
+					"name": "ip",
+					"value": "182.68.322.24"
+				}, {
+					"name": "store_url",
+					"value": "https://myshop.com/v1/hr/radar/"
+				}, {
+					"name": "tracking_number",
+					"value": "65407745"
+				}
+			],
+			"sum_basic": "153.59",
+			"sum_tax_ex1": "38.4",
+			"sum_all": "191.99",
+			"bank_ref_number": "SI004064269-8945974",
+			"method_of_payment": "Po povzetju"
+		}
+	]
 }
 ```
