@@ -69,5 +69,6 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 * [stock](/docs/webhooks.md)
 
 # Other calls
-* [put_transaction](/docs/put_transaction.md)  - add payment on existing bill or offer
-* [get_bank_statement_status](/docs/get_bank_statement_status.md)  - return last statement state, date, etc for all bank bills
+* [put_transaction](/docs/put_transaction.md) - add payment on existing bill or offer
+* [get_bank_statement_status](/docs/get_bank_statement_status.md) - return last statement state, date, etc for all bank bills
+* [change_document_status](/docs/change_document_status.md) - change status for sales order (Order Management order)
