@@ -103,7 +103,7 @@
 }
 ```
 
-### Get invoices for particula date and not paid
+### Get invoices for particular date and not paid
 **Request** (POST - https://main.metakocka.si/rest/eshop/v1/search) :
 ```javascript
 {
@@ -127,6 +127,32 @@
             "value": "false"
         }
     ]
+}
+```
+
+### Search Sales order with given status 
+Notes : you can read status_id for sales order in Mandrill settings
+**Request** (POST - https://main.metakocka.si/rest/eshop/v1/search) :
+
+```javascript
+{
+	"secret_key": "8899",
+	"company_id": "16",
+	"doc_type": "sales_order",
+	"result_type": "doc",
+	"limit": 5,
+	"offset": 0,
+	"query_advance": [{
+			"type": "doc_date_from",
+			"value": "2018-12-17+02:00"
+		}, {
+			"type": "doc_date_to",
+			"value": "2018-12-17+02:00"
+		}, {
+			"type": "status_id_list",
+			"value": "160000000083,160000000084"
+		}
+	]
 }
 ```
 
