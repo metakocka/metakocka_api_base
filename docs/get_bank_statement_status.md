@@ -1,4 +1,4 @@
-#get_bank_statement_status - return last statement state, date, etc for all bank bills
+# get_bank_statement_status - return last statement state, date, etc for all bank bills
 
 **Description** : If you use bank statement, you can get the last statement state. It is useful for dashboards to show how much money you have on some bank transaction bill.
 
