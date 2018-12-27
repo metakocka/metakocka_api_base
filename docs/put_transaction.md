@@ -1,4 +1,4 @@
-#put_transaction - add payment on existing bill or offer
+# put_transaction - add payment on existing bill or offer
 
 **Description** : Add payment transaction on existing bill or offer. Because bill / offer can have more then one transaction, operation can be repeat many times.
 
