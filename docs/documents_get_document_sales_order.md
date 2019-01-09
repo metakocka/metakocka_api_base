@@ -20,6 +20,7 @@ Respond :
     "opr_code": "0",
     "count_code": "PP-18495",
     "doc_date": "2015-05-08+02:00",
+    
     "partner": {
         "business_entity": "true",
         "taxpayer": "true",
@@ -96,6 +97,7 @@ Respond :
     "sum_tax_ex4": "10.16",
     "sum_prepayment": "5.64",
     "sum_all": "56.35",
-    "sum_paid": "10"
+    "sum_paid": "10",
+    "order_create_ts": "2015-05-08T12:13:15+02:00"    
 }
 ```
