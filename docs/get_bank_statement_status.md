@@ -2,6 +2,8 @@
 
 **Description** : If you use bank statement, you can get the last statement state. It is useful for dashboards to show how much money you have on some bank transaction bill.
 
+**Type** : POST
+
 **URL** : https://main.metakocka.si/rest/eshop/v1/get_bank_statement_status
 
 **Request example**
