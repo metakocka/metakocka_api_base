@@ -1,7 +1,7 @@
 **URL** : https://main.metakocka.si/rest/eshop/v1/put_document
 
 ## 2.1 sales\_order
-**Example full request** :
+### Example full request :
 ```javascript
 {
     "secret_key":"8899",
@@ -80,7 +80,7 @@ Notes :
 * prepayment\_percent - for exact value you can use prepayment\_value
 * discount\_percent - for exact value you can use discount_value
 
-**Example minimal request** :
+### Example minimal request :
 ```javascript
 {
     "secret_key":"8899",
@@ -110,7 +110,7 @@ Notes :
 }
 ```
 
-**Example minimal update request** :
+### Example minimal update request :
 ```javascript
 {
     "secret_key":"8899",
