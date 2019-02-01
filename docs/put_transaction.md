@@ -2,6 +2,8 @@
 
 **Description** : Add payment transaction on existing bill or offer. Because bill / offer can have more then one transaction, operation can be repeat many times.
 
+Warning : if you would like to add payment when document is created or updated and this payment in the some amount as document, you can use extra tag "mark_paid". See example - https://github.com/metakocka/metakocka_api_base/blob/master/docs/documents_put_document_sales_order.md#example-minimal-request--add-payment-
+
 **URL** : https://main.metakocka.si/rest/eshop/v1/put_transaction
 
 **Request example**
