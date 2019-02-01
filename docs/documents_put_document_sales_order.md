@@ -141,7 +141,7 @@ Notes :
 }
 ```
 
-**Example minimal request + add payment** :
+### Example minimal request + add payment :
 ```javascript
 {
     "secret_key":"8899",
