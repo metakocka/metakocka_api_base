@@ -4,6 +4,8 @@
 
 **URL** : https://main.metakocka.si/rest/eshop/v1/change_document_status
 
+**Type** : POST
+
 **Request example**
 ```javascript
 {
