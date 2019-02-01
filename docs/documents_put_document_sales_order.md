@@ -176,3 +176,6 @@ Notes :
    ]
 }
 ```
+
+Notes :
+* if you execute document update and add mark_paid, previous payment will be deleted and new will be added.
