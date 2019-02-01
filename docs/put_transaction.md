@@ -6,6 +6,8 @@ Warning : if you would like to add payment when document is created or updated a
 
 **URL** : https://main.metakocka.si/rest/eshop/v1/put_transaction
 
+**Type** : POST
+
 **Request example**
 ```javascript
 {
