@@ -174,7 +174,8 @@ Notes :
 * pricelist 'PC\_200\_PC' has price variation (2 EUR to amount 10, 3 EUR for more then 10),
 * pricelist 'c1' has only only price (without tax)
 * pricelist 'PC_115' has price (without tax)
-* pricelist 'PC-2016' has price with tax and discount
+* pricelist 'PC-2016' has price with tax and 
+* all pricelists are includes - sales and purchase
 
 ## 1.3 With compound
 Request :
