@@ -193,3 +193,45 @@ If you perform get\_document and then put\_document, the following fields are di
 * put\_document : for changing partner / receiver, first remove "mk\_id" and "count\_code" from partner. Otherwise old partner might be selected.
 * get\_document : fields "sum\_*" are calculated values. For put\_documents we always calculate this values base on given product list. 
 
+## Solution : how to put discount with value on order
+For Example : we have webshop order with gross value 1x100 EUR and discount coupon 10 EUR. Base on document structure you can define document as follows :
+1) document_discount (not full request)
+```javascript
+{
+   "discount_value" : "10",
+   "product_list": [
+        {
+            "code": "product1",
+            "amount": "1",
+            "price_with_tax" : "100",
+            "tax" : "EX4"
+        }
+    ],
+	"notes" : "Included discount 10 EUR for coupon code MyCouponCode"
+}
+```
+
+2) negative product
+You can add negative product to document, but is must be service. Not full request :
+```javascript
+{
+    "product_list": [
+        {
+            "code": "product1",
+            "amount": "1",
+            "price_with_tax" : "100",
+            "tax" : "EX4"
+        },
+        {
+            "code": "MyCouponCode",
+			"name" : "Coupon for 10 EUR"
+            "amount": "-1",
+            "price_with_tax" : "10",
+            "tax" : "EX4",
+			"unit" : "stor",
+			"service" : "true",
+			"sales" : "true"
+        }		
+    ],
+}
+```
