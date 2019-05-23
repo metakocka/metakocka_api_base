@@ -195,7 +195,7 @@ If you perform get\_document and then put\_document, the following fields are di
 
 ## Solution : how to put discount with value on order
 For Example : we have webshop order with gross value 1x100 EUR and discount coupon 10 EUR. Base on document structure you can define document as follows :
-1) document_discount (not full request)
+1) Document_discount (not full request)
 ```javascript
 {
    "discount_value" : "10",
@@ -211,8 +211,7 @@ For Example : we have webshop order with gross value 1x100 EUR and discount coup
 }
 ```
 
-2) negative product
-You can add negative product to document, but is must be service. Not full request :
+2) Negative product. You can add negative product to document, but is must be service. Not full request :
 ```javascript
 {
     "product_list": [
@@ -224,13 +223,13 @@ You can add negative product to document, but is must be service. Not full reque
         },
         {
             "code": "MyCouponCode",
-			"name" : "Coupon for 10 EUR"
+            "name" : "Coupon for 10 EUR"
             "amount": "-1",
             "price_with_tax" : "10",
             "tax" : "EX4",
-			"unit" : "stor",
-			"service" : "true",
-			"sales" : "true"
+            "unit" : "stor",
+            "service" : "true",
+            "sales" : "true"
         }		
     ],
 }
