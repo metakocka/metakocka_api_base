@@ -61,6 +61,7 @@ Request :
 ```
 Notes :
 * attribute "count\_code" or "mk\_id" is required for selection of updated record.
+* to remove value from "name_desc" or "barcode" field, insert value "$REMOVE_STRING_VALUE$" into fields. Empty or null value will not change current value. 
 
 Respond : 
 ```javascript
