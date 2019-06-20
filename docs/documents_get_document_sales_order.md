@@ -101,3 +101,12 @@ Respond :
     "order_create_ts": "2015-05-08T12:13:15+02:00"    
 }
 ```
+Request - by buyer order (POST - https://main.metakocka.si/rest/eshop/v1/get_document) :
+```javascript
+{
+  "secret_key":"8899",
+  "company_id":"16",
+  "doc_type" : "sales_order",
+  "buyer_order" : "79473216"
+}
+```
