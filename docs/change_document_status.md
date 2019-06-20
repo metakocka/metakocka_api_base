@@ -37,6 +37,17 @@
 }
 ```
 
+**Request example - identified request by buyer order**
+```javascript
+{
+    "secret_key":"8899",
+    "company_id":"16",
+    "doc_type" : "sales_order",
+  	"status_code" : "created",
+  	"buyer_order" : "79473216"
+}
+```
+
 **Notes**
 - status_code is the some value as description column in MetaKocka register form. See image below. 
 
