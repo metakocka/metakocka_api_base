@@ -8,6 +8,7 @@ Attribute                 | Type | Notes| MK SLO |
 | wh_id_list | string | If attribute is set, you will limit response by given warehouse ids. | / |
 | offset | int | see notes. | / |
 | limit | int | see notes. | / |
+| eshop_sync | bool | Product must be flag for e-commerce sync | Izmenjava - Spletna trg. |
 | product_code_list | String | Limit respond by list of MK codes (or webshops SKU), separater with comma. | / |
 | product_mk_id_list | String | Limit respond by list of MK ID, separater with comma | / |
 
