@@ -115,3 +115,15 @@ Notes :
  ]
 }
 ```
+
+### Example : update workorder header
+The fields in the below example can be updated via REST method :
+``` javascript
+{
+	"secret_key": "8899",
+	"company_id": "16",
+	"mk_id": "1600348221",
+	
+	"status_code": "Zaključen",
+	"title": "Naziv test"
+}```
