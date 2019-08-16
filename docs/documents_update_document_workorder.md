@@ -133,4 +133,18 @@ The fields in the below example can be updated via REST method :
 	
 	"status_code": "Zaključen",
 	"title": "Naziv test"
-}```
+}
+```
+
+### Example : update workorder material and work prices
+**URL** : https://main.metakocka.si/rest/eshop/v1/update_document_workorder
+
+``` javascript
+{
+	"secret_key": "8899",
+	"company_id": "16",
+	"mk_id": "1600370455",
+	"update_purchase_price_material": true,
+	"update_purchase_price_work": true
+}
+```
