@@ -2,6 +2,7 @@
 
 ### Example : add work to all positions ("izdelava - vsi")
 **URL** : https://main.metakocka.si/rest/eshop/v1/update_document_workorder
+
 Notes :
 * mk_id is MetaKocka Id for current workorder
 
@@ -26,6 +27,7 @@ Notes :
 }
 ```
 ### Example : update product realization
+**URL** : https://main.metakocka.si/rest/eshop/v1/update_document_workorder
 
 ``` javascript
 { 
@@ -45,6 +47,7 @@ Notes :
 
 ### Example : adding new product and material plan and realization
 **URL** : https://main.metakocka.si/rest/eshop/v1/update_document_workorder
+
 ``` javascript
 { 
 "mk_id":"1600436014",
@@ -99,6 +102,7 @@ Notes :
 
 ### Example : add work realization on product realization
 **URL** : https://main.metakocka.si/rest/eshop/v1/update_document_workorder
+
 ``` javascript
 { 
 "mk_id":"1600444898",
@@ -119,6 +123,7 @@ Notes :
 
 ### Example : update workorder header
 **URL** : https://main.metakocka.si/rest/eshop/v1/update_document_workorder
+
 The fields in the below example can be updated via REST method :
 ``` javascript
 {
