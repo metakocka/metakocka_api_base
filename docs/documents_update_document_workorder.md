@@ -144,6 +144,7 @@ The fields in the below example can be updated via REST method :
 	"secret_key": "8899",
 	"company_id": "16",
 	"mk_id": "1600370455",
+	
 	"update_purchase_price_material": true,
 	"update_purchase_price_work": true
 }
