@@ -149,3 +149,15 @@ The fields in the below example can be updated via REST method :
 	"update_purchase_price_work": true
 }
 ```
+
+### Example : update workorder finished date
+**URL** : https://main.metakocka.si/rest/eshop/v1/update_document_workorder
+
+``` javascript
+{
+	"secret_key": "8899",
+	"company_id": "16",
+	"mk_id": "1600370455",	
+	"doc_date_finished": "2019-08-15+02:00"
+}
+```
