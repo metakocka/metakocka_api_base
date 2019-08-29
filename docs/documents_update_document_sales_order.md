@@ -1,5 +1,5 @@
 ## Sales order - update
-You can update specific fields on sales order (see list below). In background the some operation will be perform when sales order is change on user interface (change log, events for sendings emails, etc). Supported fields :
+You can update specific fields on sales order (see list below). In background the some operation will be perform as when sales order is change on user interface (change log, events for sendings emails, etc). Supported fields :
 * delivery_type
 * status_code
 * tracking_code
