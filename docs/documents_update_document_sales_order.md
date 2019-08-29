@@ -8,7 +8,7 @@ All values are change only if new valus is different then previous value.
 
 You can identify sales order by mk_id or buyer_order.
 
-**URL** : https://main.metakocka.si/rest/eshop/v1/update_document_workorder
+**URL** : https://main.metakocka.si/rest/eshop/v1/update_document
 
 Request :
 ```javascript
