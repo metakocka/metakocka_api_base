@@ -98,7 +98,8 @@ Respond :
     "sum_prepayment": "5.64",
     "sum_all": "56.35",
     "sum_paid": "10",
-    "order_create_ts": "2015-05-08T12:13:15+02:00"    
+    "order_create_ts": "2015-05-08T12:13:15+02:00",
+    "parcel_shop_id" : "P100
 }
 ```
 Request - by buyer order (POST - https://main.metakocka.si/rest/eshop/v1/get_document) :
