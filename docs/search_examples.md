@@ -131,7 +131,6 @@
 ```
 
 ### Search Sales order with given status 
-Notes : you can read status_id for sales order in Mandrill settings
 **Request** (POST - https://main.metakocka.si/rest/eshop/v1/search) :
 
 ```javascript
@@ -149,12 +148,23 @@ Notes : you can read status_id for sales order in Mandrill settings
 			"type": "doc_date_to",
 			"value": "2018-12-17+02:00"
 		}, {
-			"type": "status_id_list",
-			"value": "160000000083,160000000084"
+			"type": "status_list",
+			"value": "draft,ready_to_ship"
+		}, {
+			"type": "partner_country",
+			"value": "Slovenia"
+		}, {
+			"type": "delivery_type",
+			"value": "posta_slovenije"			
 		}
 	]
 }
 ```
+
+Notes :
+* status_list is value "Opis" in register type "Prodajna naročila - status"
+* partner_country can be in any localized value. But we recommended US name. 
+* delivery_type is value "Opis" in register type "Vrsta dostave"
 
 ### Return products as result
 **Request** (POST - https://main.metakocka.si/rest/eshop/v1/search) :
