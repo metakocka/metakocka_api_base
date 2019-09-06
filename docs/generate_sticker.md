@@ -1,4 +1,4 @@
-Create delivery service stickers for given list of sales orders. Input parameter is list of sales order mk_id. You can get this paramether as result of creating new sales order (REST put_document) or as search result of current sales orders (REST search). Service will then generate stickers and for every success order (opr_code = 0) it will return tracking code and link to public URL for file download. If their is an error (opr_code > 0), error message will be in paramether error_desc.
+Create delivery service stickers for given list of sales orders. Input parameter is list of sales order mk_id. You can get this paramether as result of creating new sales order (REST put_document) or as search result (REST search). Service will then generate stickers and for every success order (opr_code = 0) it will return tracking code and link to public URL for file download. If their is an error (opr_code > 0), error message will be in paramether error_desc. All successful generate sticker will also be join together in one PDF (see parameter generate_sticker_join_document)
 
 **Example** :
 Request (POST - https://main.metakocka.si/rest/eshop/v1/generate_sticker) :
@@ -37,3 +37,5 @@ Respond :
 	"measure_time": "generateOrderLabels = 11598,generate_sticker_join_document = 116"
 }
 ```
+
+
