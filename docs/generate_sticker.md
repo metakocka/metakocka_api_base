@@ -38,4 +38,11 @@ Respond :
 }
 ```
 
-
+Call can also return general error :
+```javascript
+{
+	"opr_code": "6",
+	"opr_desc": "Trenutno podprto tiskanje samo za eno vrsto dostavne službe. Seznam računov : <b>posta_slovenije :</b>1-MK-1158, <b>logo :</b>1-MK-1159",
+	"opr_time_ms": "108"
+}
+```
