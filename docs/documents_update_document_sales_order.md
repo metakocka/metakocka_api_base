@@ -1,8 +1,9 @@
 ## Sales order - update
 You can update specific fields on sales order (see list below). In background the some operation will be perform as when sales order is change on user interface (change log, events for sendings emails, etc). Supported fields :
 * delivery_type
-* status_code
+* status_code. Notes : if you set status_code = 'shipped', you should set shipped_date. 
 * tracking_code
+* shipped_date
 
 All values are change only if new valus is different then previous value. 
 
@@ -23,7 +24,8 @@ Request :
   
   "delivery_type": "Pošta Slovenije",
   "status_code" : "draft",
-  "tracking_code" : "SI2001"
+  "tracking_code" : "SI2001",
+  "shipped_date" : "2019-09-26+02:00"
 }
 ```
 
