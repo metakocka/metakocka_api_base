@@ -137,7 +137,7 @@ The fields in the below example can be updated via REST method :
 ```
 
 ### Example : update workorder material and work prices
-**URL** : https://main.metakocka.si/rest/eshop/v1/update_document_workorder
+**URL** : https://main.metakocka.si/rest/eshop/v1/update_workorder_perform_operation
 
 ``` javascript
 {
@@ -151,7 +151,7 @@ The fields in the below example can be updated via REST method :
 ```
 
 ### Example : update workorder finished date
-**URL** : https://main.metakocka.si/rest/eshop/v1/update_document_workorder
+**URL** : https://main.metakocka.si/rest/eshop/v1/update_workorder_perform_operation
 
 ``` javascript
 {
