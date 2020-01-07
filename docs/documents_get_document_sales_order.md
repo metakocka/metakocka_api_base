@@ -99,7 +99,24 @@ Respond :
     "sum_all": "56.35",
     "sum_paid": "10",
     "order_create_ts": "2015-05-08T12:13:15+02:00",
-    "parcel_shop_id" : "P100
+    "parcel_shop_id" : "P100",
+    "doc_link_list": [
+        {
+            "mk_id": "1600373113",
+            "count_code": "1-MK-1406",
+            "doc_type": "sales_bill_domestic"
+        },
+        {
+            "mk_id": "400000006162",
+            "count_code": "SK1_4336",
+            "doc_type": "warehouse_packing_list"
+        },
+        {
+            "mk_id": "400000000161",
+            "count_code": "PP-26755",
+            "doc_type": "sales_order"
+        }
+    ]    
 }
 ```
 Request - by buyer order (POST - https://main.metakocka.si/rest/eshop/v1/get_document) :
@@ -111,3 +128,4 @@ Request - by buyer order (POST - https://main.metakocka.si/rest/eshop/v1/get_doc
   "buyer_order" : "79473216"
 }
 ```
+
