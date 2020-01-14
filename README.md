@@ -76,3 +76,8 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 * [put_transaction](/docs/put_transaction.md) - add payment on existing bill or offer
 * [get_bank_statement_status](/docs/get_bank_statement_status.md) - return last statement state, date, etc for all bank bills
 * [change_document_status](/docs/change_document_status.md) - change status for sales order (Order Management order)
+
+## Release notes
+Date| What's new |
+----|------------|
+| 15.1.2020 | get_document for sales_order - return "shipped_date" |
