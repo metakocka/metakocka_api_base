@@ -81,6 +81,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 Date| What's new |
 ----|------------|
 | 15.1.2020 | get_document for sales_order - return "shipped_date" |
+| 14.1.2020 | Log for API calls is saved for 2 month |
 | 7.1.2020 | get_document for sales_order - return link documents. See [sales_order](/docs/documents_put_document_sales_order.md) for more info.  |
 | 22.12.2019 | put_document for sales_order - check unique number for customer order. See [docs](https://metakocka.freshdesk.com/a/solutions/articles/3000095508?lang=sl) for more info.  |
 | 26.9.2019 | get_document for sales_order - return link documents. See [sales_order](/docs/documents_put_document_sales_order.md) for more info.  |
