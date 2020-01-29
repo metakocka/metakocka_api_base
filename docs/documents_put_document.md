@@ -1,6 +1,6 @@
 **URL** : https://main.metakocka.si/rest/eshop/v1/put_document
 
-Development environment ([https://metakocka.freshdesk.com/a/solutions/articles/3000088225](more)) : https://devmainsi.metakocka.si/rest/eshop/v1/put_document
+Development environment [https://metakocka.freshdesk.com/a/solutions/articles/3000088225](more) : https://devmainsi.metakocka.si/rest/eshop/v1/put_document
 
 # 2. put_document
 
