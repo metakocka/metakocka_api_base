@@ -169,6 +169,18 @@ Respond :
 }
 ```
 
+## 1.5 Intrastat values
+Request :
+```javascript
+{
+    "secret_key":"my_secret_key",
+    "company_id":"16",
+    "count_code":"part_sifra_test",
+    "customs_fee" : "100200300",
+    "country" : "Italy",
+    "weight" : "125"
+}
+```
 
 # 2. PHP Example
 [product\_add\_json.php](./examples_php/product_add_json.php)
