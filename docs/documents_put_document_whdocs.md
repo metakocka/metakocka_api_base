@@ -117,3 +117,37 @@ TODO
     ]
 }
 ```
+
+### 2.4.5 Example : Serial numbers, Lot numbers, Microlocations, Exparation date
+```javascript
+{
+    "secret_key":"....",
+    "company_id":"16",
+    "doc_type": "warehouse_packing_list",
+    "doc_date" : "2020-03-05+02:00",
+    "partner": {
+        "business_entity": "true",
+        "taxpayer": "true",
+        "foreign_county": "false",
+        "tax_id_number": "SI20000001",
+        "customer": "API partner 1",
+        "street": "Slovenska cesta 100",
+        "post_number": "1000",
+        "place": "Ljubljana",
+        "country": "Slovenia"
+    },
+    "product_list": [
+        {
+            "mk_id": "1600373697",
+            "code": "serial_full",
+            "amount": "2",
+            "price": "10",
+            "tax": "EX4",
+            "microlocation": "m2",
+            "serial_number_value": "s1,s2",
+            "lot_number_value": "l1",
+            "expiration_date_value": "2020-03-02+02:00"
+        }
+    ]
+}
+```
