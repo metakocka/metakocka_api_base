@@ -80,6 +80,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ## Release notes
 Date| What's new |
 ----|------------|
+| 05.3.2020 | put_document with Serial numbers, Lot numbers, Microlocations, Exparation date. [bill](/docs/documents_put_document.md#example--serial-numbers-lot-numbers-microlocations-exparation-date) |
 | 15.1.2020 | get_document for sales_order - return "shipped_date" |
 | 14.1.2020 | Log for API calls is saved for 2 month |
 | 7.1.2020 | get_document for sales_order - return link documents. See [sales_order](/docs/documents_put_document_sales_order.md) for more info.  |
