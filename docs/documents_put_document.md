@@ -324,3 +324,41 @@ Notes :
 * doc\_type must be "sales\_bill\_credit\_note"
 * credit\_note\_type can be "goods" (you must specifiy connect bill via "credit\_note\_bill",) "financial" or "standalone".
 * credit_note_bill search invoices by count_code. If more then one invoice has this count_code, the last one will be used (for calls after 24.7.2019). We highly recommended that in this case you use invoice counting that is unique accross all years. 
+
+### Example : Serial numbers, Lot numbers, Microlocations, Exparation date
+```javascript
+{
+  "secret_key":"...",
+  "company_id":"16",
+    "doc_type": "sales_bill_domestic",
+    "doc_date": "2020-03-05+02:00",
+    "partner": {
+        "mk_id": "1600036997",
+        "business_entity": "false",
+        "taxpayer": "false",
+        "foreign_county": "false",
+        "customer": "Janez Novak",
+        "street": "street 1",
+        "post_number": "1000",
+        "place": "Ljubljana",
+        "country": "Slovenia",
+        "count_code": "1600036997"
+    },
+    "service_to_date": "2020-03-05+02:00",
+    "duo_payment": "2020-03-05+02:00",
+    "currency_code": "EUR",
+    "product_list": [
+        {
+            "mk_id": "1600373697",
+            "code": "serial_full",
+            "amount": "2",
+            "price": "10",
+            "tax": "EX4",
+            "microlocation": "m2",
+            "serial_number_value": "s1,s2",
+            "lot_number_value": "l1",
+            "expiration_date_value": "2020-03-02+02:00"
+        }
+    ]
+}
+```
