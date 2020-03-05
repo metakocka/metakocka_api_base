@@ -208,9 +208,7 @@ Notes :
             "price": "10",
             "tax": "EX4",
             "microlocation": "m2",
-            "serial_number_value": "s1,s2",
-            "lot_number_value": "l1",
-            "expiration_date_value": "2020-03-02+02:00"
+            "lot_number_value": "l1"
         }
     ]
 }
