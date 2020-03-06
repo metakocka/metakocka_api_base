@@ -161,3 +161,37 @@ The fields in the below example can be updated via REST method :
 	"doc_date_finished": "2019-08-15+02:00"
 }
 ```
+
+### Example : add new plan realization and material realization with lot number and microlocation
+**URL** : https://main.metakocka.si/rest/eshop/v1/update_document_workorder
+
+```javascript
+{
+	"mk_id": "...",
+	"secret_key": "8899",
+	"company_id": "16",
+	"product_list": [{
+			"type": "product_plan",
+			"product_mk_id": "1600373547",
+			"warehouse_code": "nas1",			
+			"amount_plan": "4",
+			"purchase_price": "8",
+			"when": "2016-09-16+02:00",
+			"microlocation": "m3",
+			"lot_number_value": "l2"
+		}
+	],
+	"material_list": [{
+			"type": "material",
+			"product_mk_id": "1600373547",
+			"warehouse_code": "nas1",
+			"amount_realization": "3",
+			"purchase_price": "8",
+			"product_plan_mk_id": "1600373733",
+			"position_mk_id": "1600373675",
+			"when": "2016-09-16+02:00",
+			"microlocation": "m4",
+			"lot_number_value": "51"
+		}
+	]
+}```
