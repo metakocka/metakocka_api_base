@@ -325,7 +325,7 @@ Notes :
 * credit\_note\_type can be "goods" (you must specifiy connect bill via "credit\_note\_bill",) "financial" or "standalone".
 * credit_note_bill search invoices by count_code. If more then one invoice has this count_code, the last one will be used (for calls after 24.7.2019). We highly recommended that in this case you use invoice counting that is unique accross all years. 
 
-### Example : Serial numbers, Lot numbers, Microlocations, Exparation date
+### Example : Serial numbers, Lot numbers, Microlocations, Expiration date
 ```javascript
 {
   "secret_key":"...",
