@@ -80,8 +80,8 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ## Release notes
 Date| What's new |
 ----|------------|
-| 6.3.2020 | Read workorder and add Serial numbers, Lot numbers, Microlocations, Exparation date usage on plan and material [Update workorder](/docs/documents_update_document_workorder.md#example--add-new-plan-realization-and-material-realization-with-lot-number-and-microlocation) |
-| 5.3.2020 | put_document with Serial numbers, Lot numbers, Microlocations, Exparation date. [Bill](/docs/documents_put_document.md#example--serial-numbers-lot-numbers-microlocations-exparation-date), [Sales Order](/docs/documents_put_document_sales_order.md#example-lot-numbers-microlocations-), [Warehouse docs](/docs/documents_put_document_whdocs.md#245-example--serial-numbers-lot-numbers-microlocations-exparation-date) |
+| 6.3.2020 | Read workorder and add Serial numbers, Lot numbers, Microlocations, Expiration date usage on plan and material [Update workorder](/docs/documents_update_document_workorder.md#example--add-new-plan-realization-and-material-realization-with-lot-number-and-microlocation) |
+| 5.3.2020 | put_document with Serial numbers, Lot numbers, Microlocations, Expiration date. [Bill](/docs/documents_put_document.md#example--serial-numbers-lot-numbers-microlocations-exparation-date), [Sales Order](/docs/documents_put_document_sales_order.md#example-lot-numbers-microlocations-), [Warehouse docs](/docs/documents_put_document_whdocs.md#245-example--serial-numbers-lot-numbers-microlocations-exparation-date) |
 | 15.1.2020 | get_document for sales_order - return "shipped_date" |
 | 14.1.2020 | Log for API calls is saved for 2 month |
 | 7.1.2020 | get_document for sales_order - return link documents. See [sales_order](/docs/documents_put_document_sales_order.md) for more info.  |
