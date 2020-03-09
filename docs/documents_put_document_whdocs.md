@@ -118,7 +118,7 @@ TODO
 }
 ```
 
-### 2.4.5 Example : Serial numbers, Lot numbers, Microlocations, Exparation date
+### 2.4.5 Example : Serial numbers, Lot numbers, Microlocations, Expiration date
 ```javascript
 {
     "secret_key":"....",
