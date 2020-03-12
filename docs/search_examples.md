@@ -130,6 +130,25 @@
 }
 ```
 
+### Get invoices without status. 
+**Request** (POST - https://main.metakocka.si/rest/eshop/v1/search) :
+```javascript
+{
+    "secret_key": "8899",
+    "company_id": "16",
+    "doc_type": "sales_bill_domestic",
+    "result_type": "doc",
+    "limit": 100,
+    "offset": 0,
+    "query_advance": [
+      {
+            "type": "status_id_list",
+            "value": "-2"
+        }
+    ]
+}
+```
+
 ### Search Sales order with given status 
 **Request** (POST - https://main.metakocka.si/rest/eshop/v1/search) :
 
