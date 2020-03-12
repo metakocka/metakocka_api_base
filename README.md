@@ -80,6 +80,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ## Release notes
 Date| What's new |
 ----|------------|
+| 12.3.2020 | Update invoice status. [More info](/docs/documents_update_document_bill.md) |
 | 12.3.2020 | Get invoices without status. [Example](/docs/search_examples.md#get-invoices-without-status) |
 | 6.3.2020 | Read workorder and add Serial numbers, Lot numbers, Microlocations, Expiration date usage on plan and material [Update workorder](/docs/documents_update_document_workorder.md#example--add-new-plan-realization-and-material-realization-with-lot-number-and-microlocation) |
 | 5.3.2020 | put_document with Serial numbers, Lot numbers, Microlocations, Expiration date. [Bill](/docs/documents_put_document.md#example--serial-numbers-lot-numbers-microlocations-exparation-date), [Sales Order](/docs/documents_put_document_sales_order.md#example-lot-numbers-microlocations-), [Warehouse docs](/docs/documents_put_document_whdocs.md#245-example--serial-numbers-lot-numbers-microlocations-exparation-date) |
