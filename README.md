@@ -51,6 +51,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ### update_document
 * [workorder](/docs/documents_update_document_workorder.md)
 * [sales order](/docs/documents_update_document_sales_order.md)
+* [bill](/docs/documents_update_document_bill.md)
 
 ### search
 * [Concept](/docs/search_concept.md)
