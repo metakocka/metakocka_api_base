@@ -7,7 +7,6 @@
   "company_id" : "16",
   "secret_key" : "...",
   "doc_type": "sales_offer",
-  "opr_code": "0",
   "count_code": "PP1_329",
   "doc_date": "2015-12-27+02:00",
   "partner": {
