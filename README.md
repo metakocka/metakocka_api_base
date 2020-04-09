@@ -53,6 +53,9 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 * [sales order](/docs/documents_update_document_sales_order.md)
 * [bill](/docs/documents_update_document_bill.md)
 
+### delete_document
+* [sales order](/docs/documents_delete_document_sales_order.md)
+
 ### search
 * [Concept](/docs/search_concept.md)
 * [Examples](/docs/search_examples.md)
@@ -81,6 +84,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ## Release notes
 Date| What's new |
 ----|------------|
+| 9.4.2020 | Delete sales order. [More info](/docs/documents_delete_document_sales_order.md) |
 | 12.3.2020 | Update invoice status. [More info](/docs/documents_update_document_bill.md) |
 | 12.3.2020 | Get invoices without status. [Example](/docs/search_examples.md#get-invoices-without-status) |
 | 6.3.2020 | Read workorder and add Serial numbers, Lot numbers, Microlocations, Expiration date usage on plan and material [Update workorder](/docs/documents_update_document_workorder.md#example--add-new-plan-realization-and-material-realization-with-lot-number-and-microlocation) |
