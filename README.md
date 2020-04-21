@@ -84,6 +84,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ## Release notes
 Date| What's new |
 ----|------------|
+| 21.4.2020 | Added furs_zoi and furs_eor to get_document - Bill response |
 | 9.4.2020 | Delete sales order. [More info](/docs/documents_delete_document_sales_order.md) |
 | 12.3.2020 | Update invoice status. [More info](/docs/documents_update_document_bill.md) |
 | 12.3.2020 | Get invoices without status. [Example](/docs/search_examples.md#get-invoices-without-status) |
