@@ -101,7 +101,9 @@ Respond :
     "sum_basic": "20.33",
     "sum_discount": "13.67",
     "sum_tax_ex4": "4.47",
-    "sum_all": "24.8"
+    "sum_all": "24.8",
+    "furs_zoi": "2048f0a369e37b4258e741fc8ae9ffc2",
+    "furs_eor": "34facd65-622b-745d-a541-30ab1f9d3ac1"
 }
 ```
 ### Example : Get detail payment information
@@ -208,7 +210,9 @@ Respond :
     "sum_basic": "20.33",
     "sum_discount": "13.67",
     "sum_tax_ex4": "4.47",
-    "sum_all": "24.8"
+    "sum_all": "24.8",
+    "furs_zoi": "2048f0a369e37b4258e741fc8ae9ffc2",
+    "furs_eor": "34facd65-622b-745d-a541-30ab1f9d3ac1"
 }
 ```
 ### Example : get bill installment list
@@ -294,7 +298,9 @@ Repond :
             "installment_amount": "147.12",
             "installment_payed": "false"
         }
-    ]
+    ],
+    "furs_zoi": "2048f0a369e37b4258e741fc8ae9ffc2",
+    "furs_eor": "34facd65-622b-745d-a541-30ab1f9d3ac1"
 }
 ```
 ## Special paramethers
@@ -331,7 +337,9 @@ Respond :
 	"sum_full_paid_when": "2015-09-07+02:00",
 	"sum_creditnote": "2.44",
 	"last_paid_date": "06.09.2015",
-	"last_paid_sum": "3"    
+	"last_paid_sum": "3"  ,
+    	"furs_zoi": "2048f0a369e37b4258e741fc8ae9ffc2",
+    	"furs_eor": "34facd65-622b-745d-a541-30ab1f9d3ac1"  
 }
 ```
 
