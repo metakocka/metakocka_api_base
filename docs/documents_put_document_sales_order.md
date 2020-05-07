@@ -72,14 +72,16 @@
             "price" : "100",
             "tax" : "EX4"
         }
-    ]
-    , "order_create_ts": "2014-09-13T12:13:15+02:00"
+    ],
+    "link_to_web_store": "Demo Trgovina",
+    "order_create_ts": "2014-09-13T12:13:15+02:00"
 }
 ```
 
 Notes : 
 * prepayment\_percent - for exact value you can use prepayment\_value
 * discount\_percent - for exact value you can use discount_value
+* link_to_web_store - the string value should exactly match with an existing store name
 
 ### Example minimal request :
 ```javascript
