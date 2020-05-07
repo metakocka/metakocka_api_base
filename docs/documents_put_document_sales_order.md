@@ -81,7 +81,7 @@
 Notes : 
 * prepayment\_percent - for exact value you can use prepayment\_value
 * discount\_percent - for exact value you can use discount_value
-* link_to_web_store - the string value should exactly match with an existing store name
+* link_to_web_store - the string value should exactly match with an existing store name. Only if store is type 'manual'. 
 
 ### Example minimal request :
 ```javascript
