@@ -77,7 +77,8 @@ Respond :
 ## Special paramethers
 Paramether | Type | Description |
 -----------|------|-------------|
-show\_purchase\_price\_and\_allo\_cost | bool | get purchase price and purchase allocated cost for product.
+show\_purchase\_price\_and\_allo\_cost | bool | get purchase price and purchase allocated cost for product. |
+show\_last\_payment\_date | bool | see [Bill example](/docs/documents_get_document_bill.md) |
 
 ###show\_purchase\_price\_and\_allo\_cost
 Notes :
