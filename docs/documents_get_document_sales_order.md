@@ -134,3 +134,6 @@ Request - by buyer order (POST - https://main.metakocka.si/rest/eshop/v1/get_doc
 }
 ```
 
+## Special paramethers
+* show\_last\_payment\_date - see [Bill example](/docs/documents_get_document_bill.md)
+
