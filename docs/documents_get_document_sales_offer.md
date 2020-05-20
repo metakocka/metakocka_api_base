@@ -76,3 +76,6 @@ Respond :
     "sum_all": "54.17"
 }
 ```
+
+## Special paramethers
+* show\_last\_payment\_date - see [Bill example](/docs/documents_get_document_bill.md)
