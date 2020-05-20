@@ -7,13 +7,13 @@ Valid doc_type :
 * warehouse\_receiving\_note
 * warehouse\_acceptance\_note
 
-### 2.4.1 Warehouse delivery note
+### 2.3.1 Warehouse delivery note
 TODO
 
-### 2.4.2 Warehouse packing list
+### 2.3.2 Warehouse packing list
 TODO
 
-### 2.4.3 Warehouse receiving note
+### 2.3.3 Warehouse receiving note
 **Example full request** :
 ```javascript
 {
@@ -60,7 +60,7 @@ TODO
 }
 ```
 
-### 2.4.4 Warehouse acceptance note
+### 2.3.4 Warehouse acceptance note
 
 **Example full request** :
 ```javascript
@@ -118,7 +118,7 @@ TODO
 }
 ```
 
-### 2.4.5 Example : Serial numbers, Lot numbers, Microlocations, Expiration date
+### 2.3.5 Example : Serial numbers, Lot numbers, Microlocations, Expiration date
 ```javascript
 {
     "secret_key":"....",
@@ -147,6 +147,34 @@ TODO
             "serial_number_value": "s1,s2",
             "lot_number_value": "l1",
             "expiration_date_value": "2020-03-02+02:00"
+        }
+    ]
+}
+```
+
+### 2.3.6 Return which product are not found
+If we cannot identified products by mk_code, code, count_code, etc., you will get respond with "opr_code" = 2 and error description "opr_desc". See "product_not_found_list" for list of not found products.
+
+```javascript
+{
+    "opr_code": "2",
+    "opr_desc": "Product with code art400 not found - unit must be set to add new product",
+    "opr_time_ms": "58",
+    "partner": {
+        "mk_id": "1600129478"
+    },
+    "product_not_found_list": [
+        {
+            "code": "art200",
+            "amount": "1",
+            "price": "100",
+            "tax": "EX4"
+        },
+        {
+            "code": "art400",
+            "amount": "1",
+            "price": "100",
+            "tax": "EX4"
         }
     ]
 }
