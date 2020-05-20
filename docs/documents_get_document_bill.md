@@ -306,7 +306,8 @@ Repond :
 ## Special paramethers
 Paramether | Type | Description |
 -----------|------|-------------|
-show\_last\_payment\_date | bool| return last payment date and sum payment amount also for partially paid bills. Last payment date do not include credit notes.
+show\_last\_payment\_date | bool| return last payment date and sum payment amount also for partially paid bills. Last payment date do not include credit notes.|
+show\_product\_compound | bool| return product compound|
 
 ### show\_last\_payment\_date
 
@@ -343,4 +344,51 @@ Respond :
 }
 ```
 
+### show\_product\_compound
+Request : (POST - https://main.metakocka.si/rest/eshop/v1/get_document)
+```javascript
+{
+  "secret_key":"8899",
+  "company_id":"16",
+  "doc_type" : "sales_bill_domestic",
+  "doc_id" : "1600203257",
+  "show_product_compound" : "true"
+}
+```
+Respond :
+```javascript
+{
+    "mk_id": "1600203257",
+    "doc_type": "sales_bill_domestic",
+    [... remove ...]
+  "product_list": [
+        {
+            "mk_id": "1600316237",
+            "code": "kuhinja10",
+            "amount": "1",
+            "price": "10",
+            "tax": "EX4",
+            "compound_type": "compound",
+            "compounds": [
+                {
+                    "product_mk_id": "1600316235",
+                    "product_count_code": "30170",
+                    "product_code": "stol10",
+                    "product_title": "stol10",
+                    "amount": "4",
+                    "purchase_unit_factor": "0,125"
+                },
+                {
+                    "product_mk_id": "1600316236",
+                    "product_count_code": "30171",
+                    "product_code": "miza10",
+                    "product_title": "miza10",
+                    "amount": "1",
+                    "purchase_unit_factor": "0,5"
+                }
+            ]
+        },
+    ],
+}
+```
 
