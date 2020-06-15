@@ -76,6 +76,9 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 # Order management
 * [Generate stickers](/docs/generate_sticker.md)
 
+# Messages
+* [Email / SMS messages](/docs/send_message.md)
+
 # Other calls
 * [put_transaction](/docs/put_transaction.md) - add payment on existing bill or offer
 * [get_bank_statement_status](/docs/get_bank_statement_status.md) - return last statement state, date, etc for all bank bills
@@ -84,6 +87,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ## Release notes
 Date| What's new |
 ----|------------|
+| 15.6.2020 | Added send_message (SMS) [More info](/docs/send_message)
 | 20.5.2020 | put_document for warehouse docs will return list of not found products [More info](/docs/documents_put_document_whdocs.md#236-return-which-product-are-not-found)
 | 20.5.2020 | get_document for offer, sales order, bill, warehouse docs can return product compound. More info [Bill example](/docs/documents_get_document_bill.md)
 | 7.5.2020 | Added link_to_web_store to put_document for sales_order
