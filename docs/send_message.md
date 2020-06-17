@@ -10,7 +10,7 @@
 **Example** :
 Request (POST - https://main.metakocka.si/rest/eshop/send_message) :
 ```javascript
-{ł
+{
 	"secret_key" : "8899",
 	"company_id" : "16",
 	"message_list" : [
