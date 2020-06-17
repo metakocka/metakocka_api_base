@@ -55,6 +55,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 
 ### delete_document
 * [sales order](/docs/documents_delete_document_sales_order.md)
+* [acceptance note](/docs/documents_delete_document_acceptance_note.md)
 
 ### search
 * [Concept](/docs/search_concept.md)
@@ -87,7 +88,8 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ## Release notes
 Date| What's new |
 ----|------------|
-| 15.6.2020 | Added send_message (SMS) [More info](/docs/send_message)
+| 18.6.2020 | Added delete_document - Acceptance note [More info](/docs/documents_get_document_acceptance_note.md)
+| 15.6.2020 | Added send_message (SMS) [More info](/docs/send_message.md)
 | 20.5.2020 | put_document for warehouse docs will return list of not found products [More info](/docs/documents_put_document_whdocs.md#236-return-which-product-are-not-found)
 | 20.5.2020 | get_document for offer, sales order, bill, warehouse docs can return product compound. More info [Bill example](/docs/documents_get_document_bill.md)
 | 7.5.2020 | Added link_to_web_store to put_document for sales_order
