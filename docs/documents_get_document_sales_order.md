@@ -134,6 +134,43 @@ Request - by buyer order (POST - https://main.metakocka.si/rest/eshop/v1/get_doc
 }
 ```
 
+# get_document - Sales Order with delivery service events
+**Example** :
+
+Request (POST - https://main.metakocka.si/rest/eshop/v1/get_document) :
+```javascript
+{
+  "secret_key":"8899",
+  "company_id":"16",
+  "doc_type" : "sales_order",
+  "doc_id" : "1600202487",
+  "return_delivery_service_events" : "true"
+}
+```
+Respond :
+```javascript
+{
+  	...
+	"delivery_service_events": [
+		{
+			"event_code": "-1",
+			"event_date": "2017-10-11T14:28:54+02:00",
+			"event_status": "Dodana koda za sledenje: 5853626"
+		},
+		{
+			"event_code": "0",
+			"event_date": "2017-10-11T14:28:54+02:00",
+			"event_status": "Data sent"
+		},
+		{
+			"event_code": "0",
+			"event_date": "2017-10-11T14:28:54+02:00",
+			"event_status": "APL - registration"
+		}
+    	]
+}
+```
+
 ## Special paramethers
 * show\_last\_payment\_date - see [Bill example](/docs/documents_get_document_bill.md)
 
