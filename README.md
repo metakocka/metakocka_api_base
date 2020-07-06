@@ -88,6 +88,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ## Release notes
 Date| What's new |
 ----|------------|
+| 6.7.2020 | get_document with delivery service events for sales_order. See [sales_order](/docs/documents_get_document_sales_order.md) for more info.  |
 | 18.6.2020 | Added delete_document - Warehouse docs [More info](/docs/documents_get_document_warehouse_docs.md)
 | 15.6.2020 | Added send_message (SMS) [More info](/docs/send_message.md)
 | 20.5.2020 | put_document for warehouse docs will return list of not found products [More info](/docs/documents_put_document_whdocs.md#236-return-which-product-are-not-found)
@@ -104,3 +105,4 @@ Date| What's new |
 | 7.1.2020 | get_document for sales_order - return link documents. See [sales_order](/docs/documents_put_document_sales_order.md) for more info.  |
 | 22.12.2019 | put_document for sales_order - check unique number for customer order. See [docs](https://metakocka.freshdesk.com/a/solutions/articles/3000095508?lang=sl) for more info.  |
 | 26.9.2019 | get_document for sales_order - return link documents. See [sales_order](/docs/documents_put_document_sales_order.md) for more info.  |
+
