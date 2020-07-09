@@ -95,6 +95,7 @@ Respond :
 	"sum_prepayment": "5.64",
 	"sum_all": "56.35",
 	"sum_paid": "10",
+	"method_of_payment" : "paypal",
 	"order_create_ts": "2015-05-08T12:13:15+02:00",
 	"parcel_shop_id": "P100",
 	"doc_link_list": [{
