@@ -1,13 +1,7 @@
 **URL** : https://main.metakocka.si/rest/eshop/v1/put_document
 
 ## 2.3 Warehouse docs (delivery note, packing list, etc)
-Valid doc_type :
-* warehouse\_delivery\_note
-* warehouse\_packing\_list
-* warehouse\_receiving\_note
-* warehouse\_acceptance\_note
-
-|doc_type| SLO | DE |
+|doc_type| SLO | EN |
 |----|------------|------
 | warehouse\_delivery\_note | Nalog za odpremo  | Delivery note |
 | warehouse\_packing\_list | Dobavnica  | Packing list |
