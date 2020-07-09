@@ -7,6 +7,13 @@ Valid doc_type :
 * warehouse\_receiving\_note
 * warehouse\_acceptance\_note
 
+|doc_type| SLO | DE |
+|----|------------|------
+| warehouse\_delivery\_note | Nalog za odpremo  | Delivery note |
+| warehouse\_packing\_list | Dobavnica  | Packing list |
+| warehouse\_receiving\_note | Nalog za prevzem  | Order for receiving |
+| warehouse\_acceptance\_note | Prevzemnica  | Goods received note |
+
 ### 2.3.1 Warehouse delivery note
 TODO
 
