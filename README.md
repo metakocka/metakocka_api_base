@@ -88,6 +88,8 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ## Release notes
 Date| What's new |
 ----|------------|
+| 17.7.2020 | Added search Sales orders by last tracking event change date. See [sales_order](/docs/search_examples.md) for more info.  |
+| 17.7.2020 | Added get_document with delivery stats for sales_order. See [sales_order](/docs/documents_get_document_sales_order.md) for more info.  |
 | 6.7.2020 | get_document with delivery service events for sales_order. See [sales_order](/docs/documents_get_document_sales_order.md) for more info.  |
 | 18.6.2020 | Added delete_document - Warehouse docs [More info](/docs/documents_get_document_warehouse_docs.md)
 | 15.6.2020 | Added send_message (SMS) [More info](/docs/send_message.md)
