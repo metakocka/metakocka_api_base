@@ -172,6 +172,39 @@ Respond :
 }
 ```
 
+# get_document - Sales Order with delivery stats
+**Example** :
+
+Request (POST - https://main.metakocka.si/rest/eshop/v1/get_document) :
+```javascript
+{
+  "secret_key":"8899",
+  "company_id":"16",
+  "doc_type" : "sales_order",
+  "doc_id" : "1600202487",
+  "return_delivery_stats" : "true"
+}
+```
+Respond :
+```javascript
+{
+  	...
+	"delivery_stats": {
+            "order_create_ts": "2020-06-26+02:00",
+            "date_delivery_service_accepted": "2020-07-10+02:00",
+            "date_first_delivery": "2020-07-13+02:00",
+            "date_delivery_finished": "2020-07-13+02:00",
+            "first_delivery_date": "2020-07-13+02:00",
+            "last_delivery_service_event_code": "3.120",
+            "last_delivery_service_event_date": "2020-07-13+02:00",
+            "last_delivery_service_event_place": "Ansfelden",
+            "all_delivery_service_place": "10.07.2020,Anthering;13.07.2020,Ansfelden",
+            "tracking_last_event": "2020-07-17T18:52:58+02:00"
+        }
+    	]
+}
+```
+
 ## Special paramethers
 * show\_last\_payment\_date - see [Bill example](/docs/documents_get_document_bill.md)
 

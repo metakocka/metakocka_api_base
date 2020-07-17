@@ -185,6 +185,28 @@ Notes :
 * partner_country can be in any localized value. But we recommended US name. 
 * delivery_type is value "Opis" in register type "Vrsta dostave"
 
+### Search Sales orders by last tracking event change date
+**Request** (POST - https://main.metakocka.si/rest/eshop/v1/search) :
+
+```javascript
+{
+	"secret_key": "8899",
+	"company_id": "16",
+	"doc_type": "sales_order",
+	"result_type": "doc",
+	"limit": 5,
+	"offset": 0,
+	"query_advance": [{
+			"type": "tracking_last_event_date_from",
+			"value": "2019-12-17T14:28:54+02:00"
+		}, {
+			"type": "tracking_last_event_date_to",
+			"value": "2020-12-17T14:28:54+02:00"
+		}
+	]
+}
+```
+
 ### Return products as result
 **Request** (POST - https://main.metakocka.si/rest/eshop/v1/search) :
 ```javascript
