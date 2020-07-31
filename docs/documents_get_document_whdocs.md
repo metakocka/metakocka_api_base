@@ -79,6 +79,7 @@ Paramether | Type | Description |
 -----------|------|-------------|
 show\_purchase\_price\_and\_allo\_cost | bool | get purchase price and purchase allocated cost for product. |
 show\_last\_payment\_date | bool | see [Bill example](/docs/documents_get_document_bill.md) |
+show\_allocated\_cost | bool | get allocated costs for products. |
 
 ###show\_purchase\_price\_and\_allo\_cost
 Notes :
@@ -110,6 +111,42 @@ Respond :
             "price_purchase": "5",
             "allocated_code_purchase": "1.5",
             "allocated_cost_sales": "0.5"
+        }
+    ]
+    [... remove ...]    
+}
+```
+###show\_allocated\_cost
+Notes :
+* you will get additional return parameter - allocated\_cost\_list
+
+Request : (POST - https://main.metakocka.si/rest/eshop/v1/get_document)
+```javascript
+{
+  "secret_key":"8899",
+  "company_id":"16",
+  "doc_type" : "warehouse_receiving_note",
+  "doc_id" : "1600203257",
+  "show_allocated_cost" : "true"
+}
+```
+Respond :
+```javascript
+{
+    "mk_id": "1600203257",
+    "doc_type": "warehouse_receiving_note",
+    [... remove ...]
+    "product_list": [
+        {
+            "mk_id": "1600204437",
+            "code": "art d1",
+            "amount": "1",
+            "price": "8",
+            "tax": "EX3",
+            "allocated_cost_list": {
+                "type": "Transport",
+                "value": "2.5000000000"
+            }
         }
     ]
     [... remove ...]    

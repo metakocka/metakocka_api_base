@@ -308,6 +308,7 @@ Paramether | Type | Description |
 -----------|------|-------------|
 show\_last\_payment\_date | bool| return last payment date and sum payment amount also for partially paid bills. Last payment date do not include credit notes.|
 show\_product\_compound | bool| return product compound|
+show\_allocated\_cost | bool | get allocated costs for products. |
 
 ### show\_last\_payment\_date
 
@@ -391,4 +392,39 @@ Respond :
     ],
 }
 ```
+###show\_allocated\_cost
+Notes :
+* you will get additional return parameter - allocated\_cost\_list
 
+Request : (POST - https://main.metakocka.si/rest/eshop/v1/get_document)
+```javascript
+{
+  "secret_key":"8899",
+  "company_id":"16",
+  "doc_type" : "sales_bill_domestic",
+  "doc_id" : "1600203257",
+  "show_allocated_cost" : "true"
+}
+```
+Respond :
+```javascript
+{
+    "mk_id": "1600203257",
+    "doc_type": "sales_bill_domestic",
+    [... remove ...]
+    "product_list": [
+        {
+            "mk_id": "1600204437",
+            "code": "art d1",
+            "amount": "1",
+            "price": "8",
+            "tax": "EX3",
+            "allocated_cost_list": {
+                "type": "Transport",
+                "value": "2.5000000000"
+            }
+        }
+    ]
+    [... remove ...]    
+}
+```
