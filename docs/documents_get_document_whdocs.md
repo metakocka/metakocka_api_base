@@ -81,7 +81,7 @@ show\_purchase\_price\_and\_allo\_cost | bool | get purchase price and purchase 
 show\_last\_payment\_date | bool | see [Bill example](/docs/documents_get_document_bill.md) |
 show\_allocated\_cost | bool | get allocated costs for products. |
 
-###show\_purchase\_price\_and\_allo\_cost
+### show\_purchase\_price\_and\_allo\_cost
 Notes :
 * you will get additional return paramethers - price\_purchase, allocated\_code\_purchase, allocated\_cost\_sales
 
@@ -116,7 +116,8 @@ Respond :
     [... remove ...]    
 }
 ```
-###show\_allocated\_cost
+### show\_allocated\_cost
+
 Notes :
 * you will get additional return parameter - allocated\_cost\_list
 
