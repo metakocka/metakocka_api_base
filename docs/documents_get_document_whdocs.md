@@ -144,10 +144,12 @@ Respond :
             "amount": "1",
             "price": "8",
             "tax": "EX3",
-            "allocated_cost_list": {
-                "type": "Transport",
-                "value": "2.5000000000"
-            }
+            "allocated_cost_list": [
+                {
+                  "type": "Transport",
+                  "value": "2.5000000000"
+              }
+           ]
         }
     ]
     [... remove ...]    
