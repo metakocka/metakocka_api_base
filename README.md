@@ -88,6 +88,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ## Release notes
 Date| What's new |
 ----|------------|
+| 3.8.2020 | Added show_only_open for warehouse docs search. See [search_query_advance_discovery](/docs/search_query_advance_discovery.md) for more info.  |
 | 31.7.2020 | Added allocated_cost_list for get_document bill and whdocs. See [get_document_bill](/docs/documents_get_document_bill.md) and [get_document_whdocs](/docs/documents_get_document_whdocs.md) for more info.  |
 | 17.7.2020 | Added search Sales orders by last tracking event change date. See [search_examples](/docs/search_examples.md) for more info.  |
 | 17.7.2020 | Added get_document with delivery stats for sales_order. See [sales_order](/docs/documents_get_document_sales_order.md) for more info.  |
