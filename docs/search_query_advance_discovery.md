@@ -42,6 +42,13 @@ Service will return list of available paramethers for advance search.
             "label": "Izmenjava Spletna trg.",
             "type": "eshop_sync"
         }
+    ],
+    "warehouse_packing_list": [
+        {
+             "value_desc": "Show only open/active warehouse docs ('true' or 'false')"
+             "label": "Status",
+             "type": "show_only_open",
+        }
     ]
     ..........
 }
