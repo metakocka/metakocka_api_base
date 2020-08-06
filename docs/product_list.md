@@ -8,6 +8,7 @@
 * compound or norm structure
 * partner info on product
 * searching product with LIKE parameter
+* category info on product
 
 ## 1.1 With amount
 Request :
@@ -41,7 +42,7 @@ Attribute                 | Type | Notes| MK SLO |
 Notes :
 * call will always return max 1000 records (limit = 1000). To get next window of results, you must set offset on value 1000. 
 
-Reapond (with return\_warehause\_stock = 'true'):
+Respond (with return\_warehause\_stock = 'true'):
 ```javascript
 {
    "opr_code":"0",
@@ -728,6 +729,106 @@ Respond :
             "norm": "false",
             "serial_numbers": "false",
             "work": "false"
+        }
+    ]
+}
+```
+
+## 1.9 With categories
+Request :
+```javascript
+{
+    "secret_key":"my_secret_key",
+    "company_id":"16",
+    "sales":"true",
+    "return_categories":"true"
+}```
+
+Respond (with return\_warehause\_stock = 'true'):
+```javascript
+{
+    "opr_code":"0",
+    "opr_time_ms":"1910",
+    "sales":"true",
+    "return_category":"true",
+    "limit":"1000",
+    "offset":"0",
+    "product_list_count":"1000",
+    "product_list":[
+        {
+            "count_code":"PA_100_PA",
+            "mk_id":"1600000027",
+            "code":"prod sifra 1",
+            "barcode":"bar123123123",
+            "name":"naziv sifra 1 import 1",
+            "name_desc":"Opis1 Opis2 Opis3",
+            "unit":"kos",
+            "service":"false",
+            "sales":"true",
+            "activated":"true",
+            "purchasing":"true",
+            "eshop_sync":"false",
+            "height":"1",
+            "width":"2",
+            "depth":"3",
+            "weight":"4",
+            "customs_fee":"2710 19 29",
+            "localization":{
+                "language":"sl",
+                "name":"naziv sifra 1 import 1",
+                "name_desc":"Opis1\nOpis2\nOpis3"
+            },
+            "koli_package_amount":"0,23",
+            "asset":"false",
+            "compound":"false",
+            "country":"DE",
+            "expiration_dates":"false",
+            "lot_numbers":"false",
+            "norm":"false",
+            "serial_numbers":"false",
+            "work":"true",
+            "supplier_info":{
+                "partner_id":"1600084941",
+                "partner_name":"a1"
+            },
+            "category_tree_list":[
+                {
+                    "tree_node_id":"1600285172",
+                    "tree_node_label":"Računalnik",
+                    "tree_node_list":[
+                        {
+                            "tree_node_id":"1600285174",
+                            "tree_node_label":"Apple",
+                            "tree_node_list":[
+                                {
+                                    "tree_node_id":"1600285176",
+                                    "tree_node_label":"MacBook"
+                                }
+                            ]
+                        },
+                        {
+                            "tree_node_id":"1600286250",
+                            "tree_node_label":"Sony",
+                            "tree_node_list":[
+                                {
+                                    "tree_node_id":"1600286252",
+                                    "tree_node_label":"Experia"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tree_node_id":"1600286249",
+                    "tree_node_label":"Prodajni program",
+                    "tree_node_list":[
+                        {
+                            "tree_node_id":"1600286253",
+                            "tree_node_label":"300"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
