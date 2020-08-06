@@ -742,9 +742,10 @@ Request :
     "company_id":"16",
     "sales":"true",
     "return_categories":"true"
-}```
+} 
+```
+Respond (with return\_category = 'true'):
 
-Respond (with return\_warehause\_stock = 'true'):
 ```javascript
 {
     "opr_code":"0",
