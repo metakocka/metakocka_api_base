@@ -818,16 +818,6 @@ Respond (with return\_category = 'true'):
                             ]
                         }
                     ]
-                },
-                {
-                    "tree_node_id":"1600286249",
-                    "tree_node_label":"Prodajni program",
-                    "tree_node_list":[
-                        {
-                            "tree_node_id":"1600286253",
-                            "tree_node_label":"300"
-                        }
-                    ]
                 }
             ]
         }
