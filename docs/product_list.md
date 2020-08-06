@@ -806,16 +806,6 @@ Respond (with return\_category = 'true'):
                                     "tree_node_label":"MacBook"
                                 }
                             ]
-                        },
-                        {
-                            "tree_node_id":"1600286250",
-                            "tree_node_label":"Sony",
-                            "tree_node_list":[
-                                {
-                                    "tree_node_id":"1600286252",
-                                    "tree_node_label":"Experia"
-                                }
-                            ]
                         }
                     ]
                 }
