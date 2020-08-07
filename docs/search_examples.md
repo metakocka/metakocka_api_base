@@ -232,16 +232,6 @@ Notes :
     "limit": "2",
     "result_product": [
         {
-            "count_code": "a15631",
-            "mk_id": "1600160543",
-            "code": "547779-ODPRODAJA",
-            "name": "AKCIJA BFGoodrich 205/55R16 G-ForceWinter 94H XL",
-            "unit": "kos",
-            "service": "false",
-            "sales": "true",
-            "purchasing": "true"
-        },
-        {
             "count_code": "a15632",
             "mk_id": "1600160544",
             "code": "518776-ODPRODAJA",
