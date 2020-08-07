@@ -226,10 +226,10 @@ Notes :
 {
     "opr_code": "0",
     "opr_time_ms": "8304",
-    "result_all_records": "2",
-    "result_count": "2",
+    "result_all_records": "1",
+    "result_count": "1",
     "offset": "0",
-    "limit": "2",
+    "limit": "5",
     "result_product": [
         {
             "count_code": "a15632",
