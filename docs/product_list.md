@@ -741,7 +741,7 @@ Request :
     "secret_key":"my_secret_key",
     "company_id":"16",
     "sales":"true",
-    "return_categories":"true"
+    "return_category":"true"
 } 
 ```
 Respond (with return\_category = 'true'):
