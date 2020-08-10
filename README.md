@@ -88,6 +88,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ## Release notes
 Date| What's new |
 ----|------------|
+| 10.8.2020 | Added street_number for sales order put_document. See [put_document_sales_order](/docs/documents_put_document_sales_order.md#example_with_street_number) for more info.  |
 | 7.8.2020 | Added return_category for product list search. See [search_examples](/docs/product_list.md#19-with-categories ) for more info.  |
 | 7.8.2020 | Added return_delivery_service_events for sales order search. See [search_examples](/docs/search_examples.md#return-sales-orders-with-delivery-service-events) for more info.  |
 | 3.8.2020 | Added show_only_open for warehouse docs search. See [search_query_advance_discovery](/docs/search_query_advance_discovery.md) for more info.  |
