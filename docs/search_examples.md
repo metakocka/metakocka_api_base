@@ -388,3 +388,27 @@ If you are using sales order as target document for orders from webshop, you wil
 	]
 }
 ```
+
+### Search Warehouse Documents with given status 
+**Request** (POST - https://main.metakocka.si/rest/eshop/v1/search) :
+
+```javascript
+{
+	"secret_key": "8899",
+	"company_id": "16",
+	"doc_type": "warehouse_acceptance_note",
+	"result_type": "doc",
+	"limit": 5,
+	"offset": 0,
+	"query_advance": [{
+			"type": "status_list",
+			"value": "aktiven,delno_aktiven"
+		}
+	]
+}
+```
+
+Notes :
+* Supported warehouse document types:
+    * warehouse_acceptance_note
+    * warehouse_packing_list
