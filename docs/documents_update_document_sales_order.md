@@ -36,3 +36,107 @@ Respond :
   "opr_time_ms":"12026"
 }
 ```
+
+### Sales order - update partner and receiver
+
+**URL** : https://main.metakocka.si/rest/eshop/v1/update_document
+
+Request :
+```javascript
+{  
+  "mk_id" : "1600370614",
+  OR
+  "buyer_order" : "OR-100",
+  
+  "secret_key" : "8899",
+  "company_id" : "16",  
+  "doc_type" : "sales_order",
+  
+  "partner": {
+          "business_entity": "false",
+          "taxpayer": "true",
+          "foreign_county": "false",
+          "tax_id_number": "SI20000001",
+          "customer": "API partner 1",
+          "street": "Slovenska cesta 23",
+          "post_number": "1000",
+          "place": "Ljubljana",
+          "province": "Severna primorska",
+          "country": "Slovenia",
+          "partner_contact": {
+              "name": "Jaka Novak",
+              "phone": "05 320 24 82",
+              "fax": "05 320 24 62",
+              "gsm": "071 333 442",
+              "email": "test3@test.co.uk"
+          }
+  },
+  "receiver": {
+          "business_entity": "false",
+          "taxpayer": "true",
+          "foreign_county": "false",
+          "tax_id_number": "SI20000002",
+          "customer": "API partner 5",
+          "street": "Slovenska cesta 55",
+          "post_number": "1000",
+          "place": "Ljubljana",
+          "country": "Slovenia",
+          "partner_contact": {
+              "name": "Rok Doltar",
+              "phone": "05 320 24 81",
+              "fax": "05 320 24 81",
+              "gsm": "071 333 441",
+              "email": "test@test.co.uk"
+          }
+  }
+}
+```
+
+Respond :
+```javascript
+{
+  "opr_code":"0",
+  "opr_time_ms":"4312"
+}
+```
+
+### Sales order - adding and removing products
+
+**URL** : https://main.metakocka.si/rest/eshop/v1/update_document
+
+Request :
+```javascript
+{  
+  "mk_id" : "1600370614",
+  OR
+  "buyer_order" : "OR-100",
+  
+  "secret_key" : "8899",
+  "company_id" : "16",  
+  "doc_type" : "sales_order",
+
+   "product_remove":[
+          {
+              "code":"product123",
+              OR
+              "mk_id": 1600335835
+          }
+   ],
+   "product_add":[
+          {
+              "code": "art1",
+              "amount": "1",
+              "price" : "100",
+              "tax" : "EX4"
+          }
+   ]
+}
+```
+
+Respond :
+```javascript
+{
+  "opr_code":"0",
+  "opr_time_ms":"2054"
+}
+```
