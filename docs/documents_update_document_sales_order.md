@@ -38,6 +38,9 @@ Respond :
 ```
 
 ### Sales order - update partner and receiver
+**Notes**
+- if you only want to change email (or any other field), you must provide whole partner or receiver structure
+ as seen in the request example below.
 
 **URL** : https://main.metakocka.si/rest/eshop/v1/update_document
 
@@ -101,6 +104,9 @@ Respond :
 ```
 
 ### Sales order - adding and removing products
+**Notes**
+- if you only want to change stock amount (or any other field), you must remove the product first, then add it again.
+ Both can be done in the same request. 
 
 **URL** : https://main.metakocka.si/rest/eshop/v1/update_document
 
