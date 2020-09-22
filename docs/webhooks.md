@@ -70,3 +70,20 @@ Request example :
 	]
 }
 ```
+
+# 3. Tutorial : set up webhook with test site
+1. Open https://webhook.site/ and new test page will be created. Use "Your unique URL" and copy it to clipboard.
+
+2. Create new webhook (see steps below)
+
+TODO : Add image
+
+3. Go to MetaKocka and create new Prevzemnica with a material product.
+
+4. Check webhook.site for request 
+
+TODO : Add image
+
+5. Check MetaKocka for webhook log
+
+TOOD : Add image
