@@ -76,14 +76,14 @@ Request example :
 
 2. Create new webhook (see steps below)
 
-TODO : Add image
+![](/img/webhook_stock_1.png)
 
-3. Go to MetaKocka and create new Prevzemnica with a material product.
+3. Go to MetaKocka and create new Prevzemnica with a material product and save document
 
 4. Check webhook.site for request 
 
-TODO : Add image
+![](/img/webhook_stock_3.png)
 
 5. Check MetaKocka for webhook log
 
-TOOD : Add image
+![](/img/webhook_stock_4.png)
