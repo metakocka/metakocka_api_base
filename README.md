@@ -88,9 +88,9 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ## Release notes
 Date| What's new |
 ----|------------|
-| 23.9.2020 |  Tutorial : set up webhook with test site. See [webhook_stock](/docs/webhooks.md#3-tutorial--set-up-webhook-with-test-site)) for more info.  |
-| 30.8.2020 | Added support for changing partner/receiver and adding/removing products for sales order. See [update_document_sales_order](/docs/documents_update_document_sales_order.md)) for more info.  |
-| 28.8.2020 | Added filter by status for doc_type "warehouse_acceptance_note" and "warehouse_packing_list". See [search_examples](/docs/search_examples.md)) for more info.  |
+| 23.9.2020 |  Tutorial : set up webhook with test site. See [webhook_stock](/docs/webhooks.md#3-tutorial--set-up-webhook-with-test-site) for more info.  |
+| 30.8.2020 | Added support for changing partner/receiver and adding/removing products for sales order. See [update_document_sales_order](/docs/documents_update_document_sales_order.md) for more info.  |
+| 28.8.2020 | Added filter by status for doc_type "warehouse_acceptance_note" and "warehouse_packing_list". See [search_examples](/docs/search_examples.md) for more info.  |
 | 18.8.2020 | Support for doc_type "warehouse_receiving_note". See [change_document_status](/docs/change_document_status.md) for more info.  |
 | 10.8.2020 | Added street_number for sales order put_document. See [put_document_sales_order](/docs/documents_put_document_sales_order.md#example-with-street-number-) for more info.  |
 | 7.8.2020 | Added return_category for product list search. See [search_examples](/docs/product_list.md#19-with-categories ) for more info.  |
