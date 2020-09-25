@@ -88,6 +88,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ## Release notes
 Date| What's new |
 ----|------------|
+| 25.9.2020 | Added search Sales orders by last change timestamp. See [search_examples](/docs/search_examples.md) for more info.  |
 | 23.9.2020 |  Tutorial : set up webhook with test site. See [webhook_stock](/docs/webhooks.md#3-tutorial--set-up-webhook-with-test-site) for more info.  |
 | 30.8.2020 | Added support for changing partner/receiver and adding/removing products for sales order. See [update_document_sales_order](/docs/documents_update_document_sales_order.md) for more info.  |
 | 28.8.2020 | Added filter by status for doc_type "warehouse_acceptance_note" and "warehouse_packing_list". See [search_examples](/docs/search_examples.md) for more info.  |

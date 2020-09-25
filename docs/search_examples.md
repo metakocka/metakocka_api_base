@@ -207,6 +207,28 @@ Notes :
 }
 ```
 
+### Search Sales orders by last change timestamp
+**Request** (POST - https://main.metakocka.si/rest/eshop/v1/search) :
+
+```javascript
+{
+	"secret_key": "8899",
+	"company_id": "16",
+	"doc_type": "sales_order",
+	"result_type": "doc",
+	"limit": 5,
+	"offset": 0,
+	"query_advance": [{
+			"type": "last_change_from",
+			"value": "2019-12-17T14:28:54+02:00"
+		}, {
+			"type": "last_change_to",
+			"value": "2020-12-17T14:28:54+02:00"
+		}
+	]
+}
+```
+
 ### Return Sales Orders with delivery service events
 **Request** (POST - https://main.metakocka.si/rest/eshop/v1/search) :
 
