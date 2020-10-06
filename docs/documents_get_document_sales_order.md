@@ -122,7 +122,8 @@ Respond :
 			"name": "tracking_number",
 			"value": "65407745"
 		}
-	]
+	],
+	"shipped_date_expected_seller": "2015-05-15+02:00"
 }
 ```
 Request - by buyer order (POST - https://main.metakocka.si/rest/eshop/v1/get_document) :
