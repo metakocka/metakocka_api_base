@@ -818,6 +818,10 @@ Respond (with return\_category = 'true'):
 ```
 
 ## 1.9 With order in delivery
+
+Notes:
+* In order for the data to be returned, the delivery date must be set on the product on the purchase order.
+
 Request :
 ```javascript
 {
