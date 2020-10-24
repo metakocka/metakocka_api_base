@@ -9,6 +9,7 @@
 * partner info on product
 * searching product with LIKE parameter
 * category info on product
+* order in delivery
 
 ## 1.1 With amount
 Request :
@@ -36,6 +37,7 @@ Attribute                 | Type | Notes| MK SLO |
 | return\_warehouse\_reservation | bool | Product will have additional attribute "reservation_detail" with list of reservation amount per warehouse. | / |
 | return\_product\_partner\_info | bool | Product will have additional attribute "product_partner_info" with list of custom partner info on product. | / |
 | return\_category | bool | Product will have additional attribute "category_tree_list" with tree strucutre of selected categories on product. | / |
+| return\_expect\_order\_delivery\_date | bool | Product will have additional attribute "order_in_delivery" with a list of amounts and delivery dates per warehouse on product. | / |
 | offset | int | see notes. | / |
 | limit | int | see notes. | / |
 
@@ -813,4 +815,78 @@ Respond (with return\_category = 'true'):
         }
     ]
 }
+```
+
+## 1.9 With order in delivery
+Request :
+```javascript
+{
+    "secret_key":"my_secret_key",
+    "company_id":"16",
+    "sales":"true",
+    "return_expect_order_delivery_date":"true"
+} 
+```
+Respond (with return\_expect\_order\_delivery\_date = 'true'):
+
+```javascript
+{{
+     "opr_code": "0",
+     "opr_time_ms": "1853",
+     "sales": "true",
+     "purchase": "true",
+     "limit": "1000",
+     "offset": "0",
+     "product_list_count": "1",
+     "product_list": [
+         {
+             "count_code": "PA_115_PA",
+             "mk_id": "1600000392",
+             "code": "art1",
+             "name": "art1",
+             "unit": "pcs",
+             "unit2": "block",
+             "unit_factor": "2",
+             "service": "false",
+             "sales": "true",
+             "activated": "true",
+             "purchasing": "true",
+             "eshop_sync": "false",
+             "height": "1",
+             "weight": "0,23",
+             "customs_fee": "85153991",
+             "localization": [
+                 {
+                     "language": "sl",
+                     "name": "art1"
+                 }
+             ],
+             "asset": "false",
+             "compound": "false",
+             "country": "IT",
+             "expiration_dates": "false",
+             "gross_weight": "1",
+             "lot_numbers": "false",
+             "norm": "false",
+             "serial_numbers": "false",
+             "work": "false",
+             "order_in_delivery": [
+                 {
+                     "mk_id": "1600000392",
+                     "expect_order_amount": "17",
+                     "export_order_delivery_date": "2020-10-24",
+                     "warehouse_id": "1600263862",
+                     "warehouse_mark": "nas1"
+                 },
+                 {
+                     "mk_id": "1600000392",
+                     "expect_order_amount": "9",
+                     "export_order_delivery_date": "2020-10-25",
+                     "warehouse_id": "1600263862",
+                     "warehouse_mark": "nas1"
+                 }
+             ]
+         }
+     ]
+ }
 ```

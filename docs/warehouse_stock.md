@@ -11,6 +11,7 @@ Attribute                 | Type | Notes| MK SLO |
 | eshop_sync | bool | Product must be flag for e-commerce sync | Izmenjava - Spletna trg. |
 | product_code_list | String | Limit respond by list of MK codes (or webshops SKU), separater with comma. | / |
 | product_mk_id_list | String | Limit respond by list of MK ID, separater with comma | / |
+| return\_expect\_order\_delivery\_date | bool | Response will have additional attribute "order_in_delivery" with a list of amounts and delivery dates per returned products. | / |
 
 If MetaKocka company is using reservations, amount will be return as :
 * amount - stock amount
@@ -205,5 +206,96 @@ Respond :
       "unit2": "m"
     }
   ]
+}
+```
+
+## 1.1 With order in delivery
+
+Request :
+``` javascript
+{
+    "secret_key":"my_secret_key",
+    "company_id":"16",
+    "return_expect_order_delivery_date":true
+}
+```
+Respond :
+``` javascript
+{
+    "opr_code": "0",
+    "opr_time_ms": "86",
+    "offset": "0",
+    "limit": "1000",
+    "stock_list": [
+        {
+            "warehouse_id": "1600129888",
+            "mk_id": "1600000392",
+            "count_code": "PA_115_PA",
+            "code": "art1",
+            "title": "art1",
+            "amount": "1",
+            "reserved_amount": "0",
+            "free_amount": "1",
+            "unit": "kos",
+            "unit2": "blok",
+            "unit_factor": "2"
+        },
+        {
+            "warehouse_id": "1600263862",
+            "mk_id": "1600000392",
+            "count_code": "PA_115_PA",
+            "code": "art1",
+            "title": "art1",
+            "amount": "10",
+            "reserved_amount": "6",
+            "free_amount": "4",
+            "microlocation": "m1",
+            "unit": "kos",
+            "unit2": "blok",
+            "unit_factor": "2"
+        },
+        {
+            "warehouse_id": "1600000311",
+            "mk_id": "1600000392",
+            "count_code": "PA_115_PA",
+            "code": "art1",
+            "title": "art1",
+            "amount": "-41",
+            "reserved_amount": "54",
+            "free_amount": "-95",
+            "unit": "kos",
+            "unit2": "blok",
+            "unit_factor": "2"
+        },
+        {
+            "warehouse_id": "1600263862",
+            "mk_id": "1600000392",
+            "count_code": "PA_115_PA",
+            "code": "art1",
+            "title": "art1",
+            "amount": "863,75",
+            "reserved_amount": "6",
+            "free_amount": "857,75",
+            "unit": "kos",
+            "unit2": "blok",
+            "unit_factor": "2"
+        }
+    ],
+    "order_in_delivery": [
+        {
+            "mk_id": "1600000392",
+            "expect_order_amount": "17",
+            "export_order_delivery_date": "2020-10-24",
+            "warehouse_id": "1600263862",
+            "warehouse_mark": "nas1"
+        },
+        {
+            "mk_id": "1600000392",
+            "expect_order_amount": "9",
+            "export_order_delivery_date": "2020-10-25",
+            "warehouse_id": "1600263862",
+            "warehouse_mark": "nas1"
+        }
+    ]
 }
 ```
