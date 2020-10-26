@@ -74,6 +74,7 @@
         }
     ],
     "link_to_web_store": "Demo Trgovina",
+    "webshop_eshop_sync_id": "1600353213",
     "order_create_ts": "2014-09-13T12:13:15+02:00"
 }
 ```
