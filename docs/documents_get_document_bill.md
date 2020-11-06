@@ -103,7 +103,8 @@ Respond :
     "sum_tax_ex4": "4.47",
     "sum_all": "24.8",
     "furs_zoi": "2048f0a369e37b4258e741fc8ae9ffc2",
-    "furs_eor": "34facd65-622b-745d-a541-30ab1f9d3ac1"
+    "furs_eor": "34facd65-622b-745d-a541-30ab1f9d3ac1",
+    "last_change_user": "Jaka Novak"
 }
 ```
 ### Example : Get detail payment information
