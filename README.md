@@ -1,7 +1,7 @@
 Welcome!
 We are just translating our development documentation from Slovenian language. Stay tuned...
 
-Current documentation is available on [dev.metakocka.si](http://dev.metakocka.si/eshop/index.html)
+Old documentation (in Slovenia language) [dev.metakocka.si](http://dev.metakocka.si/eshop/index.html)
 
 Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-api/](http://blog.metakocka.si/dodatne-nastavitve-api/)
 
