@@ -88,6 +88,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ## Release notes
 Date| What's new |
 ----|------------|
+| 18.11.2020 | get_document for Bill can return method_of_payment from sales order. See [example](/docs/documents_get_document_bill.md#show_sales_order_method_of_payment) for more info.
 | 26.10.2020 | Added webshop_eshop_sync_id for documents_put_document_sales_order. See [put_document_sales_order](/docs/documents_put_document_sales_order.md#21-sales_order) for more info.
 | 24.10.2020 | Added order_in_delivery for product_list and warehouse_stock. See [product_list](/docs/product_list.md#19-with-order-in-delivery) or [warehouse_stock](/docs/warehouse_stock.md#11-with-order-in-delivery) for more info.
 | 6.10.2020 | Added shipped_date_expected_seller for sales order. See [search_examples](/docs/documents_put_document_sales_order.md#example-with-expected-ship-date-) for more info.
