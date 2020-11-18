@@ -310,6 +310,7 @@ Paramether | Type | Description |
 show\_last\_payment\_date | bool| return last payment date and sum payment amount also for partially paid bills. Last payment date do not include credit notes.|
 show\_product\_compound | bool| return product compound|
 show\_allocated\_cost | bool | get allocated costs for products. |
+show\_sales\_order\_method\_of\_payment | bool | get method of payment from sales order (if document link exist) |
 
 ### show\_last\_payment\_date
 
@@ -429,5 +430,27 @@ Respond :
         }
     ]
     [... remove ...]    
+}
+```
+
+### show\_sales\_order\_method\_of\_payment
+Notes :
+* you will get additional return parameter - method\_of\_payment
+
+Request : (POST - https://main.metakocka.si/rest/eshop/v1/get_document)
+```javascript
+{
+  "secret_key":"8899",
+  "company_id":"16",
+  "doc_type" : "sales_bill_domestic",
+  "doc_id" : "1600203257",
+  "show_sales_order_method_of_payment" : "true"
+}
+```
+Respond :
+```javascript
+{
+    "mk_id": "1600203257",
+    "method_of_payment": "PayPal"
 }
 ```
