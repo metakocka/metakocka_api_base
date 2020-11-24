@@ -737,6 +737,11 @@ Respond :
 ```
 
 ## 1.9 With categories
+
+Notes:
+* 'tree_node_container' and 'tree_node_visible' are returned only with 'Advanced categories' 
+enabled on extra fields for products (Your Company - Settings).
+
 Request :
 ```javascript
 {
@@ -796,20 +801,26 @@ Respond (with return\_category = 'true'):
             },
             "category_tree_list":[
                 {
+                    "tree_node_container": "true",
                     "tree_node_id":"1600285172",
                     "tree_node_label":"Računalnik",
                     "tree_node_list":[
                         {
+                            "tree_node_container": "true",
                             "tree_node_id":"1600285174",
                             "tree_node_label":"Apple",
                             "tree_node_list":[
                                 {
+                                    "tree_node_container": "true",
                                     "tree_node_id":"1600285176",
-                                    "tree_node_label":"MacBook"
+                                    "tree_node_label":"MacBook",
+                                    "tree_node_visible": "true"
                                 }
-                            ]
+                            ],
+                            "tree_node_visible": "true"
                         }
-                    ]
+                    ],
+                "tree_node_visible": "true"
                 }
             ]
         }
