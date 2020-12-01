@@ -304,6 +304,20 @@ Repond :
     "furs_eor": "34facd65-622b-745d-a541-30ab1f9d3ac1"
 }
 ```
+
+### Example : get bill document information
+Request : (POST - https://main.metakocka.si/rest/eshop/v1/get_document)
+
+```javascript
+{  
+	"company_id": "16", 
+	"secret_key": "8899",
+	"doc_type" : "sales_bill_domestic",
+	"doc_id" : "1600552358"
+    "return_document_info" : "true"
+}
+```
+Response can be viewed here: [example](/docs/documents_get_document_sales_order.md#get_document---sales-order-with-document-information)
 ## Special paramethers
 Paramether | Type | Description |
 -----------|------|-------------|

@@ -205,6 +205,51 @@ Respond :
     	]
 }
 ```
+# get_document - Sales Order with document information
+**Example** :
+
+Request (POST - https://main.metakocka.si/rest/eshop/v1/get_document) :
+```javascript
+{
+  "secret_key":"8899",
+  "company_id":"16",
+  "doc_type" : "sales_order",
+  "doc_id" : "400000000725",
+  "return_document_info" : "true"
+}
+```
+Respond :
+```javascript
+{
+  	...
+	    "document_info": [
+            {
+                "user_email": "test@gmail.com",
+                "operation_type": "NEW",
+                "operation_time": "2020-11-19T12:12:07+02:00"
+            },
+            {
+                "user_email": "test@gmail.com",
+                "operation_type": "CHANGE",
+                "operation_time": "2020-11-27T11:10:43+02:00"
+            },
+            {
+                "user_email": "test@gmail.com",
+                "operation_type": "CUSTOM",
+                "notes": "Naročilo preneseno na račun 1-MK-1545",
+                "operation_time": "2020-11-27T11:11:08+02:00"
+            },
+            {
+                "user_email": "test@gmail.com",
+                "operation_type": "DOCUMENT_STATUS_CHANGE",
+                "value_previous": "Novo",
+                "value_new": "Pripravljen za odpremo",
+                "operation_time": "2020-11-27T11:11:08+02:00"
+            }
+        ]
+}
+```
+
 
 ## Special paramethers
 * show\_last\_payment\_date - see [Bill example](/docs/documents_get_document_bill.md)
