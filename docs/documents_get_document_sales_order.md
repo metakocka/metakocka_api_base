@@ -225,22 +225,30 @@ Respond :
 	    "document_info": [
             {
                 "user_email": "test@gmail.com",
+                "name": "Glavni",
+                "surname": "account",
                 "operation_type": "NEW",
                 "operation_time": "2020-11-19T12:12:07+02:00"
             },
             {
                 "user_email": "test@gmail.com",
+                "name": "Glavni",
+                "surname": "account",
                 "operation_type": "CHANGE",
                 "operation_time": "2020-11-27T11:10:43+02:00"
             },
             {
                 "user_email": "test@gmail.com",
+                "name": "Glavni",
+                "surname": "account",
                 "operation_type": "CUSTOM",
                 "notes": "Naročilo preneseno na račun 1-MK-1545",
                 "operation_time": "2020-11-27T11:11:08+02:00"
             },
             {
                 "user_email": "test@gmail.com",
+                "name": "Glavni",
+                "surname": "account",
                 "operation_type": "DOCUMENT_STATUS_CHANGE",
                 "value_previous": "Novo",
                 "value_new": "Pripravljen za odpremo",
