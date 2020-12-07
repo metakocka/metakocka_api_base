@@ -148,3 +148,36 @@ Respond :
   "opr_time_ms":"2054"
 }
 ```
+
+### Sales order - update and create invoice
+
+**URL** : https://main.metakocka.si/rest/eshop/v1/update_document
+
+Request :
+```javascript
+{  
+  "mk_id" : "1600370614",
+  OR
+  "buyer_order" : "OR-100",
+  
+  "secret_key" : "8899",
+  "company_id" : "16",  
+  "doc_type" : "sales_order",
+  
+  "create_invoice": "true",
+  "delivery_type": "Pošta Slovenije",
+  "status_code" : "draft",
+  "tracking_code" : "SI2001",
+  "shipped_date" : "2019-09-26+02:00",
+  "notes_header" : "notes zgoraj",
+  "notes": "to so notes."  
+}
+```
+
+Respond :
+```javascript
+{
+  "opr_code":"0",
+  "opr_time_ms":"12026"
+}
+```
