@@ -220,6 +220,10 @@ Respond :
                 "product_title": "table",
                 "amount": "1",
                 "purchase_unit_factor": "0,5"
+                "supplier_id": "1600036997",
+                "n_of_workers": "2",
+                "row_order": "1",
+                "workplace_id": "1600567744"
             },
             {
                 "product_mk_id": "1600129634",
@@ -228,6 +232,10 @@ Respond :
                 "product_title": "chair",
                 "amount": "5",
                 "purchase_unit_factor": "0,1"
+                "supplier_id": "1600036997",
+                "n_of_workers": "1",
+                "row_order": "2",
+                "workplace_id": "1600567223"
             }
         ]
     }
