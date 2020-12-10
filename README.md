@@ -38,6 +38,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 * [sales_order](/docs/documents_put_document_sales_order.md)
 * [bill](/docs/documents_put_document.md#22-bill)
 * [warehouse docs](/docs/documents_put_document_whdocs.md)
+* [transfer_order](/docs/documents_put_document_transfer_order.md)
 * [purchase order](/docs/documents_put_document_purchase_order.md)
 * [workorder](/docs/documents_put_document_workorder.md)
 
@@ -88,6 +89,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ## Release notes
 Date| What's new |
 ----|------------|
+| 10.12.2020 | Added put_document_transfer_order - support fo creating warehouse transfer orders. See [docs](/docs/documents_put_document_transfer_order.md) for more info.
 | 7.12.2020 | Sales order - update and create invoice. See [example](/docs/documents_update_document_sales_order.md#sales-order---update-and-create-invoice) for more info.
 | 1.12.2020 | get_document for Bill and Sales order can return document_info. See [example](/docs/documents_get_document_sales_order.md#get_document---sales-order-with-document-information) for more info.
 | 18.11.2020 | get_document for Bill can return method_of_payment from sales order. See [example](/docs/documents_get_document_bill.md#show_sales_order_method_of_payment) for more info.
