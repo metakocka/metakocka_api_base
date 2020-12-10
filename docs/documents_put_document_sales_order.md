@@ -73,8 +73,6 @@
             "tax" : "EX4"
         }
     ],
-    "link_to_web_store": "Demo Trgovina",
-    "webshop_eshop_sync_id": "1600353213",
     "order_create_ts": "2014-09-13T12:13:15+02:00"
 }
 ```
@@ -309,5 +307,37 @@ Notes :
             "tax" : "EX4"
         }
     ]
+}
+```
+
+### Example with webshop link (by name or eshop_sync_id) :
+```javascript
+{
+    "secret_key":"8899",
+    "company_id":"16",
+    "doc_type": "sales_order",
+    "count_code": "resttest2",
+    "doc_date" : "2014-09-13+02:00",
+    "partner": {
+        "business_entity": "true",
+        "taxpayer": "true",
+        "foreign_county": "false",
+        "tax_id_number": "SI20000001",
+        "customer": "API partner 1",
+        "street": "Slovenska cesta 100",
+        "post_number": "1000",
+        "place": "Ljubljana",
+        "country": "Slovenia"
+    },
+    "product_list": [
+        {
+            "code": "art1",
+            "amount": "1",
+            "price" : "100",
+            "tax" : "EX4"
+        }
+    ],
+    "link_to_web_store": "Demo Trgovina",
+    "webshop_eshop_sync_id": "1600353213"
 }
 ```
