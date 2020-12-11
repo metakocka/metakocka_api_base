@@ -124,10 +124,16 @@ Respond :
 		}
 	],
 	"shipped_date_expected_seller": "2015-05-15+02:00",
-	"meta_data": {
-        	"key": "meta_data_key",
-        	"valueString": "meta_data_value_string"
-    	}
+	"meta_data": [
+        	{
+            		"key": "meta_data_key",
+            		"valueString": "meta_data_value_string"
+        	},
+        	{
+           		 "key": "meta_data_key2",
+            		"valueString": "meta_data_value_string2"
+        	}
+    	]
 }
 ```
 Request - by buyer order (POST - https://main.metakocka.si/rest/eshop/v1/get_document) :
