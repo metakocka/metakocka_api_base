@@ -89,6 +89,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ## Release notes
 Date| What's new |
 ----|------------|
+| 11.12.2020 | Added documents_put_document_sales_order - meta data. See [docs](/docs/documents_put_document_sales_order.md#example-with-meta-data-only-for-woocommerce-webshops-) for more info.
 | 10.12.2020 | Added put_document_transfer_order - support fo creating warehouse transfer orders. See [docs](/docs/documents_put_document_transfer_order.md) for more info.
 | 7.12.2020 | Sales order - update and create invoice. See [example](/docs/documents_update_document_sales_order.md#sales-order---update-and-create-invoice) for more info.
 | 1.12.2020 | get_document for Bill and Sales order can return document_info. See [example](/docs/documents_get_document_sales_order.md#get_document---sales-order-with-document-information) for more info.
