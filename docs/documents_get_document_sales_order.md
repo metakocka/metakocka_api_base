@@ -123,7 +123,11 @@ Respond :
 			"value": "65407745"
 		}
 	],
-	"shipped_date_expected_seller": "2015-05-15+02:00"
+	"shipped_date_expected_seller": "2015-05-15+02:00",
+	"meta_data": {
+        	"key": "meta_data_key",
+        	"valueString": "meta_data_value_string"
+    	}
 }
 ```
 Request - by buyer order (POST - https://main.metakocka.si/rest/eshop/v1/get_document) :
