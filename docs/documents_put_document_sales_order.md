@@ -371,8 +371,8 @@ Notes :
     ],
     "meta_data": [
         {
-            "key": "meta_data_key",
-            "valueString": "meta_data_value_string"
+            "key":"meta_data_key",
+            "value_string":"meta_data_value"
         }
     ]
 }
