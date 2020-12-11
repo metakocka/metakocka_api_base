@@ -342,7 +342,7 @@ Notes :
 }
 ```
 
-### Example with meta data (only for WooCommerce webshops) :
+### Example with meta data :
 ```javascript
 {
     "secret_key":"8899",
