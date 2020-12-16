@@ -16,7 +16,7 @@ Let's start with example :
 * you can search by one document type (doc\_type)
 * use 'query' (some as search field in MetaKocka) or 'advance\_query' (some as advance search option in MetaKocka) to limit results.
 * use 'limit' and 'offset' to perform query window
-* you can get maximum of 50 records. For more use query window
+* you can get maximum of 1000 records. For more use query window
 
 **Respond** :
 ```javascript
