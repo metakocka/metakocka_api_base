@@ -81,6 +81,9 @@ Valid doc_type :
 }
 ```
 
+Notes :
+* if you add payment "Gotovina", you can add cash register name with paramether "cashRegister" in "mark_paid" object. 
+
 ### Example : Sales bill foreign - full request
 ```javascript
 {
