@@ -105,7 +105,7 @@ TODO
     "sales_pricelist_code" : "PC-2013",    
     "status_code" : "delno_aktiven",
     "packlist_code" : "pc1",
-    "packlist_date" : "2014-12-20+02:00",,
+    "packlist_date" : "2014-12-20+02:00",
     "warehouse" : "glavni",
     "notes": "to so notes.",
     "product_list": [
