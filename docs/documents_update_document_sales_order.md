@@ -27,7 +27,8 @@ Request :
   "tracking_code" : "SI2001",
   "shipped_date" : "2019-09-26+02:00",
   "notes_header" : "notes zgoraj",
-  "notes": "to so notes."  
+  "notes": "to so notes.",
+  "warehouse" : "warehouse_mark"
 }
 ```
 
