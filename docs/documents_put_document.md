@@ -365,3 +365,32 @@ Notes :
     ]
 }
 ```
+
+### Example : return info about credit notes (if exists)
+Notes :
+* use "return_credit_note_for_invoice" : "true"
+
+Request :
+```javascript
+{
+  "secret_key":"...",
+  "company_id":"16",
+  "doc_type":"sales_bill_domestic",
+  "result_type" : "doc",
+  "return_credit_note_for_invoice" : "true",
+  "query" : "N300400"
+}
+```
+
+Respond :
+```javascript
+...
+"credit_note_list": [
+    {
+        "mk_id": "1600376160",
+        "count_code": "1-MK-1624"
+    }
+],
+...      
+```
+
