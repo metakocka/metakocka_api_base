@@ -377,3 +377,57 @@ Notes :
     ]
 }
 ```
+### Example with attachments :
+**Data parameters**
+
+|Parameter| Required/Optional | Description |
+|----|------------|------
+| attachment_list | Optional | Attachment object list |
+
+
+**Attachment object parameters**
+
+|Parameter| Required/Optional | Description |
+|----|------------|------
+| file_name | Required | Filename with extension |
+| source_url/data_b64 | Required | Public url of the file (pdf, image,...) or base64 encoded file |
+
+
+```json
+{
+    "secret_key":"8899",
+    "company_id":"16",
+    "doc_type": "sales_order",
+    "count_code": "resttest2",
+    "doc_date" : "2020-09-13+02:00",
+    "partner": {
+        "business_entity": "true",
+        "taxpayer": "true",
+        "foreign_county": "false",
+        "tax_id_number": "SI20000001",
+        "customer": "API partner 1",
+        "street": "Slovenska cesta 100",
+        "post_number": "1000",
+        "place": "Ljubljana",
+        "country": "Slovenia"
+    },
+    "product_list": [
+        {
+            "code": "art1",
+            "amount": "1",
+            "price" : "100",
+            "tax" : "EX4"
+        }
+    ],
+    "attachment_list" : [
+      {
+        "file_name" : "example.pdf", 
+        "source_url" : "PUBLIC_URL_TO_PDF"
+      },
+      {
+        "file_name" : "example.jpg", 
+        "data_b64" : "BASE64_ENCODED_JPG"
+      }
+    ]
+}
+```
