@@ -268,6 +268,38 @@ Respond :
 }
 ```
 
+# get_document - Sales order with attachments
+**Example** :
+POST - https://main.metakocka.si/rest/eshop/v1/get_document
+
+**Data parameters**
+
+|Parameter| Required/Optional | Description |
+|----|------------|------
+| show_attachments | Optional | Default "false" |
+
+Request :
+```json
+{
+  "secret_key": "8899",
+  "company_id": "16",
+  "doc_type": "sales_order",
+  "doc_id": "400000000725",
+  "show_attachments": "true"
+}
+```
+Response :
+```json
+{
+  ...
+    "attachment_list": [
+        {
+            "source_url": "PUBLIC_FILE_URL"
+        }
+    ]
+}
+```
+
 
 ## Special paramethers
 * show\_last\_payment\_date - see [Bill example](/docs/documents_get_document_bill.md)

@@ -89,6 +89,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ## Release notes
 Date| What's new |
 ----|------------|
+| 6.1.2021 | Attachments support added for get_document "sales_order". See [docs](/docs/documents_get_document_sales_order.md) for more info.
 | 6.1.2021 | Attachments support added for put_document "sales_order". See [docs](/docs/documents_put_document_sales_order.md#example-with-attachments-) for more info.
 | 5.1.2021 | For invoice return link credit notes (if exists). See [docs](/docs/documents_put_document.md#example--return-info-about-credit-notes-if-exists) for more info.
 | 30.12.2020 | Added documents_get_document_bill option to return method of payment for credit note. See [docs](/docs/documents_get_document_bill.md#show_sales_order_method_of_payment) for more info.
