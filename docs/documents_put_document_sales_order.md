@@ -377,6 +377,41 @@ Notes :
     ]
 }
 ```
+
+### Create invoice after order is stored :
+* include "create_invoice" paramether in request. In respond you will get invoice id as "bill_mk_id"
+
+Request : 
+```javascript
+{
+    "secret_key":"8899",
+    "company_id":"16",
+    .........
+      "create_invoice" : "true",
+    .........
+}
+```
+
+Respond example :
+```javascript
+{
+  "opr_code": "0",
+  "opr_time_ms": "47788",
+  "document_type_short": "PR_SO",
+  "partner": {
+    "mk_id": "1600129478"
+  },
+  "attachment_list": [
+    {
+      "bill_mk_id": "1600376594"
+    }
+  ],
+  "mk_id": "400000000425",
+  "count_code": "PP-26941",
+  "total_price": "122.00"
+}
+```
+
 ### Example with attachments :
 **Data parameters**
 
