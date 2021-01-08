@@ -89,6 +89,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ## Release notes
 Date| What's new |
 ----|------------|
+| 8.1.2021 | After sales order put_document, create also invoice. See [docs](/docs/documents_put_document_sales_order.md#create-invoice-after-order-is-stored-) for more info.
 | 6.1.2021 | Attachments support added for get_document "sales_order". See [docs](/docs/documents_get_document_sales_order.md) for more info.
 | 6.1.2021 | Attachments support added for put_document "sales_order". See [docs](/docs/documents_put_document_sales_order.md#example-with-attachments-) for more info.
 | 5.1.2021 | For invoice return link credit notes (if exists). See [docs](/docs/documents_put_document.md#example--return-info-about-credit-notes-if-exists) for more info.
