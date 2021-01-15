@@ -30,3 +30,5 @@ Respond :
   "opr_time_ms":"12026"
 }
 ```
+Notes :
+* you can set status to null value by settings "status_code : "" (empty value)
