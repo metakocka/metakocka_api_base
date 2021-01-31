@@ -413,6 +413,9 @@ Respond example :
 ```
 
 ### Example with attachments :
+Notes :
+* you can add attachments to all document types (for example sales order, invoice, offer, etc.)
+
 **Data parameters**
 
 |Parameter| Required/Optional | Description |
@@ -426,6 +429,7 @@ Respond example :
 |----|------------|------
 | file_name | Required | Filename with extension |
 | source_url/data_b64 | Required | Public url of the file (pdf, image,...) or base64 encoded file |
+
 
 
 ```json
