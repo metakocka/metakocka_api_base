@@ -229,6 +229,34 @@ Notes :
 }
 ```
 
+### Search Sales orders with partner paramaters
+**Request** (POST - https://main.metakocka.si/rest/eshop/v1/search) :
+
+```javascript
+{
+	"secret_key": "8899",
+	"company_id": "16",
+	"doc_type": "sales_order",
+	"result_type": "doc",
+	"limit": 5,
+	"offset": 0,
+	"query_advance": [{
+			"type": "partner_recipient_name",
+			"value": "Jaka Novak"
+		}, {
+			"type": "partner_recipient_email",
+			"value": "test@mail.com"
+		}, {
+			"type": "partner_recipient_phone",
+			"value": "031112321"
+		}, {
+			"type": "customer_order",
+			"value": "PP-27012"
+		}
+	]
+}
+```
+
 ### Return Sales Orders with delivery service events
 **Request** (POST - https://main.metakocka.si/rest/eshop/v1/search) :
 
