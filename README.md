@@ -89,6 +89,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ## Release notes
 Date| What's new |
 ----|------------|
+| 22.2.2021 | Added tax_factor to put_document products. See [example](/docs/documents_put_document.md#example--products---tax-factor) for more info.
 | 3.2.2021 | Added partner parameters to sales order search. See [example](/docs/search_examples.md#search-sales-orders-with-partner-paramaters) for more info.
 | 21.1.2021 | Added show_tax_factor option to get_document (bill) and search. See [example](/docs/documents_get_document_bill.md#show_tax_factor) for more info.
 | 8.1.2021 | After sales order put_document, create also invoice. See [docs](/docs/documents_put_document_sales_order.md#create-invoice-after-order-is-stored-) for more info.
