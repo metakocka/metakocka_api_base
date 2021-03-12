@@ -139,20 +139,26 @@ Respond :
             "price_def":{  
                "amount_to":"10",
                "price":"2"
-            }
+            },
+	    "title": "cenik1",
+            "buyer": "Janez Novak",
+            "valid_from": "2009-05-10+02:00",
+            "valid_to": "2021-04-04+02:00"
          },
          {  
             "count_code":"PC_200_PC",
             "price_def":{  
                "amount_from":"10",
                "price":"3"
-            }
+            },
+	    "title": "cenik1"
          },
          {  
             "count_code":"c1",
             "price_def":{  
                "price":"20"
-            }
+            },
+	    "title": "cenik2"
          },
          {  
             "count_code":"PC_115",
@@ -160,7 +166,8 @@ Respond :
                "tax":"EX4",
                "tax_desc":"22",
                "price":"2"
-            }
+            },
+	    "title": "cenik3"
          },
          {  
             "count_code":"PC-2016",
@@ -169,7 +176,8 @@ Respond :
                "tax":"EX4",
                "tax_desc":"22",
                "price_with_tax":"20"
-            }
+            },
+	    "title": "cenik4"
          }
       ]
    }
