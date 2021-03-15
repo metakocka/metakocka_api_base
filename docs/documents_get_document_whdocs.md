@@ -37,6 +37,7 @@ Respond :
         "post_number": "1000",
         "place": "Ljubljana",
         "country": "Slovenia",
+        "country_iso_2" : "SI",
         "count_code": "1000",
         "useCustomerAsContact": "false"
     },
@@ -50,6 +51,7 @@ Respond :
         "post_number": "1000",
         "place": "Ljubljana",
         "country": "Slovenia",
+        "country_iso_2" : "SI",
         "count_code": "1000",
         "useCustomerAsContact": "false"
     },
