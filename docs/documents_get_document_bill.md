@@ -328,6 +328,7 @@ show\_product\_compound | bool| return product compound|
 show\_allocated\_cost | bool | get allocated costs for products. |
 show\_sales\_order\_method\_of\_payment | bool | get method of payment from sales order (if document link exist) |
 show\_tax\_factor | bool | get tax factor for each product |
+show\_product\_detail | bool | get product detail for each product |
 
 ### show\_last\_payment\_date
 
@@ -502,6 +503,41 @@ Respond :
             "discount": "0",
             "tax": "EX4",
             "tax_factor": "0.22"
+        }
+    ]
+}
+```
+### show\_product\_detail
+
+Notes :
+* you will get additional return parameter - "type" with values: material, service, compound or bills_of_materials
+
+Request : (POST - https://main.metakocka.si/rest/eshop/v1/get_document)
+```javascript
+{
+  "secret_key":"8899",
+  "company_id":"16",
+  "doc_type" : "sales_bill_domestic",
+  "doc_id" : "1600203257",
+  "show_product_detail" : "true"
+}
+```
+Respond :
+```javascript
+{
+    "mk_id": "1600203257",
+    "doc_type": "sales_bill_domestic",
+    "opr_code": "0",
+    [... remove ...]
+    "product_list": [
+        {
+            "mk_id": "1600159377",
+            "code": "art1",
+            "amount": "2",
+            "price": "3",
+            "discount": "0",
+            "tax": "EX4",
+            "type":"material"
         }
     ]
 }
