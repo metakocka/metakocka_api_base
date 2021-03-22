@@ -9,6 +9,7 @@ Request :
     "company_id":"16",
     "count_code":"eshop_001",
     "code":"eshop_001_sif",
+    "barcode": "987654321",
     "name":"artikel eshop_001",
     "name_desc": "artikel eshop_001 - daljsi opis",    
     "unit":"kos",
