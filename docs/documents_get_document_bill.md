@@ -542,3 +542,18 @@ Respond :
     ]
 }
 ```
+
+### Invoice with foreign invoice number
+If invoice is published for country with foreign tax number, parameter count_code_foreign_country will be added with given country ISO code.
+
+```
+Respond :
+```javascript
+{
+    "mk_id": "1600203257",
+    "doc_type": "sales_bill_foreign",
+    "count_code": "HR-MK-8",
+    "count_code_foreign_country": "HR"
+    ..........................
+}
+```
