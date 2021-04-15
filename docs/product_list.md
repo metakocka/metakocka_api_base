@@ -143,7 +143,8 @@ Respond :
 	    "title": "cenik1",
             "buyer": "Janez Novak",
             "valid_from": "2009-05-10+02:00",
-            "valid_to": "2021-04-04+02:00"
+            "valid_to": "2021-04-04+02:00",
+	    "sales_purchase" : "sales"
          },
          {  
             "count_code":"PC_200_PC",
@@ -151,7 +152,8 @@ Respond :
                "amount_from":"10",
                "price":"3"
             },
-	    "title": "cenik1"
+	    "title": "cenik1",
+	    "sales_purchase" : "purchase"	    
          },
          {  
             "count_code":"c1",
