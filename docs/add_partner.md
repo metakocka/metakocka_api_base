@@ -62,6 +62,7 @@ Request (POST - https://main.metakocka.si/rest/eshop/v1/add_partner) :
     "partner": {
         "business_entity": "false",
         "taxpayer": "false",
+        "buyer" : "true",
         "foreign_county": "false",
         "customer": "Test Uporabnik",
         "street": "Test, 4",
