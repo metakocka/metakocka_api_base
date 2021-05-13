@@ -30,6 +30,8 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 
 [warehouse_stock](/docs/warehouse_stock.md)
 
+[importInventory](/docs/importInventory.md)
+
 # Documents
 [Concept](/docs/documents_concept.md)
 
@@ -89,6 +91,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ## Release notes
 Date| What's new |
 ----|------------|
+| 13.5.2021 | Inventory import. See [example](/docs/importInventory.md) for more info.
 | 30.3.2021 | Invoice with foreign invoice number - country code. See [example](/docs/documents_get_document_bill.md#invoice-with-foreign-invoice-number) for more info.
 | 17.3.2021 | Added show_product_detail for get_document. See [example](/docs/documents_get_document_bill.md#show_product_detail) for more info.
 | 16.3.2021 | Added option to return discount for get_partner. See [example](/docs/get_partner.md#get_partner-with-discounts) for more info.
