@@ -2,7 +2,7 @@
 
 **Description** : Used to create warehouse inventory.
 
-**URL** : https://main.metakocka.si/rest/eshop/importInventory
+**URL** : https://main.metakocka.si/rest/eshop/import_inventory
 
 **Type** : POST
 
@@ -19,15 +19,20 @@
 
 |Parameter| Required/Optional | Description |
 |----|------------|------
-| mk_id | Required | Warehouse internal(MK) id. |
+| mark | Required | Warehouse code/mark. |
+| mk_id | Optional | Warehouse internal(MK) id. It can be used as a replacement for mark. |
 | product_list | Required | Product object list. |
 
 **Product object parameters**
 
 |Parameter| Required/Optional | Description |
 |----|------------|------
-| mk_id | Required | Product internal(MK) id. |
+| count_code | Required | Product ID/count code. |
+| mk_id | Optional | Product internal(MK) id. It can be used as a replacement for count_code. |
 | amount | Required | Amount of the product. |
+| serial_number_value | Optional | Serial number text value |
+| lot_number_value | Optional | Lot number text value |
+| expiration_date_value | Optional | Expiry date of the product. Example format: 2020-07-23+02:00. |
 
 
 **Request example**
@@ -38,10 +43,10 @@
   "inventory_date"  : "DATE",
   "warehouse_list" : [
     {
-      "mk_id" : "WAREHOUSE_ID",
+      "mark" : "WAREHOUSE_CODE",
       "product_list": [
         {
-          "mk_id": "PRODUCT_ID",
+          "count_code": "PRODUCT_ID",
           "amount": "PRODUCT_AMOUNT"
         }
       ]
