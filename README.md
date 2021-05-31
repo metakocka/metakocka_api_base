@@ -30,7 +30,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 
 [warehouse_stock](/docs/warehouse_stock.md)
 
-[importInventory](/docs/importInventory.md)
+[import_inventory](/docs/import_inventory.md)
 
 # Documents
 [Concept](/docs/documents_concept.md)
