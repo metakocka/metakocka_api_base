@@ -74,6 +74,9 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 * [add_partner](/docs/add_partner.md)
 * [update_partner](/docs/update_partner.md)
 
+# Complaints
+* [create_complaint](/docs/create_complaint.md)
+
 # WebHooks
 * [stock](/docs/webhooks.md)
 
@@ -91,6 +94,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ## Release notes
 Date| What's new |
 ----|------------|
+| 12.6.2021 | Endpoint create_complaint added. See [example](/docs/create_complaint.md) for more info.
 | 31.5.2021 | Endpoint import_inventory - added new supported fields. See [example](/docs/import_inventory.md) for more info.
 | 13.5.2021 | Inventory import. See [example](/docs/import_inventory.md) for more info.
 | 30.3.2021 | Invoice with foreign invoice number - country code. See [example](/docs/documents_get_document_bill.md#invoice-with-foreign-invoice-number) for more info.
