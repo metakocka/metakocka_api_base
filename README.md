@@ -94,6 +94,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ## Release notes
 Date| What's new |
 ----|------------|
+| 22.6.2021 | Endpoint create_complaint added support for partner - iban and bank info. See [example](/docs/create_complaint.md) for more info.
 | 12.6.2021 | Endpoint create_complaint added. See [example](/docs/create_complaint.md) for more info.
 | 31.5.2021 | Endpoint import_inventory - added new supported fields. See [example](/docs/import_inventory.md) for more info.
 | 13.5.2021 | Inventory import. See [example](/docs/import_inventory.md) for more info.

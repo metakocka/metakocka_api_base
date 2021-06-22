@@ -17,9 +17,23 @@
 | claim_reason | Optional  | Complaint reason - text/description. |
 | sales_order_count_code | Required  | Sales order number. |
 | datetime | Optional  | Document datetime of creation. Default datetime is now. Example ISO format: 2020-06-11T17:59:59+02:00.  |
+| partner | Optional  | Partner object defining bank info for complaint.  |
 | complaint_products | Required  | Product object list to dispute. |
 | replacement_products | Optional  | Product object list for replacement. |
 | attachment_list | Optional  | Attachment object list. |
+
+**Partner object parameters**
+
+|Parameter| Required/Optional | Description |
+|----|------------|------
+| iban | Required | IBAN/account number of the partner. |
+| swift | Required | Bank swift. |
+| bank_name | Required | Bank name. |
+| bank_street | Optional | Bank street. |
+| bank_place | Optional | Bank place. |
+| bank_country_code | Optional | Country code - ISO standard. Example: SI = Slovenia. |
+| partner_id | Optional | Internal(MK) partner id, default value is chosen by the sales order partner. |
+| partner_address_id | Optional | Internal(MK) address id, default value is chosen by the sales order partner. |
 
 **Product object parameters**
 
@@ -46,6 +60,14 @@
   "claim_reason": "TEXT",
   "datetime": "2020-06-11T11:59:59+02:00",
   "sales_order_count_code"  : "SALES_ORDER_NUMBER",
+  "partner" : {
+    "iban": "IBAN",
+    "swift": "BANK_SWIFT",
+    "bank_name": "BANK_NAME",
+    "bank_street": "BANK_STREET",
+    "bank_place": "BANK_PLACE",
+    "bank_country_code": "COUNTRY_ISO_CODE"
+  },
   "complaint_products": [
     {
       "count_code": "PRODUCT_ID",
