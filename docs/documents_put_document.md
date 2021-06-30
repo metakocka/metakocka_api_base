@@ -422,7 +422,7 @@ Notes :
         {
             "code": "art1",
             "amount": "1",
-            "price" : "100",
+            "price_with_tax" : "122",
             "tax_factor" : "0.22"
         }
     ]
