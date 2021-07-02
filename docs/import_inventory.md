@@ -71,3 +71,22 @@
   "opr_time_ms": "38071"
 }
 ```
+
+**Products not found - response example**
+```json
+{
+  "opr_code": "2",
+  "opr_desc": "Product with count_code X not found",
+  "opr_time_ms": "223",
+  "product_not_found_list": [
+    {
+      "count_code": "X",
+      "amount": "1"
+    },
+    {
+      "count_code": "Y",
+      "amount": "2"
+    }
+  ]
+}
+```
