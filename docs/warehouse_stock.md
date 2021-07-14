@@ -287,14 +287,16 @@ Respond :
             "expect_order_amount": "17",
             "export_order_delivery_date": "2020-10-24",
             "warehouse_id": "1600263862",
-            "warehouse_mark": "nas1"
+            "warehouse_mark": "nas1",
+	    "status": "Odprta"
         },
         {
             "mk_id": "1600000392",
             "expect_order_amount": "9",
             "export_order_delivery_date": "2020-10-25",
             "warehouse_id": "1600263862",
-            "warehouse_mark": "nas1"
+            "warehouse_mark": "nas1",
+	    "status": "Odprta"
         }
     ]
 }
