@@ -27,7 +27,8 @@
 
 |Parameter| Required/Optional | Description |
 |----|------------|------
-| count_code | Required | Product ID/count code. |
+| code | Required | Product SKU/code. |
+| count_code | Required | Product ID/count code. Alternative to "code" parameter. |
 | mk_id | Optional | Product internal(MK) id. It can be used as a replacement for count_code. |
 | amount | Required | Amount of the product. |
 | serial_number_value | Optional | Serial number text value |
