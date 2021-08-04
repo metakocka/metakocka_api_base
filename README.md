@@ -64,6 +64,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 * [Concept](/docs/search_concept.md)
 * [Examples](/docs/search_examples.md)
 * [Query advance - paramethers](/docs/search_query_advance_discovery.md)
+* [Search document by tracking code](/docs/search_tracking_code.md)
 
 ### report
 * [Concept](/docs/report_concept.md)
@@ -94,6 +95,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ## Release notes
 Date| What's new |
 ----|------------|
+| 4.8.2021 | Endpoint search_tracking_code added. See [example](/docs/search_tracking_code.md) for more info.
 | 4.8.2021 | Endpoint import_inventory added support for product codes. See [example](/docs/import_inventory.md) for more info.
 | 1.7.2021 | Endpoint import_inventory error handling for multiple products. See [example](/docs/import_inventory.md) for more info.
 | 22.6.2021 | Endpoint create_complaint added support for partner - iban and bank info. See [example](/docs/create_complaint.md) for more info.
