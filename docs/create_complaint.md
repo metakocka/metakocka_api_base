@@ -6,7 +6,7 @@
 
 **Type** : POST
 
-**Data parameters**
+**Body data parameters**
 
 |Parameter| Required/Optional | Description |
 |----|------------|------
@@ -14,10 +14,15 @@
 | company_id | Required  | Internal(MK) company id. |
 | api_user_email | Required  | Internal(MK) user email. |
 | claim_type | Required  | Type of complaint - reclamation, return or replacement. |
-| claim_reason | Optional  | Complaint reason - text/description. |
-| sales_order_count_code | Required  | Sales order number. |
+| claim_status | Optional  | Dynamic registry key for complaint status defined in app. Predefined statuses: draft, progress, completed |
+| claim_reason | Optional  | Dynamic registry key for complaint reason defined in app. |
+| claim_description | Optional  | Complaint description - text. |
+| sales_order_customer_order | Required  | Sales order customer order. |
+| sales_order_tracking_code | Optional  | Invoice tracking code. Can be used instead of 'sales_order_customer_order'. |
+| sales_order_count_code | Optional  | Sales order number. Can be used instead of 'sales_order_customer_order'. |
 | datetime | Optional  | Document datetime of creation. Default datetime is now. Example ISO format: 2020-06-11T17:59:59+02:00.  |
 | partner | Optional  | Partner object defining bank info for complaint.  |
+| return_tracking_code | Optional  | Return tracking code of the sales order.  |
 | complaint_products | Required  | Product object list to dispute. |
 | replacement_products | Optional  | Product object list for replacement. |
 | attachment_list | Optional  | Attachment object list. |
@@ -39,8 +44,9 @@
 
 |Parameter| Required/Optional | Description |
 |----|------------|------
-| count_code | Required | Product ID/count code. |
-| mk_id | Optional | Product internal(MK) id. It can be used as a replacement for count_code. |
+| code | Required | Product code. |
+| count_code | Optional | Product ID/count code. Can be used instead of 'code'. |
+| mk_id | Optional | Product internal(MK) id. It can be used as a replacement for 'code'. |
 | amount | Required | Amount of the product. |
 
 **Attachment object parameters**

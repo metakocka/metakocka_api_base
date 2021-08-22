@@ -63,7 +63,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ### search
 * [Concept](/docs/search_concept.md)
 * [Examples](/docs/search_examples.md)
-* [Query advance - paramethers](/docs/search_query_advance_discovery.md)
+* [Query advance - parameters](/docs/search_query_advance_discovery.md)
 * [Search document by tracking code](/docs/search_tracking_code.md)
 
 ### report
@@ -95,6 +95,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ## Release notes
 Date| What's new |
 ----|------------|
+| 22.8.2021 | Added support for customer order and tracking code search.Added product search by code. Added input parameters claim_status, claim_description, return_tracking_Code. Modified claim_reason. See [example](/docs/search_tracking_code.md) for more info.
 | 4.8.2021 | Endpoint search_tracking_code added. See [example](/docs/search_tracking_code.md) for more info.
 | 4.8.2021 | Endpoint import_inventory added support for product codes. See [example](/docs/import_inventory.md) for more info.
 | 1.7.2021 | Endpoint import_inventory error handling for multiple products. See [example](/docs/import_inventory.md) for more info.
