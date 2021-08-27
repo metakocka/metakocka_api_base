@@ -4,6 +4,7 @@ You can update specific fields on sales order (see list below). In background th
 * status_code. Notes : if you set status_code = 'shipped', you should set shipped_date. 
 * tracking_code
 * shipped_date
+* discount_value
 
 All values are change only if new valus is different then previous value. 
 
