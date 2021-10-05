@@ -20,6 +20,7 @@ Respond :
 	"opr_code": "0",
 	"count_code": "PP-18495",
 	"doc_date": "2015-05-08+02:00",
+	"eshop_name": "Mimovrste",
 
 	"partner": {
 		"business_entity": "true",
