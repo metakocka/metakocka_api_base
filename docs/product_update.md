@@ -74,7 +74,7 @@ Respond :
 }
 ```
 
-## 1.6 Attachments
+## 1.2 Attachments
 
 **Data parameters**
 
