@@ -73,3 +73,40 @@ Respond :
     "count_code":"eshop_002"
 }
 ```
+
+## 1.6 Attachments
+
+**Data parameters**
+
+|Parameter| Required/Optional | Description |
+|----|------------|------
+| attachment_list | Optional | Attachment object list |
+| remove_not_send_attachments | Optional | Removes all attachments from product. Attachments from the same request are added |
+
+
+**Attachment object parameters**
+
+|Parameter| Required/Optional | Description |
+|----|------------|------
+| file_name | Required | Filename with extension |
+| source_url/data_b64 | Required | Public url of the file (pdf, image,...) or base64 encoded file |
+
+Request :
+```javascript
+{
+    "secret_key": "8899",
+    "count_code": "89693",
+    "company_id": 16,
+    "remove_not_send_attachments":true,
+    "attachment_list" : [
+          {
+            "file_name" : "example.pdf", 
+            "source_url" : "PUBLIC_URL_TO_PDF"
+          },
+          {
+            "file_name" : "example.jpg", 
+            "data_b64" : "BASE64_ENCODED_JPG"
+          }
+        ]
+}
+```
