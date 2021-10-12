@@ -144,7 +144,7 @@ Request :
               "price" : "100",
               "tax" : "EX4"
               OR
-              "tax_factor": "0.92"
+              "tax_factor": "0.22"
           }
    ]
 }
