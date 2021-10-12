@@ -109,8 +109,12 @@ Respond :
 
 ### Sales order - adding and removing products
 **Notes**
-- if you only want to change stock amount (or any other field), you must remove the product first, then add it again.
- Both can be done in the same request. 
+- If you only want to change stock amount you can use parameter "amount". Product stock on sales order will decrease by given amount. If given amount
+is equal or exceeds product stock, product will be removed and remaining stock will be subtracted from the next same product until there is no stock or same 
+products left.
+- If parameter "amount" is not used, all products with the same code or mk_id will be removed.
+- To change any other filed, you must remove the product first, then add it again. Both can be done in the same request.
+
 
 **URL** : https://main.metakocka.si/rest/eshop/v1/update_document
 
@@ -129,7 +133,8 @@ Request :
           {
               "code":"product123",
               OR
-              "mk_id": 1600335835
+              "mk_id": 1600335835,
+              "amount":"2",
           }
    ],
    "product_add":[
@@ -138,6 +143,8 @@ Request :
               "amount": "1",
               "price" : "100",
               "tax" : "EX4"
+              OR
+              "tax_factor": "0.92"
           }
    ]
 }
