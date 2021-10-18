@@ -14,6 +14,7 @@
 | company_id | Required  | Internal(MK) company id. |
 | inventory_date | Required  | Document datetime. Example format: 2020-07-23+02:00.  |
 | warehouse_list | Required  | Warehouse object list. |
+| replace_inventory_id | Optional  | Inventory id for update. |
 
 **Warehouse object parameters**
 
