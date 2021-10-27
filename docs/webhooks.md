@@ -19,7 +19,7 @@ If webhook end point is not available (or respond is not required JSON), MK will
 POST request on webhook will have the following header paramethers :
 * X-MetaKocka-Event - see EventType in description below. For example : warehouse_product_stock_update
 * X-MetaKocka-Id - unique MK event id for log tracking
-* X-MetaKocka-Signature - hash body value (HMAC) with client_secret value and then Base64
+* X-MetaKocka-Signature - hash body value (HmacSHA1) with client_secret value and then Base64
 
 POST content is UTF-8 encoded.  
 
