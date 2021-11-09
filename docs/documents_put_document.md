@@ -295,6 +295,7 @@ Notes :
 * doc\_type must be "sales\_bill\_credit\_note"
 * credit\_note\_type must be "financial"
 * credit_note_bill is count_code of linked invoice. If more than one invoice has this count_code, the last one will be used (for calls after 24.7.2019). We highly recommended that in this case you use invoice counting that is unique across all years.
+* product in "product_list" must be service, not material type
 
 ```javascript
 {
@@ -335,6 +336,7 @@ Notes :
 * doc\_type must be "sales\_bill\_credit\_note"
 * credit\_note\_type must be "goods"
 * credit_note_bill is count_code of linked invoice. If more than one invoice has this count_code, the last one will be used (for calls after 24.7.2019). We highly recommended that in this case you use invoice counting that is unique across all years.
+* products in "product_list" must be the same as on linked invoice
 
 ```javascript
 {
