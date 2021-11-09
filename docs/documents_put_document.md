@@ -289,18 +289,24 @@ Notes :
 }
 ```
 
-### Example : Credit note
+### Example : Credit note - financial
+
+Notes :
+* doc\_type must be "sales\_bill\_credit\_note"
+* credit\_note\_type must be "financial"
+* credit_note_bill is count_code of linked invoice. If more than one invoice has this count_code, the last one will be used (for calls after 24.7.2019). We highly recommended that in this case you use invoice counting that is unique across all years.
+
 ```javascript
 {
     "secret_key":"...",
     "company_id":"16",
     "doc_type": "sales_bill_credit_note",
-    "count_code": "bill1",
-    "doc_date" : "2014-11-23+02:00",
-    "service_to_date" : "2014-11-22+02:00",    
-    "duo_payment" : "2014-11-24+02:00",    
-    "credit_note_type" : "goods",
-    "credit_note_bill" : "bill2",
+    "count_code": "1-MK-1831",
+    "doc_date" : "2021-11-205+02:00",
+    "service_to_date" : "2021-11-05+02:00",    
+    "duo_payment" : "2021-11-05+02:00",    
+    "credit_note_type" : "financial",
+    "credit_note_bill" : "1-MK-1830",
     "partner": {
         "business_entity": "true",
         "taxpayer": "true",
@@ -323,10 +329,83 @@ Notes :
 }
 ```
 
+### Example : Credit note - goods
+
 Notes :
 * doc\_type must be "sales\_bill\_credit\_note"
-* credit\_note\_type can be "goods" (you must specifiy connect bill via "credit\_note\_bill",) "financial" or "standalone".
-* credit_note_bill search invoices by count_code. If more then one invoice has this count_code, the last one will be used (for calls after 24.7.2019). We highly recommended that in this case you use invoice counting that is unique accross all years. 
+* credit\_note\_type must be "goods"
+* credit_note_bill is count_code of linked invoice. If more than one invoice has this count_code, the last one will be used (for calls after 24.7.2019). We highly recommended that in this case you use invoice counting that is unique across all years.
+
+```javascript
+{
+    "secret_key":"...",
+    "company_id":"16",
+    "doc_type": "sales_bill_credit_note",
+    "count_code": "1-MK-1831",
+    "doc_date" : "2021-11-205+02:00",
+    "service_to_date" : "2021-11-05+02:00",    
+    "duo_payment" : "2021-11-05+02:00",    
+    "credit_note_type" : "goods",
+    "credit_note_bill":"1-MK-1830",
+    "partner": {
+        "business_entity": "true",
+        "taxpayer": "true",
+        "foreign_county": "false",
+        "tax_id_number": "SI20000001",
+        "customer": "API partner 1",
+        "street": "Slovenska cesta 100",
+        "post_number": "1000",
+        "place": "Ljubljana",
+        "country": "Slovenia"
+    },
+    "product_list": [
+        {
+            "code": "art1",
+            "amount": "1",
+            "price" : "100",
+            "tax" : "EX4"
+        }
+    ]
+}
+```
+
+### Example : Credit note - standalone
+
+Notes :
+* doc\_type must be "sales\_bill\_credit\_note"
+* credit\_note\_type must be "standalone"
+
+```javascript
+{
+    "secret_key":"...",
+    "company_id":"16",
+    "doc_type": "sales_bill_credit_note",
+    "count_code": "bill1",
+    "doc_date" : "2021-11-205+02:00",
+    "service_to_date" : "2021-11-05+02:00",    
+    "duo_payment" : "2021-11-05+02:00",   
+    "credit_note_type" : "standalone",
+    "partner": {
+        "business_entity": "true",
+        "taxpayer": "true",
+        "foreign_county": "false",
+        "tax_id_number": "SI20000001",
+        "customer": "API partner 1",
+        "street": "Slovenska cesta 100",
+        "post_number": "1000",
+        "place": "Ljubljana",
+        "country": "Slovenia"
+    },
+    "product_list": [
+        {
+            "code": "art1",
+            "amount": "1",
+            "price" : "100",
+            "tax" : "EX4"
+        }
+    ]
+}
+```
 
 ### Example : Serial numbers, Lot numbers, Microlocations, Expiration date
 ```javascript
