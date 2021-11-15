@@ -22,7 +22,8 @@ Respond :
 			"sales_order_count_code": "PP-26617",
 			"sales_order_customer_order": "PP-26617",
 			"sticker_public_url": "https://metakocka-generated-stickers-dev.s3-eu-west-1.amazonaws.com/16/67f7fe691b25a7779.pdf",
-			"tracking_code": "CF001622134SI"
+			"tracking_code": "CF001622134SI",
+			"carrier_tracking_code":"1234111234"
 		},{
 			"opr_code": "1",
 			"opr_time_ms": "0",
