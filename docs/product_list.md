@@ -36,7 +36,8 @@ Attribute                 | Type | Notes| MK SLO |
 | return\_warehause\_stock | bool | If attribute is set, every product in respond will have "amount" attribute. In case the product was newer use on stock, attribute "amount" will still have value 0. | / |
 | return\_warehouse\_reservation | bool | Product will have additional attribute "reservation_detail" with list of reservation amount per warehouse. | / |
 | return\_product\_partner\_info | bool | Product will have additional attribute "product_partner_info" with list of custom partner info on product. | / |
-| return\_category | bool | Product will have additional attribute "category_tree_list" with tree strucutre of selected categories on product. | / |
+| return\_category | bool | Product will have additional attribute "category_tree_list" with tree structure of selected categories on product. | / |
+| category | char | Filter products by category name (example: "Computer","Shop",...). | / |
 | return\_expect\_order\_delivery\_date | bool | Product will have additional attribute "order_in_delivery" with a list of amounts and delivery dates per warehouse on product. | / |
 | offset | int | see notes. | / |
 | limit | int | see notes. | / |
