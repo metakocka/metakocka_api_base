@@ -192,4 +192,4 @@ Respond :
 ```
 
 ### Sales order - Add payment
-Please use put_document call - https://github.com/metakocka/metakocka_api_base/blob/master/docs/put_transaction.md
+Please use put_transaction call - https://github.com/metakocka/metakocka_api_base/blob/master/docs/put_transaction.md

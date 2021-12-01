@@ -95,6 +95,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ## Release notes
 Date| What's new |
 ----|------------|
+| 1.12.2021 | Added support for identifying Sales order with buyer_order. See [example](/docs/put_transaction.md) for more info.
 | 18.10.2021 | Replace inventory added for import_inventory. See [example](/docs/import_inventory.md) for more info.
 | 23.9.2021 | Attachments support added for product_update and product_add. See [example](/docs/product_add.md#16-attachments) for more info.
 | 27.8.2021 | Added discount_value for update_document Sales order. See [example](/docs/documents_update_document_sales_order.md) for more info.
