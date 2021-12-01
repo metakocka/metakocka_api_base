@@ -259,7 +259,7 @@ Notes :
         "foreign_county": "false",
         "tax_id_number": "SI20000001",
         "customer": "API partner 1",
-        "street": "Bul.george Cosbuc 31-37 SC:2 ET:1 AP:5",
+        "street": "Bul.george Cosbuc 31-37, SC:2 ET:1 AP:5",
         "street_number": "31-37",
         "post_number": "1000",
         "place": "Bucuresti",
