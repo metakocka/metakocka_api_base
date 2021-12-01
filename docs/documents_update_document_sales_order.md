@@ -190,3 +190,6 @@ Respond :
   "opr_time_ms":"12026"
 }
 ```
+
+### Sales order - Add payment
+Please use put_document call - https://github.com/metakocka/metakocka_api_base/blob/master/docs/put_transaction.md
