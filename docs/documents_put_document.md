@@ -330,6 +330,30 @@ Notes :
 }
 ```
 
+V2 minimal request (Please call support to turn on this feature)
+```javascript
+{
+    "secret_key":"...",
+    "company_id":"16",
+    "doc_type": "sales_bill_credit_note",
+    "count_code": "1-MK-1831",
+    "doc_date" : "2021-11-205+02:00",
+    "service_to_date" : "2021-11-05+02:00",    
+    "duo_payment" : "2021-11-05+02:00",    
+    "credit_note_type" : "financial",
+    "credit_note_bill" : "1-MK-1830",
+    "product_list": [
+        {
+            "code": "art1",
+            "amount": "1",
+            "price" : "100",
+            "tax" : "EX4"
+        }
+    ]
+}
+```
+
+
 ### Example : Credit note - goods
 
 Notes :
@@ -343,7 +367,6 @@ Notes :
     "secret_key":"...",
     "company_id":"16",
     "doc_type": "sales_bill_credit_note",
-    "count_code": "1-MK-1831",
     "doc_date" : "2021-11-205+02:00",
     "service_to_date" : "2021-11-05+02:00",    
     "duo_payment" : "2021-11-05+02:00",    
@@ -371,6 +394,29 @@ Notes :
 }
 ```
 
+V2 minimal request (Please call support to turn on this feature)
+```javascript
+{
+    "secret_key":"...",
+    "company_id":"16",
+    "doc_type": "sales_bill_credit_note",
+    "doc_date" : "2021-11-205+02:00",
+    "service_to_date" : "2021-11-05+02:00",    
+    "duo_payment" : "2021-11-05+02:00",    
+    "credit_note_type" : "goods",
+    "credit_note_bill":"1-MK-1830",
+    "product_list": [
+        {
+            "code": "art1",
+            "amount": "1",
+            "price" : "100",
+            "tax" : "EX4"
+        }
+    ]
+}
+```
+
+
 ### Example : Credit note - standalone
 
 Notes :
@@ -382,7 +428,6 @@ Notes :
     "secret_key":"...",
     "company_id":"16",
     "doc_type": "sales_bill_credit_note",
-    "count_code": "bill1",
     "doc_date" : "2021-11-205+02:00",
     "service_to_date" : "2021-11-05+02:00",    
     "duo_payment" : "2021-11-05+02:00",   
