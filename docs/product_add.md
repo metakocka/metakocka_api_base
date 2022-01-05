@@ -220,6 +220,35 @@ Request :
 }
 ```
 
+## 1.7 Packaging waste
+
+- Only packaging wastes you have selected in MetaKocka will be inserted.
+- Units are in grams [g].
+
+**Data parameters**
+
+|Parameter| Description |
+|----|------
+| packaging_waste_paper | Paper |
+| packaging_waste_plastic | Plastic |
+| packaging_waste_wood | Wood |
+| packaging_waste_metal | Metal |
+| packaging_waste_glass | Glass |
+| packaging_waste_other | Other |
+| packaging_waste_iron_steel | Iron and steel |
+| packaging_waste_aluminum | Aluminum |
+
+```javascript
+{
+    "secret_key": "8899",
+    "count_code": "89693",
+    "company_id": 16,
+    "packaging_waste_metal":"150",
+    "packaging_waste_glass":"20",
+    "packaging_waste_wood":"13"
+}
+```
+
 # 2. PHP Example
 [product\_add\_json.php](./examples_php/product_add_json.php)
 

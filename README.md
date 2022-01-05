@@ -95,6 +95,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ## Release notes
 Date| What's new |
 ----|------------|
+| 5.1.2022 | Packaging waste for products and products on warehouse acceptance note. See [example](/docs/documents_put_document_whdocs.md#237-warehouse-acceptance-note---product-packaging-waste) for more info.
 | 21.12.2021 | Create credit note without Partner information. See [example](/docs/documents_put_document.md#example--credit-note---financial) for more info.
 | 1.12.2021 | Added support for identifying Sales order with buyer_order. See [example](/docs/put_transaction.md) for more info.
 | 18.10.2021 | Replace inventory added for import_inventory. See [example](/docs/import_inventory.md) for more info.

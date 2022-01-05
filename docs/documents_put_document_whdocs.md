@@ -180,3 +180,37 @@ If we cannot identified products by mk_code, code, count_code, etc., you will ge
     ]
 }
 ```
+### 2.3.7 Warehouse acceptance note - product packaging waste
+
+See [Packaging waste](/docs/product_add.md#17-packaging-waste) at product_add for more info.
+
+```javascript
+{
+    "secret_key":"....",
+    "company_id":"16",
+    "doc_type": "warehouse_acceptance_note",
+    "doc_date" : "2020-03-05+02:00",
+    "partner": {
+        "business_entity": "true",
+        "taxpayer": "true",
+        "foreign_county": "false",
+        "tax_id_number": "SI20000001",
+        "customer": "API partner 1",
+        "street": "Slovenska cesta 100",
+        "post_number": "1000",
+        "place": "Ljubljana",
+        "country": "Slovenia"
+    },
+    "product_list": [
+        {
+            "mk_id": "1600373697",
+            "code": "serial_full",
+            "amount": "2",
+            "price": "10",
+            "tax": "EX4",
+            "packaging_waste_paper":"10"
+            "packaging_waste_wood":"11"
+        }
+    ]
+}
+```

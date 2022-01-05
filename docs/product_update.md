@@ -110,3 +110,7 @@ Request :
         ]
 }
 ```
+
+## 1.3 Packaging waste
+
+See [Packaging waste](/docs/product_add.md#17-packaging-waste) at product_add for more info.
