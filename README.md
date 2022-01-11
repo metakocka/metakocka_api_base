@@ -77,8 +77,8 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 
 # Complaints
 * [create_complaint](/docs/create_complaint.md)
-* 
-* # Blacklists
+
+# Blacklists
 * [search_blacklist_partner](/docs/search_blacklist_partner.md)
 
 # WebHooks
