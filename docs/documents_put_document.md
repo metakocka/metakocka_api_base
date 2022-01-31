@@ -308,40 +308,6 @@ Notes :
     "duo_payment" : "2021-11-05+02:00",    
     "credit_note_type" : "financial",
     "credit_note_bill" : "1-MK-1830",
-    "partner": {
-        "business_entity": "true",
-        "taxpayer": "true",
-        "foreign_county": "false",
-        "tax_id_number": "SI20000001",
-        "customer": "API partner 1",
-        "street": "Slovenska cesta 100",
-        "post_number": "1000",
-        "place": "Ljubljana",
-        "country": "Slovenia"
-    },
-    "product_list": [
-        {
-            "code": "art1",
-            "amount": "1",
-            "price" : "100",
-            "tax" : "EX4"
-        }
-    ]
-}
-```
-
-V2 minimal request (Please call support to turn on this feature)
-```javascript
-{
-    "secret_key":"...",
-    "company_id":"16",
-    "doc_type": "sales_bill_credit_note",
-    "count_code": "1-MK-1831",
-    "doc_date" : "2021-11-205+02:00",
-    "service_to_date" : "2021-11-05+02:00",    
-    "duo_payment" : "2021-11-05+02:00",    
-    "credit_note_type" : "financial",
-    "credit_note_bill" : "1-MK-1830",
     "product_list": [
         {
             "code": "art1",
@@ -362,39 +328,6 @@ Notes :
 * credit_note_bill is count_code of linked invoice. If more than one invoice has this count_code, the last one will be used (for calls after 24.7.2019). We highly recommended that in this case you use invoice counting that is unique across all years.
 * products in "product_list" must be the same as on linked invoice
 
-```javascript
-{
-    "secret_key":"...",
-    "company_id":"16",
-    "doc_type": "sales_bill_credit_note",
-    "doc_date" : "2021-11-205+02:00",
-    "service_to_date" : "2021-11-05+02:00",    
-    "duo_payment" : "2021-11-05+02:00",    
-    "credit_note_type" : "goods",
-    "credit_note_bill":"1-MK-1830",
-    "partner": {
-        "business_entity": "true",
-        "taxpayer": "true",
-        "foreign_county": "false",
-        "tax_id_number": "SI20000001",
-        "customer": "API partner 1",
-        "street": "Slovenska cesta 100",
-        "post_number": "1000",
-        "place": "Ljubljana",
-        "country": "Slovenia"
-    },
-    "product_list": [
-        {
-            "code": "art1",
-            "amount": "1",
-            "price" : "100",
-            "tax" : "EX4"
-        }
-    ]
-}
-```
-
-V2 minimal request (Please call support to turn on this feature)
 ```javascript
 {
     "secret_key":"...",
