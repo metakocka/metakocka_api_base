@@ -94,10 +94,12 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 * [put_transaction](/docs/put_transaction.md) - add payment on existing bill or offer
 * [get_bank_statement_status](/docs/get_bank_statement_status.md) - return last statement state, date, etc for all bank bills
 * [change_document_status](/docs/change_document_status.md) - change status for sales order (Order Management order)
+* [cash_register_journal](/docs/cash_register_journal.md) - return cash register journal data with transactions
 
 ## Release notes
 Date| What's new |
 ----|------------|
+| 2.2.2022 | Added new endpoint for searching cash register journals. See [example](/docs/cash_register_journal.md) for more info.
 | 11.1.2022 | Added new endpoint for searching blacklist partners. See [example](/docs/search_blacklist_partner.md) for more info.
 | 5.1.2022 | Packaging waste for products and products on warehouse acceptance note. See [example](/docs/documents_put_document_whdocs.md#237-warehouse-acceptance-note---product-packaging-waste) for more info.
 | 21.12.2021 | Create credit note without Partner information. See [example](/docs/documents_put_document.md#example--credit-note---financial) for more info.
