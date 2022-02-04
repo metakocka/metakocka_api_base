@@ -43,37 +43,43 @@
                     "partner": "TRGOVINA, D.O.O.",
                     "document": "1-MK-1935",
                     "description": "This is a description",
-                    "amount": "165.35"
+                    "amount": "165.35",
+                    "payment_type":"Gotovina"
                 },
                 {
                     "type": "Izdatek",
                     "partner": "TRGOVINA, D.O.O.",
                     "document": "MK-211",
-                    "amount": "36"
+                    "amount": "36",
+                    "payment_type":"Gotovina"
                 },
                 {
                     "type": "Prejemek - avans",
                     "partner": "TRGOVINA, D.O.O.",
                     "document": "PP-27203",
-                    "amount": "365.35"
+                    "amount": "365.35",
+                    "payment_type":"Gotovina"
                 },
                 {
                     "type": "Izdatek - avans",
                     "partner": "TRGOVINA, D.O.O.",
                     "document": "doc1",
-                    "amount": "4.38"
+                    "amount": "4.38",
+                    "payment_type":"Gotovina"
                 },
                 {
                     "type": "Vračilo - prodaja",
                     "partner": "TRGOVINA, D.O.O.",
                     "document": "PP-27178",
-                    "amount": "0"
+                    "amount": "0",
+                    "payment_type":"Gotovina"
                 },
                 {
                     "type": "Vračilo - nabava",
                     "partner": "TRGOVINA, D.O.O.",
                     "document": "linktest",
-                    "amount": "0"
+                    "amount": "0",
+                    "payment_type":"Gotovina"
                 }
             ]
         }
