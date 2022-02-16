@@ -487,3 +487,32 @@ Notes :
     ]
 }
 ```
+### Example : Prepaid bill - link to offer
+```javascript
+{
+	"secret_key": "REMOVE_SECRET_KEY",
+	"company_id": "16",
+	"doc_type": "sales_bill_prepaid",
+	"doc_date": "16.02.2022",
+	"duo_payment": "16.02.2022",
+	"service_to_date": "16.02.2022",
+	"partner": {
+		"customer": "Janez Novak",
+		"street": "Jutranja cesta 164",
+		"post_number": "2000",
+		"place": "Maribor",
+		"country": "Slovenia"
+	},
+	"offer_list": {
+		"count_code": "35348\/2022"
+	},
+	"notes": "avansni racun 75585",
+	"product_list": [{
+			"count_code": "2729",
+			"amount": "4",
+			"tax": "220",
+			"price_with_tax": "25.99"
+		}
+	]
+}
+```
