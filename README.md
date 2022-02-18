@@ -95,10 +95,12 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 * [get_bank_statement_status](/docs/get_bank_statement_status.md) - return last statement state, date, etc for all bank bills
 * [change_document_status](/docs/change_document_status.md) - change status for sales order (Order Management order)
 * [cash_register_journal](/docs/cash_register_journal.md) - return cash register journal data with transactions
+* [mark_orders_as_shipped](/docs/mark_orders_as_shipped.md) - mark sales orders as shipped
 
 ## Release notes
 Date| What's new |
 ----|------------|
+| 2.2.2022 | Added new endpoint for marking orders as shipped. See [example](/docs/mark_orders_as_shipped.md) for more info.
 | 2.2.2022 | Added new endpoint for searching cash register journals. See [example](/docs/cash_register_journal.md) for more info.
 | 11.1.2022 | Added new endpoint for searching blacklist partners. See [example](/docs/search_blacklist_partner.md) for more info.
 | 5.1.2022 | Packaging waste for products and products on warehouse acceptance note. See [example](/docs/documents_put_document_whdocs.md#237-warehouse-acceptance-note---product-packaging-waste) for more info.
