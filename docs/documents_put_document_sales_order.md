@@ -48,6 +48,7 @@
     "pariteta" : "Lasten Prevzem",
     "doc_created_email" : "m@m.com",
     "parcel_shop_id" : "P100",
+    "profit_center" : "ProfitCenter1",
     "offer_list" : [
         {
             "count_code" : "PP1_261"

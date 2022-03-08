@@ -21,7 +21,6 @@ Respond :
 	"count_code": "PP-18495",
 	"doc_date": "2015-05-08+02:00",
 	"eshop_name": "Mimovrste",
-
 	"partner": {
 		"business_entity": "true",
 		"taxpayer": "true",
@@ -101,6 +100,7 @@ Respond :
 	"method_of_payment" : "paypal",
 	"order_create_ts": "2015-05-08T12:13:15+02:00",
 	"parcel_shop_id": "P100",
+	"profit_center": "ProfitCenter1",
 	"doc_link_list": [{
 			"mk_id": "1600373113",
 			"count_code": "1-MK-1406",
