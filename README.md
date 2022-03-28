@@ -100,6 +100,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ## Release notes
 Date| What's new |
 ----|------------|
+| 28.3.2022 | Added pricelist_type and currency_code field for pricelists in product_list. See [example](/docs/product_list.md#12-with-pricelist) for more info.
 | 2.3.2022 | Added declaration field for product_add/update. See [example](/docs/product_add.md#18-extra-column---declaration) for more info.
 | 2.2.2022 | Added new endpoint for marking orders as shipped. See [example](/docs/mark_orders_as_shipped.md) for more info.
 | 2.2.2022 | Added new endpoint for searching cash register journals. See [example](/docs/cash_register_journal.md) for more info.
