@@ -151,7 +151,7 @@ Respond :
             "valid_to": "2021-04-04+02:00",
 	    "sales_purchase" : "sales",
 	    "currency_code": "EUR",
-	    "pricelist_type: "type1"
+	    "pricelist_type": "type1"
          },
          {  
             "count_code":"PC_200_PC",
@@ -162,7 +162,7 @@ Respond :
 	    "title": "cenik1",
 	    "sales_purchase" : "purchase",
 	    "currency_code": "EUR",
-	    "pricelist_type: "type2"    
+	    "pricelist_type": "type2"    
          },
          {  
             "count_code":"c1",
