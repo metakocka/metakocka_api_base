@@ -108,9 +108,6 @@ Notes :
 
 ## 1.2 With pricelist
 
-Notes :
-* "pricelist_type" parameter is only returned if company has "pricelist_type" extra feature.
-
 Request :
 ```javascript
 {
