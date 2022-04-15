@@ -413,6 +413,15 @@ Respond example :
 }
 ```
 
+### Country - northeren Ireland
+If you ship orders in Northern Ireland from the EU, these orders must have Tax (usually 20%) and a separate tax number (OSS - The Union One-Stop Shop). These orders should not have a country UK, but a separate county: United Kingdom - Northern Ireland. Please use one of the following words for "country" parameter :
+
+* Združeno kraljestvo (UK) - Severna Irska
+* United Kingdom - Northern Ireland
+* XI
+
+Tax factor / taxId must be set the same as for other EU countries. 
+
 ### Example with attachments :
 Notes :
 * you can add attachments to all document types (for example sales order, invoice, offer, etc.)
