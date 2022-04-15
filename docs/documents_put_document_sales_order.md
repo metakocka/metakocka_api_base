@@ -413,7 +413,7 @@ Respond example :
 }
 ```
 
-### Country - northeren Ireland
+### Country - Northeren Ireland
 If you ship orders in Northern Ireland from the EU, these orders must have Tax (usually 20%) and a separate tax number (OSS - The Union One-Stop Shop). These orders should not have a country UK, but a separate county: United Kingdom - Northern Ireland. Please use one of the following words for "country" parameter :
 
 * Združeno kraljestvo (UK) - Severna Irska
