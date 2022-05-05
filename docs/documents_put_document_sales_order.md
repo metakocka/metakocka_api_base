@@ -2,7 +2,7 @@
 
 ## 2.1 sales\_order
 ### Example full request :
-```javascript
+```json
 {
     "secret_key":"8899",
     "company_id":"16",
@@ -84,7 +84,7 @@ Notes :
 * link_to_web_store - the string value should exactly match with an existing store name. Only if store is type 'manual'. 
 
 ### Example minimal request :
-```javascript
+```json
 {
     "secret_key":"8899",
     "company_id":"16",
@@ -114,7 +114,7 @@ Notes :
 ```
 
 ### Example minimal request with gross price (always use if you have webshop) :
-```javascript
+```json
 {
     "secret_key":"8899",
     "company_id":"16",
@@ -144,7 +144,7 @@ Notes :
 ```
 
 ### Example minimal update request :
-```javascript
+```json
 {
     "secret_key":"8899",
     "company_id":"16",
@@ -175,7 +175,7 @@ Notes :
 ```
 
 ### Example minimal request + add payment :
-```javascript
+```json
 {
     "secret_key":"8899",
     "company_id":"16",
@@ -214,7 +214,7 @@ Notes :
 * if you execute document update and add mark_paid, previous payment will be deleted and new will be added.
 
 ### Example Lot numbers, Microlocations :
-```javascript
+```json
 {
     "secret_key":"...",
     "company_id":"16",
@@ -247,7 +247,7 @@ Notes :
 ```
 
 ### Example with street number :
-```javascript
+```json
 {
     "secret_key":"...",
     "company_id":"16",
@@ -281,7 +281,7 @@ Notes :
 ```
 
 ### Example with expected ship date :
-```javascript
+```json
 {
     "secret_key":"8899",
     "company_id":"16",
@@ -312,7 +312,7 @@ Notes :
 ```
 
 ### Example with webshop link (by name or eshop_sync_id) :
-```javascript
+```json
 {
     "secret_key":"8899",
     "company_id":"16",
@@ -344,7 +344,7 @@ Notes :
 ```
 
 ### Example with meta data :
-```javascript
+```json
 {
     "secret_key":"8899",
     "company_id":"16",
@@ -383,7 +383,7 @@ Notes :
 * include "create_invoice" paramether in request. In respond you will get invoice id as "bill_mk_id"
 
 Request : 
-```javascript
+```json
 {
     "secret_key":"8899",
     "company_id":"16",
@@ -484,7 +484,7 @@ Notes :
 ### Extra info for document change log
 You can specify extra information (like real user name from called system) that will be saved into the change log. Use paramether "document_change_log_notes" (max 50 characters).
 
-```javascript
+```json
 {
     "secret_key":"8899",
     "company_id":"16",
