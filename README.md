@@ -78,6 +78,9 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 # Complaints
 * [create_complaint](/docs/create_complaint.md)
 
+# Attachments
+* [add_attachment](/docs/add_attachment.md)
+
 # Blacklists
 * [search_blacklist_partner](/docs/search_blacklist_partner.md)
 
@@ -98,6 +101,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ## Release notes
 Date| What's new |
 ----|------------|
+| 18.5.2022 | Added new endpoint for adding document attachments. See [example](/docs/add_attachment.md) for more info.
 | 11.1.2022 | Added new endpoint for searching blacklist partners. See [example](/docs/search_blacklist_partner.md) for more info.
 | 5.1.2022 | Packaging waste for products and products on warehouse acceptance note. See [example](/docs/documents_put_document_whdocs.md#237-warehouse-acceptance-note---product-packaging-waste) for more info.
 | 21.12.2021 | Create credit note without Partner information. See [example](/docs/documents_put_document.md#example--credit-note---financial) for more info.
