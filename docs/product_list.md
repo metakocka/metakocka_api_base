@@ -107,6 +107,7 @@ Notes :
 * amount\_detail will give you detail view for amount on different warehouses and separate by serial number, exp date, microloc or lot.
 
 ## 1.2 With pricelist
+
 Request :
 ```javascript
 {
@@ -145,7 +146,9 @@ Respond :
             "buyer": "Janez Novak",
             "valid_from": "2009-05-10+02:00",
             "valid_to": "2021-04-04+02:00",
-	    "sales_purchase" : "sales"
+	    "sales_purchase" : "sales",
+	    "currency_code": "EUR",
+	    "pricelist_type": "type1"
          },
          {  
             "count_code":"PC_200_PC",
@@ -154,14 +157,17 @@ Respond :
                "price":"3"
             },
 	    "title": "cenik1",
-	    "sales_purchase" : "purchase"	    
+	    "sales_purchase" : "purchase",
+	    "currency_code": "EUR",
+	    "pricelist_type": "type2"    
          },
          {  
             "count_code":"c1",
             "price_def":{  
                "price":"20"
             },
-	    "title": "cenik2"
+	    "title": "cenik2",
+	    "currency_code": "EUR"
          },
          {  
             "count_code":"PC_115",
@@ -170,7 +176,8 @@ Respond :
                "tax_desc":"22",
                "price":"2"
             },
-	    "title": "cenik3"
+	    "title": "cenik3",
+	    "currency_code": "EUR"
          },
          {  
             "count_code":"PC-2016",
@@ -180,7 +187,8 @@ Respond :
                "tax_desc":"22",
                "price_with_tax":"20"
             },
-	    "title": "cenik4"
+	    "title": "cenik4",
+	    "currency_code": "EUR"
          }
       ]
    }

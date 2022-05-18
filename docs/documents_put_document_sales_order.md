@@ -2,7 +2,7 @@
 
 ## 2.1 sales\_order
 ### Example full request :
-```javascript
+```json
 {
     "secret_key":"8899",
     "company_id":"16",
@@ -48,6 +48,7 @@
     "pariteta" : "Lasten Prevzem",
     "doc_created_email" : "m@m.com",
     "parcel_shop_id" : "P100",
+    "profit_center" : "ProfitCenter1",
     "offer_list" : [
         {
             "count_code" : "PP1_261"
@@ -83,7 +84,7 @@ Notes :
 * link_to_web_store - the string value should exactly match with an existing store name. Only if store is type 'manual'. 
 
 ### Example minimal request :
-```javascript
+```json
 {
     "secret_key":"8899",
     "company_id":"16",
@@ -113,7 +114,7 @@ Notes :
 ```
 
 ### Example minimal request with gross price (always use if you have webshop) :
-```javascript
+```json
 {
     "secret_key":"8899",
     "company_id":"16",
@@ -143,7 +144,7 @@ Notes :
 ```
 
 ### Example minimal update request :
-```javascript
+```json
 {
     "secret_key":"8899",
     "company_id":"16",
@@ -174,7 +175,7 @@ Notes :
 ```
 
 ### Example minimal request + add payment :
-```javascript
+```json
 {
     "secret_key":"8899",
     "company_id":"16",
@@ -213,7 +214,7 @@ Notes :
 * if you execute document update and add mark_paid, previous payment will be deleted and new will be added.
 
 ### Example Lot numbers, Microlocations :
-```javascript
+```json
 {
     "secret_key":"...",
     "company_id":"16",
@@ -246,7 +247,7 @@ Notes :
 ```
 
 ### Example with street number :
-```javascript
+```json
 {
     "secret_key":"...",
     "company_id":"16",
@@ -280,7 +281,7 @@ Notes :
 ```
 
 ### Example with expected ship date :
-```javascript
+```json
 {
     "secret_key":"8899",
     "company_id":"16",
@@ -311,7 +312,7 @@ Notes :
 ```
 
 ### Example with webshop link (by name or eshop_sync_id) :
-```javascript
+```json
 {
     "secret_key":"8899",
     "company_id":"16",
@@ -343,7 +344,7 @@ Notes :
 ```
 
 ### Example with meta data :
-```javascript
+```json
 {
     "secret_key":"8899",
     "company_id":"16",
@@ -382,7 +383,7 @@ Notes :
 * include "create_invoice" paramether in request. In respond you will get invoice id as "bill_mk_id"
 
 Request : 
-```javascript
+```json
 {
     "secret_key":"8899",
     "company_id":"16",
@@ -411,6 +412,15 @@ Respond example :
   "total_price": "122.00"
 }
 ```
+
+### Country - Northeren Ireland
+If you ship orders in Northern Ireland from the EU, these orders must have Tax (usually 20%) and a separate tax number (OSS - The Union One-Stop Shop). These orders should not have a country UK, but a separate county: United Kingdom - Northern Ireland. Please use one of the following words for "country" parameter :
+
+* Združeno kraljestvo (UK) - Severna Irska
+* United Kingdom - Northern Ireland
+* XI
+
+Tax factor / taxId must be set the same as for other EU countries. 
 
 ### Example with attachments :
 Notes :
@@ -467,6 +477,39 @@ Notes :
         "file_name" : "example.jpg", 
         "data_b64" : "BASE64_ENCODED_JPG"
       }
+    ]
+}
+```
+
+### Extra info for document change log
+You can specify extra information (like real user name from called system) that will be saved into the change log. Use paramether "document_change_log_notes" (max 50 characters).
+
+```json
+{
+    "secret_key":"8899",
+    "company_id":"16",
+    "doc_type": "sales_order",
+    "count_code": "resttest2",
+    "doc_date" : "2014-09-13+02:00",
+    "document_change_log_notes" : "User : John deere",
+    "partner": {
+        "business_entity": "true",
+        "taxpayer": "true",
+        "foreign_county": "false",
+        "tax_id_number": "SI20000001",
+        "customer": "API partner 1",
+        "street": "Slovenska cesta 100",
+        "post_number": "1000",
+        "place": "Ljubljana",
+        "country": "Slovenia"
+    },
+    "product_list": [
+        {
+            "code": "art1",
+            "amount": "1",
+            "price" : "100",
+            "tax" : "EX4"
+        }
     ]
 }
 ```

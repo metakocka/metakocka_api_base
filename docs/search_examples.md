@@ -313,6 +313,24 @@ Notes :
     ]
 }
 ```
+### Search Sales orders with profit center
+**Request** (POST - https://main.metakocka.si/rest/eshop/v1/search) :
+
+```javascript
+{
+	"secret_key": "8899",
+	"company_id": "16",
+	"doc_type": "sales_order",
+	"result_type": "doc",
+	"limit": 5,
+	"offset": 0,
+	"query_advance": [{
+			"type": "profit_center",
+			"value": "ProfitCenter1"
+		}
+	]
+}
+```
 ### Return products as result
 **Request** (POST - https://main.metakocka.si/rest/eshop/v1/search) :
 ```javascript

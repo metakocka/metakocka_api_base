@@ -160,3 +160,7 @@ Attribute                 | Description | Documents|
 # Report type
 When sending request, you must specify type of report you want to get. 
 Supported types: PDF, XLS, CSV, XML, HTM, JSN (JSON), POI (xlsx), ESL (xml)
+
+# Supported locale 
+For invoice you can use the following locale values : sl,en,de,it,hr,sr_RS,sr_ba,ro_RO,pt_PT,es_ES,cz_CZ,sk_SK,hu_HU,pl_PL,mk_MK,nl,gr,fr,bg
+

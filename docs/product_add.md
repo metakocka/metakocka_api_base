@@ -249,6 +249,24 @@ Request :
 }
 ```
 
+## 1.8 Extra column - Declaration
+
+- To enable "Declaration" field on products, you must first enable declarations in MetaKocka company settings under "Extra fields on products".
+
+```javascript
+{
+    "secret_key": "8899",
+    "count_code": "89693",
+    "company_id": 16,
+    "extra_column": [
+        {
+            "name": "declaration",
+            "value": "This is declaration text."
+        }
+    ]
+}
+```
+
 # 2. PHP Example
 [product\_add\_json.php](./examples_php/product_add_json.php)
 
