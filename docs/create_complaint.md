@@ -48,6 +48,8 @@
 | count_code | Optional | Product ID/count code. Can be used instead of 'code'. |
 | mk_id | Optional | Product internal(MK) id. It can be used as a replacement for 'code'. |
 | amount | Required | Amount of the product. |
+| complaint_reason | Optional | Complaint reason - product level. Dynamic registry key for complaint reason defined in app settings.  |
+| complaint_description | Optional | Complaint description - product level. |
 
 **Attachment object parameters**
 
