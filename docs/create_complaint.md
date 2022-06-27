@@ -32,8 +32,8 @@
 |Parameter| Required/Optional | Description |
 |----|------------|------
 | iban | Required | IBAN/account number of the partner. |
-| swift | Required | Bank swift. |
-| bank_name | Required | Bank name. |
+| swift | Optional | Bank swift. |
+| bank_name | Optional | Bank name. |
 | bank_street | Optional | Bank street. |
 | bank_place | Optional | Bank place. |
 | bank_country_code | Optional | Country code - ISO standard. Example: SI = Slovenia. |
