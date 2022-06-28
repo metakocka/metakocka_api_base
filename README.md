@@ -98,6 +98,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ## Release notes
 Date| What's new |
 ----|------------|
+| 28.6.2022 | Updated descriptions for create_complaint. See [example](/docs/create_complaint.md) for more info.
 | 27.6.2022 | Updated create_complaint, optional parameters. See [example](/docs/create_complaint.md) for more info.
 | 13.6.2022 | Updated complaint reason/description. See [example](/docs/create_complaint.md) for more info.
 | 18.5.2022 | Added new endpoint for adding document attachments. See [example](/docs/add_attachment.md) for more info.

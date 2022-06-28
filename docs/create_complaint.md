@@ -48,6 +48,9 @@
 | count_code | Optional | Product ID/count code. Can be used instead of 'code'. |
 | mk_id | Optional | Product internal(MK) id. It can be used as a replacement for 'code'. |
 | amount | Required | Amount of the product. |
+| price_with_tax | Mixed | Product price value. Required for replacement products. |
+| tax | Optional | VAT rates - system defined. For example: "EX4", "220". Default value - tax from sales order. |
+| discount | Optional | Product discount value |
 | complaint_reason | Optional | Complaint reason - product level. Dynamic registry key for complaint reason defined in app settings.  |
 | complaint_description | Optional | Complaint description - product level. |
 
@@ -85,7 +88,8 @@
   "replacement_products": [
     {
       "count_code": "PRODUCT_ID",
-      "amount": "AMOUNT"
+      "amount": "AMOUNT",
+      "price_with_tax": "PRICE"
     }
   ],
   "attachment_list" : [
