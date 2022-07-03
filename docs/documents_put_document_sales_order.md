@@ -47,6 +47,7 @@
     "status_code" : "shipped",
     "pariteta" : "Lasten Prevzem",
     "doc_created_email" : "m@m.com",
+    "commercialist_email" : "m@m.com",
     "parcel_shop_id" : "P100",
     "profit_center" : "ProfitCenter1",
     "offer_list" : [
