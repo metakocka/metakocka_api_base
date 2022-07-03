@@ -56,7 +56,8 @@ Respond :
 	"status_code": "Novo naročilo",
 	"title": "naziv1",
 	"pariteta": "Dostava kupcu",
-	"doc_created_email": "maticpetek@gmail.com",
+	"doc_created_email": "m@m.com",
+	"commercialist_email" : "m@m.com",
 	"delivery_deadline": "2015-05-10+02:00",
 	"finish_date": "2015-05-10+02:00",
 	"offer_list": [{
