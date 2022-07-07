@@ -556,3 +556,24 @@ Respond :
     ..........................
 }
 ```
+
+### Linked invoice to prepaid bill
+If prepaid invoice is linked to sales invoice, the linked invoice will be displayed in 'doc_link_list' list.
+
+Respond :
+```javascript
+{
+    "mk_id": "1600203257",
+    "doc_type": "sales_bill_prepaid",
+    "count_code":  "1-MK-2062",
+    ............
+    "doc_link_list": [
+                {
+                    "mk_id": "1600598025",
+                    "count_code": "1-MK-2063",
+                    "doc_type": "sales_bill_foreign"
+                }
+    ],
+    ............
+}
+```
