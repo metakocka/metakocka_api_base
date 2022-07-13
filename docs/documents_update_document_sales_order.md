@@ -141,7 +141,7 @@ Request :
           {
               "code": "art1",
               "amount": "1",
-              "price" : "100",
+              "price_with_tax" : "100",
               "tax" : "EX4"
               OR
               "tax_factor": "0.22"
