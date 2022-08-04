@@ -543,7 +543,7 @@ You can update custom fee and country of origin for specify product. Two extra a
             "amount": "1",
             "price" : "100",
             "tax" : "EX4",
-            "country" : "Croatia",
+            "country" : "croatia",
             "customs_fee" : "85153990"
         }
     ]
