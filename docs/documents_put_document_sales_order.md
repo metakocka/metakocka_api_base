@@ -518,6 +518,7 @@ You can specify extra information (like real user name from called system) that 
 ### Update custom fee and country of origin on product
 You can update the custom fee and country of origin for a specific product. Two extra attributes must be added to the product - country and customs_fee. If a customs fee is not yet in MK register, it will be added.
 
+Country can be EN name (Slovenia, Italy, Croatia) or 2 char (SI, IT, HR).
 ```json
 {
     "secret_key":"8899",
