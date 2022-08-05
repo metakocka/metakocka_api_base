@@ -516,7 +516,7 @@ You can specify extra information (like real user name from called system) that 
 ```
 
 ### Update custom fee and country of origin on product
-You can update custom fee and country of origin for specify product. Two extra atributs must be se on product - country and customs_fee. 
+You can update the custom fee and country of origin for a specific product. Two extra attributes must be added to the product - country and customs_fee. If a customs fee is not yet in MK register, it will be added.
 
 ```json
 {
