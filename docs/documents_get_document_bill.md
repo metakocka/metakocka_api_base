@@ -510,7 +510,10 @@ Respond :
 ### show\_product\_detail
 
 Notes :
-* you will get additional return parameter - "type" with values: material, service, compound or bills_of_materials
+* you will get additional return parameters:
+  * "type" with values: material, service, compound or bills_of_materials
+  * "mk_row_id" : internal row id
+* "show_product_detail" is also supported for /search query
 
 Request : (POST - https://main.metakocka.si/rest/eshop/v1/get_document)
 ```javascript
@@ -537,7 +540,8 @@ Respond :
             "price": "3",
             "discount": "0",
             "tax": "EX4",
-            "type":"material"
+            "type":"material",
+            "mk_row_id":"1600598394"
         }
     ]
 }
