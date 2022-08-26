@@ -2,6 +2,9 @@
 # 1. JSON Example
 **URL** : https://main.metakocka.si/rest/eshop/v1/json/product_add
 
+Notes :
+* Pricelist: instead of "tax" you can use "tax_factor" (Example : "tax_factor":"0.22")
+
 Request :
 ```javascript
 {

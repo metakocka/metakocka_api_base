@@ -114,7 +114,8 @@ Request :
     "secret_key":"my_password",
     "company_id":"16",
     "count_code":"PA_115_PA",
-    "return_pricelist" : "true"
+    "return_pricelist" : "true",
+    "show_tax_factor":"true"
 }
 ```
 
@@ -174,7 +175,8 @@ Respond :
             "price_def":{  
                "tax":"EX4",
                "tax_desc":"22",
-               "price":"2"
+               "price":"2",
+               "tax_factor":"0.22"
             },
 	    "title": "cenik3",
 	    "currency_code": "EUR"
@@ -185,7 +187,8 @@ Respond :
                "discount":"15",
                "tax":"EX4",
                "tax_desc":"22",
-               "price_with_tax":"20"
+               "price_with_tax":"20",
+               "tax_factor":"0.22"
             },
 	    "title": "cenik4",
 	    "currency_code": "EUR"
@@ -200,6 +203,7 @@ Notes :
 * pricelist 'PC_115' has price (without tax)
 * pricelist 'PC-2016' has price with tax and 
 * all pricelists are includes - sales and purchase
+* use parameter "show_tax_factor" to get tax factor for each pricelist product insert
 
 ## 1.3 With compound
 Request :
