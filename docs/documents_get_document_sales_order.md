@@ -31,9 +31,11 @@ Respond :
 		"post_number": "1000",
 		"place": "Ljubljana",
 		"country": "Slovenia",
-        "country_iso_2" : "SI",
+		"country_iso_2" : "SI",
 		"count_code": "1000",
-		"useCustomerAsContact": "false"
+		"useCustomerAsContact": "false",
+		"mk_id": "180600025047",
+		"mk_address_id": "180600073437"
 	},
 	"receiver": {
 		"business_entity": "true",
@@ -45,9 +47,11 @@ Respond :
 		"post_number": "2000",
 		"place": "Kamnik",
 		"country": "Slovenia",
-        "country_iso_2" : "SI",
+		"country_iso_2" : "SI",
 		"count_code": "1000",
-		"useCustomerAsContact": "false"
+		"useCustomerAsContact": "false",
+		"mk_id": "180600025047",
+		"mk_address_id": "180600073437"
 	},
 	"sales_pricelist_code": "PC_115",
 	"prepayment_value": "10",

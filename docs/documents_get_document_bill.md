@@ -44,7 +44,9 @@ Respond :
         "country": "Slovenia",
         "country_iso_2" : "SI",
         "count_code": "1000",
-        "useCustomerAsContact": "false"
+        "useCustomerAsContact": "false",
+        "mk_id": "180600025047",
+        "mk_address_id": "180600073437"
     },
     "receiver": {
         "business_entity": "true",
@@ -58,7 +60,9 @@ Respond :
         "country": "Slovenia",
         "country_iso_2" : "SI",
         "count_code": "1000",
-        "useCustomerAsContact": "false"
+        "useCustomerAsContact": "false",
+        "mk_id": "180600025047",
+        "mk_address_id": "180600073437"
     },
     "service_to_date": "2015-05-07+02:00",
     "sales_pricelist_code": "PC_115",

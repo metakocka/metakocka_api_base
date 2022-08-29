@@ -33,7 +33,9 @@ Respond :
         "country": "Slovenia",
         "country_iso_2" : "SI",
         "count_code": "1600002672",
-        "useCustomerAsContact": "false"
+        "useCustomerAsContact": "false",
+        "mk_id": "180600025047",
+        "mk_address_id": "180600073437"
     },
     "sales_pricelist_code": "bruto1",
     "purchase_pricelist_code": "cenik_nabava",

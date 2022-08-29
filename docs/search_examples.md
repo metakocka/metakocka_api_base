@@ -65,7 +65,9 @@
                 "place": "Komenda",
                 "country": "Slovenia",
                 "count_code": "50513",
-                "useCustomerAsContact": "false"
+                "useCustomerAsContact": "false",
+                "mk_id": "180600025047",
+                "mk_address_id": "180600073437"
             },
             "receiver": {
                 "business_entity": "false",
@@ -78,7 +80,9 @@
                 "place": "Komenda",
                 "country": "Slovenia",
                 "count_code": "50513",
-                "useCustomerAsContact": "false"
+                "useCustomerAsContact": "false",
+                "mk_id": "180600025047",
+                "mk_address_id": "180600073437"
             },
             "service_to_date": "2015-05-10+02:00",
             "duo_payment": "2015-05-12+02:00",
