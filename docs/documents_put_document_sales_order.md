@@ -550,3 +550,56 @@ Country can be EN name (Slovenia, Italy, Croatia) or 2 char (SI, IT, HR).
     ]
 }
 ```
+
+### Example with product metadata
+
+| Parameter     | Optional | 
+|---------------|----------|
+| key           | true     |            
+| value_string  | true     |
+| display_key   | true     |
+| display_value | true     |
+
+```json
+{
+  "secret_key": "8899",
+  "company_id": "16",
+  "doc_type": "sales_order",
+  "doc_date": "23.03.2022",
+  "buyer_order": "test",
+  "partner": {
+    "business_entity": "true",
+    "taxpayer": "true",
+    "foreign_county": "true",
+    "tax_id_number": "SI20000859",
+    "customer": "API partner test",
+    "street": "Slovenska cesta 1001",
+    "post_number": "1000",
+    "place": "Ljubljana",
+    "country": "Croatia"
+  },
+  "product_list": [
+    {
+      "code": "art1",
+      "amount": "1",
+      "price": "1.00",
+      "discount": "0.00",
+      "tax": "EX4",
+      "meta_data": [
+        {
+          "key": "Design ID",
+          "value_string": "87cd01c179014823bd4bdf8a8cb3facc",
+          "display_key": "Design ID",
+          "display_value": "87cd01c179014823bd4bdf8a8cb3facc"
+        },
+        {
+          "key": "Tile ID",
+          "value_string": "0",
+          "display_key": "Tile ID",
+          "display_value": "0"
+        }
+      ]
+    }
+  ]
+}
+```

@@ -282,9 +282,9 @@ POST - https://main.metakocka.si/rest/eshop/v1/get_document
 
 **Data parameters**
 
-|Parameter| Required/Optional | Description |
-|----|------------|------
-| show_attachments | Optional | Default "false" |
+| Parameter        | Required/Optional | Description     |
+|------------------|-------------------|-----------------|
+| show_attachments | Optional          | Default "false" |
 
 Request :
 ```json
@@ -305,6 +305,60 @@ Response :
             "source_url": "PUBLIC_FILE_URL"
         }
     ]
+}
+```
+
+# get_document - Sales order with product metadata
+**Example** :
+POST - https://main.metakocka.si/rest/eshop/v1/get_document
+
+**Data parameters**
+
+| Parameter             | Required/Optional | Description                                                  |
+|-----------------------|-------------------|--------------------------------------------------------------|
+| show_product_metadata | Optional          | Default "false". Paramater also works with /search endpoint. |
+
+Request :
+```json
+{
+  "secret_key": "8899",
+  "company_id": "16",
+  "doc_type": "sales_order",
+  "doc_id": "400000000725",
+  "show_product_metadata": "true"
+}
+```
+Response :
+```json
+{
+  ...
+  "product_list": [
+    {
+      "count_code": "PA_115_PA",
+      "mk_id": "1600000392",
+      "code": "art1",
+      "name": "art1",
+      "unit": "kos",
+      "amount": "1",
+      "price": "1",
+      "discount": "0",
+      "tax": "EX4",
+      "meta_data": [
+        {
+          "display_key": "Design ID",
+          "display_value": "87cd01c179014823bd4bdf8a8cb3facc",
+          "key": "Design ID",
+          "value_string": "87cd01c179014823bd4bdf8a8cb3facc"
+        },
+        {
+          "display_key": "Tile ID",
+          "display_value": "0",
+          "key": "Tile ID",
+          "value_string": "0"
+        }
+      ]
+    }
+  ]
 }
 ```
 
