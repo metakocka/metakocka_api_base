@@ -90,7 +90,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 # Messages
 * [Email / SMS messages](/docs/send_message.md)
 
-# Get bank documents
+# Bank
 * [Cash register journal](/docs/cash_register_journal.md)
 * [Bank statements](/docs/get_bank_statement.md)
 * [Compensations](/docs/get_bank_compensation.md)
