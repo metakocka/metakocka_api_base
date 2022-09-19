@@ -90,6 +90,11 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 # Messages
 * [Email / SMS messages](/docs/send_message.md)
 
+# Get bank documents
+* [Cash register journal](/docs/cash_register_journal.md)
+* [Bank statements](/docs/get_bank_statement.md)
+* [Compensations](/docs/get_bank_compensation.md)
+
 # Other calls
 * [put_transaction](/docs/put_transaction.md) - add payment on existing bill or offer
 * [get_bank_statement_status](/docs/get_bank_statement_status.md) - return last statement state, date, etc for all bank bills
@@ -98,6 +103,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ## Release notes
 | Date       | What's new                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 19.9.2022  | Added get_bank_statement and get_bank_compensation endpoints and search by date to cash_register_journal. See [example](#get-bank-documents)                                                                                                                                                                                                                                                                                |
 | 7.9.2022   | Added support for product metadata to search, get_document and put_document for sales orders. See [example](/docs/documents_get_document_sales_order.md#get_document---sales-order-with-product-metadata), [example](/docs/documents_put_document_sales_order.md#example-with-product-metadata) for more info.                                                                                                              |
 | 26.8.2022  | Added support for show_product_detail to search and added mk_row_id return paramater. See [example](/docs/documents_get_document_bill.md#show_product_detail) for more info.                                                                                                                                                                                                                                                |
 | 26.8.2022  | Added support for tax_factor to product_add, product_update and show_tax_factor to product_list and search, get_document for sales_order. See [example](/docs/product_list.md#1.2-With-pricelist), [example](/docs/documents_get_document_bill.md#show_tax_factor) for more info.                                                                                                                                           |
