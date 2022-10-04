@@ -8,23 +8,25 @@
 
 **Data parameters**
 
-|Parameter| Required/Optional | Description |
-|----|------------|------
-| secret_key | Required  | Generated API key. |
-| company_id | Required  | Internal MK company id. |
-| doc_date | Required  | Document datetime.  |
-| count_code | _Optional_  | Count code of new transfer order. |
-| warehouseIdFrom | Required  | Original/source warehouse of the product_list. |
-| warehouseIdTo | Required  | Final warehouse to transfer product_list. |
-| product_list | Required | Product object list to transfer between warehouses. |
+| Parameter       | Required/Optional | Description                                         |
+|-----------------|-------------------|-----------------------------------------------------|
+| secret_key      | Required          | Generated API key.                                  |
+| company_id      | Required          | Internal MK company id.                             |
+| doc_date        | Required          | Document datetime.                                  |
+| count_code      | _Optional_        | Count code of new transfer order.                   |
+| warehouseIdFrom | Required          | Original/source warehouse of the product_list.      |
+| warehouseIdTo   | Required          | Final warehouse to transfer product_list.           |
+| product_list    | Required          | Product object list to transfer between warehouses. |
+| confirmed       | _Optional_        | Confirm transfer order                              |
 
 **Product object parameters**
 
-|Parameter| Required/Optional | Description |
-|----|------------|------
-| mk_id/count_code | Required | Product internal id or product count code. |
-| amount | Required | Amount of product to transfer. |
-| microlocation | _Optional_ | Location name of the final warehouse. |
+| Parameter        | Required/Optional | Description                                |
+|------------------|-------------------|--------------------------------------------|
+| mk_id/count_code | Required          | Product internal id or product count code. |
+| amount           | Required          | Amount of product to transfer.             |
+| microlocation    | _Optional_        | Location name of the final warehouse.      |
+| confirmed        | _Optional_        | Set product as confirmed                   |
 
 
 **Request example**
