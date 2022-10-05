@@ -603,3 +603,39 @@ Country can be EN name (Slovenia, Italy, Croatia) or 2 char (SI, IT, HR).
   ]
 }
 ```
+
+### Example with tracking type
+* Added parameter "salesOrderTrackingType" with two value:
+  * "bill"
+  * "packing_list"
+
+```json
+{
+  "secret_key": "8899",
+  "company_id": "16",
+  "doc_type": "sales_order",
+  "doc_date": "23.03.2022",
+  "buyer_order": "test",
+  "salesOrderTrackingType":"packing_list",
+  "partner": {
+    "business_entity": "true",
+    "taxpayer": "true",
+    "foreign_county": "true",
+    "tax_id_number": "SI20000859",
+    "customer": "API partner test",
+    "street": "Slovenska cesta 1001",
+    "post_number": "1000",
+    "place": "Ljubljana",
+    "country": "Croatia"
+  },
+  "product_list": [
+    {
+      "code": "art1",
+      "amount": "1",
+      "price": "1.00",
+      "discount": "0.00",
+      "tax": "EX4"
+    }
+  ]
+}
+```
