@@ -605,7 +605,7 @@ Country can be EN name (Slovenia, Italy, Croatia) or 2 char (SI, IT, HR).
 ```
 
 ### Example with tracking type
-* Added parameter "salesOrderTrackingType" with two value:
+* Added parameter "salesOrderTrackingType" with two options:
   * "bill"
   * "packing_list"
 
