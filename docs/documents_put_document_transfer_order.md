@@ -28,6 +28,7 @@
 | amount           | Required          | Amount of product to transfer.             |
 | microlocation    | _Optional_        | Location name of the final warehouse.      |
 | confirmed        | _Optional_        | Set product as confirmed                   |
+| amount_original  | _Optional_        | Set original amount of product to transfer |
 
 
 **Request example**
