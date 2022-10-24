@@ -380,6 +380,42 @@ Notes :
 }
 ```
 
+### Example with product categories :
+```json
+{
+    "secret_key":"...",
+    "company_id":"16",
+    "doc_type": "sales_order",
+    "count_code": "resttest2",
+    "doc_date" : "2020-03-05+02:00",
+    "partner": {
+        "business_entity": "true",
+        "taxpayer": "true",
+        "foreign_county": "false",
+        "tax_id_number": "SI20000001",
+        "customer": "API partner 1",
+        "street": "Slovenska cesta 100",
+        "post_number": "1000",
+        "place": "Ljubljana",
+        "country": "Slovenia"
+    },
+    "product_list": [
+        {
+            "mk_id": "1600373697",
+            "code": "serial_full",
+            "amount": "2",
+            "price": "10",
+            "tax": "EX4",
+            "categories" :[
+              {"category":"Fruit"},
+              {"category":["Fruit", "Apple"]}
+            ]
+        }
+    ]
+}
+```
+
+
 ### Create invoice after order is stored :
 * include "create_invoice" paramether in request. In respond you will get invoice id as "bill_mk_id"
 
