@@ -484,3 +484,32 @@ Notes :
 * Supported warehouse document types:
     * warehouse_acceptance_note
     * warehouse_packing_list
+
+### Search Sales orders with products
+**Request** (POST - https://main.metakocka.si/rest/eshop/v1/search) :
+
+Notes:
+* List of product IDs or codes seperated by a comma.
+* product_id_list -> input product's MK ID
+* product_code_list -> input product's code
+* Only one list can be used in the same request
+```javascript
+{
+	"secret_key": "8899",
+	"company_id": "16",
+	"doc_type": "sales_order",
+	"result_type": "doc",
+	"limit": 5,
+	"offset": 0,
+	"query_advance": [{
+			"type": "product_id_list",
+			"value": "1600601820,1600601234,1600307694"
+		}, 
+		OR
+		{
+			"type": "product_code_list",
+			"value": "Code1,Code2,Code3"
+		}
+	]
+}
+```
