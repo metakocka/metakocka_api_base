@@ -237,6 +237,7 @@ Respond :
         "compound_type": "compound",
         "compounds": [
             {
+	    	"mk_id": "1600386549",
                 "product_mk_id": "1600129635",
                 "product_count_code": "PA-4170",
                 "product_code": "t1",
@@ -249,6 +250,7 @@ Respond :
                 "workplace_id": "1600567744"
             },
             {
+	    	"mk_id": "1600386550",
                 "product_mk_id": "1600129634",
                 "product_count_code": "PA-4169",
                 "product_code": "c1",
