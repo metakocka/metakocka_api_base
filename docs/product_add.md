@@ -270,6 +270,83 @@ Request :
 }
 ```
 
+## 1.9 Compound
+
+
+Notes :
+* Parameter count_code' or 'mk_id' must be set for add operation
+
+**Product parameters**
+|Parameter| Required/Optional | Description |
+|----|------------|------
+| secret_key | Required | Generated API key |
+| company_id | Required | Company identification number |
+| mk_id | Required/Optional(if count_code is provided) | Product Identification number |
+| count_code | Required/Optional(if mk_id is provided) | Product count code |
+| service | Required/Optional(if product parameter complete_set is added) | Product as a service |
+| complete_set | Required/Optional(if parameter service is added) | Product as a service and compound |
+| compound_type | Required | Required value = "compound" |
+| confirm_save_change_product_service | Optional | To confirm if we want to change product as a service |
+
+Note :
+- if product is already in use on any document, invoice,... a warning will be shown to recalculate stock.   
+   To confirm, we need to add aditional parameter confirm_save_change_product_service
+
+**Compound parameters**
+
+Notes :
+* Parameter "product_count_code" or "product_mk_id" is required if we want to add existing product as compound.
+* If "product_count_code" and "product_mk_id" is not set or no product is found, and if all valid required parameters are provided, then new product will be created and then added as a compound.
+
+|Parameter| Required/Optional | Description |
+|----|------------|------
+| product_mk_id | Optional | Product id |
+| product_count_code | Optional | Product count code | 
+| amount | Required | add amount |
+| purchase_unit_factor | Required | Purchase unit factor |
+| supplier_id | Required | Supplier identification |
+| purchase_price | Required | Purchase price |
+| n_of_workers | Required | number of workers |
+| workplace_id | Required | workplace id |
+| unit | Required | Measurement unit |
+| categories | optional | Categories list |
+
+
+Request :
+
+```javascript
+{
+    "secret_key": "8899",
+    "count_code": "30888",
+    "company_id": 16,
+    "service": "true",
+    "compound_type":"compound",
+    "compounds": [
+            {
+                "product_count_code": "30888",
+                "product_title": "Table",
+                "amount": "1",
+                "purchase_unit_factor": "0,5",
+                "supplier_id": "1600036997",
+                "purchase_price": "4",
+                "n_of_workers": "2",
+                "workplace_id": "1600567744",
+                "unit" : "m2",
+            }
+    ]     
+}
+```
+Respond :
+```javascript
+{
+    "opr_code": "0",
+    "opr_time_ms": "66",
+    "mk_id": "1600386552",
+    "count_code": "30888"
+}
+```
+
+
 # 2. PHP Example
 [product\_add\_json.php](./examples_php/product_add_json.php)
 
