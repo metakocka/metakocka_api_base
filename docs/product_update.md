@@ -173,19 +173,21 @@ Request :
     "company_id": 16,
     "service": "true",
     "compound_type":"compound",
-    "compounds": [
-            {
-                "product_count_code": "30888",
-                "product_title": "Table",
-                "amount": "1",
-                "purchase_unit_factor": "0,5",
-                "supplier_id": "1600036997",
-                "purchase_price": "4",
-                "n_of_workers": "2",
-                "workplace_id": "1600567744",
-                "unit" : "m2",
-            }
-    ]     
+    "compounds_list": [
+        {
+            "mk_id": "1600386560",
+            "product_count_code": "30888",
+            "product_title": "table",
+            "amount": "1543",
+            "purchase_unit_factor": "0,5",
+            "supplier_id": "1600036997",
+            "purchase_price": "4",
+            "n_of_workers": "2",
+            "row_order": "1",
+            "workplace_id": "1600567744",
+            "unit": "m2"
+        }
+    ]    
 }
 ```
 Respond :
@@ -239,19 +241,19 @@ Request :
     "count_code": "30888",
     "company_id": 16,
     "service": "true",
-    "compound_type":"compound",
-    "compounds": [
-            {
-                "mk_id" : "1600385171",
-                "amount": "1",
-                "purchase_unit_factor": "0,5",
-                "supplier_id": "1600036997",
-                "purchase_price": "4",
-                "n_of_workers": "2",
-                "workplace_id": "1600567744",
-                "unit" : "m2",
-            }
-    ]     
+    "compound_type": "compound",
+    "compounds_list": [
+        {
+            "mk_id": "1600385171",
+            "amount": "1",
+            "purchase_unit_factor": "0,5",
+            "supplier_id": "1600036997",
+            "purchase_price": "4",
+            "n_of_workers": "2",
+            "workplace_id": "1600567744",
+            "unit": "m2",
+        }
+    ]
 }
 ```
 Respond : 
@@ -299,14 +301,12 @@ Notes :
     "count_code": "30888",
     "company_id": 16,
     "compound_type": "compound",
-    "compounds":[
-          {
-                "mark_delete": "true",
-                "mk_id": "1600386561"
-              
-          }
-          
-   ]
+    "compounds_list": [
+        {
+            "mark_delete": "true",
+            "mk_id": "1600386560"
+        }
+    ]
 }
 ```
 Respond : 

@@ -1,4 +1,5 @@
 
+
 # 1. JSON Examples
 **URL** : https://main.metakocka.si/rest/eshop/v1/json/product_list
 
@@ -235,9 +236,9 @@ Respond :
         "sales": "true",
         "purchasing": "true",
         "compound_type": "compound",
-        "compounds": [
+        "compounds_list": [
             {
-	    	"mk_id": "1600386549",
+		"mk_id": "1600386549",
                 "product_mk_id": "1600129635",
                 "product_count_code": "PA-4170",
                 "product_code": "t1",
@@ -250,7 +251,7 @@ Respond :
                 "workplace_id": "1600567744"
             },
             {
-	    	"mk_id": "1600386550",
+		"mk_id": "1600386550",
                 "product_mk_id": "1600129634",
                 "product_count_code": "PA-4169",
                 "product_code": "c1",
@@ -518,14 +519,16 @@ Respond :
                 "name_desc": "<br>"
             },
             "compound_type": "compound",
-            "compounds": {
-                "product_mk_id": "1600000550",
-                "product_count_code": "PA_120_PA",
-                "product_code": "s120",
-                "product_title": "n120",
-                "amount": "5",
-                "purchase_unit_factor": "0,2"
-            },
+            "compounds_list": [
+	       {
+	          "product_mk_id": "1600000550",
+	          "product_count_code": "PA_120_PA",
+	          "product_code": "s120",
+	          "product_title": "n120",
+	          "amount": "5",
+	          "purchase_unit_factor": "0,2"
+	       }
+            ],
             "asset": "false",
             "compound": "true",
             "country": "VE",
@@ -553,14 +556,16 @@ Respond :
             "eshop_sync": "false",
             "weight": "121",
             "compound_type": "compound",
-            "compounds": {
-                "product_mk_id": "1600000027",
-                "product_count_code": "PA_100_PA",
-                "product_code": "prod sifra 1",
-                "product_title": "naziv sifra 1",
-                "amount": "200",
-                "purchase_unit_factor": "0,005"
-            },
+            "compounds_list": [
+	      {
+		"product_mk_id": "1600000027",
+		"product_count_code": "PA_100_PA",
+		"product_code": "prod sifra 1",
+		"product_title": "naziv sifra 1",
+		"amount": "200",
+		"purchase_unit_factor": "0,005"
+	      }
+            ],
             "asset": "false",
             "compound": "true",
             "expiration_dates": "false",
@@ -720,7 +725,7 @@ Respond :
             "purchasing": "true",
             "eshop_sync": "false",
             "compound_type": "compound",
-            "compounds": [
+            "compounds_list": [
                 {
                     "product_mk_id": "1600000167",
                     "product_count_code": "PA_107_PA",
