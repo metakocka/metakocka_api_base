@@ -236,7 +236,7 @@ Respond :
         "sales": "true",
         "purchasing": "true",
         "compound_type": "compound",
-        "compounds_list": [
+        "compounds": [
             {
 		"mk_id": "1600386549",
                 "product_mk_id": "1600129635",
@@ -519,7 +519,7 @@ Respond :
                 "name_desc": "<br>"
             },
             "compound_type": "compound",
-            "compounds_list": [
+            "compounds": [
 	       {
 	          "product_mk_id": "1600000550",
 	          "product_count_code": "PA_120_PA",
@@ -556,7 +556,7 @@ Respond :
             "eshop_sync": "false",
             "weight": "121",
             "compound_type": "compound",
-            "compounds_list": [
+            "compounds": [
 	      {
 		"product_mk_id": "1600000027",
 		"product_count_code": "PA_100_PA",
@@ -725,7 +725,7 @@ Respond :
             "purchasing": "true",
             "eshop_sync": "false",
             "compound_type": "compound",
-            "compounds_list": [
+            "compounds": [
                 {
                     "product_mk_id": "1600000167",
                     "product_count_code": "PA_107_PA",
