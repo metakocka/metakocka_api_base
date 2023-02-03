@@ -173,7 +173,7 @@ Request :
     "company_id": 16,
     "service": "true",
     "compound_type":"compound",
-    "compounds_list": [
+    "compounds": [
         {
             "mk_id": "1600386560",
             "product_count_code": "30888",
@@ -242,7 +242,7 @@ Request :
     "company_id": 16,
     "service": "true",
     "compound_type": "compound",
-    "compounds_list": [
+    "compounds": [
         {
             "mk_id": "1600385171",
             "amount": "1",
@@ -301,7 +301,7 @@ Notes :
     "count_code": "30888",
     "company_id": 16,
     "compound_type": "compound",
-    "compounds_list": [
+    "compounds": [
         {
             "mark_delete": "true",
             "mk_id": "1600386560"
