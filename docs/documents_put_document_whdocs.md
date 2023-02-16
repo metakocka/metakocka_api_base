@@ -17,7 +17,6 @@
     "doc_type": "warehouse_delivery_note",
     "count_code": "rest_test_1",
     "doc_date" : "2014-12-21+02:00",
-    "cenik_id":"1600602207",
     "partner": {
         "business_entity": "true",
         "taxpayer": "true",
@@ -51,7 +50,7 @@
     "discount_value" : "15",
     "currency_code" : "EUR",
     "doc_created_email" : "m@m.com",    
-    "purchase_pricelist_code" : "cenik_pr_1",
+    "sales_pricelist_code" : "cenik_se_1",
     "status_code" : "delno_aktiven",
     "warehouse" : "glavni",
     "notes": "to so notes.",
@@ -75,7 +74,6 @@
     "doc_type": "warehouse_packing_list",
     "count_code": "rest_test_1",
     "doc_date" : "2014-12-21+02:00",
-    "cenik_id":"1600602207",
     "partner": {
         "business_entity": "true",
         "taxpayer": "true",
@@ -109,7 +107,7 @@
     "discount_value" : "15",
     "currency_code" : "EUR",
     "doc_created_email" : "m@m.com",    
-    "purchase_pricelist_code" : "cenik_pr_1",
+    "sales_pricelist_code" : "cenik_se_1",
     "status_code" : "delno_aktiven",
     "warehouse" : "glavni",
     "notes": "to so notes.",
