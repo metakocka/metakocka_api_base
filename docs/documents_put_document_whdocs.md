@@ -1,18 +1,128 @@
 **URL** : https://main.metakocka.si/rest/eshop/v1/put_document
 
 ## 2.3 Warehouse docs (delivery note, packing list, etc)
-|doc_type| SLO | EN |
-|----|------------|------
-| warehouse\_delivery\_note | Nalog za odpremo  | Delivery note |
-| warehouse\_packing\_list | Dobavnica  | Packing list |
-| warehouse\_receiving\_note | Nalog za prevzem  | Order for receiving |
-| warehouse\_acceptance\_note | Prevzemnica  | Goods received note |
+| doc_type                    | SLO              | EN                  |
+|-----------------------------|------------------|---------------------|
+| warehouse\_delivery\_note   | Nalog za odpremo | Delivery note       |
+| warehouse\_packing\_list    | Dobavnica        | Packing list        |
+| warehouse\_receiving\_note  | Nalog za prevzem | Order for receiving |
+| warehouse\_acceptance\_note | Prevzemnica      | Goods received note |
 
 ### 2.3.1 Warehouse delivery note
-TODO
+**Example full request** :
+```javascript
+{
+    "secret_key":"8899",
+    "company_id":"16",
+    "doc_type": "warehouse_delivery_note",
+    "count_code": "rest_test_1",
+    "doc_date" : "2014-12-21+02:00",
+    "cenik_id":"1600602207",
+    "partner": {
+        "business_entity": "true",
+        "taxpayer": "true",
+        "foreign_county": "false",
+        "tax_id_number": "SI20000001",
+        "customer": "API partner 1",
+        "street": "Slovenska cesta 100",
+        "post_number": "1000",
+        "place": "Ljubljana",
+        "province": "Severna primorska",
+        "country": "Slovenia"
+    },
+    "offer_list" : [
+    	{
+    		"count_code" : "37"
+    	},
+    	{
+    		"count_code" : "38"
+    	}    	
+    ],
+    "sales_order_list" : [
+    	{
+    		"count_code" : "232"
+    	}   	
+    ],
+    "workorder_list" : [
+    	{
+    		"count_code" : "431"
+    	}   	
+    ],
+    "discount_value" : "15",
+    "currency_code" : "EUR",
+    "doc_created_email" : "m@m.com",    
+    "purchase_pricelist_code" : "cenik_pr_1",
+    "status_code" : "delno_aktiven",
+    "warehouse" : "glavni",
+    "notes": "to so notes.",
+    "product_list": [
+        {
+            "code": "art1",
+            "amount": "1",
+            "price" : "100",
+            "tax" : "EX4"
+        }
+    ]
+}
+```
 
 ### 2.3.2 Warehouse packing list
-TODO
+**Example full request** :
+```javascript
+{
+    "secret_key":"8899",
+    "company_id":"16",
+    "doc_type": "warehouse_packing_list",
+    "count_code": "rest_test_1",
+    "doc_date" : "2014-12-21+02:00",
+    "cenik_id":"1600602207",
+    "partner": {
+        "business_entity": "true",
+        "taxpayer": "true",
+        "foreign_county": "false",
+        "tax_id_number": "SI20000001",
+        "customer": "API partner 1",
+        "street": "Slovenska cesta 100",
+        "post_number": "1000",
+        "place": "Ljubljana",
+        "province": "Severna primorska",
+        "country": "Slovenia"
+    },
+    "offer_list" : [
+    	{
+    		"count_code" : "37"
+    	},
+    	{
+    		"count_code" : "38"
+    	}    	
+    ],
+    "sales_order_list" : [
+    	{
+    		"count_code" : "232"
+    	}   	
+    ],
+    "workorder_list" : [
+    	{
+    		"count_code" : "431"
+    	}   	
+    ],
+    "discount_value" : "15",
+    "currency_code" : "EUR",
+    "doc_created_email" : "m@m.com",    
+    "purchase_pricelist_code" : "cenik_pr_1",
+    "status_code" : "delno_aktiven",
+    "warehouse" : "glavni",
+    "notes": "to so notes.",
+    "product_list": [
+        {
+            "code": "art1",
+            "amount": "1",
+            "price" : "100",
+            "tax" : "EX4"
+        }
+    ]
+}
+```
 
 ### 2.3.3 Warehouse receiving note
 **Example full request** :
