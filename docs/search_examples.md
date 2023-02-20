@@ -554,6 +554,16 @@ Notes:
             "opr_code": "0",
             "count_code": "30",
             "status_code": "Zaključeno",
+	     "partner": {
+                "mk_id": "1600307881",
+                "mk_address_id": "1600307882",
+                "iban": "IBAN",
+                "bank_name": "BANK_NAME",
+                "bank_street": "BANK_STREET",
+                "bank_place": "BANK_PLACE",
+                "bank_country_code": "SI",
+                "swift": "BANK_SWIFT"
+            },
             "complaint_products": {
                 "mk_id": "1600034099",
                 "amount": "132",
@@ -574,6 +584,16 @@ Notes:
             "doc_type": "complaint",
             "opr_code": "0",
             "count_code": "31",
+	     "partner": {
+                "mk_id": "1600307881",
+                "mk_address_id": "1600307882",
+                "iban": "IBAN",
+                "bank_name": "BANK_NAME",
+                "bank_street": "BANK_STREET",
+                "bank_place": "BANK_PLACE",
+                "bank_country_code": "SI",
+                "swift": "BANK_SWIFT"
+            },
             "status_code": "Zaključeno",
             "complaint_products": {
                 "mk_id": "1600034099",
