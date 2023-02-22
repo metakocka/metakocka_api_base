@@ -554,7 +554,7 @@ Notes:
             "opr_code": "0",
             "count_code": "30",
             "status_code": "Zaključeno",
-	     "partner": {
+	    "partner": {
                 "mk_id": "1600307881",
                 "mk_address_id": "1600307882",
                 "iban": "IBAN",
@@ -564,15 +564,20 @@ Notes:
                 "bank_country_code": "SI",
                 "swift": "BANK_SWIFT"
             },
+	    "buyer_order": "test3",
             "complaint_products": {
+                "count_code": "1016",
                 "mk_id": "1600034099",
+                "code": "artikel_5",
                 "amount": "132",
                 "price": "6.00",
                 "tax": "EX4",
                 "complaint_reason": "wrong_product"
             },
             "replacement_products": {
+	    	"count_code": "682",
                 "mk_id": "1600092669",
+                "code": "ŽARNIC-R7S-LIN-120-ES-OSR",
                 "amount": "43",
                 "price": "43.00",
                 "tax": "EX4"
@@ -584,7 +589,7 @@ Notes:
             "doc_type": "complaint",
             "opr_code": "0",
             "count_code": "31",
-	     "partner": {
+	    "partner": {
                 "mk_id": "1600307881",
                 "mk_address_id": "1600307882",
                 "iban": "IBAN",
@@ -594,16 +599,21 @@ Notes:
                 "bank_country_code": "SI",
                 "swift": "BANK_SWIFT"
             },
-            "status_code": "Zaključeno",
-            "complaint_products": {
-                "mk_id": "1600034099",
+           "status_code": "Zaključeno",
+           "buyer_order": "PP-27085",
+           "complaint_products": {
+                "count_code": "PA_115_PA",
+                "mk_id": "1600000392",
+                "code": "art1",
                 "amount": "132",
                 "price": "6.00",
                 "tax": "EX4",
                 "complaint_reason": "wrong_product"
             },
             "replacement_products": {
+	   	"count_code": "682",
                 "mk_id": "1600092669",
+                "code": "ŽARNIC-R7S-LIN-120-ES-OSR",
                 "amount": "43",
                 "price": "43.00",
                 "tax": "EX4"
