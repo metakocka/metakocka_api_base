@@ -48,7 +48,8 @@ Request :
               "discount" : "5",
               "tax" : "220",
               "price" : "8",
-              "price_with_tax" : "10"
+              "price_with_tax" : "10",
+              "lowest_price_30_days": "6"
             },
             {
               "amount_from" : "6",
@@ -56,7 +57,8 @@ Request :
               "discount" : "5",
               "tax" : "220",
               "price" : "8",
-              "price_with_tax" : "10"
+              "price_with_tax" : "10",
+              "lowest_price_30_days": "6"
             }
          ]
       }
