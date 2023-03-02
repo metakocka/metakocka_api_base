@@ -126,17 +126,9 @@ See [Packaging waste](/docs/product_add.md#17-packaging-waste) at product_add fo
 
 ### -Add compound
 
-
-Notes :
-* Parameter count_code' or 'mk_id' must be set for update operation
-
 **Product parameters**
 |Parameter| Required/Optional | Description |
 |----|------------|------
-| secret_key | Required | Generated API key |
-| company_id | Required | Company identification number |
-| mk_id | Required/Optional(if count_code is provided) | Product Identification number |
-| count_code | Required/Optional(if mk_id is provided) | Product count code |
 | service | Required/Optional(if product parameter complete_set is added) | Product as a service |
 | complete_set | Required/Optional(if parameter service is added) | Product as a service and compound |
 | compound_type | Required | Required value = "compound" |
@@ -177,8 +169,7 @@ Request :
     "compound_type":"compound",
     "compounds": [
         {
-            "mk_id": "1600386560",
-            "product_count_code": "30888",
+            "product_mk_id": "1600386560",
             "product_title": "table",
             "amount": "1543",
             "purchase_unit_factor": "0,5",
@@ -207,14 +198,10 @@ Respond :
 **Product parameters**
 
 Notes :
-* Parameter count_code' or 'mk_id' must be set for update operation
+* Parameter 'count_code' or 'mk_id' must be set for update operation
 
 |Parameter| Required/Optional | Description |
 |----|------------|------
-| secret_key | Required | Generated API key |
-| company_id | Required | Company identification number |
-| mk_id | Required/Optional(if count_code is provided) | Product Identification number |
-| count_code | Required/Optional(if mk_id is provided) | Product count code |
 | compound_type | Required | Required value = "compound" |
 
 
