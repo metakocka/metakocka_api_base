@@ -47,16 +47,16 @@ Warning : if you would like to add payment when document is created or updated a
 - use mk_id or count_code or buyer_order (only for sales_order doc_type) for document identification
 - cash_register paramether is required only if we have cash payment and we use multiple cash register
 
-| Paramether | Required? | In MK | Type / max length | Notes |
-| ------- | -------- | ---- | ----------------- | ------ |
-| doc_type | Yes | / | char | See doc_type list in Notes above.
-| mk_id | No | / | char, 30 | unique document identification in MK. Usually we get this parameter as result of the call for adding document. mk_id, count_code or buyer_order (for sales_order) is required.
-| count_code | Yes | Bill or offer number | char, 30 | document number in MK. It can be automatically generated in MK or added in document when it is created by REST call. 
-| buyer_order | No | Customer order number on Sales order | char, 30 | Customer order number on Sales order document. Field can be used for Sales order identification instead of count_code or mk_id. 
-| payment_mode | No | Payment mode | char | see payment edit dialog in MK. It can have values 'payment', 'prepayment' or 'return'.
-| payment_type | No | Payment type | char,100 | payment type can be set in dynamic register.
-| cash_register | NE | Cash register | char,100 | the name of cash register that can be set in dynamic register. Use only when you have cash payment and multiple cash register.
-| date | DA | Date | char (ISO date) | when payment was done. In ISO 8601 format.
-| price | DA | Price | price | price in format '1200.12'.
-| notes | NE | Notes | char,100 | text will be part of transaction description.
+| Parameter     | Required? | In MK                                | Type / max length | Notes                                                                                                                                                                          |
+|---------------|-----------|--------------------------------------|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| doc_type      | Yes       | /                                    | char              | See doc_type list in Notes above.                                                                                                                                              |
+| mk_id         | No        | /                                    | char, 30          | unique document identification in MK. Usually we get this parameter as result of the call for adding document. mk_id, count_code or buyer_order (for sales_order) is required. |
+| count_code    | Yes       | Bill or offer number                 | char, 30          | document number in MK. It can be automatically generated in MK or added in document when it is created by REST call.                                                           |
+| buyer_order   | No        | Customer order number on Sales order | char, 30          | Customer order number on Sales order document. Field can be used for Sales order identification instead of count_code or mk_id.                                                |
+| payment_mode  | Yes       | Payment mode                         | char              | see payment edit dialog in MK. It can have values 'payment', 'prepayment' or 'return'.                                                                                         |
+| payment_type  | Yes       | Payment type                         | char,100          | payment type can be set in dynamic register.                                                                                                                                   |
+| cash_register | No        | Cash register                        | char,100          | the name of cash register that can be set in dynamic register. Use only when you have cash payment and multiple cash register.                                                 |
+| date          | Yes       | Date                                 | char (ISO date)   | when payment was done. In ISO 8601 format.                                                                                                                                     |
+| price         | Yes       | Price                                | price             | price in format '1200.12'.                                                                                                                                                     |
+| notes         | No        | Notes                                | char,100          | text will be part of transaction description.                                                                                                                                  |
 
