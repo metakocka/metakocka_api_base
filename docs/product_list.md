@@ -189,7 +189,8 @@ Respond :
                "tax":"EX4",
                "tax_desc":"22",
                "price_with_tax":"20",
-               "tax_factor":"0.22"
+               "tax_factor":"0.22",
+	       "lowest_price_30_days": "6"
             },
 	    "title": "cenik4",
 	    "currency_code": "EUR"
@@ -205,6 +206,7 @@ Notes :
 * pricelist 'PC-2016' has price with tax and 
 * all pricelists are includes - sales and purchase
 * use parameter "show_tax_factor" to get tax factor for each pricelist product insert
+* pricelist 'PC_115' has lowest price in 30 days 
 
 ## 1.3 With compound
 Request :

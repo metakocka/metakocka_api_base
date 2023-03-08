@@ -515,7 +515,7 @@ Notes:
 ```
 
 
-### Search Complains
+### Search Complains by last change timestamp
 **Request** (POST - https://main.metakocka.si/rest/eshop/v1/search) :
 ```javascript
 {
@@ -524,7 +524,17 @@ Notes:
     "doc_type": "complaint",
     "result_type": "doc",
     "limit": 5,
-    "offset": 0
+    "offset": 0,
+    "query_advance": [
+        {
+            "type": "last_change_from",
+            "value": "2023-01-17T14:28:54+02:00"
+        },
+        {
+            "type": "last_change_to",
+            "value": "2023-12-17T14:28:54+02:00"
+        }
+    ]
 }
 
 ```
@@ -533,16 +543,18 @@ Notes:
 ```javascript
 {
     "opr_code": "0",
-    "opr_time": "74",
+    "opr_time": "37",
     "result_count": "2",
     "offset": "0",
     "limit": "5",
     "result": [
         {
-            "mk_id": "17077",
+            "mk_id": "17104",
             "doc_type": "complaint",
             "opr_code": "0",
-            "partner": {
+            "count_code": "30",
+            "status_code": "Zaključeno",
+	    "partner": {
                 "mk_id": "1600307881",
                 "mk_address_id": "1600307882",
                 "iban": "IBAN",
@@ -552,33 +564,61 @@ Notes:
                 "bank_country_code": "SI",
                 "swift": "BANK_SWIFT"
             },
-            "status_code": "V teku",
-            "additional_data": "{\r\n  \"completed_status_datetime\" : \"2023-02-09 16:06:47\",\r\n  \"customer_notes\" : [],\r\n  \"supplier_notes\" : [ ]\r\n}"
-        },
-        {
-            "mk_id": "17079",
-            "doc_type": "complaint",
-            "opr_code": "0",
-            "status_code": "Zaključeno",
+	    "buyer_order": "test3",
             "complaint_products": {
+                "count_code": "1016",
                 "mk_id": "1600034099",
-                "amount": "null",
-                "price_with_tax": "6.00",
-                "tax": "EX4"
+                "code": "artikel_5",
+                "amount": "132",
+                "price": "6.00",
+                "tax": "EX4",
+                "complaint_reason": "wrong_product"
             },
             "replacement_products": {
-                "mk_id": "1600034099",
-                "amount": "null",
-                "price_with_tax": "6.00",
+	    	"count_code": "682",
+                "mk_id": "1600092669",
+                "code": "ŽARNIC-R7S-LIN-120-ES-OSR",
+                "amount": "43",
+                "price": "43.00",
                 "tax": "EX4"
             },
-	    "substitute_products": {
-                "mk_id": "1600034099",
-                "amount": "null",
-                "price_with_tax": "6.00",
+            "additional_data": "{\r\n  \"completed_status_datetime\" : \"2023-02-20 13:18:39\",\r\n  \"customer_notes\" : [],\r\n  \"supplier_notes\" : [ ]\r\n}"
+        },
+        {
+            "mk_id": "17105",
+            "doc_type": "complaint",
+            "opr_code": "0",
+            "count_code": "31",
+	    "partner": {
+                "mk_id": "1600307881",
+                "mk_address_id": "1600307882",
+                "iban": "IBAN",
+                "bank_name": "BANK_NAME",
+                "bank_street": "BANK_STREET",
+                "bank_place": "BANK_PLACE",
+                "bank_country_code": "SI",
+                "swift": "BANK_SWIFT"
+            },
+           "status_code": "Zaključeno",
+           "buyer_order": "PP-27085",
+           "complaint_products": {
+                "count_code": "PA_115_PA",
+                "mk_id": "1600000392",
+                "code": "art1",
+                "amount": "132",
+                "price": "6.00",
+                "tax": "EX4",
+                "complaint_reason": "wrong_product"
+            },
+            "replacement_products": {
+	   	"count_code": "682",
+                "mk_id": "1600092669",
+                "code": "ŽARNIC-R7S-LIN-120-ES-OSR",
+                "amount": "43",
+                "price": "43.00",
                 "tax": "EX4"
             },
-            "additional_data": "{\r\n  \"completed_status_datetime\" : \"2023-02-13 08:55:33\",\r\n  \"customer_notes\" : [],\r\n  \"supplier_notes\" : [ ]\r\n}"
+            "additional_data": "{\r\n  \"completed_status_datetime\" : \"2023-02-20 13:38:28\",\r\n  \"customer_notes\" : [],\r\n  \"supplier_notes\" : [ ]\r\n}"
         }
     ]
 }
