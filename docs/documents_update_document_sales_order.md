@@ -5,6 +5,7 @@ You can update specific fields on sales order (see list below). In background th
 * tracking_code
 * shipped_date
 * discount_value
+* tracking_intermediate_code
 
 All values are change only if new valus is different then previous value. 
 
@@ -26,6 +27,7 @@ Request :
   "delivery_type": "Pošta Slovenije",
   "status_code" : "draft",
   "tracking_code" : "SI2001",
+  "tracking_intermediate_code" : "KZ120022",
   "shipped_date" : "2019-09-26+02:00",
   "notes_header" : "notes zgoraj",
   "notes": "to so notes.",
