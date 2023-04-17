@@ -308,3 +308,6 @@ Respond :
     "count_code": "30888"
 }
 ```
+
+## 1.5 Pricelist update
+By default, update will change current product on pricelist (if exist). This is because of change history. You can also delete product and insert new one. Use paramether "pricelist_remove_product_before_add" : "true" in product level. 
