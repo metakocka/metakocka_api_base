@@ -622,4 +622,35 @@ Notes:
         }
     ]
 }
+```
+
+### Additional options for Acceptance notes
+
+You can use addition query paramethers (with doc_date_from and doc_date_to) for filtering return documents :
+* show_only_open - documents without invoice
+* show_only_real_acceptance_note - skiw automatic credit note acceptance notes.
+
+```javascript
+{
+	"secret_key": "8899",
+	"company_id": "16",
+	"doc_type": "warehouse_acceptance_note",
+	"result_type": "doc",
+	"limit": 5,
+	"offset": 0,
+	"query_advance": [{
+            "type": "doc_date_from",
+            "value": "2023-04-19+02:00"
+        },
+        {
+            "type": "doc_date_to",
+            "value": "2023-05-19+02:00"
+        },
+        {
+            "type": "show_only_real_acceptance_note",
+            "value": true
+        }		
+	]
+}
+```
 
