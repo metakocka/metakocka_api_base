@@ -654,3 +654,35 @@ You can use addition query paramethers (with doc_date_from and doc_date_to) for 
 }
 ```
 
+### Sales order - status change
+
+Notes:
+* Retrieve sales orders whose status changed to one of the listed statuses between the provided dates.
+* All three parameters ("status_change_from", "status_change_to", "status_change_list") are required.
+
+**Request** (POST - https://main.metakocka.si/rest/eshop/v1/search) :
+```javascript
+{
+    "secret_key": "8899",
+    "company_id": "16",
+    "doc_type": "sales_order",
+    "result_type": "doc",
+    "limit": 100,
+    "offset": 0,
+    "query_advance": [
+        {
+            "type": "status_change_from",
+            "value": "2023-05-05T00:00:00+02:00"
+        },
+        {
+            "type": "status_change_to",
+            "value": "2023-12-21T00:00:00+02:00"
+        },
+        {
+            "type": "status_change_list",
+            "value": "canceled,lost,damaged"
+        }
+    ]
+}
+
+```
