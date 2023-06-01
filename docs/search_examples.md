@@ -549,76 +549,125 @@ Notes:
     "limit": "5",
     "result": [
         {
-            "mk_id": "17104",
+            "mk_id": "1",
             "doc_type": "complaint",
             "opr_code": "0",
-            "count_code": "30",
-            "status_code": "Zaključeno",
-	    "partner": {
-                "mk_id": "1600307881",
-                "mk_address_id": "1600307882",
-                "iban": "IBAN",
-                "bank_name": "BANK_NAME",
-                "bank_street": "BANK_STREET",
-                "bank_place": "BANK_PLACE",
-                "bank_country_code": "SI",
-                "swift": "BANK_SWIFT"
+            "count_code": "1",
+            "partner": {
+                "mk_id": "180600025047",
+                "business_entity": "false",
+                "taxpayer": "false",
+                "foreign_county": "false",
+                "customer": "METAKOCKA, NAPREDNE SPLETNE APLIKACIJE, D.O.O",
+                "street": "test 2",
+                "post_number": "1000",
+                "place": "Komenda",
+                "country": "Slovenia",
+                "count_code": "12565",
+                "mk_address_id": "180600073437",
+                "country_iso_2": "SI",
+                "buyer": "true",
+                "supplier": "false"
             },
-	    "buyer_order": "test3",
+            "status_code": "completed",
+            "buyer_order": "PP-27400",
+            "created_ts": "2023-05-31T12:41:02+02:00",
+            "doc_link_list": [
+                {
+                    "mk_id": "400000002884",
+                    "count_code": "PP-27400",
+                    "doc_type": "sales_order"
+                },
+                {
+                    "mk_id": "1600608186",
+                    "count_code": "1-MK-2344",
+                    "doc_type": "sales_bill_domestic"
+                },
+                {
+                    "mk_id": "400000002885",
+                    "count_code": "PP-27401",
+                    "doc_type": "sales_order"
+                },
+                {
+                    "mk_id": "1600608194",
+                    "count_code": "1-MK-2345",
+                    "doc_type": "sales_bill_credit_note"
+                }
+            ],
+            "last_change_user": "Glavni account",
             "complaint_products": {
-                "count_code": "1016",
-                "mk_id": "1600034099",
-                "code": "artikel_5",
-                "amount": "132",
-                "price": "6.00",
-                "tax": "EX4",
-                "complaint_reason": "wrong_product"
-            },
-            "replacement_products": {
-	    	"count_code": "682",
-                "mk_id": "1600092669",
-                "code": "ŽARNIC-R7S-LIN-120-ES-OSR",
-                "amount": "43",
-                "price": "43.00",
+                "count_code": "90040",
+                "mk_id": "1600600802",
+                "code": "art123",
+                "amount": "2",
+                "price": "1.00",
+                "discount": "4",
                 "tax": "EX4"
             },
-            "additional_data": "{\r\n  \"completed_status_datetime\" : \"2023-02-20 13:18:39\",\r\n  \"customer_notes\" : [],\r\n  \"supplier_notes\" : [ ]\r\n}"
-        },
-        {
-            "mk_id": "17105",
-            "doc_type": "complaint",
-            "opr_code": "0",
-            "count_code": "31",
-	    "partner": {
-                "mk_id": "1600307881",
-                "mk_address_id": "1600307882",
-                "iban": "IBAN",
-                "bank_name": "BANK_NAME",
-                "bank_street": "BANK_STREET",
-                "bank_place": "BANK_PLACE",
-                "bank_country_code": "SI",
-                "swift": "BANK_SWIFT"
-            },
-           "status_code": "Zaključeno",
-           "buyer_order": "PP-27085",
-           "complaint_products": {
+            "replacement_products": {
                 "count_code": "PA_115_PA",
                 "mk_id": "1600000392",
                 "code": "art1",
-                "amount": "132",
-                "price": "6.00",
-                "tax": "EX4",
-                "complaint_reason": "wrong_product"
-            },
-            "replacement_products": {
-	   	"count_code": "682",
-                "mk_id": "1600092669",
-                "code": "ŽARNIC-R7S-LIN-120-ES-OSR",
-                "amount": "43",
-                "price": "43.00",
+                "amount": "1",
+                "price": "1.00",
+                "discount": "4",
                 "tax": "EX4"
             },
-            "additional_data": "{\r\n  \"completed_status_datetime\" : \"2023-02-20 13:38:28\",\r\n  \"customer_notes\" : [],\r\n  \"supplier_notes\" : [ ]\r\n}"
+            "additional_data": "{\r\n  \"completed_status_datetime\" : \"2023-05-31 13:05:11\",\r\n  \"customer_notes\" : [],\r\n  \"supplier_notes\" : [ ]\r\n}",
+            "last_change_ts": "2023-05-31T14:54:45+02:00",
+            "claim_note": "complaint",
+            "reclamation_replacement": "false",
+            "include_services": "false",
+            "refund": "false",
+            "damaged": "true",
+            "warehouse_damaged": "novoSkl",
+            "claim_type": "replacement"
+        },
+        {
+            "mk_id": "4",
+            "doc_type": "complaint",
+            "opr_code": "0",
+            "count_code": "4",
+            "partner": {
+                "mk_id": "180600025047",
+                "business_entity": "false",
+                "taxpayer": "false",
+                "foreign_county": "false",
+                "customer": "METAKOCKA, NAPREDNE SPLETNE APLIKACIJE, D.O.O",
+                "street": "test 2",
+                "post_number": "1000",
+                "place": "Komenda",
+                "country": "Slovenia",
+                "count_code": "12565",
+                "mk_address_id": "180600073437",
+                "country_iso_2": "SI",
+                "buyer": "true",
+                "supplier": "false"
+            },
+            "status_code": "draft",
+            "buyer_order": "PP-27404",
+            "created_ts": "2023-05-31T17:03:12+02:00",
+            "doc_link_list": [
+                {
+                    "mk_id": "400000002888",
+                    "count_code": "PP-27404",
+                    "doc_type": "sales_order"
+                },
+                {
+                    "mk_id": "1600608217",
+                    "count_code": "1-MK-2348",
+                    "doc_type": "sales_bill_domestic"
+                }
+            ],
+            "last_change_user": "Glavni account",
+            "additional_data": "{\r\n  \"customer_notes\" : [],\r\n  \"supplier_notes\" : [ ]\r\n}",
+            "last_change_ts": "2023-05-31T17:21:18+02:00",
+            "claim_note": "complaint",
+            "reclamation_replacement": "false",
+            "include_services": "false",
+            "refund": "false",
+            "claim_type": "reclamation",
+            "sales_order_new_status": "Novo naročilo"
         }
     ]
 }
