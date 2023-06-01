@@ -78,6 +78,8 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 
 # Complaints
 * [create_complaint](/docs/create_complaint.md)
+* [get complaint](/docs/get_complaint.md)
+* [search complaint](/docs/search_examples.md#Search-Complains-by-last-change-timestamp)
 
 # Blacklists
 * [search_blacklist_partner](/docs/search_blacklist_partner.md)
@@ -104,6 +106,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ## Release notes
 | Date       | What's new                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1.6.2023   | Added support for get complaint. See [Example](/docs/get_complaint.md) for more info.                                                                                                                                                                                                                                                                                                                                       |
 | 25.5.2023  | Added support for searching sales orders with changes status. See [Example](/docs/search_examples.md#sales-order---status-change) for more info.                                                                                                                                                                                                                                                                            |
 | 19.5.2023  | Additional options for Acceptance notes See [Example](/docs/search_examples.md#additional-options-for-acceptance-notes) for more info.                                                                                                                                                                                                                                                                                      |
 | 13.3.2023  | Added support for tracking_intermediate_code parameter via update_documnet for sales_order. See [Example](/docs/documents_update_document_sales_order.md#sales-order---update) for more info.                                                                                                                                                                                                                               |
