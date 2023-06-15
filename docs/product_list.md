@@ -961,7 +961,7 @@ Request :
     "return_web_shop_link":"true"
 } 
 ```
-Respond (with return\_web\_shop\_link = 'true'):~~~~
+Respond (with return\_web\_shop\_link = 'true'):
 
 ```javascript
 {{
