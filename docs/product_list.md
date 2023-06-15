@@ -23,25 +23,26 @@ Request :
 }
 ```
 
-Attribute                 | Type | Notes| MK SLO |
---------------------------|------|------|--------|
-| count_code | char,30 | | Id artikla |
-| mk_id | char,30 | | / |
-| code | char,50 | | Šifra artikla |
-| sales | bool | Product must be flag as sales | Prodajni |
-| purchase | bool | Product must be flag as purchase | Nabavni |
-| service | bool | Product must be flag as service | Storitev |
-| work | bool | Product must be flag as work | Delo |
-| active | bool | Product must be flag as active | Aktiven |
-| eshop_sync | bool | Product must be flag for e-commerce sync | Izmenjava - Spletna trg. |
-| return\_warehause\_stock | bool | If attribute is set, every product in respond will have "amount" attribute. In case the product was newer use on stock, attribute "amount" will still have value 0. | / |
-| return\_warehouse\_reservation | bool | Product will have additional attribute "reservation_detail" with list of reservation amount per warehouse. | / |
-| return\_product\_partner\_info | bool | Product will have additional attribute "product_partner_info" with list of custom partner info on product. | / |
-| return\_category | bool | Product will have additional attribute "category_tree_list" with tree structure of selected categories on product. | / |
-| category | char | Filter products by category name (example: "Computer","Shop",...). | / |
-| return\_expect\_order\_delivery\_date | bool | Product will have additional attribute "order_in_delivery" with a list of amounts and delivery dates per warehouse on product. | / |
-| offset | int | see notes. | / |
-| limit | int | see notes. | / |
+| Attribute                             | Type    | Notes                                                                                                                                                               | MK SLO                   |
+|---------------------------------------|---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|
+| count_code                            | char,30 |                                                                                                                                                                     | Id artikla               |
+| mk_id                                 | char,30 |                                                                                                                                                                     | /                        |
+| code                                  | char,50 |                                                                                                                                                                     | Šifra artikla            |
+| sales                                 | bool    | Product must be flag as sales                                                                                                                                       | Prodajni                 |
+| purchase                              | bool    | Product must be flag as purchase                                                                                                                                    | Nabavni                  |
+| service                               | bool    | Product must be flag as service                                                                                                                                     | Storitev                 |
+| work                                  | bool    | Product must be flag as work                                                                                                                                        | Delo                     |
+| active                                | bool    | Product must be flag as active                                                                                                                                      | Aktiven                  |
+| eshop_sync                            | bool    | Product must be flag for e-commerce sync                                                                                                                            | Izmenjava - Spletna trg. |
+| return\_warehause\_stock              | bool    | If attribute is set, every product in respond will have "amount" attribute. In case the product was newer use on stock, attribute "amount" will still have value 0. | /                        |
+| return\_warehouse\_reservation        | bool    | Product will have additional attribute "reservation_detail" with list of reservation amount per warehouse.                                                          | /                        |
+| return\_product\_partner\_info        | bool    | Product will have additional attribute "product_partner_info" with list of custom partner info on product.                                                          | /                        |
+| return\_category                      | bool    | Product will have additional attribute "category_tree_list" with tree structure of selected categories on product.                                                  | /                        |
+| category                              | char    | Filter products by category name (example: "Computer","Shop",...).                                                                                                  | /                        |
+| return\_expect\_order\_delivery\_date | bool    | Product will have additional attribute "order_in_delivery" with a list of amounts and delivery dates per warehouse on product.                                      | /                        |
+| return\_web\_shop\_link               | bool    | Product will have additional attribute "web_shop_link" with a list of product web shop data for each web shop.                                                      | /                        |
+| offset                                | int     | see notes.                                                                                                                                                          | /                        |
+| limit                                 | int     | see notes.                                                                                                                                                          | /                        |
 
 Notes :
 * call will always return max 1000 records (limit = 1000). To get next window of results, you must set offset on value 1000. 
@@ -945,3 +946,83 @@ Respond (with return\_expect\_order\_delivery\_date = 'true'):
      ]
  }
 ```
+
+## 1.10 With web shop link
+
+Notes:
+* In order for the data to be returned, parameter "return_web_shop_link" must be set.
+
+Request :
+```javascript
+{
+    "secret_key":"my_secret_key",
+    "company_id":"16",
+    "sales":"true",
+    "return_web_shop_link":"true"
+} 
+```
+Respond (with return\_expect\_order\_delivery\_date = 'true'):
+
+```javascript
+{{
+     "opr_code": "0",
+     "opr_time_ms": "1853",
+     "sales": "true",
+     "purchase": "true",
+     "limit": "1000",
+     "offset": "0",
+     "product_list_count": "1",
+     "product_list": [
+         {
+             "count_code": "PA_115_PA",
+             "mk_id": "1600000392",
+             "code": "art1",
+             "name": "art1",
+             "unit": "pcs",
+             "unit2": "block",
+             "unit_factor": "2",
+             "service": "false",
+             "sales": "true",
+             "activated": "true",
+             "purchasing": "true",
+             "eshop_sync": "false",
+             "height": "1",
+             "weight": "0,23",
+             "customs_fee": "85153991",
+             "asset": "false",
+             "compound": "false",
+             "country": "IT",
+             "expiration_dates": "false",
+             "gross_weight": "1",
+             "lot_numbers": "false",
+             "norm": "false",
+             "serial_numbers": "false",
+             "work": "false",
+             "web_shop_link": [
+                {
+                    "eshop_sync_id": "1600351213",
+                    "eshop_sync_name": "MK Demo trgovina",
+                    "first_image_url": "https://example.com/images/art1.jpg",
+                    "title": "art1",
+                    "url": "https://example.com/art1"
+                },
+                {
+                    "eshop_sync_id": "1600333199",
+                    "eshop_sync_name": "PrestaShop demo",
+                    "first_image_url": "https://example.com/images/art1.jpg",
+                    "title": "art1",
+                    "url": "https://example.com/art1"
+                },
+                {
+                    "eshop_sync_id": "1601363559",
+                    "eshop_sync_name": "Shopamine",
+                    "first_image_url": "https://example.com/images/art1.jpg",
+                    "title": "art1",
+                    "url": "https://example.com/art1"
+                }
+            ]
+         }
+     ]
+ }
+```
+
