@@ -950,7 +950,7 @@ Respond (with return\_expect\_order\_delivery\_date = 'true'):
 ## 1.10 With web shop link
 
 Notes:
-* In order for the data to be returned, parameter "return_web_shop_link" must be set.
+* In order for the data to be returned, parameter "return\_web\_shop\_link" must be set.
 
 Request :
 ```javascript
@@ -961,7 +961,7 @@ Request :
     "return_web_shop_link":"true"
 } 
 ```
-Respond (with return\_expect\_order\_delivery\_date = 'true'):
+Respond (with return\_web\_shop\_link = 'true'):~~~~
 
 ```javascript
 {{
