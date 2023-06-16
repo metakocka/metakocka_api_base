@@ -394,7 +394,7 @@ Request (POST - https://main.metakocka.si/rest/eshop/v1/get_document) :
 Respond :
 ```javascript
 {
-  	...
+    ...
     "sum_basic": "165.57",
     "sum_tax_ex4": "36.43",
     "sum_all": "202",
