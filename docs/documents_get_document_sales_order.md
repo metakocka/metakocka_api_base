@@ -363,7 +363,49 @@ Response :
 }
 ```
 
+# Sales Order with credit value
+**Example** :
 
+Notes:
+* Works also with /search endpoint
+
+**Request Data parameters**
+
+| Parameter       | Required/Optional | Description     |
+|-----------------|-------------------|-----------------|
+| show_sum_credit | Optional          | Default "false" |
+
+**Response Data parameters**
+
+| Parameter  | Description                                                                      |
+|------------|----------------------------------------------------------------------------------|
+| sum_credit | A positive number that contains the sum of credit values of all linked invoices. |
+
+Request (POST - https://main.metakocka.si/rest/eshop/v1/get_document) :
+```javascript
+{
+  "secret_key":"8899",
+  "company_id":"16",
+  "doc_type" : "sales_order",
+  "doc_id" : "1600202487",
+  "show_sum_credit " : "true"
+}
+```
+Respond :
+```javascript
+{
+  	...
+    "sum_basic": "165.57",
+    "sum_tax_ex4": "36.43",
+    "sum_all": "202",
+    "sum_paid": "202",
+    "sum_credit": "50",
+    "profit_center": "DEMO",
+    "bank_ref_number": "25990",
+    "method_of_payment": "PayPal,
+    ...
+}
+```
 ## Special paramethers
 * show\_last\_payment\_date - see [Bill example](/docs/documents_get_document_bill.md)
 
