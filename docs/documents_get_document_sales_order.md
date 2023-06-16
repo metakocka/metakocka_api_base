@@ -363,7 +363,7 @@ Response :
 }
 ```
 
-# Sales Order with credit value
+# get_document - Sales Order with credit value
 **Example** :
 
 Notes:
