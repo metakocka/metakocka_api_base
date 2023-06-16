@@ -367,7 +367,7 @@ Response :
 **Example** :
 
 Notes:
-* Works also with /search endpoint
+* Also works with /search endpoint
 
 **Request Data parameters**
 
@@ -402,7 +402,7 @@ Respond :
     "sum_credit": "50",
     "profit_center": "DEMO",
     "bank_ref_number": "25990",
-    "method_of_payment": "PayPal,
+    "method_of_payment": "PayPal",
     ...
 }
 ```
