@@ -406,6 +406,61 @@ Respond :
     ...
 }
 ```
+
+# get_document - Sales Order with split orders
+**Example** :
+
+Notes:
+* Also works with /search endpoint
+
+**Request Data parameters**
+
+| Parameter         | Required/Optional | Description     |
+|-------------------|-------------------|-----------------|
+| show_split_orders | Optional          | Default "false" |
+
+**Response Data parameters**
+
+| Parameter    | Description                   |
+|--------------|-------------------------------|
+| split_orders | A list of split sales orders. |
+
+Request (POST - https://main.metakocka.si/rest/eshop/v1/get_document) :
+```javascript
+{
+  "secret_key":"8899",
+  "company_id":"16",
+  "doc_type" : "sales_order",
+  "doc_id" : "1600202487",
+  "show_split_orders " : "true"
+}
+```
+Respond :
+```javascript
+{
+    "mk_id": "1600202487",
+    "doc_type": "sales_order",
+    "opr_code": "0",
+    "count_code": "PP-27408",
+    "doc_date": "2023-06-14+02:00",
+    "bank_ref_number": "27408",
+    "commercialist_email": "mail@gmail.com",
+    "salesOrderTrackingType": "bill",
+    "created_ts": "2023-06-14T14:30:04+02:00",
+    "split_orders": [
+        {
+            "mk_id": "400000002893",
+            "doc_type": "sales_order",
+            "opr_code": "0",
+            "count_code": "PP-27409",
+            "doc_date": "2023-06-14+02:00",
+            "partner": {
+                "mk_id": "1600000019",
+                "business_entity": "true",
+    ...
+}
+```
+
 ## Special paramethers
 * show\_last\_payment\_date - see [Bill example](/docs/documents_get_document_bill.md)
 
