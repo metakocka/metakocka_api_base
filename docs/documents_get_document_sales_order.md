@@ -107,6 +107,7 @@ Respond :
 	"order_create_ts": "2015-05-08T12:13:15+02:00",
 	"parcel_shop_id": "P100",
 	"profit_center": "ProfitCenter1",
+	"profit_center_desc": "ProfitCenter1 description",
 	"doc_link_list": [{
 			"mk_id": "1600373113",
 			"count_code": "1-MK-1406",
@@ -401,6 +402,7 @@ Respond :
     "sum_paid": "202",
     "sum_credit": "50",
     "profit_center": "DEMO",
+    "profit_center_desc": "DEMO description",
     "bank_ref_number": "25990",
     "method_of_payment": "PayPal",
     ...

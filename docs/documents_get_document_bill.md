@@ -111,7 +111,8 @@ Respond :
     "furs_zoi": "2048f0a369e37b4258e741fc8ae9ffc2",
     "furs_eor": "34facd65-622b-745d-a541-30ab1f9d3ac1",
     "last_change_user": "Jaka Novak",
-    "profit_center": "Profitni center 1"
+    "profit_center": "Profitni center 1",
+    "profit_center_desc": "Profitni center 1 description"
 }
 ```
 ### Example : Get detail payment information
