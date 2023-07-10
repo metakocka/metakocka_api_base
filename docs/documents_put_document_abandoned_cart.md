@@ -30,7 +30,7 @@ Development environment [more](https://metakocka.freshdesk.com/a/solutions/artic
       "currency":"EUR",
       "checkout_url":"https://test-store.com?token={unique_id}",
       "is_cod":false,
-      "shipping_method": "{shipping_method_name}",
+      "shipping_method":"{shipping_method_name}",
       "items":[
          {
             "id":"123",
@@ -62,12 +62,17 @@ Development environment [more](https://metakocka.freshdesk.com/a/solutions/artic
          "postal_code":"1000",
          "country":"SI",
          "county":"",
-        "locality":"",
-        "bl":"",
-        "sc":"",
-        "et":"",
-        "ap":""
+         "locality":"",
+         "bl":"",
+         "sc":"",
+         "et":"",
+         "ap":""
       }
    }
 }
 ```
+
+Priority order for fields:
+* first_name : billing_address > partner
+* last_name : billing_address > partner
+* 
