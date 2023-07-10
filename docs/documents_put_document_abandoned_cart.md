@@ -75,6 +75,6 @@ Development environment [more](https://metakocka.freshdesk.com/a/solutions/artic
 Priority order for fields:
 * first_name : billing_address > partner
 * last_name : billing_address > partner
-* 
+
 * gsm : partner > billing_address > partner_contact
 * email : partner > billing_address > partner_contact
