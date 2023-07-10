@@ -26,7 +26,7 @@ Development environment [more](https://metakocka.freshdesk.com/a/solutions/artic
    "order":{
       "id":"{unique_id}",
       "number":null,
-      "order_value":"52.43",
+      "order_value":"55.55",
       "currency":"EUR",
       "checkout_url":"https://test-store.com?token={unique_id}",
       "is_cod":false,
