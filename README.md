@@ -98,6 +98,10 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 * [Bank statements](/docs/get_bank_statement.md)
 * [Compensations](/docs/get_bank_compensation.md)
 
+# Abandoned cart
+* [put_document](/docs/documents_put_document_abandoned_cart.md)
+* [update_document](/docs/documents_update_document_abandoned_cart.md)
+
 # Other calls
 * [put_transaction](/docs/put_transaction.md) - add payment on existing bill or offer
 * [get_bank_statement_status](/docs/get_bank_statement_status.md) - return last statement state, date, etc for all bank bills
@@ -106,6 +110,8 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ## Release notes
 | Date       | What's new                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 11.7.2023  | Added new endpoint for abandoned cart update. See [Example](/docs/documents_update_document_abandoned_cart.md) for more info. 
+| 11.7.2023  | Added new endpoint for abandoned cart. See [Example](/docs/documents_put_document_abandoned_cart.md) for more info. 
 | 17.6.2023  | Added support for show_split_orders for get_document and search for sales orders. See [Example](/docs/documents_get_document_sales_order.md#get_document---sales-order-with-split-orders) for more info.                                                                                                                                                                                                                    |
 | 16.6.2023  | Added support for show_sum_credit for get_document and search for sales orders. See [Example](/docs/documents_get_document_sales_order.md#get_document---sales-order-with-credit-value) for more info.                                                                                                                                                                                                                      |
 | 15.6.2023  | Added support for retrieving product web shop data. See [Example](/docs/product_list.md#110-with-web-shop-link) for more info.                                                                                                                                                                                                                                                                                              |
