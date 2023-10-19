@@ -109,18 +109,19 @@ Respond :
 }
 ```
 
-### Sales order - adding and removing products
+### Sales order - removing products
 **Notes**
-- If you only want to change stock amount you can use parameter "amount". Product stock on sales order will decrease by given amount. If given amount
+- If you only want to decrease stock amount you can use parameter "amount". Product stock on sales order will decrease by given amount. If given amount
 is equal or exceeds product stock, product will be removed and remaining stock will be subtracted from the next same product until there is no stock or same 
-products left.
+products left. (Example 1)
 - If parameter "amount" is not used, all products with the same code or mk_id will be removed.
-- To change any other filed, you must remove the product first, then add it again. Both can be done in the same request.
+- To adjust amount or remove only a specific product use "mk_row_id" for identification.
+- Products can also be removed using "product_list" array with "mark_delete" and "mk_row_id" parameters. (Example 2)
 
 
 **URL** : https://main.metakocka.si/rest/eshop/v1/update_document
 
-Request :
+Request - Example 1:
 ```javascript
 {  
   "mk_id" : "1600370614",
@@ -136,29 +137,97 @@ Request :
               "code":"product123",
               OR
               "mk_id": 1600335835,
+              OR
+              "mk_row_id":1600331823
               "amount":"2",
           }
-   ],
-   "product_add":[
+   ]
+}
+```
+Request - Example 2:
+```javascript
+{  
+  "mk_id" : "1600370614",
+  OR
+  "buyer_order" : "OR-100",
+  
+  "secret_key" : "8899",
+  "company_id" : "16",  
+  "doc_type" : "sales_order",
+
+   "product_list":[
           {
-              "code": "art1",
-              "amount": "1",
-              "price_with_tax" : "100",
-              "tax" : "EX4"
-              OR
-              "tax_factor": "0.22"
+              "mk_row_id":"1600331823"
+              "mark_delete":"true",
           }
    ]
 }
 ```
 
-Respond :
+### Sales order - adding products
+**Notes**
+- "product_list" can be also used instead of "product_add"
+
+**URL** : https://main.metakocka.si/rest/eshop/v1/update_document
+
+Request - Example 1:
 ```javascript
-{
-  "opr_code":"0",
-  "opr_time_ms":"2054"
+{  
+  "mk_id" : "1600370614",
+  OR
+  "buyer_order" : "OR-100",
+  
+  "secret_key" : "8899",
+  "company_id" : "16",  
+  "doc_type" : "sales_order",
+
+   "product_add":[
+          {
+            "code": "89693",
+            "name": "art1",
+            "name_desc": "art1Desc",
+            "unit": "kpl",
+            "amount": "4",
+            "price": "12",
+            "tax": "EX4"
+        }
+   ]
 }
 ```
+
+### Sales order - updating products
+**Notes**
+- "product_list" can be also used instead of "product_add"
+- "mk_row_id" is required for updating products. If "mk_row_id" is not set, product will be added.
+
+**URL** : https://main.metakocka.si/rest/eshop/v1/update_document
+
+Request - Example 1:
+```javascript
+{  
+  "mk_id" : "1600370614",
+  OR
+  "buyer_order" : "OR-100",
+  
+  "secret_key" : "8899",
+  "company_id" : "16",  
+  "doc_type" : "sales_order",
+
+   "product_add":[
+          {
+            "mk_row_id": "1600335835",
+            "code": "89693",
+            "name": "art1",
+            "name_desc": "art1Desc",
+            "unit": "kpl",
+            "amount": "4",
+            "price": "12",
+            "tax": "EX4"
+        }
+   ]
+}
+```
+
 
 ### Sales order - update and create invoice
 
