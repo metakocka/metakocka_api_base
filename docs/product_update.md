@@ -81,20 +81,23 @@ Respond :
 
 ## 1.2 Attachments
 
+**Notes**
+* If a file with the same case-sensitive file_name already exists on the product, the existing file(s) will be deleted, and the new file will be added.
+
 **Data parameters**
 
-|Parameter| Required/Optional | Description |
-|----|------------|------
-| attachment_list | Optional | Attachment object list |
-| remove_not_send_attachments | Optional | Removes all attachments from product. Attachments from the same request are added |
+| Parameter                   | Required/Optional | Description                                                                       |
+|-----------------------------|-------------------|-----------------------------------------------------------------------------------|
+| attachment_list             | Optional          | Attachment object list                                                            |
+| remove_not_send_attachments | Optional          | Removes all attachments from product. Attachments from the same request are added |
 
 
 **Attachment object parameters**
 
-|Parameter| Required/Optional | Description |
-|----|------------|------
-| file_name | Required | Filename with extension |
-| source_url/data_b64 | Required | Public url of the file (pdf, image,...) or base64 encoded file |
+| Parameter           | Required/Optional | Description                                                    |
+|---------------------|-------------------|----------------------------------------------------------------|
+| file_name           | Required          | Filename with extension                                        |
+| source_url/data_b64 | Required          | Public url of the file (pdf, image,...) or base64 encoded file |
 
 Request :
 ```javascript
