@@ -107,6 +107,28 @@
 }
 ```
 
+### Set order direction for sorting
+
+| Supported documents | Default order direction |
+|---------------------|-------------------------|
+| sales_order         | asc                     |
+| warehouse documents | asc                     |
+| workorder           | desc                    |
+
+* Documents are sorted by mk_id
+* "order_direction" parameter is optional
+
+**Request** (POST - https://main.metakocka.si/rest/eshop/v1/search) :
+```javascript
+{
+    "secret_key":"8899",
+    "company_id":"16",
+    "doc_type":"sales_order",
+    "limit" : "100",
+    "order_direction":"asc"
+}
+```
+
 ### Get invoices for particular date and not paid
 **Request** (POST - https://main.metakocka.si/rest/eshop/v1/search) :
 ```javascript
