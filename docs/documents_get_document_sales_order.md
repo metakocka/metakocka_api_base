@@ -463,6 +463,57 @@ Respond :
 }
 ```
 
+# get_document - Sales Order with stickers
+**Example** :
+
+Notes:
+* Also works with /search endpoint
+* Sticker url is read from linked invoice or delivery note
+
+**Request Data parameters**
+
+| Parameter           | Required/Optional | Description     |
+|---------------------|-------------------|-----------------|
+| return_stickers_url | Optional          | Default "false" |
+
+**Response Data parameters**
+
+| Parameter    | Description                                                                                                                  |
+|--------------|------------------------------------------------------------------------------------------------------------------------------|
+| sticker_list | A list of sticker objects.                                                                                                   |
+| url          | Url to the sticker                                                                                                           |
+| valid_until  | Date time when url becomes inaccessible. This url is active 7 days from creation. After 7 days a new link will be generated. |
+
+Request (POST - https://main.metakocka.si/rest/eshop/v1/get_document) :
+```javascript
+{
+  "secret_key":"8899",
+  "company_id":"16",
+  "doc_type" : "sales_order",
+  "doc_id" : "1600202487",
+  "return_stickers_url " : "true"
+}
+```
+Respond :
+```javascript
+{
+    "mk_id": "1600202487",
+    "doc_type": "sales_order",
+    "opr_code": "0",
+    "count_code": "PP-27408",
+    "doc_date": "2023-06-14+02:00",
+    "salesOrderTrackingType": "bill",
+    "created_ts": "2023-06-14T14:30:04+02:00",
+    "sticker_list": [
+        {
+            "url": "https://metakocka-generated-stickers-dev.s3.amazonaws.com/16/File.pdf?AWSAccessKeyId=key&Expires=1703000406&Signature=sign%3D",
+            "valid_until": "2023-12-19T16:40:06+02:00"
+        }
+    ]
+    ...
+}
+```
+
 ## Special paramethers
 * show\_last\_payment\_date - see [Bill example](/docs/documents_get_document_bill.md)
 
