@@ -514,6 +514,62 @@ Respond :
 }
 ```
 
+# get_document - Sales Order products with linked invoice serial data
+**Example** :
+
+Notes:
+* If a Sales Order is linked to an invoice, the serial data from that invoice's product, which is linked with the Sales Order's product, will overwrite the serial data on the Sales Order's product.
+* Only "lot_number_value" is currently supported
+
+**Request Data parameters**
+
+| Parameter                               | Required/Optional | Description     |
+|-----------------------------------------|-------------------|-----------------|
+| read_product_serial_from_linked_invoice | Optional          | Default "false" |
+
+**Response Data parameters**
+
+| Parameter        | Description                                                |
+|------------------|------------------------------------------------------------|
+| lot_number_value | Lot number set on the product linked with the Sales Order. |
+
+Request (POST - https://main.metakocka.si/rest/eshop/v1/get_document) :
+```javascript
+{
+  "secret_key":"8899",
+  "company_id":"16",
+  "doc_type" : "sales_order",
+  "doc_id" : "1600202487",
+  "read_product_serial_from_linked_invoice" : "true"
+}
+```
+Respond :
+```javascript
+{
+    "mk_id": "1600202487",
+    "doc_type": "sales_order",
+    "opr_code": "0",
+    "count_code": "PP-27408",
+    "doc_date": "2023-06-14+02:00",
+    "created_ts": "2023-06-14T14:30:04+02:00",
+    "warehouse": "nas1",
+    "product_list": [
+        {
+            "count_code": "PA-4143",
+            "mk_id": "1600123008",
+            "code": "lt1",
+            "amount": "10",
+            "price": "55",
+            "discount": "0",
+            "tax": "EX4",
+            "microlocation": "m1",
+            "lot_number_value": "33"
+        }
+    ]
+    ...
+}
+```
+
 ## Special paramethers
 * show\_last\_payment\_date - see [Bill example](/docs/documents_get_document_bill.md)
 
