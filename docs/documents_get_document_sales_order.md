@@ -491,7 +491,7 @@ Request (POST - https://main.metakocka.si/rest/eshop/v1/get_document) :
   "company_id":"16",
   "doc_type" : "sales_order",
   "doc_id" : "1600202487",
-  "return_stickers_url " : "true"
+  "return_stickers_url" : "true"
 }
 ```
 Respond :
