@@ -6,6 +6,7 @@ Valid doc_type :
 * warehouse\_packing\_list
 * warehouse\_receiving\_note
 * warehouse\_acceptance\_note
+* warehouse\_inventory
 
 **Example** :
 
@@ -31,9 +32,9 @@ Respond :
         "business_entity": "true",
         "taxpayer": "true",
         "foreign_county": "false",
-        "tax_id_number": "SI78552478",
-        "customer": "3D ART d.o.o.",
-        "street": "Glavarjeva ulica 49",
+        "tax_id_number": "SI11111111",
+        "customer": "Customer d.o.o.",
+        "street": "Glavarjeva ulica 1",
         "post_number": "1000",
         "place": "Ljubljana",
         "country": "Slovenia",
@@ -47,9 +48,9 @@ Respond :
         "business_entity": "true",
         "taxpayer": "true",
         "foreign_county": "false",
-        "tax_id_number": "SI78552478",
-        "customer": "3D ART d.o.o.",
-        "street": "Glavarjeva ulica 49",
+        "tax_id_number": "SI11111111",
+        "customer": "Customer d.o.o.",
+        "street": "Glavarjeva ulica 1",
         "post_number": "1000",
         "place": "Ljubljana",
         "country": "Slovenia",
@@ -80,12 +81,73 @@ Respond :
 }
 ```
 
+## Get warehouse inventory
+Request : (POST - https://main.metakocka.si/rest/eshop/v1/get_document)
+```javascript
+{
+  "secret_key":"8899",
+  "company_id":"16",
+  "doc_type" : "warehouse_inventory",
+  "doc_id" : "52000004002"
+}
+```
+Respond :
+```javascript
+{
+    "mk_id": "52000004002",
+    "doc_type": "warehouse_inventory",
+    "opr_code": "0",
+    "doc_date": "2021-02-05+02:00",
+    "import_date": "2021-02-05T20:52:11+02:00",
+    "import_user": "Glavni account",
+    "warehouse_list": [
+        {
+            "mk_id": "1600376715",
+            "mark": "warehouse1",
+            "name": "warehouseName",
+            "warehouse_type": "normal",
+            "product_list": [
+                {
+                    "count_code": "87659",
+                    "mk_id": "1600559955",
+                    "code": "0012",
+                    "name": "Artikel 1",
+                    "unit": "kos",
+                    "microlocation": "m1",
+                    "serial_number_value": "TempSerial",
+                    "lot_number_value": "TempLot",
+                    "expiration_date_value": "2023-07-03+02:00",
+                    "amount_warehouse": "0",
+                    "amount_new": "1",
+                    "amount_diff": "1",
+                    "purchase_price":"10"	
+                },
+                {
+                    "count_code": "86114",
+                    "mk_id": "1600558410",
+                    "code": "0013",
+                    "name": "EVO II POKRIVALO PROTI TOČI L",
+                    "unit": "kos",
+                    "microlocation": "m1",
+                    "amount_warehouse": "4",
+                    "amount_new": "1",
+                    "amount_diff": "-3",
+                    "purchase_price":"5"
+                }
+                .....
+            ]
+        }
+        .....
+    ]
+}
+```
+
 ## Special paramethers
-Paramether | Type | Description |
------------|------|-------------|
-show\_purchase\_price\_and\_allo\_cost | bool | get purchase price and purchase allocated cost for product. |
-show\_last\_payment\_date | bool | see [Bill example](/docs/documents_get_document_bill.md) |
-show\_allocated\_cost | bool | get allocated costs for products. |
+| Paramether                             | Type | Description                                                   |
+|----------------------------------------|------|---------------------------------------------------------------|
+| show\_purchase\_price\_and\_allo\_cost | bool | get purchase price and purchase allocated cost for product.   |
+| show\_last\_payment\_date              | bool | see [Bill example](/docs/documents_get_document_bill.md)      |
+| show\_allocated\_cost                  | bool | get allocated costs for products.                             |
 
 ### show\_purchase\_price\_and\_allo\_cost
 Notes :
