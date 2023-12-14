@@ -26,16 +26,17 @@
 
 **Product object parameters**
 
-| Parameter             | Required/Optional | Description                                |
-|-----------------------|-------------------|--------------------------------------------|
-| mk_id/count_code      | Required          | Product internal id or product count code. |
-| amount                | Required          | Amount of product to transfer.             |
-| microlocation         | _Optional_        | Location name of the final warehouse.      |
-| confirmed             | _Optional_        | Set product as confirmed                   |
-| amount_original       | _Optional_        | Set original amount of product to transfer |
-| lot_number_value      | _Optional_        | Set product lot number                     |
-| serial_number_value   | _Optional_        | Set product serial number                  |
-| expiration_date_value | _Optional_        | Set product expiration date                |
+| Parameter             | Required/Optional | Description                                     |
+|-----------------------|-------------------|-------------------------------------------------|
+| mk_id/count_code      | Required          | Product internal id or product count code.      |
+| amount                | Required          | Amount of product to transfer.                  |
+| microlocation         | _Optional_        | Location name of the original/source warehouse. |
+| target_microlocation  | _Optional_        | Location name of the final warehouse.           |
+| confirmed             | _Optional_        | Set product as confirmed                        |
+| amount_original       | _Optional_        | Set original amount of product to transfer      |
+| lot_number_value      | _Optional_        | Set product lot number                          |
+| serial_number_value   | _Optional_        | Set product serial number                       |
+| expiration_date_value | _Optional_        | Set product expiration date                     |
 
 
 **Request example**
