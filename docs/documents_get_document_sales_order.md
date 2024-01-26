@@ -520,6 +520,7 @@ Respond :
 Notes:
 * If a Sales Order is linked to an invoice, the serial data from that invoice's product, which is linked with the Sales Order's product, will overwrite the serial data on the Sales Order's product.
 * Only "lot_number_value" is currently supported
+* Also works with /search endpoint
 
 **Request Data parameters**
 
