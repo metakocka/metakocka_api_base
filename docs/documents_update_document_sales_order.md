@@ -6,6 +6,7 @@ You can update specific fields on sales order (see list below). In background th
 * shipped_date
 * discount_value
 * tracking_intermediate_code
+* parcel_shop_id
 
 All values are change only if new valus is different then previous value. 
 
@@ -31,7 +32,8 @@ Request :
   "shipped_date" : "2019-09-26+02:00",
   "notes_header" : "notes zgoraj",
   "notes": "to so notes.",
-  "warehouse" : "warehouse_mark"
+  "warehouse" : "warehouse_mark",
+  "parcel_shop_id": "shop_id"
 }
 ```
 
