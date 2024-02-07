@@ -86,6 +86,30 @@
         "province": "Severna primorska",
         "country": "Slovenia"
     },
+    "receiver": {
+        "business_entity": "true",
+        "taxpayer": "true",
+        "foreign_county": "false",
+        "tax_id_number": "SI20000001",
+        "customer": "API partner 1",
+        "street": "Slovenska cesta 100",
+        "post_number": "1000",
+        "place": "Ljubljana",
+        "province": "Severna primorska",
+        "country": "Slovenia"
+    },
+    "client": {
+        "business_entity": "true",
+        "taxpayer": "true",
+        "foreign_county": "false",
+        "tax_id_number": "SI20000001",
+        "customer": "API partner 1",
+        "street": "Slovenska cesta 100",
+        "post_number": "1000",
+        "place": "Ljubljana",
+        "province": "Severna primorska",
+        "country": "Slovenia"
+    },
     "offer_list" : [
     	{
     		"count_code" : "37"
