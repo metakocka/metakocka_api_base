@@ -255,6 +255,29 @@ Notes :
 }
 ```
 
+### Search Sales orders by profit center
+**Request** (POST - https://main.metakocka.si/rest/eshop/v1/search) :
+
+Notes:
+* The 'value' field should contain the description of the profit center.
+* Other query_advance parameters can also be added.
+
+```javascript
+{
+	"secret_key": "8899",
+	"company_id": "16",
+	"doc_type": "sales_order",
+	"result_type": "doc",
+	"limit": 5,
+	"offset": 0,
+	"query_advance": [{
+			"type": "profit_center",
+			"value": "Profit center LJ"
+		}
+	]
+}
+```
+
 ### Search Sales orders with partner paramaters
 **Request** (POST - https://main.metakocka.si/rest/eshop/v1/search) :
 
