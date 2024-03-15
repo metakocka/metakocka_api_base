@@ -571,6 +571,59 @@ Respond :
 }
 ```
 
+# get_document - Sales Order with tracking url
+**Example** :
+
+Notes:
+* Also works with /search endpoint
+
+**Request Data parameters**
+
+| Parameter         | Required/Optional | Description     |
+|-------------------|-------------------|-----------------|
+| show_tracking_url | Optional          | Default "false" |
+
+**Response Data parameters**
+
+| Parameter    | Description                       |
+|--------------|-----------------------------------|
+| tracking_url | Tracking url for delivery service |
+
+Request (POST - https://main.metakocka.si/rest/eshop/v1/get_document) :
+```javascript
+{
+  "secret_key":"8899",
+  "company_id":"16",
+  "doc_type" : "sales_order",
+  "doc_id" : "1600202487",
+  "show_tracking_url " : "true"
+}
+```
+Respond :
+```javascript
+{
+    "mk_id": "1600202487",
+    "doc_type": "sales_order",
+    "opr_code": "0",
+    "count_code": "PP-27408",
+    "doc_date": "2023-06-14+02:00",
+    "bank_ref_number": "27408",
+    "commercialist_email": "mail@gmail.com",
+    "salesOrderTrackingType": "bill",
+    "created_ts": "2023-06-14T14:30:04+02:00",
+    "extra_column": [
+        {
+            "name": "tracking_number",
+            "value": "TS600511111"
+        },
+        {
+            "name": "tracking_url",
+            "value": "https://gls-group.eu/SI/sl/sledenje-posiljki?match=TS600511111"
+        }
+    ]
+}
+```
+
 ## Special paramethers
 * show\_last\_payment\_date - see [Bill example](/docs/documents_get_document_bill.md)
 
