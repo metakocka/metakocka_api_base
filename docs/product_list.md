@@ -336,7 +336,8 @@ Respond :
             "name": "marketing",
             "value": "false"
           }
-        ]
+        ],
+        "minimal_order_quantity": "10"
     }
 }
 ```

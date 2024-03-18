@@ -22,6 +22,7 @@ Request :
     "height":"12.23",
     "depth":"4.12",
     "weight":"6.3",
+    "minimal_order_quantity": "10"     
     "localization":[
       {
          "language":"en",
