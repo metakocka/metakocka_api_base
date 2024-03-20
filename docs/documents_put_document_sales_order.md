@@ -214,6 +214,67 @@ Notes :
 Notes :
 * if you execute document update and add mark_paid, previous payment will be deleted and new will be added.
 
+### Example request for Fulfilment :
+```json
+{
+    "secret_key": "8899",
+    "company_id": "16",
+    "doc_type": "sales_order",
+    "doc_date": "2024-03-13+02:00",
+    "status_code": "Novo naročilo",
+    "customer_order": "OrderAPIMK",
+    "delivery_type": "DHL",
+    "currency_code": "EUR",
+    "method_of_payment": "PayPal",
+    "partner": {
+        "business_entity": "true",
+        "taxpayer": "true",
+        "foreign_county": "false",
+        "tax_id_number": "SI20000001",
+        "customer": "API partner 1",
+        "street": "Slovenska cesta 100",
+        "post_number": "1000",
+        "place": "Ljubljana",
+        "country": "Slovenia"
+    },
+    "receiver": {
+        "business_entity": "true",
+        "taxpayer": "true",
+        "foreign_county": "fals    e",
+        "tax_id_number": "SI20000002",
+        "customer": "API partner 2",
+        "street": "Slovenska cesta 200",
+        "post_number": "1000",
+        "place": "Ljubljana",
+        "country": "Slovenia",
+        "partner_contact": {
+            "name": "Janez Novak",
+            "phone": "05 111 11 11",
+            "fax": "05 111 11 12",
+            "gsm": "071 333 444",
+            "email": "test@test.co.uk"
+      }
+    },
+    "product_list": [
+        {
+          "code": "art1",
+          "amount": "1",
+          "price_with_tax": "100",
+          "tax_factor": "0.22"
+        }
+    ],
+    "mark_paid": [
+        {
+          "payment_type": "PayPal",
+          "date": "14.03.2014"
+        }
+    ]
+}
+```
+
+Notes :
+* if you execute document update and add mark_paid, previous payment will be deleted and new will be added.
+
 ### Example Lot numbers, Microlocations :
 ```json
 {
