@@ -588,6 +588,7 @@ Notes:
 | Parameter    | Description                       |
 |--------------|-----------------------------------|
 | tracking_url | Tracking url for delivery service |
+| tracking_page_url | Url for tracking page |
 
 Request (POST - https://main.metakocka.si/rest/eshop/v1/get_document) :
 ```javascript
@@ -619,6 +620,10 @@ Respond :
         {
             "name": "tracking_url",
             "value": "https://gls-group.eu/SI/sl/sledenje-posiljki?match=TS600511111"
+        },
+	{
+            "name": "tracking_page_url",
+            "value": "https://dev4main.metakocka.si/rest/trackingpage/show/2374/237400000061/503522969"
         }
     ]
 }
