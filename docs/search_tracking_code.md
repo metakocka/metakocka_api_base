@@ -13,6 +13,7 @@
 | secret_key | Required  | Generated API key. |
 | company_id | Required  | Internal(MK) company id. |
 | tracking_code | Required  | Tracking code or return tracking code. |
+| sticker_code | Optional  | Sticker number/barcode. Can be used instead of tracking_code. |
 
 
 **Request example**
