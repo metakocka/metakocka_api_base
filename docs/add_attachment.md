@@ -12,7 +12,6 @@
 |----|------------|------
 | secret_key | Required  | Generated API key. |
 | company_id | Required  | Internal(MK) company id. |
-| api_user_email | Required  | Internal(MK) user email. |
 | document_id | Required  | Internal(MK) document id. |
 | document_type | Required  | Internal(MK) document type. |
 | attachment_list | Required | Attachment object list |
@@ -30,7 +29,6 @@
 {
   "secret_key": "8899",
   "company_id": "16",
-  "api_user_email": "admin@admin.com",
   "document_id": "89693",
   "document_type": "RRR",
   "attachment_list": [
