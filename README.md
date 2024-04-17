@@ -107,6 +107,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 * [get_bank_statement_status](/docs/get_bank_statement_status.md) - return last statement state, date, etc for all bank bills
 * [change_document_status](/docs/change_document_status.md) - change status for sales order (Order Management order)
 * [add_webshop_terms_of_use](/docs/add_webshop_terms_of_use.md) - Add terms of use file to webshop
+* [add_attachment](/docs/add_attachment.md) - add attachment
 
 ## Release notes
 | Date       | What's new                                                                                                                                                                                                                                                                                                                                                                                                                  |
