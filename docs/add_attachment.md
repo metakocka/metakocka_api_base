@@ -29,7 +29,7 @@
 {
   "secret_key": "8899",
   "company_id": "16",
-  "mk_id": "89693",
+  "mk_id": "1600000123",
   "doc_type": "sales_order",
   "attachment_list": [
     {
