@@ -12,8 +12,8 @@
 |----|------------|------
 | secret_key | Required  | Generated API key. |
 | company_id | Required  | Internal(MK) company id. |
-| document_id | Required  | Internal(MK) document id. |
-| document_type | Required  | Internal(MK) document type. |
+| mk_id | Required  | Internal(MK) document id. |
+| doc_type | Required  | Internal(MK) document type. For example : sales_order, sales_bill_foreign, etc |
 | attachment_list | Required | Attachment object list |
 
 **Attachment object parameters**
@@ -29,8 +29,8 @@
 {
   "secret_key": "8899",
   "company_id": "16",
-  "document_id": "89693",
-  "document_type": "RRR",
+  "mk_id": "89693",
+  "doc_type": "sales_order",
   "attachment_list": [
     {
       "file_name": "example.pdf",
