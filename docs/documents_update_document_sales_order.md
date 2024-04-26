@@ -230,6 +230,25 @@ Request - Example 1:
 }
 ```
 
+### Sales order - updating extra columns
+**URL** : https://main.metakocka.si/rest/eshop/v1/update_document
+
+Request - Example 1:
+```javascript
+{  
+  "mk_id" : "1600024839384",
+  "secret_key" : "8899",
+  "company_id" : "16",  
+  "doc_type" : "sales_order",
+  "extra_column" : [
+    {
+        "name" : "shipping_lines_method_id",
+        "value" : "standard"
+    }
+  ]
+}  
+```
+
 
 ### Sales order - update and create invoice
 
