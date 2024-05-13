@@ -39,6 +39,8 @@
 | bank_country_code | Optional | Country code - ISO standard. Example: SI = Slovenia. |
 | partner_id | Optional | Internal(MK) partner id, default value is chosen by the sales order partner. |
 | partner_address_id | Optional | Internal(MK) address id, default value is chosen by the sales order partner. |
+| post_number | Optional | Partner post number. |
+| place | Optional | Partner place. |
 
 **Product object parameters**
 
