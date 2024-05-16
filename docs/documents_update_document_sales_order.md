@@ -285,3 +285,29 @@ Respond :
 
 ### Sales order - Add payment
 Please use put_transaction call - https://github.com/metakocka/metakocka_api_base/blob/master/docs/put_transaction.md
+
+### Sales order - remove fields
+
+**URL** : https://main.metakocka.si/rest/eshop/v1/update_document
+
+If you put fields names into "clear" fields, values will be set on empty value. Supported fields :
+* tracking_code - remove tracking code
+
+Request :
+```javascript
+{  
+    "secret_key" : "8899",
+    "company_id" : "16",  
+    "doc_type" : "sales_order",    
+    "mk_id" : "400000001190",
+    "clear" : ["tracking_code"]
+}  
+```
+
+Respond :
+```javascript
+{
+  "opr_code":"0",
+  "opr_time_ms":"12026"
+}
+```
