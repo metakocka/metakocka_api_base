@@ -705,6 +705,7 @@ Country can be EN name (Slovenia, Italy, Croatia) or 2 char (SI, IT, HR).
 * Added parameter "salesOrderTrackingType" with two options:
   * "bill"
   * "packing_list"
+* Also works with update_document endpoint
 
 ```json
 {
