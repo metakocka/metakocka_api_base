@@ -1,4 +1,4 @@
-**URL** : https://main.metakocka.si/rest/eshop/v1/put_document
+**URL** : https://main.metakocka.si/rest/eshop/v1/put_document_workorder
 
 ## Workorder
 
