@@ -628,7 +628,91 @@ Respond :
     ]
 }
 ```
+# get_document - Sales Order purchase prices
+You can get the FIFO purchase price, last purchase price, and price from the pricelist for products on order.
+
+Requirements : see https://metakocka.freshdesk.com/a/solutions/articles/3000124471 for the required settings on your metakocka account.
+
+Notes :
+* FIFO purchase price : order must have an invoice and this invoice must be older than the current date
+* price from pricelist : see https://metakocka.freshdesk.com/a/solutions/articles/3000124471 for details on how it works
+* if the product is a compound product, the call will return values for every separate product in this compound.
+* paramether "return_purchase_price" is supported in get_document and search call.
+
+Request (POST - https://main.metakocka.si/rest/eshop/v1/get_document) :
+```javascript
+{
+  "secret_key":"8899",
+  "company_id":"16",
+  "doc_type" : "sales_order",
+  "doc_id" : "1600202487",
+  "return_purchase_price " : "true"
+}
+```
+
+Respond :
+```javascript
+{
+    "mk_id": "400000001382",
+    "doc_type": "sales_order",
+    "opr_code": "0",
+    "count_code": "PP-27574",
+    "doc_date": "2024-06-11+02:00",
+    "partner": {
+        "mk_id": "1600256350",
+        .....
+    },
+    "receiver": {
+        "mk_id": "1600256350",
+        .....
+    },
+    "product_list": [
+        {
+            "count_code": "PA-4166",
+            "mk_id": "1600129495",
+            "code" : "toy_1x_car_1x_teddybear",
+            "name" : "Toy : Car + Teddy Bear",
+            .....
+            "purchase_price_list": [
+                {
+                    "mk_id": "160055555",
+                    "code": "car",
+                    "stock_price" : "2.5",
+                    "stock_allocation_cost" : "0.3",                    
+                    "last_price" : "2.1",
+                    "last_allocation_cost" : "0.2",                    
+                    "pricelist_price": "2.7"
+                },
+                {
+                    "mk_id": "160066666",
+                    "code": "teddybear",
+                    "stock_price" : "3.7",
+                    "stock_allocation_cost" : "0.2",                    
+                    "last_price" : "3.2",
+                    "last_allocation_cost" : "0.4",                    
+                    "pricelist_price": "2.9"
+                }                
+            ]
+        },
+        {
+            "count_code": "30852",
+            "mk_id": "1600339495",
+            "code": "delivery_service",
+            ....
+            "purchase_price_list": [
+                {
+                    "code": "delivery_service",
+                    "pricelist_price": "1.4"                    
+                }
+            ]
+        }
+    ]
+}
+```
+
+Notes :
+* The first product "Toy : Car + Teddy Bear" (code toy_1x_car_1x_teddybear) is a compound product from "car" and "teddybear" material products. The parameter purchase_price_list will contain the purchase price for every product. In this case "code" parameter will not match.
+* The second product "delivery_service" is a service and the product in purchase_price_list array has the same code as the parent product.
 
 ## Special paramethers
 * show\_last\_payment\_date - see [Bill example](/docs/documents_get_document_bill.md)
-
