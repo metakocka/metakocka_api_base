@@ -61,9 +61,9 @@ Respond :
 Request :
 ```javascript
 {
-    "secret_key": "8899",
+    "secret_key": "1234",
     "company_id": "16",
-    "api_user_email": "c16",
+    "api_user_email": "c16@api.com",
     "include_current_stock": "true",
     "stock_list": [{
             "warehouse_id": "1600000042",
@@ -106,9 +106,9 @@ Respond :
 ## 2.1 Response with removed stock
 ```javascript
 {
-    "secret_key": "8899",
+    "secret_key": "1234",
     "company_id": "16",
-    "api_user_email": "c16",
+    "api_user_email": "c16@api.com"
     "stock_list": [{
             "warehouse_id": "1600000042",
             "product_code": "WOOART1",
@@ -153,9 +153,9 @@ Respond :
 ## 2.2 Response with errors
 ```javascript
 {
-    "secret_key": "8899",
+    "secret_key": "1234",
     "company_id": "16",
-    "api_user_email": "c16",
+    "api_user_email": "c16@api.com"
     "stock_list": [{
             "warehouse_id": "1600000043",
             "product_code": "WOOART1",
