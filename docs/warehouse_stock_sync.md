@@ -24,7 +24,8 @@ Request :
     "api_user_email": "c16@api.com",
     "stock_list": [{
             "warehouse_id": "1600000042",
-            "product_code": "WOOART1",
+            "product_code": "WOOART1", // product_code or product_id is required
+            "product_id": "1600000001", // product_code or product_id is required
             "amount": "100"
         }, {
             "warehouse_id": "1600456606",
