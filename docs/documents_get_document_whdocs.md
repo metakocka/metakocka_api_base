@@ -89,7 +89,8 @@ Request : (POST - https://main.metakocka.si/rest/eshop/v1/get_document)
 | doc\_id          | Optional          | Inventory ID (mk_id)                                                   |
 | import\_date     | Optional          | Exact import time in ISO format (Example: "2021-12-21T11:33:15+02:00") |
 | limit\_warehouse | Optional          | Limit output by warehouse mark or name                                 |
-* doc_id or import_date is required for identification
+| doc\_date        | Optional          | Inventory date in ISO format (Example: "2021-12-21+02:00")             |
+* doc_id, doc_date or import_date is required for identification
 
 ```javascript
 {
