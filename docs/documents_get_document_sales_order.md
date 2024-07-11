@@ -636,7 +636,7 @@ Requirements : see https://metakocka.freshdesk.com/a/solutions/articles/30001244
 Notes :
 * FIFO purchase price : order must have an invoice and this invoice must be older than the current date
 * price from pricelist : see https://metakocka.freshdesk.com/a/solutions/articles/3000124471 for details on how it works
-* if the product is a compound product, the call will return values for every separate product in this compound.
+* if the product is a compound product, the call will return values for every separate product in this compound. Paramether "amount" is how many peaces of product is inside compound.
 * paramether "return_purchase_price" is supported in get_document and search call.
 
 Request (POST - https://main.metakocka.si/rest/eshop/v1/get_document) :
@@ -670,8 +670,8 @@ Respond :
         {
             "count_code": "PA-4166",
             "mk_id": "1600129495",
-            "code" : "toy_1x_car_1x_teddybear",
-            "name" : "Toy : Car + Teddy Bear",
+            "code" : "toy_1x_car_2x_teddybear",
+            "name" : "Toy : Car + 2x Teddy Bear",
             .....
             "purchase_price_list": [
                 {
@@ -681,7 +681,8 @@ Respond :
                     "stock_allocation_cost" : "0.3",                    
                     "last_price" : "2.1",
                     "last_allocation_cost" : "0.2",                    
-                    "pricelist_price": "2.7"
+                    "pricelist_price": "2.7",
+                    "amount" : "1"
                 },
                 {
                     "mk_id": "160066666",
@@ -690,7 +691,8 @@ Respond :
                     "stock_allocation_cost" : "0.2",                    
                     "last_price" : "3.2",
                     "last_allocation_cost" : "0.4",                    
-                    "pricelist_price": "2.9"
+                    "pricelist_price": "2.9",
+                    "amount" : "2"
                 }                
             ]
         },
@@ -702,7 +704,8 @@ Respond :
             "purchase_price_list": [
                 {
                     "code": "delivery_service",
-                    "pricelist_price": "1.4"                    
+                    "pricelist_price": "1.4",
+                    "amount" : "1"                    
                 }
             ]
         }
@@ -711,7 +714,7 @@ Respond :
 ```
 
 Notes :
-* The first product "Toy : Car + Teddy Bear" (code toy_1x_car_1x_teddybear) is a compound product from "car" and "teddybear" material products. The parameter purchase_price_list will contain the purchase price for every product. In this case "code" parameter will not match.
+* The first product "Toy : Car + 2 x Teddy Bear" (code toy_1x_car_2x_teddybear) is a compound product from "car" and "teddybear" material products. The parameter purchase_price_list will contain the purchase price for every product. In this case "code" parameter will not match.
 * The second product "delivery_service" is a service and the product in purchase_price_list array has the same code as the parent product.
 
 ## Special paramethers
