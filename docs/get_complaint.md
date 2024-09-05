@@ -40,6 +40,7 @@ Respond :
         "buyer": "true",
         "supplier": "false"
     },
+    "currency_code": "RON",
     "status_code": "completed",
     "buyer_order": "PP-27402",
     "created_ts": "2023-05-31T14:08:07+02:00",
@@ -62,7 +63,9 @@ Respond :
         {
             "mk_id": "1600608209",
             "count_code": "1-MK-2347",
-            "doc_type": "sales_bill_credit_note"
+            "doc_type": "sales_bill_credit_note",
+            "sum_eur": "1.23",
+            "sum_currency": "6.10"
         }
     ],
     "last_change_user": "Glavni account",
