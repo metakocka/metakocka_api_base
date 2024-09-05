@@ -302,14 +302,14 @@ Respond :
     ]
 }
 ```
-## 1.1 Return reservations without amount
+## 1.1 Return reservations without stock
 Request :
 ```javascript
 {
     "secret_key":"my_secret_key",
     "company_id":"16",
     "wh_id_list":"1600194133",
-    "return_reservation_without_amount":"true"
+    "return_reservation_without_stock":"true"
 }
 ```
 Respond :
