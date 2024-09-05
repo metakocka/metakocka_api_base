@@ -12,6 +12,7 @@ Attribute                 | Type | Notes| MK SLO |
 | product_code_list | String | Limit respond by list of MK codes (or webshops SKU), separater with comma. | / |
 | product_mk_id_list | String | Limit respond by list of MK ID, separater with comma | / |
 | return\_expect\_order\_delivery\_date | bool | Response will have additional attribute "order_in_delivery" with a list of amounts and delivery dates per returned products. | / |
+| return\_reservation\_without\_amount | bool | When set to true, the response will return products that are currently out of stock. | / |
 
 If MetaKocka company is using reservations, amount will be return as :
 * amount - stock amount
@@ -297,6 +298,101 @@ Respond :
             "warehouse_id": "1600263862",
             "warehouse_mark": "nas1",
 	    "status": "Odprta"
+        }
+    ]
+}
+```
+## 1.1 Return reservations without amount
+Request :
+```javascript
+{
+    "secret_key":"my_secret_key",
+    "company_id":"16",
+    "wh_id_list":"1600194133",
+    "return_reservation_without_amount":"true"
+}
+```
+Respond :
+``` javascript
+{
+    "opr_code": "0",
+    "opr_time_ms": "19",
+    "wh_id_list": "1600194133",
+    "offset": "0",
+    "limit": "1000",
+    "stock_list_count": "6",
+    "stock_list": [
+        {
+            "warehouse_id": "1600194133",
+            "mk_id": "1600540916",
+            "count_code": "16916",
+            "code": "nagode_nabava",
+            "title": "nagode_nabava",
+            "amount": "97",
+            "reserved_amount": "7",
+            "free_amount": "90",
+            "microlocation": "A1",
+            "unit": "kos"
+        },
+        {
+            "warehouse_id": "1600194133",
+            "mk_id": "1600540704",
+            "count_code": "16915",
+            "code": "nagode",
+            "title": "nagode",
+            "amount": "16",
+            "reserved_amount": "0",
+            "free_amount": "16",
+            "microlocation": "A1",
+            "unit": "kos"
+        },
+        {
+            "warehouse_id": "1600194133",
+            "mk_id": "1600540704",
+            "count_code": "16915",
+            "code": "nagode",
+            "title": "nagode",
+            "amount": "-5",
+            "reserved_amount": "0",
+            "free_amount": "-5",
+            "unit": "kos"
+        },
+        {
+            "warehouse_id": "1600194133",
+            "mk_id": "1600540704",
+            "count_code": "16915",
+            "code": "nagode",
+            "title": "nagode",
+            "amount": "1000",
+            "reserved_amount": "0",
+            "free_amount": "1000",
+            "microlocation": "B1",
+            "unit": "kos"
+        },
+        {
+            "warehouse_id": "1600194133",
+            "mk_id": "1600147687",
+            "count_code": "20350",
+            "code": "s1",
+            "title": "stol",
+            "amount": "0",
+            "reserved_amount": "1",
+            "free_amount": "-1",
+            "unit": "kos"
+        },
+        {
+            "warehouse_id": "1600194133",
+            "mk_id": "1600000066",
+            "count_code": "PA_102_PA",
+            "code": "sktest1",
+            "title": "sktest1",
+            "amount": "5",
+            "reserved_amount": "0",
+            "free_amount": "5",
+            "microlocation": "B1",
+            "unit": "kg",
+            "unit2": "g",
+            "unit_factor": "1000"
         }
     ]
 }
