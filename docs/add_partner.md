@@ -7,21 +7,21 @@ When adding new partner, you must declare his default data such as street, post 
 
 Supported attributes for partner:
 
-| Attribute           	| Type     	| Notes                            	| MK SLO                   	|
-|---------------------	|----------	|----------------------------------	|--------------------------	|
-| business_entity     	| bool     	|                                  	| Fizična oseba (Da/Ne)    	|
-| taxpayer            	| bool     	|                                  	| Davčni zavezanec (Da/Ne) 	|
-| foreign_county      	| bool     	|                                  	| Tujina (Da/Ne)           	|
-| buyer               	| bool     	| Partner must be flag as buyer    	| Kupec                    	|
-| supplier            	| bool     	| Partner must be flag as supplier 	| Dobavitelj               	|
-| tax_id_number       	| char,50  	| Partner's tax number             	| Davčna številka          	|
-| registration_number 	| char,50  	| Partner's registration number    	| Matična številka         	|
-| customer            	| char,100 	| Partner's name                   	| Naziv partnerja          	|
-| street              	| char,150 	| Partner's address                	| Ulica                    	|
-| post_number         	| char,20  	| Partner's post number            	| Poštna številka          	|
-| place               	| char,100 	| Partner's place                  	| Kraj                     	|
-| province            	| char,50  	| Partner's provnice               	| Pokrajina                	|
-| country             	| char,50  	| Partner's country                	| Država                   	|
+| Attribute           	 | Type     	 | Notes                            	 | MK SLO                   	 |
+|-----------------------|------------|------------------------------------|----------------------------|
+| business_entity     	 | bool     	 | 	                                  | Pravna oseba (Da/Ne)    	  |
+| taxpayer            	 | bool     	 | 	                                  | Davčni zavezanec (Da/Ne) 	 |
+| foreign_county      	 | bool     	 | 	                                  | Tujina (Da/Ne)           	 |
+| buyer               	 | bool     	 | Partner must be flag as buyer    	 | Kupec                    	 |
+| supplier            	 | bool     	 | Partner must be flag as supplier 	 | Dobavitelj               	 |
+| tax_id_number       	 | char,50  	 | Partner's tax number             	 | Davčna številka          	 |
+| registration_number 	 | char,50  	 | Partner's registration number    	 | Matična številka         	 |
+| customer            	 | char,100 	 | Partner's name                   	 | Naziv partnerja          	 |
+| street              	 | char,150 	 | Partner's address                	 | Ulica                    	 |
+| post_number         	 | char,20  	 | Partner's post number            	 | Poštna številka          	 |
+| place               	 | char,100 	 | Partner's place                  	 | Kraj                     	 |
+| province            	 | char,50  	 | Partner's provnice               	 | Pokrajina                	 |
+| country             	 | char,50  	 | Partner's country                	 | Država                   	 |
 
 
 Supported attributes for partner contact:
