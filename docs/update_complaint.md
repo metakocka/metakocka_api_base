@@ -12,7 +12,6 @@
 |----|------------|------
 | secret_key | Required  | Generated API key. |
 | company_id | Required  | Internal(MK) company id. |
-| api_user_email | Required  | Internal(MK) user email. |
 | claim_id | Required  | Internal(MK) complaint id. |
 | claim_type | Required  | Type of complaint - reclamation, return or replacement. |
 | claim_status | Required  | Dynamic registry key for complaint status defined in app. Predefined statuses: draft, progress, completed |
@@ -23,7 +22,6 @@
 {
   "secret_key": "API_KEY",
   "company_id": "COMPANY_ID",
-  "api_user_email": "CREATOR_EMAIL",
   "claim_id": "COMPLAINT_ID",
   "claim_type": "reclamation",
   "claim_status": "completed_refunded",
