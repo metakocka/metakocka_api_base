@@ -6,7 +6,7 @@ Status options:
 * waiting
 * sms
 * email
-* Viber
+* viber
 * call_center
 * done
 * deleted
