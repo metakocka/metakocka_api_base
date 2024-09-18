@@ -15,6 +15,7 @@ Status options:
 
 
 ### 1. Update Abandoned Cart status bulk
+ If 'external_id_list' contains more than one element bulk status change will occur
 ```json
 {
     "company_id": "{company_id}",
@@ -25,6 +26,7 @@ Status options:
 ```
 
 ### 2. Update Abandoned Cart
+If 'external_id' is present or 'external_id_list' contains only one element Abandoned cart update will occur
 ```json
 {
     "company_id": "{company_id}",
