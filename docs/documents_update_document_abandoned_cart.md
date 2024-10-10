@@ -32,8 +32,7 @@ If 'external_id' is present or 'external_id_list' contains only one element Aban
     "company_id": "{company_id}",
     "secret_key": "{secret_key}",
 
-    "external_id_list": ["{unique_id_1}"], // One must be present in request
-    "external_id": "{unique_id_1}", // One must be present in request
+    "external_id": "{unique_id_1}", 
 
     "first_name": "FirstName",
     "last_name": "LastName",
