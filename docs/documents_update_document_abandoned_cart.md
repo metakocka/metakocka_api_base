@@ -15,8 +15,8 @@ Status options:
 
 
 ### 1. Update Abandoned Cart
-If 'external_id' is present or 'external_id_list' contains only one element Abandoned cart update will occur.
-Field 'status' can be null, in that case status will not be updated.
+* If 'external_id' is present or 'external_id_list' contains only one element Abandoned cart update will occur.
+* Field 'status' can be null, in that case status will not be updated.
 ```json
 {
     "company_id": "{company_id}",
