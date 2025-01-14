@@ -780,3 +780,57 @@ Notes:
 }
 
 ```
+
+### Transfer order - search
+
+Notes:
+* Limit transfer order search by date, warehouses or product specific parameters
+
+**Request** (POST - https://main.metakocka.si/rest/eshop/v1/search) :
+```javascript
+{
+    "secret_key": "8899",
+    "company_id": "16",
+    "doc_type": "transfer_order",
+    "result_type": "doc",
+    "limit": 100,
+    "offset": 0,
+    "query": "query example"
+    "query_advance": [
+        {
+            "type": "doc_date_from",
+            "value": "2024-10-05+02:00"
+        },
+        {
+            "type": "doc_date_to",
+            "value": "2025-12-21+02:00"
+        },
+        {
+            "type": "product_code",
+            "value": "artPrevzemTest2"
+        },
+        {
+            "type": "warehouse_from",
+            "value": "oznaka2"
+        },
+        {
+            "type": "warehouse_to",
+            "value": "whnaslov"
+        },
+        {
+            "type": "product_lot_number",
+            "value": "lot1"
+        },
+        {
+            "type": "product_exp_date",
+            "value": "2024-03-14+02:00"
+        },
+        {
+            "type": "product_serial_number",
+            "value": "213213"
+        }
+    ]
+}
+
+```
+

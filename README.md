@@ -50,6 +50,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 * [bill](/docs/documents_get_document_bill.md)
 * [warehouse docs](/docs/documents_get_document_whdocs.md)
 * [workorder](/docs/documents_get_document_workorder.md)
+* [transfer_order](/docs/documents_get_document_transfer_order.md)
 
 ### update_document
 * [workorder](/docs/documents_update_document_workorder.md)
@@ -113,6 +114,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ## Release notes
 | Date       | What's new                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 14.1.2025  | Added get_document and search support for transfer order. See [example](/docs/documents_get_document_transfer_order.md) and [example](/docs/search_examples.md#Transfer-order---search) for more info.                                                                                                                                                                                                                      |
 | 7.1.2025   | Added support for duo_payment for put_document for sales orders. See [example](/docs/documents_put_document_sales_order.md) for more info.                                                                                                                                                                                                                                                                                  |
 | 6.9.2024   | Added new endpoint for updating status on complaint. See [update_complaint](/docs/update_complaint.md) for more info. Added response fields currency_code, sum_eur and sum_currency for get_document for complaint. See [Example](/docs/get_complaint.md) for more info.                                                                                                                                                    |
 | 5.9.2024   | Added return_reservation_without_stock for warehouse_stock. See [warehouse_stock](/docs/warehouse_stock.md#11-return-reservations-without-stock) for more info.                                                                                                                                                                                                                                                             |
