@@ -732,7 +732,8 @@ You can use addition query paramethers (with doc_date_from and doc_date_to) for 
 	"result_type": "doc",
 	"limit": 5,
 	"offset": 0,
-	"query_advance": [{
+	"query_advance": [
+	    {
             "type": "doc_date_from",
             "value": "2023-04-19+02:00"
         },
@@ -779,6 +780,54 @@ Notes:
     ]
 }
 
+```
+
+### Sales order - status code
+
+Notes:
+* Parameter "show_status_code": "true"/"false"
+* Return "status_code" when searching sales orders and not fetching full document data.
+
+**Request** (POST - https://main.metakocka.si/rest/eshop/v1/search) :
+```javascript
+{
+    "secret_key": "8899",
+    "company_id": "16",
+    "doc_type": "sales_order",
+    "limit": 100,
+    "offset": 0,
+    "show_status_code":"true",
+    "query_advance": [
+        {
+            "type": "doc_date_from",
+            "value": "2023-04-19+02:00"
+        },
+        {
+            "type": "doc_date_to",
+            "value": "2023-05-19+02:00"
+        }
+    ]
+}
+```
+
+**Respond**
+```javascript
+{
+    "opr_code": "0",
+    "opr_time": "0",
+    "result_all_records": "449",
+    "result_count": "1",
+    "offset": "0",
+    "limit": "1"
+    "result": [
+        {
+            "mk_id": "400000001511",
+            "opr_code": "0",
+            "count_code": "PP-27162",
+            "status_code": "Odpremljen"
+        }
+    ]
+}
 ```
 
 ### Transfer order - search
