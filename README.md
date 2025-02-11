@@ -105,7 +105,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 * [update_document](/docs/documents_update_document_abandoned_cart.md)
 
 # Delivery service
-*[Price-lists](/docs/delivery_service_pricelists.md)
+* [Price lists](/docs/delivery_service_pricelists.md)
 
 # Other calls
 * [put_transaction](/docs/put_transaction.md) - add payment on existing bill or offer
