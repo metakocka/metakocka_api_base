@@ -311,3 +311,28 @@ Respond :
   "opr_time_ms":"12026"
 }
 ```
+
+### Sales order - change count code
+
+**URL** : https://main.metakocka.si/rest/eshop/v1/update_document
+
+* Use parameter 'count_code_new'
+
+Request :
+```javascript
+{
+    "mk_id": "400000003293",
+    "doc_type": "sales_order",
+    "company_id": "16",
+    "secret_key": "8899",
+    "count_code_new":"newCountCodeExample"
+}
+```
+
+Respond :
+```javascript
+{
+  "opr_code":"0",
+  "opr_time_ms":"523"
+}
+```
