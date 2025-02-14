@@ -42,6 +42,7 @@
             "pricelist_rows": [
                 {
                     "cod_cost": "3",
+                    "id": "1",
                     "package_delivery_cost": "2",
                     "package_weight": "2",
                     "return_cost": "4",
@@ -51,6 +52,7 @@
                 },
                 {
                     "cod_cost": "3",
+                    "id": "2",
                     "package_delivery_cost": "4",
                     "package_weight": "5",
                     "return_cost": "2",
@@ -74,6 +76,7 @@
             "pricelist_rows": [
                 {
                     "cod_cost": "4",
+                    "id": "3",
                     "package_delivery_cost": "23",
                     "package_weight": "1",
                     "return_cost": "2",
