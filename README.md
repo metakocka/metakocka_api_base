@@ -71,6 +71,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ### report
 * [Concept](/docs/report_concept.md)
 * [Examples](/docs/report_examples.md)
+* [Asynchronous Printing](/docs/report_async.md)
 
 # Partner
 * [get_partner](/docs/get_partner.md)
@@ -117,6 +118,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ## Release notes
 | Date       | What's new                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 18.2.2025  | Added support for async report printing. See [example](/docs/report_async.md) for more info.                                                                                                                                                                                                                                                                                                                                |
 | 11.2.2025  | Added new endpoint get_delivery_service_pricelist. See [example](/docs/delivery_service_pricelists.md) for more info.                                                                                                                                                                                                                                                                                                       |
 | 11.2.2025  | Added support for changing sales order count_code via update_document. See [example](/docs/documents_update_document_sales_order.md#Sales-order---change-count-code) for more info.                                                                                                                                                                                                                                         |
 | 23.1.2025  | Added support for show_status_code when searching sales orders. See [example](/docs/search_examples.md#Sales-order---status-code) for more info.                                                                                                                                                                                                                                                                            |

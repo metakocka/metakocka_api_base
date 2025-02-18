@@ -1,6 +1,6 @@
 # Concept
 
-Let's start with example :
+Let's start with an example :
 
 **Request** (POST - https://main.metakocka.si/rest/eshop/v1/report) :
 ```javascript
