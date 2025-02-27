@@ -717,5 +717,58 @@ Notes :
 * The first product "Toy : Car + 2 x Teddy Bear" (code toy_1x_car_2x_teddybear) is a compound product from "car" and "teddybear" material products. The parameter purchase_price_list will contain the purchase price for every product. In this case "code" parameter will not match.
 * The second product "delivery_service" is a service and the product in purchase_price_list array has the same code as the parent product.
 
+# get_document - Sales Order with associated tracking numbers
+**Example** :
+
+Notes:
+* Also works with /search endpoint
+* 'associated_tracking_numbers' is returned only when 'tracking_number' is present as well
+
+**Request Data parameters**
+
+| Parameter                          | Required/Optional | Description     |
+|------------------------------------|-------------------|-----------------|
+| return_associated_tracking_numbers | Optional          | Default "false" |
+
+**Response Data parameters**
+
+| Parameter                   | Description                           |
+|-----------------------------|---------------------------------------|
+| associated_tracking_numbers | Tracking numbers separated by commas. |
+Request (POST - https://main.metakocka.si/rest/eshop/v1/get_document) :
+```javascript
+{
+  "secret_key":"8899",
+  "company_id":"16",
+  "doc_type" : "sales_order",
+  "doc_id" : "1600202487",
+  "return_associated_tracking_numbers " : "true"
+}
+```
+Respond :
+```javascript
+{
+    "mk_id": "1600202487",
+    "doc_type": "sales_order",
+    "opr_code": "0",
+    "count_code": "PP-27408",
+    "doc_date": "2023-06-14+02:00",
+    "bank_ref_number": "27408",
+    "commercialist_email": "mail@gmail.com",
+    "salesOrderTrackingType": "bill",
+    "created_ts": "2023-06-14T14:30:04+02:00",
+    "extra_column": [
+                {
+                    "name": "tracking_number",
+                    "value": "TrackingCodeMain"
+                },
+                {
+                    "name": "associated_tracking_numbers",
+                    "value": "TrackingCode1,TracklingCode2"
+                }
+            ],
+}
+```
+
 ## Special paramethers
 * show\_last\_payment\_date - see [Bill example](/docs/documents_get_document_bill.md)
