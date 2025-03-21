@@ -8,19 +8,20 @@
 
 **Data parameters**
 
-|Parameter| Required/Optional | Description |
-|----|------------|------
-| secret_key | Required  | Generated API key. |
-| company_id | Required  | Internal MK company id. |
-| doc_type | Required  | Supported types: "sales_order", "warehouse_receiving_note" |
-| status_code | Required  | New status of the document. It has the same value as description column in MetaKocka.  |
-| mk_id | Required  | Unique internal document identifier |
-| buyer_order | _Optional_  | May be used instead of mk_id for doc_type "sales_order" |
-| api_user_email | _Optional_  | This parameter is used to identify the request user by his email  |
+| Parameter      | Required/Optional | Description                                                                           |
+|----------------|-------------------|---------------------------------------------------------------------------------------|
+| secret_key     | Required          | Generated API key.                                                                    |
+| company_id     | Required          | Internal MK company id.                                                               |
+| doc_type       | Required          | Supported types: "sales_order", "warehouse_receiving_note"                            |
+| status_code    | Required          | New status of the document. It has the same value as description column in MetaKocka. |
+| mk_id          | Required          | Unique internal document identifier                                                   |
+| mk_id_list     | Required          | A list of unique internal document indentifiers. This or 'mk_id' can be used.         |
+| buyer_order    | _Optional_        | May be used instead of mk_id for doc_type "sales_order"                               |
+| api_user_email | _Optional_        | This parameter is used to identify the request user by his email                      |
 
 *All Data parameters are type of "String".
 
-**Request example**
+**Request example - mk_id**
 ```javascript
 {
   "secret_key" : "REMOVE_SECRET_KEY",
@@ -28,6 +29,17 @@
   "doc_type" : "sales_order",
   "status_code" : "created",
   "mk_id" : "1600016978"
+}
+```
+
+**Request example - mk_id_list**
+```javascript
+{
+  "secret_key" : "REMOVE_SECRET_KEY",
+  "company_id" : "16",
+  "doc_type" : "sales_order",
+  "status_code" : "created",
+  "mk_id_list" : [400000003364,400000003363]
 }
 ```
 
