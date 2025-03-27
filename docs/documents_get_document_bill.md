@@ -333,7 +333,7 @@ Response can be viewed here: [example](/docs/documents_get_document_sales_order.
 | show\_product\_compound                 | bool | return product compound                                                                                                             |
 | show\_allocated\_cost                   | bool | get allocated costs for products.                                                                                                   |
 | show\_sales\_order\_method\_of\_payment | bool | get method of payment from sales order (if document link exist)                                                                     |
-| show\_tax\_factor                       | bool | get tax factor for each product                                                                                                     |
+| show\_tax\_factor                       | bool | get tax factor and tax description for each product                                                                                 |
 | show\_product\_detail                   | bool | get product detail for each product                                                                                                 |
 | show\_purchase\_price\_and\_allo\_cost  | bool | get product purchase price and allocation costs [example](/docs/documents_get_document_whdocs.md#show_purchase_price_and_allo_cost) |
 
