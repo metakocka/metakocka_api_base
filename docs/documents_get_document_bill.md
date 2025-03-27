@@ -482,7 +482,7 @@ Respond :
 
 ### show\_tax\_factor
 Notes :
-* you will get additional return parameter - tax\_factor
+* you will get additional return parameters - tax\_factor and tax\_desc
 
 Request : (POST - https://main.metakocka.si/rest/eshop/v1/get_document)
 ```javascript
@@ -509,7 +509,8 @@ Respond :
             "price": "3",
             "discount": "0",
             "tax": "EX4",
-            "tax_factor": "0.22"
+            "tax_factor": "0.22",
+            "tax_desc": "22"
         }
     ]
 }
