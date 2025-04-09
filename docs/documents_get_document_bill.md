@@ -32,6 +32,7 @@ Respond :
     "opr_code": "0",
     "count_code": "PRD1_493",
     "doc_date": "2015-05-07+02:00",
+    "publish_ts": "2015-05-07T12:53:27+02:00",
     "partner": {
         "business_entity": "true",
         "taxpayer": "true",
