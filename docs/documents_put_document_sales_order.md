@@ -8,14 +8,14 @@
     "company_id":"16",
     "doc_type": "sales_order",
     "count_code": "resttest1",
-    "doc_date" : "2014-09-13+02:00",
+    "doc_date" : "2024-09-12+02:00",
     "title": "REST test 1",
     "partner": {
         "business_entity": "true",
         "taxpayer": "true",
         "foreign_county": "false",
         "tax_id_number": "SI20000001",
-        "customer": "API partner 1",
+        "customer": "Buyer d.o.o.",
         "street": "Slovenska cesta 100",
         "post_number": "1000",
         "place": "Ljubljana",
@@ -23,28 +23,28 @@
         "country": "Slovenia"
     },
     "receiver": {
-        "business_entity": "true",
-        "taxpayer": "true",
+        "business_entity": "false",
+        "taxpayer": "false",
         "foreign_county": "false",
-        "tax_id_number": "SI20000002",
-        "customer": "API partner 2",
+        "tax_id_number": "",
+        "customer": "Rok Horvat",
         "street": "Slovenska cesta 200",
         "post_number": "1000",
         "place": "Ljubljana",
         "country": "Slovenia",
         "partner_contact": {
-            "name": "Rok Doltar",
+            "name": "Rok Horvat",
             "phone": "05 320 24 88",
             "fax": "05 320 24 84",
-            "gsm": "071 333 444",
-            "email": "test@test.co.uk"
+            "gsm": "071 333 422",
+            "email": "test2@test.co.uk"
         }
     },
     "sales_pricelist_code" : "118",
     "prepayment_percent" : "15",
     "discount_percent" : "20",
     "currency_code" : "USD",
-    "status_code" : "shipped",
+    "status_code" : "created",
     "pariteta" : "Lasten Prevzem",
     "doc_created_email" : "m@m.com",
     "commercialist_email" : "m@m.com",
@@ -75,7 +75,7 @@
             "tax" : "EX4"
         }
     ],
-    "order_create_ts": "2014-09-13T12:13:15+02:00",
+    "order_create_ts": "2024-09-12T12:13:15+02:00",
     "duo_payment": "2024-09-24+02:00"
 }
 ```
