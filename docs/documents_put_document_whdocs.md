@@ -1,12 +1,12 @@
 **URL** : https://main.metakocka.si/rest/eshop/v1/put_document
 
 ## 2.3 Warehouse docs (delivery note, packing list, etc)
-| doc_type                    | SLO              | EN                  |
-|-----------------------------|------------------|---------------------|
-| warehouse\_delivery\_note   | Nalog za odpremo | Delivery note       |
-| warehouse\_packing\_list    | Dobavnica        | Packing list        |
-| warehouse\_receiving\_note  | Nalog za prevzem | Order for receiving |
-| warehouse\_acceptance\_note | Prevzemnica      | Goods received note |
+| doc_type                    | SLO              | EN                        |
+|-----------------------------|------------------|---------------------------|
+| warehouse\_delivery\_note   | Nalog za odpremo | Delivery note             |
+| warehouse\_packing\_list    | Dobavnica        | Packing list              |
+| warehouse\_receiving\_note  | Nalog za prevzem | Inbound order             |
+| warehouse\_acceptance\_note | Prevzemnica      | Goods received note       |
 
 ### 2.3.1 Warehouse delivery note
 **Example full request** :
