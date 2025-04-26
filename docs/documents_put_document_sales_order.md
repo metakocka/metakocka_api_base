@@ -222,39 +222,43 @@ Notes :
     "secret_key": "8899",
     "company_id": "16",
     "doc_type": "sales_order",
-    "doc_date": "2024-03-13+02:00",
-    "status_code": "Novo naročilo",
-    "customer_order": "OrderAPIMK",
+    "doc_date": "2024-03-14+02:00",
+    "status_code": "created",
+    "customer_order": "Order Number 1",
     "delivery_type": "DHL",
     "currency_code": "EUR",
+    "doc_created_email" : "api@m.com",
+    "parcel_shop_id" : "P100",
+    "profit_center" : "ProfitCenter1",
+    "notes": "customer notes - cart",
     "method_of_payment": "PayPal",
     "partner": {
-        "business_entity": "true",
-        "taxpayer": "true",
+        "business_entity": "false",
+        "taxpayer": "false",
         "foreign_county": "false",
-        "tax_id_number": "SI20000001",
-        "customer": "API partner 1",
-        "street": "Slovenska cesta 100",
+        "tax_id_number": "",
+        "customer": "Janez Novak",
+        "street": "Dunajska 120",
         "post_number": "1000",
         "place": "Ljubljana",
         "country": "Slovenia"
     },
     "receiver": {
-        "business_entity": "true",
-        "taxpayer": "true",
-        "foreign_county": "fals    e",
-        "tax_id_number": "SI20000002",
-        "customer": "API partner 2",
-        "street": "Slovenska cesta 200",
+        "business_entity": "false",
+        "taxpayer": "false",
+        "foreign_county": "false",
+        "tax_id_number": "",
+        "customer": "Lojze Horvat",
+        "street": "Slovenska cesta 100",
         "post_number": "1000",
         "place": "Ljubljana",
         "country": "Slovenia",
         "partner_contact": {
-            "name": "Janez Novak",
-            "phone": "05 111 11 11",
+            "name": "Lojze Horvat",
+            "phone": "05 111 11 12",
             "fax": "05 111 11 12",
-            "gsm": "071 333 444",
-            "email": "test@test.co.uk"
+            "gsm": "071 333 433",
+            "email": "test1@test.co.uk"
       }
     },
     "product_list": [
@@ -262,13 +266,14 @@ Notes :
           "code": "art1",
           "amount": "1",
           "price_with_tax": "100",
+          "discount": "10",
           "tax_factor": "0.22"
         }
     ],
     "mark_paid": [
         {
           "payment_type": "PayPal",
-          "date": "14.03.2014"
+          "date": "14.03.2024"
         }
     ]
 }
