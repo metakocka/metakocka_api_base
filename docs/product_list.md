@@ -35,6 +35,7 @@ Request :
 | active                                | bool    | Product must be flag as active                                                                                                                                      | Aktiven                  |
 | eshop_sync                            | bool    | Product must be flag for e-commerce sync                                                                                                                            | Izmenjava - Spletna trg. |
 | return\_warehause\_stock              | bool    | If attribute is set, every product in respond will have "amount" attribute. In case the product was newer use on stock, attribute "amount" will still have value 0. | /                        |
+| return\_free\_amount                  | bool    | If attribute is set, every product in respond will have "free_amount" attribute. It's calculated as (amount - reservations)                                         | /                        |
 | return\_warehouse\_reservation        | bool    | Product will have additional attribute "reservation_detail" with list of reservation amount per warehouse.                                                          | /                        |
 | return\_product\_partner\_info        | bool    | Product will have additional attribute "product_partner_info" with list of custom partner info on product.                                                          | /                        |
 | return\_category                      | bool    | Product will have additional attribute "category_tree_list" with tree structure of selected categories on product.                                                  | /                        |
@@ -1027,3 +1028,58 @@ Respond (with return\_web\_shop\_link = 'true'):
  }
 ```
 
+## 1.11 With free amount
+
+Notes:
+* Only warehouses with "Show in product list" ticked are used for the calculation
+
+Request :
+```javascript
+{
+    "secret_key":"my_secret_key",
+    "company_id": "16",
+    "return_free_amount": "true"
+}
+```
+Respond (with return\_free\_amount = 'true'):
+
+```javascript
+{{
+    "opr_code": "0",
+    "opr_time_ms": "419",
+    "opr_time_no_lock_ms": "0",
+    "limit": "1",
+    "offset": "0",
+    "product_list_count": "1",
+    "product_list": [
+        {
+            "count_code": "31141",
+            "mk_id": "1600472316",
+            "code": "artikel1",
+            "name": "artikel1",
+            "unit": "kos",
+            "service": "false",
+            "sales": "true",
+            "activated": "true",
+            "purchasing": "true",
+            "eshop_sync": "false",
+            "weight": "4",
+            "localization": [
+                {
+                    "language": "sl",
+                    "name": "artikel1"
+                }
+            ],
+            "asset": "false",
+            "compound": "false",
+            "expiration_dates": "false",
+            "gross_weight": "5",
+            "lot_numbers": "false",
+            "norm": "false",
+            "serial_numbers": "false",
+            "work": "false",
+            "free_amount": "3079"
+        }
+    ]
+}
+```
