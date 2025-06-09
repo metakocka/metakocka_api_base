@@ -530,6 +530,29 @@ Notes :
     * warehouse_acceptance_note
     * warehouse_packing_list
 
+### Search Warehouse Documents only write off
+**Request** (POST - https://main.metakocka.si/rest/eshop/v1/search) :
+
+```javascript
+{
+	"secret_key": "8899",
+	"company_id": "16",
+	"doc_type": "warehouse_packing_list",
+	"result_type": "doc",
+	"limit": 5,
+	"offset": 0,
+	"query_advance": [{
+			"type": "write_off",
+			"value": "true"
+		}
+	]
+}
+```
+
+Notes :
+* Supported warehouse document types:
+  * warehouse_packing_list
+
 ### Search Sales orders with products
 **Request** (POST - https://main.metakocka.si/rest/eshop/v1/search) :
 
