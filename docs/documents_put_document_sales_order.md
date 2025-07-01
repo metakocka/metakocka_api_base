@@ -780,7 +780,7 @@ add or update barcode on product with parameter "barcode"
 ```
 
 ### Update product webshop data
-Add code, web_shop_URL, first_image_URL, name, price_with_tax to product_list object
+Add code, web_shop_URL, first_image_URL, name, price_with_tax to product_list object. In the parent object, webshop_eshop_sync_id is also required
 
 ```json
 {
@@ -811,6 +811,7 @@ Add code, web_shop_URL, first_image_URL, name, price_with_tax to product_list ob
             "web_shop_URL": "Webshop.com/product-name-test",
             "first_image_URL": "webshop.com/product-name-test/image.png"
         }
-    ]
+    ],
+    "webshop_eshop_sync_id": "1600353213"
 }
 ```
