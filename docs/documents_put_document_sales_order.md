@@ -778,3 +778,39 @@ add or update barcode on product with parameter "barcode"
     ]
 }
 ```
+
+### Update product webshop data
+Add code, web_shop_URL, first_image_URL, name, price_with_tax to product_list object
+
+```json
+{
+    "secret_key":"8899",
+    "company_id":"16",
+    "doc_type": "sales_order",
+    "count_code": "resttest2",
+    "doc_date" : "2014-09-13+02:00",
+    "document_change_log_notes" : "User : John deere",
+    "partner": {
+        "business_entity": "true",
+        "taxpayer": "true",
+        "foreign_county": "false",
+        "tax_id_number": "SI20000001",
+        "customer": "API partner 1",
+        "street": "Slovenska cesta 100",
+        "post_number": "1000",
+        "place": "Ljubljana",
+        "country": "Slovenia"
+    },
+    "product_list": [
+        {
+            "code": "art1",
+            "amount": "1",
+            "price_with_tax" : "100",
+            "tax" : "EX4",
+            "name": "Product name test",
+            "web_shop_URL": "Webshop.com/product-name-test",
+            "first_image_URL": "webshop.com/product-name-test/image.png"
+        }
+    ]
+}
+```
