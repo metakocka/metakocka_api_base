@@ -44,6 +44,7 @@ Respond :
     "duo_payment": "2015-04-22+02:00",
     "currency_code": "EUR",
     "status_code": "Odprta",
+    "status_desc": "open",
     "valid_days": "30",
     "valid_to": "2015-05-20+02:00",
     "title": "Ponudba 1",

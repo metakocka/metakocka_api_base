@@ -77,7 +77,9 @@ Respond :
     ],
     "sum_basic": "8",
     "sum_tax_ex3": "0.76",
-    "sum_all": "8.76"
+    "sum_all": "8.76",
+    "status_code": "Odpremljen",
+    "status_desc": "shipped"
 }
 ```
 

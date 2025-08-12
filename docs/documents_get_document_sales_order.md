@@ -59,6 +59,7 @@ Respond :
 	"discount_value": "20.12",
 	"currency_code": "EUR",
 	"status_code": "Novo naročilo",
+	"status_desc": "new_order",
 	"title": "naziv1",
 	"pariteta": "Dostava kupcu",
 	"doc_created_email": "m@m.com",

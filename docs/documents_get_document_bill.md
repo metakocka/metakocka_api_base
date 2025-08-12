@@ -70,6 +70,8 @@ Respond :
     "discount_value": "10",
     "duo_payment": "2015-05-22+02:00",
     "currency_code": "EUR",
+    "status_code": "Izdelan",
+    "status_desc": "created",
     "title": "Naziv1",
     "pariteta": "Dostava kupcu",
     "doc_created_email": "maticpetek@gmail.com",

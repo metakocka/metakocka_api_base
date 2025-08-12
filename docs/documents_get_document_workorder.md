@@ -49,6 +49,7 @@ Respond :
   ],
   "discount_value": "10",
   "status_code": "Aktiven",
+  "status_desc": "active",
   "title": "REST test1",
   "offer_list": [
     {
