@@ -292,6 +292,8 @@ Please use put_transaction call - https://github.com/metakocka/metakocka_api_bas
 
 If you put fields names into "clear" fields, values will be set on empty value. Supported fields :
 * tracking_code - remove tracking code
+* notes - remove notes
+* notes_header - remove header notes
 
 Request :
 ```javascript
