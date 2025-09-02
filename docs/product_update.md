@@ -18,6 +18,7 @@ Request :
     "unit":"kos",
     "service":"false",
     "sales":"true",
+    "activated" : "true",
     "purchasing":"false",
     "height":"12.23",
     "depth":"4.12",
