@@ -30,6 +30,8 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 
 [warehouse_stock](/docs/warehouse_stock.md)
 
+[source_stock](/docs/source_stock.md)
+
 [import_inventory](/docs/import_inventory.md)
 
 # Documents
@@ -118,6 +120,7 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 ## Release notes
 | Date       | What's new                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 11.9.2025  | Read stock for external ERP - [source_stock](/docs/source_stock.md)                                                                                                                                                                                                                                                                                                                                                                                  |
 | 12.8.2025  | Added status_desc parameter for all get_document documents. See [Example](/docs/documents_get_document_sales_order.md) for more info.                                                                                                                                                                                                                                                                                       |
 | 1.7.2025   | Added support for adding product webshop data over put_document. See [Example](/docs/documents_put_document_sales_order.md#update-product-webshop-data) for more info.                                                                                                                                                                                                                                                      |
 | 9.6.2025   | Added support for write_off at search by type warehouse_packing_list. See [Example](/docs/search_examples.md#search-warehouse-documents-only-write-off) for more info.                                                                                                                                                                                                                                                      |
