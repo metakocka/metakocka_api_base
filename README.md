@@ -36,6 +36,8 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 
 [get_order_change_warehouse / replace_order_change_warehouse](/docs/order_change_warehouse.md)
 
+[get_order_forbidden_products / replace_order_forbidden_products](/docs/order_forbidden_products.md)
+
 # Documents
 [Concept](/docs/documents_concept.md)
 
@@ -119,9 +121,12 @@ Instruction how to get API key :  [http://blog.metakocka.si/dodatne-nastavitve-a
 * [add_webshop_terms_of_use](/docs/add_webshop_terms_of_use.md) - Add terms of use file to webshop
 * [add_attachment](/docs/add_attachment.md) - add attachment
 
+[get_order_forbidden_products / replace_order_forbidden_products](/docs/order_forbidden_products.md)
+
 ## Release notes
 | Date       | What's new                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 16.9.2025  | API search / replace of rules for Forbidden products. [get_order_forbidden_products / replace_order_forbidden_products](/docs/order_forbidden_products.md).                                                                                                                                                                                                                                                                 |
 | 12.9.2025  | API search / replace of rules for Warehouse mapping. [get_order_change_warehouse / replace_order_change_warehouse](/docs/order_change_warehouse.md).                                                                                                                                                                                                                                                                        |
 | 11.9.2025  | Read stock for external ERP - [source_stock](/docs/source_stock.md)                                                                                                                                                                                                                                                                                                                                                         |
 | 12.8.2025  | Added status_desc parameter for all get_document documents. See [Example](/docs/documents_get_document_sales_order.md) for more info.                                                                                                                                                                                                                                                                                       |
