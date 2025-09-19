@@ -7,6 +7,10 @@
 * sender_message_id
 * eshop_sync_id :  Found at : MetaKocka -> Additional Settings -> Notifications -> Connections -> ID in grid
 
+***Notes*** 
+* for two way communication, you must (a) notify MetaKocka support to get the suitable provider and (b) do not specified sender_message_id paramether.  
+* for Abandoned cart connection, please provide AC id (return value of AC [put_document](/docs/documents_put_document_abandoned_cart.md) call) as parameter "abandoned_cart_id" (String)
+
 **Example** :
 Request (POST - https://main.metakocka.si/rest/eshop/send_message) :
 ```javascript
