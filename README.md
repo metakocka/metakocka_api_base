@@ -4,9 +4,9 @@ We are just translating our development documentation from Slovenian language. S
 Old documentation (in Slovenia language) [dev.metakocka.si](http://dev.metakocka.si/eshop/index.html)
 
 Instruction how to get API key : 
-[http://blog.metakocka.si/dodatne-nastavitve-api/](http://blog.metakocka.si/dodatne-nastavitve-api/)
 
 [English] (https://metakocka.freshdesk.com/en/support/solutions/articles/3000106126-obtaining-api-key-and-company-id)
+
 [Spanish] (https://metakocka.freshdesk.com/es/support/solutions/articles/3000106126-obtención-de-la-clave-api-y-el-id-de-la-empresa)
 
 
