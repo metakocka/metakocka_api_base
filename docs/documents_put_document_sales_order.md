@@ -66,7 +66,7 @@
     "buyer_order" : "border",
     "notes_header" : "notes zgoraj",
     "notes": "to so notes.",
-    "method_of_payment" : "on_deliver",
+    "method_of_payment" : "on_delivery",
     "product_list": [
         {
             "code": "art1",
