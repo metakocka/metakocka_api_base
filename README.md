@@ -68,6 +68,7 @@ Instruction how to get API key :
 * [sales order](/docs/documents_update_document_sales_order.md)
 * [bill](/docs/documents_update_document_bill.md)
 * [transfer_order](/docs/documents_update_document_transfer_order.md)
+* [warehouse docs](/docs/documents_update_document_whdocs.md)
 
 ### delete_document
 * [sales order](/docs/documents_delete_document_sales_order.md)
@@ -131,6 +132,7 @@ Instruction how to get API key :
 ## Release notes
 | Date       | What's new                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 20.02.2026 | Added support for updating warehouse documents. See [example](/docs/documents_update_document_whdocs.md) for more info.                                                                                                                                                                                                                                                                                                     |
 | 28.10.2025 | Added customer_order_list support for marking orders as shipped. See [example](/docs/mark_orders_as_shipped.md) for more info.                                                                                                                                                                                                                                                                                              |
 | 16.9.2025  | API search / replace of rules for Forbidden products. [get_order_forbidden_products / replace_order_forbidden_products](/docs/order_forbidden_products.md).                                                                                                                                                                                                                                                                 |
 | 12.9.2025  | API search / replace of rules for Warehouse mapping. [get_order_change_warehouse / replace_order_change_warehouse](/docs/order_change_warehouse.md).                                                                                                                                                                                                                                                                        |
