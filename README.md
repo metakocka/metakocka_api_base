@@ -126,8 +126,8 @@ Instruction how to get API key :
 * [change_document_status](/docs/change_document_status.md) - change status for sales order (Order Management order)
 * [add_webshop_terms_of_use](/docs/add_webshop_terms_of_use.md) - Add terms of use file to webshop
 * [add_attachment](/docs/add_attachment.md) - add attachment
-
-[get_order_forbidden_products / replace_order_forbidden_products](/docs/order_forbidden_products.md)
+* [get_order_forbidden_products / replace_order_forbidden_products](/docs/order_forbidden_products.md) - managed forbidden products
+* [accounting_export.md](/docs/accounting_export.md) - export accounting data
 
 ## Release notes
 | Date       | What's new                                                                                                                                                                                                                                                                                                                                                                                                                  |
