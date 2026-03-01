@@ -1,6 +1,7 @@
 # Accounting export
 
-**Description** : Generate accounting export data based on defined profiles. See https://metakocka.freshdesk.com/a/solutions/articles/3000048648 for more information.
+**Description** : Generate accounting export data based on defined profiles. See https://metakocka.freshdesk.com/a/solutions/articles/3000048648 for more information. The result is a URL to a ZIP file with the same content as an export performed directly within the MetaKocka main interface.
+Only one export at a time can be executed (parallel calls will be placed into a queue).
 
 **URL** : https://main.metakocka.si/rest/eshop/accounting_export
 
@@ -14,7 +15,7 @@ Notes :
 
 ```json
 {
-  "secret_key" : "8899",
+  "secret_key" : "MySecretKey",
   "company_id" : "16",
   "profile_name_list" : ["Izdani računi Vasco - domači"],
   "from_date" : "2026-01-01+02:00",
