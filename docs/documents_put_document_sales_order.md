@@ -275,6 +275,16 @@ Notes :
           "payment_type": "PayPal",
           "date": "14.03.2024"
         }
+    ],
+    "extra_column": [
+        {
+          "name": "tag",
+          "value": "Materials"
+        },
+        {
+          "name": "promo_code",
+          "value": "test promo"
+        }
     ]
 }
 ```
