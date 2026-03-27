@@ -8,14 +8,15 @@
 
 **Body data parameters**
 
-|Parameter| Required/Optional | Description |
-|----|------------|------
-| secret_key | Required  | Generated API key. |
-| company_id | Required  | Internal(MK) company id. |
-| claim_id | Required  | Internal(MK) complaint id. |
-| claim_type | Required  | Type of complaint - reclamation, return or replacement. |
-| claim_status | Required  | Dynamic registry key for complaint status defined in app. Predefined statuses: draft, progress, completed |
-| claim_note | Optional  | Complaint note - text. |
+| Parameter            | Required/Optional | Description                                                                                               |
+|----------------------|-------------------|-----------------------------------------------------------------------------------------------------------|
+| secret_key           | Required          | Generated API key.                                                                                        |
+| company_id           | Required          | Internal(MK) company id.                                                                                  |
+| claim_id             | Required          | Internal(MK) complaint id.                                                                                |
+| claim_type           | Required          | Type of complaint - reclamation, return or replacement.                                                   |
+| claim_status         | Required          | Dynamic registry key for complaint status defined in app. Predefined statuses: draft, progress, completed |
+| claim_note           | Optional          | Complaint note - text.                                                                                    |
+| return_tracking_code | Optional          | Return tracking code                                                                                      |
 
 **Request example**
 ```json
@@ -25,7 +26,8 @@
   "claim_id": "COMPLAINT_ID",
   "claim_type": "reclamation",
   "claim_status": "completed_refunded",
-  "claim_note"  : "Complaint notes - text"
+  "claim_note"  : "Complaint notes - text",
+  "return_tracking_code": "ZVTRNPPKKDDA"
 }
 ```
 
