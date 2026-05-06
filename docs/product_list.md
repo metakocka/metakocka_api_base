@@ -42,6 +42,7 @@ Request :
 | category                              | char    | Filter products by category name (example: "Computer","Shop",...).                                                                                                  | /                        |
 | return\_expect\_order\_delivery\_date | bool    | Product will have additional attribute "order_in_delivery" with a list of amounts and delivery dates per warehouse on product.                                      | /                        |
 | return\_web\_shop\_link               | bool    | Product will have additional attribute "web_shop_link" with a list of product web shop data for each web shop.                                                      | /                        |
+| return\_last\_purchase\_price               | bool    | Product will have additional attribute "last_purchase_price" shop.                                                      | /                        |
 | offset                                | int     | see notes.                                                                                                                                                          | /                        |
 | limit                                 | int     | see notes.                                                                                                                                                          | /                        |
 
@@ -1079,6 +1080,60 @@ Respond (with return\_free\_amount = 'true'):
             "serial_numbers": "false",
             "work": "false",
             "free_amount": "3079"
+        }
+    ]
+}
+```
+
+
+## 1.12 With last purchase price
+
+Request :
+```javascript
+{
+    "secret_key":"my_secret_key",
+    "company_id": "16",
+    "return_last_purchase_price": "true"
+}
+```
+Respond (with return\_last\_purchase\_price = 'true'):
+
+```javascript
+{{
+    "opr_code": "0",
+    "opr_time_ms": "419",
+    "opr_time_no_lock_ms": "0",
+    "limit": "1",
+    "offset": "0",
+    "product_list_count": "1",
+    "product_list": [
+        {
+            "count_code": "31141",
+            "mk_id": "1600472316",
+            "code": "artikel1",
+            "name": "artikel1",
+            "unit": "kos",
+            "service": "false",
+            "sales": "true",
+            "activated": "true",
+            "purchasing": "true",
+            "eshop_sync": "false",
+            "weight": "4",
+            "localization": [
+                {
+                    "language": "sl",
+                    "name": "artikel1"
+                }
+            ],
+            "asset": "false",
+            "compound": "false",
+            "expiration_dates": "false",
+            "gross_weight": "5",
+            "lot_numbers": "false",
+            "norm": "false",
+            "serial_numbers": "false",
+            "work": "false",
+            "last_purchase_price": "4.0000000000"
         }
     ]
 }
