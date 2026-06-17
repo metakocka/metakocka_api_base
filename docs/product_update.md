@@ -132,12 +132,15 @@ See [Packaging waste](/docs/product_add.md#17-packaging-waste) at product_add fo
 ### -Add compound
 
 **Product parameters**
-|Parameter| Required/Optional | Description |
-|----|------------|------
-| service | Required/Optional(if product parameter complete_set is added) | Product as a service |
-| complete_set | Required/Optional(if parameter service is added) | Product as a service and compound |
-| compound_type | Required | Required value = "compound" |
-| confirm_save_change_product_service | Optional | To confirm if we want to change product as a service |
+
+| Parameter                           | Required/Optional                                             | Value      | Description                                          |
+|-------------------------------------|---------------------------------------------------------------|------------|------------------------------------------------------|
+| service                             | Required/Optional(if product parameter complete_set is added) | true/false | Mark product as a service                            |
+| compound                            | Required/Optional                                             | true/false | Mark product as compound                             |
+| complete_set                        | Required/Optional(if parameter service is added)              | true/false | Mark product as a service and compound               |
+| norm                                | Required/Optional                                             | true/false | Mark product as BOM (Bill of Materials)              |
+| compound_type                       | Required                                                      | compound   | Required value = "compound"                          |
+| confirm_save_change_product_service | Optional                                                      | true/false | To confirm if we want to change product as a service |
 
 Note :
 - if product is already in use on any document, invoice,... a warning will be shown to recalculate stock.   
@@ -147,23 +150,25 @@ Note :
 
 Notes :
 * Parameter "product_count_code" or "product_mk_id" is required if we want to add existing product as compound.
-* If "product_count_code" and "product_mk_id" is not set or no product is found, and if all valid required parameters are provided, then new product will be created and then added as a compound.
+* If "product_count_code" and "product_mk_id" is not set or no product is found, and if all valid required parameters are provided, then new product will be created and added as a compound.
 
-|Parameter| Required/Optional | Description |
-|----|------------|------
-| product_mk_id | Optional | Product id |
-| product_count_code | Optional | Product count code | 
-| amount | Required | add amount |
-| purchase_unit_factor | Required | Purchase unit factor |
-| supplier_id | Required | Supplier identification |
-| purchase_price | Required | Purchase price |
-| n_of_workers | Required | number of workers |
-| workplace_id | Required | workplace id |
-| unit | Required | Measurement unit |
-| categories | optional | Categories list |
+| Parameter            | Required/Optional | Description                                |
+|----------------------|-------------------|--------------------------------------------|
+| product_mk_id        | Required/Optional | Product id                                 |
+| product_count_code   | Required/Optional | Product count code                         | 
+| product_code         | Optional          | Product code. Required if new product.     |
+| product_title        | Optional          | Product title. Required if new product.    |
+| amount               | Required          | add amount                                 |
+| purchase_unit_factor | Optional          | Purchase unit factor                       |
+| supplier_id          | Optional          | Supplier identification                    |
+| purchase_price       | Optional          | Purchase price                             |
+| n_of_workers         | Optional          | number of workers                          |
+| workplace_id         | Optional          | workplace id                               |
+| unit                 | Optional          | Measurement unit. Required if new product. |
+| categories           | Optional          | Categories list                            |
 
 
-Request :
+Request - compound:
 
 ```javascript
 {
@@ -171,11 +176,37 @@ Request :
     "count_code": "30888",
     "company_id": 16,
     "service": "true",
+    "compound": "true",       
     "compound_type":"compound",
     "compounds": [
         {
             "product_mk_id": "1600386560",
             "product_title": "table",
+            "amount": "1543",
+            "purchase_unit_factor": "0,5",
+            "supplier_id": "1600036997",
+            "purchase_price": "4",
+            "n_of_workers": "2",
+            "row_order": "1",
+            "workplace_id": "1600567744",
+            "unit": "m2"
+        }
+    ]    
+}
+```
+Request - Bill of Materials:
+```javascript
+{
+    "secret_key": "8899",
+    "count_code": "30888",
+    "company_id": 16,
+    "service": "true",
+    "norm": "true",       
+    "compound_type":"compound",
+    "compounds": [
+        {
+            "product_mk_id": "1600386560",
+            "product_count_code": "34432",
             "amount": "1543",
             "purchase_unit_factor": "0,5",
             "supplier_id": "1600036997",
