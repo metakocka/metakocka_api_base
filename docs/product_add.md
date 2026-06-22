@@ -193,18 +193,18 @@ Request :
 
 **Data parameters**
 
-|Parameter| Required/Optional | Description |
-|----|------------|------
-| attachment_list | Optional | Attachment object list |
-| remove_not_send_attachments | Optional | Removes all attachments from product. Attachments from the same request are added |
+| Parameter                   | Required/Optional | Description                                                                       |
+|-----------------------------|-------------------|-----------------------------------------------------------------------------------|
+| attachment_list             | Optional          | Attachment object list                                                            |
+| remove_not_send_attachments | Optional          | Removes all attachments from product. Attachments from the same request are added |
 
 
 **Attachment object parameters**
 
-|Parameter| Required/Optional | Description |
-|----|------------|------
-| file_name | Required | Filename with extension |
-| source_url/data_b64 | Required | Public url of the file (pdf, image,...) or base64 encoded file |
+| Parameter           | Required/Optional | Description                                                    |
+|---------------------|-------------------|----------------------------------------------------------------|
+| file_name           | Required          | Filename with extension                                        |
+| source_url/data_b64 | Required          | Public url of the file (pdf, image,...) or base64 encoded file |
 
 Request :
 ```javascript
@@ -233,16 +233,16 @@ Request :
 
 **Data parameters**
 
-|Parameter| Description |
-|----|------
-| packaging_waste_paper | Paper |
-| packaging_waste_plastic | Plastic |
-| packaging_waste_wood | Wood |
-| packaging_waste_metal | Metal |
-| packaging_waste_glass | Glass |
-| packaging_waste_other | Other |
+| Parameter                  | Description    |
+|----------------------------|----------------|
+| packaging_waste_paper      | Paper          |
+| packaging_waste_plastic    | Plastic        |
+| packaging_waste_wood       | Wood           |
+| packaging_waste_metal      | Metal          |
+| packaging_waste_glass      | Glass          |
+| packaging_waste_other      | Other          |
 | packaging_waste_iron_steel | Iron and steel |
-| packaging_waste_aluminum | Aluminum |
+| packaging_waste_aluminum   | Aluminum       |
 
 ```javascript
 {
@@ -276,6 +276,22 @@ Request :
 ## 1.9 Compound
 
 See [Compound](/docs/product_update.md#14-compound) at product_update for more info.
+
+## 1.10 Supplier
+
+- Works for product_update aswell
+- Partner with set ID must exist and must be marked as supplier
+
+```javascript
+{
+    "secret_key": "8899",
+    "count_code": "89693",
+    "company_id": 16,
+    "supplier_info": {
+        "partner_id": "1600000643"
+    }
+}
+```
 
 
 ## 2. PHP Example
