@@ -98,6 +98,7 @@ Instruction how to get API key :
 
 # Blacklists
 * [search_blacklist_partner](/docs/search_blacklist_partner.md)
+* [import_blacklist_partner](/docs/import_blacklist_partner.md)
 
 # WebHooks
 * [stock](/docs/webhooks.md)
@@ -137,6 +138,7 @@ Instruction how to get API key :
 ## Release notes
 | Date       | What's new                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 24.6.2026  | Added import_blacklist_partner endpoint. See [example](/docs/import_blacklist_partner.md) for more info.                                                                                                                                                                                                                                                                                                                    |
 | 22.6.2026  | Added supplier_info support for product_add/update. See [example](/docs/product_add.md#110-Supplier) for more info.                                                                                                                                                                                                                                                                                                         |
 | 6.5.2026   | Added return_last_purchase_price to product_list endpoint. See [example](/docs/product_list.md#112-with-last-purchase-price) for more info.                                                                                                                                                                                                                                                                                 |
 | 30.4.2026  | Added create_webshop endpoint. See [example](/docs/create_webshop.md) for more info.                                                                                                                                                                                                                                                                                                                                        |
