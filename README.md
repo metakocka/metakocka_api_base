@@ -62,6 +62,7 @@ Instruction how to get API key :
 * [warehouse docs](/docs/documents_get_document_whdocs.md)
 * [workorder](/docs/documents_get_document_workorder.md)
 * [transfer_order](/docs/documents_get_document_transfer_order.md)
+* [purchase order](/docs/documents_get_document_purchase_order.md)
 
 ### update_document
 * [workorder](/docs/documents_update_document_workorder.md)
@@ -138,6 +139,7 @@ Instruction how to get API key :
 ## Release notes
 | Date       | What's new                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 13.7.2026  | Added get_document support for purchase_order. See [example](/docs/documents_get_document_purchase_order.md) for more info.                                                                                                                                                                                                                                                                                                  |
 | 24.6.2026  | Added import_blacklist_partner endpoint. See [example](/docs/import_blacklist_partner.md) for more info.                                                                                                                                                                                                                                                                                                                    |
 | 22.6.2026  | Added supplier_info support for product_add/update. See [example](/docs/product_add.md#110-Supplier) for more info.                                                                                                                                                                                                                                                                                                         |
 | 6.5.2026   | Added return_last_purchase_price to product_list endpoint. See [example](/docs/product_list.md#112-with-last-purchase-price) for more info.                                                                                                                                                                                                                                                                                 |
