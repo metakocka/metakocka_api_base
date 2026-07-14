@@ -119,6 +119,60 @@
       }
    ]
 }
+
+```
+
+### Example : create product, material plan and material realization for fulfillment center
+```javascript
+{  
+   "secret_key":"8899",
+   "company_id":"16",
+   "fulfillment_user" : true,
+   "doc_date":"20.11.2015",
+   "start_date":"20.11.2015",
+   "partner":{  
+      "business_entity":"true",
+      "taxpayer":"true",
+      "tax_id_number":"SI10040073",
+      "customer":"eshop 1",
+      "street":"Slovenska cesta 100",
+      "post_number":"1000",
+      "place":"Ljubljana",
+      "country":"Slovenia"
+   },
+   "create_product_plan_list":[  
+      {  
+         "product_code":"cp1",
+         "amount_plan":"1",
+         "price_sales":"1",
+         "discount_sales":"1",
+         "notes":"create_product_1",
+         "fulfillment_user" : true,
+         "material_plan_list":[  
+            {  
+               "product_code":"mp11",
+               "amount_plan":"11",
+               "price_purchase_plan":"11",
+               "notes":"material_plan_1_1",
+               "warehouse_code":"WHNaslov",
+               "when":"2015-11-22+02:00",
+               "fulfillment_user" : true,
+               "material_realization_list":[  
+                  {  
+                     "product_code":"mp11",
+                     "amount_realization":"6",
+                     "price_purchase":"1,1",
+                     "notes":"material_plan_1_1 usage",
+                     "warehouse_code":"WHNaslov",
+                     "fulfillment_user" : true,
+                     "when":"2015-11-22+02:00"
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}
 ```
 
 ### Example : complex example with create product, material plan and material realization
