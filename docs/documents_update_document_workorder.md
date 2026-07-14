@@ -214,6 +214,7 @@ The fields in the below example can be updated via REST method :
 			"amount_plan": "4",
 			"purchase_price": "8",
 			"when": "2016-09-16+02:00",
+			"fulfillment_user" : true,
 			"microlocation": "m3",
 			"lot_number_value": "l2"
 		}
@@ -227,6 +228,7 @@ The fields in the below example can be updated via REST method :
 			"product_plan_mk_id": "1600373733",
 			"position_mk_id": "1600373675",
 			"when": "2016-09-16+02:00",
+			"fulfillment_user" : true,
 			"microlocation": "m4",
 			"lot_number_value": "51"
 		}
