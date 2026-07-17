@@ -146,7 +146,7 @@
 }
 ```
 
-### 2.3.3 Warehouse receiving note
+### 2.3.3 Warehouse receiving note ( Inbound order)
 **Example full request** :
 ```javascript
 {
