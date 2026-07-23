@@ -21,7 +21,10 @@ Request :
     "purchasing":"false",
     "height":"12.23",
     "depth":"4.12",
+    "width": "15",
     "weight":"6.3",
+    "gross_weight": "0,8",
+    "min_stock": "20",
     "minimal_order_quantity": "10",
     "localization":[
       {
