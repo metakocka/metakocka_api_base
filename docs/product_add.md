@@ -154,7 +154,7 @@ Request :
     "product_partner_info": [
         {
           "product_code": "t12345",
-          "product_name": "sifra_partner",
+          "product_name": "Supplier item name",
           "partner_id": "1600113924"
         }, 
         {
