@@ -72,6 +72,9 @@
 }
 ```
 
+**Notes**
+* `sales_order_list` also supports `buyer_order` (customer order number) as an alternative to `count_code`. If both parameters are provided, they must identify the same sales order.
+
 ### Example : create product, material plan and material realization
 ```javascript
 {  
