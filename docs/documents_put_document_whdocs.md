@@ -8,6 +8,9 @@
 | warehouse\_receiving\_note  | Nalog za prevzem | Inbound order             |
 | warehouse\_acceptance\_note | Prevzemnica      | Goods received note       |
 
+**Notes**
+* `sales_order_list` also supports `buyer_order` (customer order number) as an alternative to `count_code`. If both parameters are provided, they must identify the same sales order.
+
 ### 2.3.1 Warehouse delivery note
 **Example full request** :
 ```javascript
