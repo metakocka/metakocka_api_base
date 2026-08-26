@@ -245,3 +245,121 @@ Respond :
 ```
 
 ---
+
+### 4.1 Email events
+
+**Description** : Look up delivery/tracking events (sent, opened, clicked, bounced, ...) for previously sent emails, using the `mk_id` values returned by `send_message` for `type = email` (see **Result** at the top of this page — `mk_id` is the row id in **email_queue**).
+
+**Endpoint**: `POST https://main.metakocka.si/rest/eshop/get_email_events`
+
+* `secret_key` (**required**) : Generated API key, tied to the company session.
+* `company_id` (**required**) : Internal(MK) company id.
+* `mk_id_list` (**required**) : array of `mk_id` values to look up events for.
+
+***Notes***
+* Rate limit : max **1000** ids per request. Exceeding it returns error `"mk_id_list size cannot be more than 1000"`.
+* If an `mk_id` is invalid or has no events, it's still returned in the result with an empty `events` array — no error.
+* Duplicate ids in `mk_id_list` are deduped in the response (one entry per unique `mk_id`, in input order).
+
+**Response** : array with one entry per requested `mk_id`, each containing an `events` array with `event_time`, `event_type`, `event_sub_type`. Events are populated from AWS SES delivery notifications as they arrive, so `events` may be empty right after sending and fill in over time.
+
+| `event_type`     | Occurs when...                                                                    | Possible `event_sub_type`                    |
+|------------------|-------------------------------------------------------------------------------------|-----------------------------------------------|
+| `send`           | the email was accepted by the sending mail server.                                  | `null`                                          |
+| `delivered`      | the email was successfully delivered to the recipient's mail server.                | `null`                                          |
+| `open`           | the recipient opened the email.                                                     | `null`                                          |
+| `click`          | the recipient clicked a link in the email.                                          | `null`                                          |
+| `hard_bounce`    | the email permanently failed to deliver (e.g. mailbox doesn't exist).               | see below                                       |
+| `soft_bounce`    | the email temporarily/undeterminedly failed to deliver (may still succeed on retry).| see below                                       |
+| `delivery_delay` | delivery was delayed and is being retried.                                          | see below                                       |
+| `complaint`      | the recipient (or their mail provider) reported the message as spam/abuse.          | see below                                       |
+
+`event_sub_type` gives the specific reason for a `hard_bounce` / `soft_bounce` / `delivery_delay` / `complaint` event (`null` for `send` / `delivered` / `open` / `click`) :
+
+| `event_sub_type`                | Applies to                        |
+|----------------------------------|------------------------------------|
+| `General`                        | bounce, delivery_delay             |
+| `MailboxFull`                    | bounce, delivery_delay             |
+| `AttachmentRejected`             | bounce                             |
+| `ContentRejected`                | bounce                             |
+| `CustomTimeoutExceeded`          | bounce                             |
+| `EmailValidationSuppressed`      | bounce                             |
+| `MessageTooLarge`                | bounce                             |
+| `NoEmail`                        | bounce                             |
+| `OnAccountSuppressionList`       | bounce                             |
+| `OnTenantSuppressionList`        | bounce                             |
+| `Suppressed`                     | bounce                             |
+| `UnsubscribedRecipient`          | bounce                             |
+| `InternalFailure`                | delivery_delay                     |
+| `SpamDetected`                   | delivery_delay                     |
+| `RecipientServerError`           | delivery_delay                     |
+| `IPFailure`                      | delivery_delay                     |
+| `TransientCommunicationFailure`  | delivery_delay                     |
+| `BYOIPHostNameLookupUnavailable` | delivery_delay                     |
+| `Undetermined`                   | delivery_delay                     |
+| `SendingDeferral`                | delivery_delay                     |
+| `Abuse`                          | complaint                          |
+| `Auth_Failure`                   | complaint                          |
+| `Fraud`                          | complaint                          |
+| `Not_Spam`                       | complaint                          |
+| `Other`                          | complaint                          |
+| `Virus`                          | complaint                          |
+
+**Example** :
+Request (POST - https://main.metakocka.si/rest/eshop/get_email_events) :
+```javascript
+{
+	"secret_key" : "8899",
+	"company_id" : "16",
+	"mk_id_list" : [
+		11,
+		22,
+		33
+	]
+}
+```
+Respond :
+```javascript
+[
+    {
+        "mk_id": 11,
+        "events": [
+            {
+                "event_time": "2026-08-20T09:46:14+02:00",
+                "event_type": "send",
+                "event_sub_type": null
+            },
+            {
+                "event_time": "2026-08-20T09:47:02+02:00",
+                "event_type": "open",
+                "event_sub_type": null
+            }
+        ]
+    },
+    {
+        "mk_id": 22,
+        "events": [
+            {
+                "event_time": "2026-08-20T09:50:11+02:00",
+                "event_type": "hard_bounce",
+                "event_sub_type": "MailboxFull"
+            }
+        ]
+    },
+    {
+        "mk_id": 33,
+        "events": []
+    }
+]
+```
+
+Call can also return general error:
+```javascript
+{
+    "opr_code": "2",
+    "opr_desc": "mk_id_list is required",
+    "opr_time_ms": "5"
+}
+```
+
+---
