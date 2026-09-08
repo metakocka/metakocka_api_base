@@ -772,5 +772,72 @@ Respond :
 }
 ```
 
+# get_document - Sales Order with group expedition
+**Example** :
+
+Notes:
+* Also works with the `/search` endpoint by setting `return_group_expedition` to `true`.
+* When the requested sales order is the parent order, `group_expedition.sales_order_list` contains the linked sales orders as regular `get_document` responses.
+* When a linked sales order is requested directly, its `group_expedition` contains `parent_mk_id` and `parent_sales_order_id`.
+
+**Request Data parameters**
+
+| Parameter                 | Required/Optional | Description     |
+|---------------------------|-------------------|-----------------|
+| return_group_expedition   | Optional          | Default `false` |
+
+Request (POST - https://main.metakocka.si/rest/eshop/v1/get_document) :
+```javascript
+{
+  "secret_key": "8899",
+  "company_id": "16",
+  "doc_type": "sales_order",
+  "doc_id": "400000000100",
+  "return_group_expedition": true
+}
+```
+
+Respond :
+```javascript
+{
+  "mk_id": "400000000100",
+  "doc_type": "sales_order",
+  "opr_code": "0",
+  "count_code": "PP-100",
+  ...
+  "group_expedition": {
+    "mk_id": 1000,
+    "sales_order_id": 400000000100,
+    "start_packing": "2026-08-20T08:10:00+02:00",
+    "finished_packing": "2026-08-20T08:25:00+02:00",
+    "delivery_type": "GLS",
+    "country": "Slovenia",
+    "status_code": "prepared",
+    "prepared": "2026-08-20T08:30:00+02:00",
+    "prepared_user": "Jane Doe",
+    "dispatched": "2026-08-20T09:00:00+02:00",
+    "dispatch_user": "John Doe",
+    "sales_order_list": [
+      {
+        "mk_id": "400000000101",
+        "doc_type": "sales_order",
+        "opr_code": "0",
+        "count_code": "PP-101",
+        ...
+        "group_expedition": {
+          "mk_id": 1001,
+          "sales_order_id": 400000000101,
+          "parent_mk_id": 1000,
+          "parent_sales_order_id": 400000000100,
+          "start_packing": "2026-08-20T08:12:00+02:00",
+          "finished_packing": "2026-08-20T08:20:00+02:00",
+          "added": "2026-08-20T08:05:00+02:00"
+        }
+      }
+    ]
+  }
+}
+```
+
 ## Special paramethers
 * show\_last\_payment\_date - see [Bill example](/docs/documents_get_document_bill.md)
