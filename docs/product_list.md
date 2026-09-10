@@ -99,7 +99,8 @@ Respond (with return\_warehause\_stock = 'true'):
          "unit":"dan",
          "service":"false",
          "sales":"true",
-         "purchasing":"false"
+         "purchasing":"false",
+         "safety_stock": "21"
       }
    ]
 }

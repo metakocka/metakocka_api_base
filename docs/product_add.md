@@ -25,7 +25,8 @@ Request :
     "weight":"6.3",
     "gross_weight": "0,8",
     "min_stock": "20",
-    "minimal_order_quantity": "10",
+    "minimal_order_quantity": "10", 
+    "safety_stock": "5",
     "localization":[
       {
          "language":"en",
