@@ -207,7 +207,7 @@ Notes :
     "mark_paid":[
       {
             "payment_type":"PayPal",
-            "date":"12.03.2011"
+            "date":"2011-03-12+02:00"
       }
    ]
 }
