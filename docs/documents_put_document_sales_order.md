@@ -45,7 +45,7 @@
     "discount_percent" : "20",
     "currency_code" : "USD",
     "status_code" : "created",
-    "pariteta" : "Lasten Prevzem",
+    "pariteta" : "DAP",
     "doc_created_email" : "m@m.com",
     "commercialist_email" : "m@m.com",
     "parcel_shop_id" : "P100",
@@ -59,13 +59,13 @@
         }       
     ],        
     "delivery_deadline" : "2014-09-14+02:00",
-    "warehouse" : "glavni",
+    "warehouse" : "main",
     "delivery_type" : "DHL",
-    "priority" : "3-Visoka",
+    "priority" : "3-High",
     "finish_date" : "2014-09-15+02:00",
-    "buyer_order" : "border",
-    "notes_header" : "notes zgoraj",
-    "notes": "to so notes.",
+    "buyer_order" : "CUST-O-1",
+    "notes_header" : "notes interal",
+    "notes": "Customer order notes",
     "method_of_payment" : "on_delivery",
     "product_list": [
         {
