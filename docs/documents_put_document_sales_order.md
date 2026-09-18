@@ -138,7 +138,12 @@ Notes :
         "street": "Slovenska cesta 100",
         "post_number": "1000",
         "place": "Ljubljana",
-        "country": "Slovenia"
+        "country": "Slovenia",
+        "partner_contact": {
+			"name": "Jo Malone ",
+			"gsm": "041 555 000",
+			"email": "jom1@icloud.com"
+		}
     },
     "product_list": [
         {
@@ -169,7 +174,12 @@ Notes :
         "street": "Slovenska cesta 100",
         "post_number": "1000",
         "place": "Ljubljana",
-        "country": "Slovenia"
+        "country": "Slovenia",
+        "partner_contact": {
+			"name": "Jo Malone ",
+			"gsm": "041 555 000",
+			"email": "jom1@icloud.com"
+		}
     },
     "product_list": [
         {
@@ -199,7 +209,12 @@ Notes :
         "street": "Slovenska cesta 100",
         "post_number": "1000",
         "place": "Ljubljana",
-        "country": "Slovenia"
+        "country": "Slovenia",
+        "partner_contact": {
+			"name": "Jo Malone ",
+			"gsm": "041 555 000",
+			"email": "jom1@icloud.com"
+		}
     },    
     "product_list": [
         {
