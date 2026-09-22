@@ -251,6 +251,7 @@ Notes :
     "parcel_shop_id" : "P100",
     "profit_center" : "ProfitCenter1",
     "notes": "customer notes - cart",
+    "multiple_parcels" : "2",
     "method_of_payment": "PayPal",
     "partner": {
         "business_entity": "false",
