@@ -28,11 +28,21 @@ For SMS, Viber, and WhatsApp, `sender_message_id` is not really an id — it's a
 
 ---
 
+### Receiver Country
+
+For SMS, Viber, and WhatsApp, `receiver_country` (optional) tells MetaKocka which country the recipient belongs to.
+
+* The country cannot always be determined exactly from the phone number alone (e.g. numbers without an international prefix), so it is **always advisable** to send `receiver_country` whenever you know the recipient's country.
+* Value can be the country name in any language (e.g. `"Slovenija"`, `"Slovenia"`, `"Slowenien"`) or an ISO country code (e.g. `"SI"`).
+
+---
+
 ### 1. SMS
 
 **Description** : Send SMS using selected provider :
 * `type` : must be `"sms"`
 * `to_number` (**required**) : recipient phone number, validated for correct format
+* `receiver_country` (optional, recommended) : recipient's country — country name in any language or ISO code. See [Receiver Country](#receiver-country) above.
 * `message` (**required**) : message content
 * `sender_message_id` (optional) : string literal — the sender name shown to the recipient. See [Sender Name](#sender-name) above.
 * `eshop_sync_id` (optional) : id of the SMS connection to send through. Found at : MetaKocka -> Additional Settings -> Notifications -> Connections -> ID in grid. If omitted, the most recently created SMS connection is used.
@@ -53,6 +63,7 @@ Request (POST - https://main.metakocka.si/rest/eshop/send_message) :
 			"type" : "sms",			
 			"eshop_sync_id" : "1600374782",
 			"to_number" : "41 111 222",
+			"receiver_country" : "SI",
 			"message" : "message content",
 			"sender_message_id" : "sms1"				
                     },
@@ -60,6 +71,7 @@ Request (POST - https://main.metakocka.si/rest/eshop/send_message) :
 			"type" : "sms",			
 			"eshop_sync_id" : "1600374782",
 			"to_number" : "41 111 222 123",
+			"receiver_country" : "Slovenija",
 			"message" : "message content",
 			"sender_message_id" : "sms2"				
 		    }
@@ -93,6 +105,7 @@ Respond :
 **Description** : Send a Viber message using a connected Viber provider :
 * `type` : must be `"viber"`
 * `to_number` (**required**) : recipient phone number
+* `receiver_country` (optional, recommended) : recipient's country — country name in any language or ISO code. See [Receiver Country](#receiver-country) above.
 * `message` (**required**) : message content
 * `sender_message_id` (optional) : string literal — the sender name shown to the recipient. See [Sender Name](#sender-name) above.
 * `eshop_sync_id` (optional) : id of the Viber connection to send through. Found at : MetaKocka -> Additional Settings -> Notifications -> Connections -> ID in grid. If provided, it must point to a Viber-type connection, otherwise the call fails with "Not valid value for eshop_sync_id". If omitted, the most recently created Viber connection is used.
@@ -113,6 +126,7 @@ Request (POST - https://main.metakocka.si/rest/eshop/send_message) :
 			"type" : "viber",
 			"eshop_sync_id" : "1600374782",
 			"to_number" : "41 111 222",
+			"receiver_country" : "SI",
 			"message" : "message content",
 			"sender_message_id" : "viber1"
 		}
@@ -141,6 +155,7 @@ Respond :
 **Description** : Send a WhatsApp message using a connected WhatsApp provider :
 * `type` : must be `"whatsapp"`
 * `to_number` (**required**) : recipient phone number
+* `receiver_country` (optional, recommended) : recipient's country — country name in any language or ISO code. See [Receiver Country](#receiver-country) above.
 * `message` (**required**) : message content
 * `sender_message_id` (optional) : string literal — the sender name shown to the recipient. See [Sender Name](#sender-name) above.
 * `eshop_sync_id` (optional) : id of the WhatsApp connection to send through. Found at : MetaKocka -> Additional Settings -> Notifications -> Connections -> ID in grid. If provided, it must point to a WhatsApp-type connection, otherwise the call fails with "Not valid value for eshop_sync_id". If omitted, the most recently created WhatsApp connection is used.
@@ -161,6 +176,7 @@ Request (POST - https://main.metakocka.si/rest/eshop/send_message) :
 			"type" : "whatsapp",
 			"eshop_sync_id" : "1600374782",
 			"to_number" : "41 111 222",
+			"receiver_country" : "Slovenia",
 			"message" : "message content",
 			"sender_message_id" : "wa1"
 		}
@@ -200,7 +216,7 @@ Respond :
 
 ***Notes***
 * for Abandoned cart connection, please provide AC id (return value of AC [put_document](/docs/documents_put_document_abandoned_cart.md) call) as parameter `abandoned_cart_id` (String)
-* `to_number` / `eshop_sync_id` do not apply to this type and are ignored.
+* `to_number` / `receiver_country` / `eshop_sync_id` do not apply to this type and are ignored.
 
 **Example** :
 Request (POST - https://main.metakocka.si/rest/eshop/send_message) :
