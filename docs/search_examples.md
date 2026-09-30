@@ -233,7 +233,7 @@ Notes :
 }
 ```
 
-### Search Sales orders by last change timestamp
+### Search Sales orders by last change timestamp and delivery events
 **Request** (POST - https://main.metakocka.si/rest/eshop/v1/search) :
 
 ```javascript
@@ -242,6 +242,7 @@ Notes :
 	"company_id": "16",
 	"doc_type": "sales_order",
 	"result_type": "doc",
+    "return_delivery_service_events": "true",
 	"limit": 5,
 	"offset": 0,
 	"query_advance": [{
