@@ -233,7 +233,7 @@ Notes :
 }
 ```
 
-### Search Sales orders by last change timestamp and delivery events
+### Search Sales orders by last change timestamp and delivery service events
 **Request** (POST - https://main.metakocka.si/rest/eshop/v1/search) :
 
 ```javascript
