@@ -46,6 +46,7 @@ For SMS, Viber, and WhatsApp, `receiver_country` (optional) tells MetaKocka whic
 * `message` (**required**) : message content
 * `sender_message_id` (optional) : string literal — the sender name shown to the recipient. See [Sender Name](#sender-name) above.
 * `eshop_sync_id` (optional) : id of the SMS connection to send through. Found at : MetaKocka -> Additional Settings -> Notifications -> Connections -> ID in grid. If omitted, the most recently created SMS connection is used.
+* `message_type` (optional) : `"marketing"` or `"transactional"`
 
 ***Notes***
 * for two-way communication (replies routed back to you), your company must have a registered phone number set up with MetaKocka support for a 2-way-capable provider. When sending through such a number, omit `sender_message_id` — the sender must display as the registered phone number itself so replies can be routed back. This only applies to SMS.
@@ -65,6 +66,7 @@ Request (POST - https://main.metakocka.si/rest/eshop/send_message) :
 			"to_number" : "41 111 222",
 			"receiver_country" : "SI",
 			"message" : "message content",
+			"message_type" : "transactional",
 			"sender_message_id" : "sms1"				
                     },
                     {
@@ -73,6 +75,7 @@ Request (POST - https://main.metakocka.si/rest/eshop/send_message) :
 			"to_number" : "41 111 222 123",
 			"receiver_country" : "Slovenija",
 			"message" : "message content",
+			"message_type" : "transactional",
 			"sender_message_id" : "sms2"				
 		    }
 	]
@@ -109,6 +112,7 @@ Respond :
 * `message` (**required**) : message content
 * `sender_message_id` (optional) : string literal — the sender name shown to the recipient. See [Sender Name](#sender-name) above.
 * `eshop_sync_id` (optional) : id of the Viber connection to send through. Found at : MetaKocka -> Additional Settings -> Notifications -> Connections -> ID in grid. If provided, it must point to a Viber-type connection, otherwise the call fails with "Not valid value for eshop_sync_id". If omitted, the most recently created Viber connection is used.
+* `message_type` (optional) : `"marketing"` or `"transactional"`
 
 ***Notes***
 * see [Sender Name](#sender-name) above; required for Slovenia and Poland.
@@ -128,6 +132,7 @@ Request (POST - https://main.metakocka.si/rest/eshop/send_message) :
 			"to_number" : "41 111 222",
 			"receiver_country" : "SI",
 			"message" : "message content",
+			"message_type" : "transactional",
 			"sender_message_id" : "viber1"
 		}
 	]
@@ -159,6 +164,7 @@ Respond :
 * `message` (**required**) : message content
 * `sender_message_id` (optional) : string literal — the sender name shown to the recipient. See [Sender Name](#sender-name) above.
 * `eshop_sync_id` (optional) : id of the WhatsApp connection to send through. Found at : MetaKocka -> Additional Settings -> Notifications -> Connections -> ID in grid. If provided, it must point to a WhatsApp-type connection, otherwise the call fails with "Not valid value for eshop_sync_id". If omitted, the most recently created WhatsApp connection is used.
+* `message_type` (optional) : `"marketing"` or `"transactional"`
 
 ***Notes***
 * see [Sender Name](#sender-name) above; required for Slovenia and Poland.
@@ -178,6 +184,7 @@ Request (POST - https://main.metakocka.si/rest/eshop/send_message) :
 			"to_number" : "41 111 222",
 			"receiver_country" : "Slovenia",
 			"message" : "message content",
+			"message_type" : "transactional",
 			"sender_message_id" : "wa1"
 		}
 	]
@@ -213,6 +220,7 @@ Respond :
 * `email_html_body` (optional) : HTML body content
 * `sender_message_id` (optional) : your own id, echoed back in the response to correlate results
 * `attached_file_list` (optional) : array of attachments, each with `file_name`, `content_type`, and `file_data_base64` (base64-encoded file content)
+* `message_type` (optional) : `"marketing"` or `"transactional"`
 
 ***Notes***
 * for Abandoned cart connection, please provide AC id (return value of AC [put_document](/docs/documents_put_document_abandoned_cart.md) call) as parameter `abandoned_cart_id` (String)
@@ -233,6 +241,7 @@ Request (POST - https://main.metakocka.si/rest/eshop/send_message) :
 			"email_cc_list" : "sales@example.com",
 			"email_subject" : "Your order confirmation",
 			"email_html_body" : "<p>Thank you for your order.</p>",
+			"message_type" : "transactional",
 			"sender_message_id" : "email1",
 			"attached_file_list" : [
 				{
