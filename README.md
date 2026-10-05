@@ -73,6 +73,7 @@ Instruction how to get API key :
 
 ### delete_document
 * [sales order](/docs/documents_delete_document_sales_order.md)
+* [bill](/docs/documents_delete_document_bill.md)
 * [warehouse docs](/docs/documents_get_document_warehouse_docs.md)
 
 ### search
@@ -140,6 +141,7 @@ Instruction how to get API key :
 ## Release notes
 | Date       | What's new                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 5.10.2026  | Added delete_document support for bills. See [example](/docs/documents_delete_document_bill.md) for more info.                                                                                                                                                                                                                                                                                                              |
 | 29.9.2026  | Added the group_expedition endpoint for creating and updating grouped sales-order expeditions. See [documentation](/docs/group_expedition.md) for more info.                                                                                                                                                                                                                                                                |
 | 10.9.2026  | Added support for safety stock to product_add, product_update and product_list. See [example](/docs/product_add.md) for more info.                                                                                                                                                                                                                                                                                          |
 | 8.9.2026   | Added support for returning group expedition data in get_document and search for sales orders. See [example](/docs/documents_get_document_sales_order.md#get_document---sales-order-with-group-expedition) for more info.                                                                                                                                                                                                   |
