@@ -19,7 +19,7 @@ Request :
   "mk_id" : "1600370614",
   "secret_key" : "8899",
   "company_id" : "16",  
-  "doc_type" : "sales_bill_domestic",
+  "doc_type" : "sales_bill_domestic"
 }
 ```
 
