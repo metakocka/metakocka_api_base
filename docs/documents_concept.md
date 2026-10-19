@@ -9,28 +9,27 @@ We support the following REST calls on all supported documents :
 * /update\_document
 * /delete\_document
 * /get\_document
-* /get\_change\_documents - return list of documents that change after last call.
 
 Not all calls are (yet) supported for every document type. We add support base on custumer needs.
 Prefix for all methods is https://main.metakocka.si/rest/eshop/v1/ (example: https://main.metakocka.si/rest/eshop/v1/put_document)
 
 Currenty we support :
 
-Document type                | Put | Update | Delete | Get | GetChangeDocument| Local translation [SLO]|
------------------------------|-----|--------|--------|-----|------------------|------------------|
-warehouse\_delivery\_note    |X    |X       |        |X    | X                |Nalog za odpremo|
-warehouse\_packing\_list     |X    |X       |        |X    | X                |Dobavnica|
-warehouse\_receiving\_note   |X    |X       |        |X    | X                |Nalog za prejem|
-warehouse\_acceptance\_note  |X    |X       |        |X    | X                |Prevzemnica|
-sales\_order                 |X    |X       |        |X    |                  |Prodajno naročilo|
-sales\_offer                 |X    |X       |        |X    |                  |Ponudba|
-sales\_bill\_domestic        |X    |X       |        |X    |                  |Prodaja Račun Domači|
-sales\_bill\_foreign         |X    |X       |        |X    |                  |Prodaja Račun Tuji|
-sales\_bill\_retail          |X    |X       |        |X    |                  |Prodaja Račun maloprodajni|
-purchase\_order              |X    |X       |        |X    |                  |Naročilnica|
-purchase\_bill\_domestic     |X    |X       |        |X    |                  |Nabava Račun - domači|
-purchase\_bill\_foreign      |X    |X       |        |X    |                  |Nabava Račun - tuji|
-workorder                    |X    |        |        |X    |                  |Delovni nalog|
+Document type                | Put | Update | Delete | Get | Local translation [SLO]|
+-----------------------------|-----|--------|--------|-----|------------------|
+warehouse\_delivery\_note    |X    |X       |        |X    |Nalog za odpremo|
+warehouse\_packing\_list     |X    |X       |        |X    |Dobavnica|
+warehouse\_receiving\_note   |X    |X       |        |X    |Nalog za prejem|
+warehouse\_acceptance\_note  |X    |X       |        |X    |Prevzemnica|
+sales\_order                 |X    |X       |        |X    |Prodajno naročilo|
+sales\_offer                 |X    |X       |        |X    |Ponudba|
+sales\_bill\_domestic        |X    |X       |        |X    |Prodaja Račun Domači|
+sales\_bill\_foreign         |X    |X       |        |X    |Prodaja Račun Tuji|
+sales\_bill\_retail          |X    |X       |        |X    |Prodaja Račun maloprodajni|
+purchase\_order              |X    |X       |        |X    |Naročilnica|
+purchase\_bill\_domestic     |X    |X       |        |X    |Nabava Račun - domači|
+purchase\_bill\_foreign      |X    |X       |        |X    |Nabava Račun - tuji|
+workorder                    |X    |        |        |X    |Delovni nalog|
 
 ## 1.2. Building blocks
 All calls have very simmilar JSON structure. Let's describe the most importand parts.
