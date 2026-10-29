@@ -495,6 +495,9 @@ If you are using sales order as target document for orders from webshop, you wil
 				}, {
 					"name": "tracking_number",
 					"value": "65407745"
+				}, {
+					"name": "tracking_intermediate_number",
+					"value": "56456456489411631"
 				}
 			],
 			"sum_basic": "153.59",

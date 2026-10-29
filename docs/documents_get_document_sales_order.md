@@ -133,6 +133,9 @@ Respond :
 		}, {
 			"name": "tracking_number",
 			"value": "65407745"
+		}, {
+			"name": "tracking_intermediate_number",
+			"value": "56456456489411631"
 		}
 	],
 	"shipped_date_expected_seller": "2015-05-15+02:00",
@@ -744,7 +747,7 @@ Request (POST - https://main.metakocka.si/rest/eshop/v1/get_document) :
   "company_id":"16",
   "doc_type" : "sales_order",
   "doc_id" : "1600202487",
-  "return_associated_tracking_numbers " : "true"
+  "return_associated_tracking_numbers" : "true"
 }
 ```
 Respond :
